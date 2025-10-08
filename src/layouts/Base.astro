@@ -1,0 +1,69 @@
+---
+import { getLangFromUrl } from '../i18n/utils';
+import LanguagePicker from '../components/LanguagePicker.astro';
+import { useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<html lang={lang} class="theme-dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BoycottWithAI</title>
+    <meta name="description" content="Tools, guides and community resources to organize strategic, non-violent campaigns and economic pressure. Manifesto, toolkits, and actionable templates in multiple languages." />
+    <meta property="og:title" content="BoycottWithAI — Tools for Collective Action" />
+    <meta property="og:description" content="Organize strategic, non-violent campaigns. Find toolkits, templates, and a manifesto for sustained pressure." />
+    <meta property="og:type" content="website" />
+  <link rel="alternate" hreflang="en" href="/en/" />
+  <link rel="alternate" hreflang="it" href="/it/" />
+  <link rel="alternate" hreflang="fr" href="/fr/" />
+  <link rel="alternate" hreflang="es" href="/es/" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="app-root">
+    <header class="site-header">
+      <div class="container header-inner">
+        <div style="display:flex;flex-direction:column">
+          <a class="brand" href="/">BoycottWithAI</a>
+          <small class="muted" style="font-weight:600;margin-top:4px">Organize, pressure, and build alternatives</small>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation">
+          <LanguagePicker />
+          <a href={`/${lang}/tools/`}>{t('nav.tools')}</a>
+          <a href={`/${lang}/actions/`}>{t('nav.actions')}</a>
+          <a href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
+          <a href={`/${lang}/feeds/`}>{t('nav.feeds')}</a>
+          <a href="/rss.xml" class="muted">RSS</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <div class="container">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <small>BoycottWithAI — tools, guides and community resources to build sustained, non-violent pressure.</small>
+        </div>
+        <div class="footer-right">
+          <LanguagePicker />
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // small accessibility helper: focus outline for keyboard users
+      (function(){
+        window.addEventListener('keydown', function(e){
+          if(e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
+        });
+      })();
+    </script>
+  </body>
+</html>

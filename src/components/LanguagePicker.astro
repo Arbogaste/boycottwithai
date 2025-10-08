@@ -1,0 +1,11 @@
+---
+import { languages } from '../i18n/ui';
+---
+<div>
+  <label for="lang-select" class="sr-only">Language</label>
+  <select id="lang-select" onchange="location.href=this.value + '/'" class="secondary">
+    {Object.entries(languages).map(([code, label]) => (
+      <option value={code}>{label}</option>
+    ))}
+  </select>
+</div>

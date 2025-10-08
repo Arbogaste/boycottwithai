@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+import companies from '../data/boycott_response.json';
+---
+
+<head>
+  <title>Targets & Strategic Leverage — BoycottWithAI</title>
+  <meta name="description" content="Curated list of targets with sector and risk profiles. Find leverage points and suggested actions for strategic pressure." />
+</head>
+
+<Base>
+  <section>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <h1>Targets & Strategic Leverage</h1>
+        <p class="muted">A curated list of targets organized by sector and strategic vulnerability. Use the filters to find relevant local or thematic targets.</p>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <small class="muted">Phases:</small>
+        <div class="secondary">Awareness</div>
+        <div class="secondary">Mobilize</div>
+        <div class="secondary">Escalate</div>
+        <div class="secondary">Sustain</div>
+      </div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <label class="muted">Sector:</label>
+      <select id="sectorFilter" class="secondary">
+        <option value="">All</option>
+        {Array.from(new Set(companies.map(c => c.sector))).map(s => <option value={s}>{s}</option>)}
+      </select>
+
+      <label class="muted">Tag:</label>
+      <select id="tagFilter" class="secondary">
+        <option value="">All</option>
+        {Array.from(new Set(companies.flatMap(c => c.tags))).map(t => <option value={t}>{t}</option>)}
+      </select>
+    </div>
+
+    <div style="margin-top:18px" class="grid" id="targetsGrid">
+      {companies.map(company => (
+        <article class="card" data-sector={company.sector} data-tags={company.tags.join(',')}>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>{company.name}</h3>
+              <small class="muted">{company.sector}</small>
+            </div>
+            <div style="text-align:right">
+              <div style="font-weight:800;color:var(--accent)">{company.score}</div>
+              <small class="muted">risk</small>
+            </div>
+          </div>
+
+          <p style="margin-top:10px">{company.reason}</p>
+
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              {company.tags.map(tag => (
+                <span class="secondary" style="padding:6px 8px;border-radius:999px;font-size:0.8rem">{tag}</span>
+              ))}
+            </div>
+            <div>
+              <a class="button" href={company.boycott_url} target="_blank" rel="noopener noreferrer">Support Boycott</a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <script>
+      (() => {
+        const sector = document.getElementById('sectorFilter') as HTMLSelectElement | null;
+        const tag = document.getElementById('tagFilter') as HTMLSelectElement | null;
+        const grid = document.getElementById('targetsGrid') as HTMLElement | null;
+        function applyFilters(){
+          const s = sector ? sector.value : '';
+          const t = tag ? tag.value : '';
+          if (!grid) return;
+          Array.from(grid.children).forEach(child => {
+            const card = child as HTMLElement;
+            const cs = card.getAttribute('data-sector') || '';
+            const ts = (card.getAttribute('data-tags') || '').split(',');
+            const okSector = !s || cs === s;
+            const okTag = !t || ts.includes(t);
+            card.style.display = (okSector && okTag) ? '' : 'none';
+          });
+        }
+        if (sector) sector.addEventListener('change', applyFilters);
+        if (tag) tag.addEventListener('change', applyFilters);
+      })();
+    </script>
+
+    <section style="margin-top:20px">
+      <h3>How to use this list</h3>
+      <p class="muted">This list is modulare: it is populated from `src/data/boycott_response.json`. Replace that file or connect it to a CMS to update targets dynamically. Consider localizing actions and providing region filters.</p>
+    </section>
+  </section>
+</Base>

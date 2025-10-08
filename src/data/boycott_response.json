@@ -1,0 +1,38 @@
+[
+  {
+    "id": "acme-corp",
+    "name": "Acme Corporation",
+    "sector": "Retail",
+    "score": 72,
+    "reason": "Reported labor violations in multiple factories and aggressive union-busting tactics.",
+    "boycott_url": "https://example.org/acme-boycott",
+    "tags": ["labor", "supply-chain"]
+  },
+  {
+    "id": "globex",
+    "name": "Globex Industries",
+    "sector": "Energy",
+    "score": 88,
+    "reason": "Environmental damage and refusal to commit to clean-up costs.",
+    "boycott_url": "https://example.org/globex-boycott",
+    "tags": ["environment", "fossil-fuels"]
+  },
+  {
+    "id": "initech",
+    "name": "Initech Systems",
+    "sector": "Technology",
+    "score": 65,
+    "reason": "Privacy-invasive data practices and sale of user data to third parties.",
+    "boycott_url": "https://example.org/initech-boycott",
+    "tags": ["privacy", "tech"]
+  },
+  {
+    "id": "omnitech",
+    "name": "Omnitech Logistics",
+    "sector": "Transport",
+    "score": 54,
+    "reason": "Poor worker protections for gig drivers and subcontracted labor.",
+    "boycott_url": "https://example.org/omnitech-boycott",
+    "tags": ["labor", "transport"]
+  }
+]

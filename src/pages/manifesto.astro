@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Manifesto per la Giustizia — BoycottWithAI</title>
+  <meta name="description" content="Strategie multi-dimensionali di pressione: boicottaggi, attivismo digitale e azioni non-violente. Guida pratica per organizzatori." />
+</head>
+
+<Base>
+  <section>
+  <h1>{t('manifesto.title')}</h1>
+  <p class="muted">Strategie multi-dimensionali di pressione — sintesi del documento guida.</p>
+
+    <article class="card" style="margin-top:18px">
+      <h2>Pressione Economica Strategica</h2>
+      <ul>
+        <li>Boicottaggi mirati e organizzati</li>
+        <li>Scioperi strategici che colpiscono infrastrutture critiche</li>
+        <li>Creare alternative economiche e mercati paralleli</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Pressione Digitale e Cyber-Attivismo</h2>
+      <ul>
+        <li>Occupazione digitale e campagne di amplificazione</li>
+        <li>Uso di tecnologie per coordinamento e creazione di contenuti</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Intervento Non-Violento Diretto</h2>
+      <ul>
+        <li>Occupazioni strategiche e disobbedienza civile coordinata</li>
+        <li>Costruzione di istituzioni alternative e zone autonome temporanee</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Fattori di Successo</h2>
+      <p>Regola del 3,5%: la ricerca mostra che raggiungere ~3.5% della popolazione attiva può rendere inevitabile il cambiamento politico. Focus su:</p>
+      <ul>
+        <li>Diversità: coinvolgere età, classe, professioni e geografie differenti</li>
+        <li>Unità: messaggi chiari e ripetibili</li>
+        <li>Metriche: partecipazione, copertura media, impatto economico stimato</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Tattiche Innovative 2024-2025</h2>
+      <p>Proteste creative, performance art, pressioni internazionali e targeting strategico.</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Costruire Alleanze</h2>
+      <p>Alleati dentro le istituzioni, coalizioni ampie e strategie di media e narrativa.</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Escalation e Sostenibilità</h2>
+      <p>Seguire una progressione per fasi aiuta a mantenere controllo e legittimità. Fasi raccomandate:</p>
+      <ol>
+        <li>Sensibilizzazione e costruzione di coalizioni (settimane 1-4)</li>
+        <li>Azioni dimostrative e mobilitazione (settimane 4-12)</li>
+        <li>Disobbedienza civile e pressione economica mirata (settimane 12-24)</li>
+        <li>Sostenimento e istituzioni alternative (oltre 24 settimane)</li>
+      </ol>
+      <p>Mantenere non-violenza, rotazione di responsabilità e supporti contro il burnout.</p>
+      <h3>Prompt rapido per organizzatori</h3>
+      <p class="muted">Usa questo schema per iniziare: identificare l'obiettivo, mappare punti di leva, stabilire metriche di successo, pianificare fasi, assegnare ruoli, testare una piccola azione pilota.</p>
+    </article>
+
+  </section>
+</Base>

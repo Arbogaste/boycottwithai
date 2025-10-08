@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { useTranslations } from '../../i18n/utils';
+
+const t = useTranslations('en');
+---
+
+<head>
+  <title>BoycottWithAI — Strategic tools for non-violent campaigns</title>
+  <meta name="description" content="Open tools, templates and a manifesto to organize strategic economic and civil pressure. Resources in multiple languages." />
+</head>
+
+<Base>
+  <div class="hero">
+    <div class="left">
+      <h1>{t('hero.title')}</h1>
+      <p class="lead">{t('hero.subtitle')}</p>
+      <div class="cta">
+        <a class="button" href="/tools/">{t('cta.explore')}</a>
+        <a class="secondary" href="/actions/">{t('cta.start')}</a>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Live Alerts</h3>
+      <p class="muted">Subscribe to RSS for urgent calls and updates.</p>
+      <a class="secondary" href="/rss.xml">Subscribe</a>
+    </div>
+  </div>
+
+  <section style="margin-top:28px">
+    <div class="grid">
+      <div class="card">
+        <h4>How it works</h4>
+        <p class="muted">We provide open tools and guides to plan direct actions, coordinate safe assemblies, and run effective pressure campaigns.</p>
+      </div>
+      <div class="card">
+        <h4>Privacy-first</h4>
+        <p class="muted">Design choices prioritize participant safety: opt-in sharing, ephemeral events, and minimal data collection.</p>
+      </div>
+      <div class="card">
+        <h4>Community-driven</h4>
+        <p class="muted">Everything here is meant to be adapted by local groups — fork the project and contribute.</p>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:28px">
+    <div class="card">
+      <h4>From the Manifesto</h4>
+      <p class="muted">This project follows clear, evidence-based principles: build broad coalitions, combine diverse tactics, and progress through calibrated phases to reach mass-critical participation (the 3.5% rule). Use the tools and guides to move from awareness to sustained economic and political pressure while keeping actions non-violent and inclusive.</p>
+      <div style="margin-top:10px">
+        <a class="secondary" href="/manifesto/">Read the full manifesto</a>
+      </div>
+    </div>
+  </section>
+</Base>
