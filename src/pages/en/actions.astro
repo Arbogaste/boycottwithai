@@ -1,14 +1,14 @@
 ---
-import Base from '../layouts/Base.astro';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <head>
-  <title>Actions & Campaigns — BoycottWithAI</title>
-  <meta name="description" content="Blueprints for consumer boycotts, civil assemblies, and mutual aid. Phase-aligned templates and quickstart guides." />
+  <title>{t('actions.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('actions.subtitle')} />
 </head>
 
 <Base>
@@ -27,7 +27,7 @@ const t = useTranslations(lang);
       </div>
       <div class="card">
         <h4>Direct Aid</h4>
-  <p>Coordinating mutual aid for impacted groups: transparent resource distribution, sign-up forms, and accountability practices to sustain long-term support.</p>
+        <p>Coordinating mutual aid for impacted groups: transparent resource distribution, sign-up forms, and accountability practices to sustain long-term support.</p>
       </div>
     </div>
 
@@ -37,7 +37,7 @@ const t = useTranslations(lang);
       <ul>
         <li>Leaflet A4 — English / Italian</li>
         <li>Press release — editable markdown</li>
-  <li>Social media calendar — example CSV</li>
+        <li>Social media calendar — example CSV</li>
       </ul>
     </section>
   </section>

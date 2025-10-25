@@ -1,8 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { useTranslations } from '../../i18n/utils';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 
-const t = useTranslations('it');
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <head>
@@ -16,8 +17,8 @@ const t = useTranslations('it');
       <h1>{t('hero.title')}</h1>
       <p class="lead">{t('hero.subtitle')}</p>
       <div class="cta">
-        <a class="button" href="/tools/">{t('cta.explore')}</a>
-        <a class="secondary" href="/actions/">{t('cta.start')}</a>
+        <a class="button" href={`/${lang}/tools/`}>{t('cta.explore')}</a>
+        <a class="secondary" href={`/${lang}/actions/`}>{t('cta.start')}</a>
       </div>
     </div>
     <div class="card">
@@ -48,7 +49,7 @@ const t = useTranslations('it');
       <h4>Dal Manifesto</h4>
       <p class="muted">Questo progetto segue principi basati sull'evidenza: costruire coalizioni ampie, combinare tattiche diversificate e seguire fasi calibrate per raggiungere la massa critica (regola del 3,5%). Usa gli strumenti e le guide per passare dalla consapevolezza a una pressione economica e politica sostenuta, mantenendo sempre pratiche non-violente e inclusive.</p>
       <div style="margin-top:10px">
-        <a class="secondary" href="/manifesto/">Leggi il manifesto completo</a>
+        <a class="secondary" href={`/${lang}/manifesto/`}>Leggi il manifesto completo</a>
       </div>
     </div>
   </section>

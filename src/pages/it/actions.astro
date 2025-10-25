@@ -1,0 +1,60 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('actions.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('actions.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('actions.title')}</h1>
+    <p class="muted">{t('actions.subtitle')}</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Boicottaggio del consumatore</h4>
+        <p>Identifica i punti di leva economica, prepara guide di sostituzione e usa escalation per massimizzare l'impatto proteggendo i partecipanti.</p>
+      </div>
+      <div class="card">
+        <h4>Assemblea Civile</h4>
+        <p>Pianificazione percorsi, osservatori legali, squadre di de-escalation, accomodamenti di accessibilità e script per l'ufficio stampa — mappati alle fasi della campagna.</p>
+      </div>
+      <div class="card">
+        <h4>Aiuto Diretto</h4>
+        <p>Coordinamento mutuo per gruppi impattati: distribuzione trasparente delle risorse, moduli di iscrizione e pratiche di rendicontazione per sostenere il lungo periodo.</p>
+      </div>
+    </div>
+
+    <section style="margin-top:18px">
+      <h3>Template Condivisibili</h3>
+      <p class="muted">I template scaricabili includono checklist per fase, script per i media e un foglio di valutazione per misurare l'impatto rispetto agli obiettivi.</p>
+      <ul>
+        <li>Leaflet A4 — Inglese / Italiano</li>
+        <li>Comunicati stampa — markdown modificabile</li>
+        <li>Calendario social — esempio CSV</li>
+      </ul>
+    </section>
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h4>{t('actions.quickstart.title')}</h4>
+      <ol>
+        {
+          (() => {
+            const raw = t('actions.quickstart.steps');
+            if (Array.isArray(raw)) {
+              return raw.map((step) => <li>{step}</li>);
+            }
+            return <li>{String(raw)}</li>;
+          })()
+        }
+      </ol>
+    </div>
+  </section>
+</Base>

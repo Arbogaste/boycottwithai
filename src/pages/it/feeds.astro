@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import internalFeed from '../../data/internal_feed.json';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export async function get() {
+  return { props: { items: internalFeed } };
+}
+---
+
+<Base>
+  <section>
+    <h1>{t('feeds.title')}</h1>
+    <p class="muted">{t('feeds.subtitle')}</p>
+
+    <div style="margin:16px 0">
+      <a class="button" href="/combined-rss.xml">Iscriviti al feed unificato</a>
+    </div>
+
+    <div class="grid">
+      {Astro.props.items && Astro.props.items.length ? (
+        (Astro.props.items as any[]).slice(0, 30).map(item => (
+          <div class="card">
+            <a href={item.link}><h4>{item.title}</h4></a>
+            <p class="muted">{item.pubDate}</p>
+            <p class="muted">{item.contentSnippet || item.content || item.description}</p>
+          </div>
+        ))
+      ) : (
+        <div class="card">Nessun elemento disponibile al momento.</div>
+      )}
+    </div>
+  </section>
+</Base>

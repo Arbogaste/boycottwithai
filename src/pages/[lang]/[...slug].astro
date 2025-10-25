@@ -1,0 +1,59 @@
+---
+import fs from 'fs';
+import path from 'path';
+import { languages, defaultLang } from '../../i18n/ui';
+
+export async function getStaticPaths() {
+  // Build paths for languages with a fallback to root
+  const langs = Object.keys(languages);
+  // We won't pre-render every possible slug; use on-demand rendering if supported by adapter.
+  return langs.map((lang) => ({ params: { lang, slug: undefined } }));
+}
+
+const PAGES_DIR = new URL('../../pages', import.meta.url).pathname.replace(/\\/g, '/');
+
+export async function get({ params, request }) {
+  const { lang, slug } = params;
+  const langs = Object.keys(languages);
+  if (!langs.includes(lang)) {
+    return new Response(null, { status: 302, headers: { Location: '/' + defaultLang + '/' } });
+  }
+
+  // If slug is undefined, go to the language root
+  if (!slug) {
+    return new Response(null, { status: 302, headers: { Location: '/' + lang + '/' } });
+  }
+
+  // Reconstruct the requested path and try to map to an existing page file
+  const reqPath = '/' + slug + '/';
+
+  // List of possible page files to check under src/pages
+  const candidates = [];
+  // direct file like src/pages/actions.astro => slug 'actions'
+  const parts = slug.split('/');
+  const top = parts[0];
+  candidates.push(path.join(PAGES_DIR, top + '.astro'));
+  candidates.push(path.join(PAGES_DIR, top, 'index.astro'));
+
+  // If any candidate exists, redirect to the canonical page under language prefix
+  for (const c of candidates) {
+    if (fs.existsSync(c)) {
+      return new Response(null, { status: 302, headers: { Location: '/' + lang + '/' + top + '/' } });
+    }
+  }
+
+  // Fallback: redirect to language root
+  return new Response(null, { status: 302, headers: { Location: '/' + lang + '/' } });
+}
+
+---
+
+<html lang={Astro.params.lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content={`0;url=/${Astro.params.lang}/`} />
+  </head>
+  <body>
+    <p>Redirecting to /{Astro.params.lang}/ ...</p>
+  </body>
+</html>

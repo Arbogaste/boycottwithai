@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('manifesto.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('manifesto.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('manifesto.title')}</h1>
+    <p class="muted">{t('manifesto.subtitle')}</p>
+
+    <article class="card" style="margin-top:18px">
+      <h2>Strategic Economic Pressure</h2>
+      <ul>
+        <li>Targeted and organized boycotts</li>
+        <li>Strategic strikes hitting critical infrastructure</li>
+        <li>Build alternative economies and parallel markets</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Digital Pressure and Cyber-Activism</h2>
+      <ul>
+        <li>Digital occupation and amplification campaigns</li>
+        <li>Use tech for coordination and content generation</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>Non-Violent Direct Action</h2>
+      <ul>
+        <li>Strategic occupations and coordinated civil disobedience</li>
+        <li>Build alternative institutions and temporary autonomous zones</li>
+      </ul>
+    </article>
+
+  </section>
+</Base>

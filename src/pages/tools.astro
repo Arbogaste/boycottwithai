@@ -1,5 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <head>
@@ -10,11 +14,11 @@ import Base from '../layouts/Base.astro';
 <Base>
   <section class="hero">
     <div class="left">
-      <h1>Tools for Collective Action</h1>
-  <p class="lead">A curated set of practical tools to organize, coordinate, and amplify collective actions. These tools are structured to support the phases of a strategic campaign: awareness, mobilization, escalation, and sustaining pressure.</p>
+      <h1>{t('hero.title')}</h1>
+  <p class="lead">{t('hero.subtitle')}</p>
       <div class="cta">
-        <a class="button" href="/actions/">Explore Actions</a>
-        <a class="secondary" href="/map/">Open Map</a>
+        <a class="button" href={`/${lang}/actions/`}>{t('cta.explore')}</a>
+        <a class="secondary" href={`/${lang}/map/`}>Open Map</a>
       </div>
     </div>
     <div class="card" style="width:420px">

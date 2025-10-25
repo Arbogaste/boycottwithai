@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('hero.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('hero.subtitle')} />
+</head>
+
+<Base>
+  <section class="hero">
+    <div class="left">
+      <h1>{t('hero.title')}</h1>
+      <p class="lead">{t('hero.subtitle')}</p>
+      <div class="cta">
+        <a class="button" href={`/${lang}/actions/`}>{t('cta.explore')}</a>
+        <a class="secondary" href={`/${lang}/map/`}>Apri mappa</a>
+      </div>
+    </div>
+    <div class="card" style="width:420px">
+      <h3>Strumenti rapidi</h3>
+      <ul>
+        <li><strong>Pianificatore eventi</strong> — Pianifica assemblee con priorità per accessibilità, osservatori legali e percorsi di escalation.</li>
+        <li><strong>Messaggistica sicura</strong> — Linee guida per coordinamento cifrato e comunicazioni a tutela della privacy.</li>
+        <li><strong>Template contatti</strong> — Script per outreach a aziende, partner e media per applicare pressione coordinata.</li>
+      </ul>
+      <hr />
+      <p class="muted">Usa questi componenti per costruire campagne scalabili: pianifica fasi, assegna ruoli e monitora metriche come tasso di partecipazione e copertura mediatica.</p>
+    </div>
+  </section>
+
+  <section style="margin-top:28px">
+    <div class="grid">
+      <div class="card">
+        <h4>Kits di mobilitazione</h4>
+        <p>Risorse raggruppate: poster, fogli con cori, guide per accessibilità, checklist per osservatori legali. I template scaricabili ti aiutano a muoverti rapidamente dal piano all'azione.</p>
+      </div>
+      <div class="card">
+        <h4>Azioni digitali</h4>
+        <p>Come condurre spin social coordinati, campagne hashtag e outreach resistente al doxxing. Strumenti per misurare la portata (demo analytics).</p>
+      </div>
+      <div class="card">
+        <h4>Formazione</h4>
+        <p>Moduli brevi: de-escalation, formazione di affinity group, nozioni di primo soccorso, diritti legali. Link a curricula open-source (esempi).</p>
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h4>Come iniziare (4 passi)</h4>
+      <ol>
+        <li>Definisci obiettivo e target (chi detiene la leva).</li>
+        <li>Costruisci una coalizione e mappa i ruoli (comunicazione, legale, sanitari).</li>
+        <li>Fai un'azione pilota e misura i risultati (partecipazione, portata).</li>
+        <li>Scala usando escalation per fasi e metriche di responsabilità.</li>
+      </ol>
+    </div>
+  </section>
+</Base>

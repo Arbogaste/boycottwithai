@@ -1,44 +1,44 @@
 ---
-import Base from '../layouts/Base.astro';
-import companies from '../data/boycott_response.json';
-import { getLangFromUrl, useTranslations } from '../i18n/utils';
+import Base from '../../layouts/Base.astro';
+import companies from '../../data/boycott_response.json';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
 <head>
-  <title>Targets & Strategic Leverage — BoycottWithAI</title>
-  <meta name="description" content="Curated list of targets with sector and risk profiles. Find leverage points and suggested actions for strategic pressure." />
+  <title>{t('map.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('map.subtitle')} />
 </head>
 
 <Base>
   <section>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
       <div>
-        <h1>{t('map.title') || 'Targets & Strategic Leverage'}</h1>
-        <p class="muted">{t('map.subtitle') || 'A curated list of targets organized by sector and strategic vulnerability.'}</p>
+        <h1>{t('map.title')}</h1>
+        <p class="muted">{t('map.subtitle')}</p>
       </div>
       <div style="display:flex;gap:8px;align-items:center">
-  <small class="muted">{t('map.phasesLabel') || 'Phases:'}</small>
-  <div class="secondary">{t('map.phase.awareness') || 'Awareness'}</div>
-  <div class="secondary">{t('map.phase.mobilize') || 'Mobilize'}</div>
-  <div class="secondary">{t('map.phase.escalate') || 'Escalate'}</div>
-  <div class="secondary">{t('map.phase.sustain') || 'Sustain'}</div>
+        <small class="muted">{t('map.phasesLabel')}</small>
+        <div class="secondary">{t('map.phase.awareness')}</div>
+        <div class="secondary">{t('map.phase.mobilize')}</div>
+        <div class="secondary">{t('map.phase.escalate')}</div>
+        <div class="secondary">{t('map.phase.sustain')}</div>
       </div>
     </div>
 
     <div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
-  <label class="muted">{t('map.filter.sector') || 'Sector:'}</label>
+      <label class="muted">{t('map.filter.sector')}</label>
       <select id="sectorFilter" class="secondary">
         <option value="">All</option>
         {Array.from(new Set(companies.map(c => c.sector))).map(s => <option value={s}>{s}</option>)}
       </select>
 
-  <label class="muted">{t('map.filter.tag') || 'Tag:'}</label>
+      <label class="muted">{t('map.filter.tag')}</label>
       <select id="tagFilter" class="secondary">
         <option value="">All</option>
-        {Array.from(new Set(companies.flatMap(c => c.tags))).map(t => <option value={t}>{t}</option>)}
+        {Array.from(new Set(companies.flatMap(c => c.tags))).map(tg => <option value={tg}>{tg}</option>)}
       </select>
     </div>
 
@@ -65,7 +65,7 @@ const t = useTranslations(lang);
               ))}
             </div>
             <div>
-              <a class="button" href={company.boycott_url} target="_blank" rel="noopener noreferrer">{t('map.button.support') || 'Support Boycott'}</a>
+              <a class="button" href={company.boycott_url} target="_blank" rel="noopener noreferrer">{t('map.button.support')}</a>
             </div>
           </div>
         </article>
@@ -74,15 +74,15 @@ const t = useTranslations(lang);
 
     <script>
       (() => {
-        const sector = document.getElementById('sectorFilter') as HTMLSelectElement | null;
-        const tag = document.getElementById('tagFilter') as HTMLSelectElement | null;
-        const grid = document.getElementById('targetsGrid') as HTMLElement | null;
+        const sector = document.getElementById('sectorFilter');
+        const tag = document.getElementById('tagFilter');
+        const grid = document.getElementById('targetsGrid');
         function applyFilters(){
           const s = sector ? sector.value : '';
           const t = tag ? tag.value : '';
           if (!grid) return;
           Array.from(grid.children).forEach(child => {
-            const card = child as HTMLElement;
+            const card = child;
             const cs = card.getAttribute('data-sector') || '';
             const ts = (card.getAttribute('data-tags') || '').split(',');
             const okSector = !s || cs === s;
@@ -95,9 +95,5 @@ const t = useTranslations(lang);
       })();
     </script>
 
-    <section style="margin-top:20px">
-      <h3>How to use this list</h3>
-      <p class="muted">This list is modulare: it is populated from `src/data/boycott_response.json`. Replace that file or connect it to a CMS to update targets dynamically. Consider localizing actions and providing region filters.</p>
-    </section>
   </section>
 </Base>

@@ -1,11 +1,59 @@
 ---
 import { languages } from '../i18n/ui';
 ---
+
 <div>
   <label for="lang-select" class="sr-only">Language</label>
-  <select id="lang-select" onchange="location.href=this.value + '/'" class="secondary">
+  <select id="lang-select" class="secondary" aria-label="Select language" data-langs={JSON.stringify(Object.keys(languages))}>
     {Object.entries(languages).map(([code, label]) => (
       <option value={code}>{label}</option>
     ))}
   </select>
 </div>
+
+<script type="text/javascript">
+  // Client-side logic: read valid langs from the select's data attribute to avoid server-side code in this script
+  document.addEventListener('DOMContentLoaded', function () {
+    /** @type {HTMLSelectElement | null} */
+    var select = /** @type {HTMLSelectElement | null} */ (document.getElementById('lang-select'));
+    if (!select) return;
+
+    /** @type {string[]} */
+    var validLangs = [];
+    try {
+      validLangs = JSON.parse(select.getAttribute('data-langs') || '[]');
+    } catch (e) {
+      validLangs = [];
+    }
+
+    function isValidLang(l) { return validLangs && validLangs.indexOf(l) !== -1; }
+
+    function buildNewPathForLang(newLang) {
+      var path = window.location.pathname || '/';
+      var segments = path.split('/').filter(function(s){ return s.length > 0; });
+
+      // Remove any existing language segments wherever they appear
+      var cleaned = segments.filter(function(seg){ return !isValidLang(seg); });
+      // Insert the new language at the front
+      cleaned.unshift(newLang);
+
+      return '/' + cleaned.join('/') + '/';
+    }
+
+    function setSelectToCurrentLanguage() {
+      var path = window.location.pathname || '/';
+      var segments = path.split('/').filter(function(s){ return s.length > 0; });
+      var current = document.documentElement.lang || '';
+      if (segments.length > 0 && isValidLang(segments[0])) current = segments[0];
+      if (current && isValidLang(current)) select.value = current;
+    }
+
+    setSelectToCurrentLanguage();
+
+    select.addEventListener('change', function () {
+      var newLang = /** @type {string} */ (this.value);
+      var newPath = buildNewPathForLang(newLang);
+      window.location.replace(newPath);
+    });
+  });
+</script>
