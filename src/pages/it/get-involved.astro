@@ -16,6 +16,17 @@ const t = useTranslations(lang);
     <h1>{t('getinvolved.title')}</h1>
     <p class="muted">{t('getinvolved.subtitle')}</p>
 
+    <div class="card" style="margin-top:12px">
+      <h3>Contesto attuale: 2024–2025</h3>
+      <ul>
+        <li><strong>Crisi umanitaria:</strong> Oltre 30.000 civili uccisi a Gaza (OCHA, 2024), milioni di sfollati in Sudan e Yemen, attacchi record a infrastrutture civili. L’ONU denuncia carestia e blocchi agli aiuti.</li>
+        <li><strong>Crisi climatica:</strong> Nel 2024 emissioni di CO₂ ai massimi storici e oltre 40 milioni di rifugiati climatici (IDMC). COP28 senza risultati vincolanti.</li>
+        <li><strong>Istituzioni assenti:</strong> Consiglio di Sicurezza ONU bloccato dai veti; UE e G7 aumentano export di armi e spese militari, ignorando appelli per cessate il fuoco e accesso umanitario.</li>
+        <li><strong>Cosa puoi fare ora:</strong> Avvia una micro-campagna: scegli un obiettivo locale (es. contratto armi, progetto fossile), usa i template di petizione/email, registra ogni risposta. Condividi i risultati con media locali e gruppi civici. Anche 10 firme o una risposta di un parlamentare possono generare attenzione o dibattito.</li>
+      </ul>
+      <p class="muted">Fonti dati: OCHA, SIPRI, IDMC, UNHCR, ACLED. Vedi <a href="/it/resources/">risorse</a> per template e guide.</p>
+    </div>
+
     <div style="margin-top:18px" class="card">
       <h3>Passi pratici</h3>
       <ol>
@@ -44,5 +55,24 @@ const t = useTranslations(lang);
         <a class="secondary" href={`/${lang}/resources/`}>Scopri di più</a>
       </div>
     </div>
+      <div class="card" style="margin-top:18px">
+        <h3>Toolkit per indagini, denuncia pubblica e impatto reale</h3>
+        <ul>
+          <li><strong>OSINT e giornalismo investigativo:</strong> Usa <a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat How-To</a>, <a href="https://www.lighthousereports.com/investigations/">Lighthouse Reports</a>, <a href="https://www.occrp.org/en/howto/">OCCRP guide</a> per imparare tecniche di verifica immagini, tracciamento armi, analisi satellitari e inchieste collaborative.</li>
+          <li><strong>Whistleblowing sicuro:</strong> Segnala abusi e corruzione tramite <a href="https://www.globaleaks.org/">GlobaLeaks</a>, <a href="https://ddosecrets.com/wiki/Submit">DDoSecrets</a>, <a href="https://securedrop.org/">SecureDrop</a>. Queste piattaforme sono usate da giornalisti e ONG per ricevere leak in modo anonimo.</li>
+          <li><strong>Scraping e data leaks:</strong> Usa <a href="https://github.com/datalab-mi/italian-public-procurement">script open source</a> per scaricare dati da appalti pubblici, lobby, export armi. Incrocia i dati con <a href="https://lobbyfacts.eu/">LobbyFacts</a> e <a href="https://transparency.org/">Transparency International</a> per smascherare conflitti di interesse.</li>
+          <li><strong>Supporto legale e denuncia internazionale:</strong> Consulta <a href="https://www.anticorruzione.eu/">EDRi</a>, <a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.it/">Amnesty Italia</a> per modelli di denuncia a Corte Europea, ONU, e supporto legale gratuito.</li>
+          <li><strong>Dashboard pubbliche e campagne di pressione:</strong> Pubblica prove e dati su <a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>, o Google Sheets. Esempio: la mappa delle navi di armi di Lighthouse Reports ha portato a interrogazioni parlamentari in Olanda e Italia (<a href="https://www.lighthousereports.com/investigations/ships-of-war/">caso reale</a>).</li>
+        </ul>
+        <h4 style="margin-top:10px">Workflow operativo: dalla scoperta alla denuncia internazionale</h4>
+        <ol>
+          <li>Raccogli prove (screenshot, PDF, dati pubblici, testimonianze) e salvale in modo sicuro (es. Nextcloud, Proton Drive, OnionShare).</li>
+          <li>Verifica e incrocia i dati con fonti pubbliche e database internazionali.</li>
+          <li>Prepara un report o una visualizzazione chiara e pubblica tutto su una dashboard o invia a giornalisti/ONG.</li>
+          <li>Se emergono violazioni gravi, usa i modelli di denuncia di FIDH/Amnesty e invia il caso a Corte Europea, ONU, o autorità nazionali.</li>
+          <li>Coinvolgi media, attivisti e cittadini: più pubblico è il caso, più è difficile insabbiarlo.</li>
+        </ol>
+        <p class="muted">Tutte le risorse sopra sono usate da giornalisti e attivisti che hanno portato a processi, dimissioni e cambi di legge in Italia e UE. Per sicurezza, consulta la <a href="/templates/osint-safety-it.txt" download>Guida OSINT</a>.</p>
+      </div>
   </section>
 </Base>

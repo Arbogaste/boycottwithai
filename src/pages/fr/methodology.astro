@@ -16,12 +16,34 @@ const t = useTranslations(lang);
     <h1>{t('methodology.title')}</h1>
     <p class="muted">{t('methodology.subtitle')}</p>
 
+    <div class="card" style="margin-top:12px">
+      <h3>Situation actuelle : 2024–2025</h3>
+      <ul>
+        <li><strong>Escalade & victimes civiles :</strong> Plus de 30 000 civils tués à Gaza (OCHA, 2024), déplacements massifs au Soudan et au Yémen, attaques record sur les infrastructures. L’ONU et les ONG alertent sur la famine et les blocages humanitaires.</li>
+        <li><strong>Crise climatique :</strong> 2024 : émissions de CO₂ record et plus de 40 millions de réfugiés climatiques (IDMC). COP28 sans engagement contraignant.</li>
+        <li><strong>Institutions défaillantes :</strong> Conseil de sécurité de l’ONU bloqué par les vétos ; UE et G7 augmentent exportations d’armes et budgets militaires, ignorant les appels au cessez-le-feu et à l’aide humanitaire.</li>
+        <li><strong>Que faire :</strong> Utilisez les <a href="/templates/monitoring-sample-en.txt" download>modèles de suivi</a> pour documenter les impacts locaux, collecter des preuves et envoyer des rapports mensuels aux journalistes et députés. Exemple : consignez chaque attaque sur les infrastructures civiles de votre région et partagez les données avec les médias et élus.</li>
+      </ul>
+      <p class="muted">Sources : OCHA, SIPRI, IDMC, UNHCR, ACLED. Voir <a href="/fr/resources/">ressources</a> pour modèles et guides.</p>
+    </div>
+
     <article class="card" style="margin-top:18px">
       <h3>{t('methodology.analysis')}</h3>
       <p class="muted">{t('methodology.analysis_detail')}</p>
     </article>
 
     <article class="card" style="margin-top:12px">
+      <div class="card" style="margin-top:18px">
+        <h3>Workflow d'impact réel : de la preuve à la plainte internationale</h3>
+        <ol>
+          <li>Collectez preuves (captures, PDF, données publiques, témoignages) et stockez-les de façon sécurisée (Nextcloud, Proton Drive, OnionShare).</li>
+          <li>Vérifiez et croisez les données avec des sources publiques et bases internationales (<a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat</a>, <a href="https://www.lighthousereports.com/investigations/">Lighthouse Reports</a>, <a href="https://www.occrp.org/en/howto/">OCCRP</a>).</li>
+          <li>Publiez un rapport ou une visualisation claire sur un dashboard public (<a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>), ou envoyez à des journalistes/ONG.</li>
+          <li>Pour violations graves, utilisez les modèles de plainte FIDH/Amnesty et saisissez la CEDH, l'ONU ou les autorités nationales (<a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.fr/">Amnesty</a>).</li>
+          <li>Rendez le cas public : plus il est visible, plus il est difficile à étouffer. Exemple : la carte des navires d'armes de Lighthouse Reports a mené à des questions parlementaires (<a href="https://www.lighthousereports.com/investigations/ships-of-war/">cas réel</a>).</li>
+        </ol>
+        <p class="muted">Pour la sécurité, consultez le <a href="/templates/osint-safety-en.txt" download>Guide OSINT</a>. Toutes ces ressources sont utilisées par des journalistes et activistes ayant obtenu des procès, démissions et changements de loi en France et UE.</p>
+      </div>
       <h3>{t('osint.title')}</h3>
       <p class="muted">{t('osint.intro')}</p>
       <ul>

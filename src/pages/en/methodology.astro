@@ -16,12 +16,34 @@ const t = useTranslations(lang);
     <h1>{t('methodology.title')}</h1>
     <p class="muted">{t('methodology.subtitle')}</p>
 
+    <div class="card" style="margin-top:12px">
+      <h3>Current Situation: 2024–2025</h3>
+      <ul>
+        <li><strong>Escalation & civilian harm:</strong> Over 30,000 civilians killed in Gaza (OCHA, 2024), mass displacement in Sudan and Yemen, and record attacks on infrastructure. UN and humanitarian agencies warn of famine and blocked aid corridors.</li>
+        <li><strong>Climate breakdown:</strong> 2024 saw record CO₂ emissions and over 40 million climate refugees (IDMC). COP28 failed to deliver binding fossil fuel phase-out.</li>
+        <li><strong>Institutional failure:</strong> UN Security Council blocked by vetoes; EU and G7 increase arms exports and military budgets, ignoring calls for ceasefire and humanitarian access.</li>
+        <li><strong>What you can do:</strong> Use <a href="/templates/monitoring-sample-en.txt" download>monitoring templates</a> to track local impacts, document evidence, and share with journalists and MPs. Example: log every attack on civilian infrastructure in your city or region, and send monthly reports to local representatives and media.</li>
+      </ul>
+      <p class="muted">Data sources: OCHA, SIPRI, IDMC, UNHCR, ACLED. See <a href="/en/resources/">resources</a> for templates and guides.</p>
+    </div>
+
     <article class="card" style="margin-top:18px">
       <h3>{t('methodology.analysis')}</h3>
       <p class="muted">{t('methodology.analysis_detail')}</p>
     </article>
 
     <article class="card" style="margin-top:12px">
+      <div class="card" style="margin-top:18px">
+        <h3>Real-World Workflow: From Evidence to International Complaint</h3>
+        <ol>
+          <li>Gather evidence (screenshots, PDFs, public data, testimonies) and store securely (Nextcloud, Proton Drive, OnionShare).</li>
+          <li>Verify and cross-check data with public sources and international databases (<a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat</a>, <a href="https://www.lighthousereports.com/investigations/">Lighthouse Reports</a>, <a href="https://www.occrp.org/en/howto/">OCCRP</a>).</li>
+          <li>Prepare a clear report or visualization and publish on a public dashboard (<a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>) or send to journalists/NGOs.</li>
+          <li>For serious violations, use FIDH/Amnesty templates and file with ECHR, UN, or national authorities (<a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty</a>).</li>
+          <li>Make the case public: the more visible, the harder to cover up. Example: Lighthouse Reports’ arms shipment map led to parliamentary questions (<a href="https://www.lighthousereports.com/investigations/ships-of-war/">real case</a>).</li>
+        </ol>
+        <p class="muted">For safety, see the <a href="/templates/osint-safety-en.txt" download>OSINT Safety Guide</a>. All these resources are used by journalists and activists who have achieved trials, resignations, and law changes in the EU.</p>
+      </div>
       <h3>{t('methodology.monitoring')}</h3>
       <p class="muted">{t('methodology.monitoring_detail')}</p>
     </article>
@@ -79,6 +101,17 @@ const t = useTranslations(lang);
     <article class="card" style="margin-top:12px">
       <h3>{t('methodology.safety')}</h3>
       <p class="muted">{t('methodology.safety')}</p>
+    </article>
+    <article class="card" style="margin-top:12px">
+      <h3>Quick OSINT starter checklist</h3>
+      <ol>
+        <li class="muted">Pick a narrow target: company/contract with a clear timeline or transaction ID.</li>
+        <li class="muted">Gather 3 primary sources: news, NGO report, or satellite image. Save permalinks and timestamps.</li>
+        <li class="muted">Create a one-page briefing using <a href="/templates/briefing-en.txt" download>briefing-en.txt</a>: keep it to one A4 and state the ask.</li>
+        <li class="muted">Choose a monitoring template <a href="/templates/monitoring-sample-en.txt" download>monitoring-sample-en.txt</a> and track developments.</li>
+        <li class="muted">Run the OSINT safety checklist (<a href="/templates/osint-safety-en.txt" download>osint-safety-en.txt</a>) before publishing any claims or images.</li>
+      </ol>
+      <p class="muted">Outputs: one brief for journalists, a petition, and a monitoring log. Store logs and replies as evidence in a single shared folder for further escalation.</p>
     </article>
     <article class="card" style="margin-top:12px">
       <h3>{t('methodology.quick_verify_title')}</h3>
