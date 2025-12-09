@@ -1,0 +1,86 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('methodology.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('methodology.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('methodology.title')}</h1>
+    <p class="muted">{t('methodology.subtitle')}</p>
+
+    <article class="card" style="margin-top:18px">
+      <h3>{t('methodology.analysis')}</h3>
+      <p class="muted">{t('methodology.analysis_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('osint.title')}</h3>
+      <p class="muted">{t('osint.intro')}</p>
+      <ul>
+        <li><a href="https://acleddata.com">{t('osint.acled')}</a></li>
+        <li><a href="https://www.gdeltproject.org">{t('osint.gdelt')}</a></li>
+        <li><a href="https://www.bellingcat.com">{t('osint.bellingcat')}</a></li>
+        <li><a href="https://liveuamap.com">{t('osint.liveuamap')}</a></li>
+        <li><a href="https://earthdata.nasa.gov/firms">{t('osint.nasa')}</a></li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('ai.title')}</h3>
+      <p class="muted">{t('ai.intro')}</p>
+      <p class="muted">{t('methodology.ai.tradeoffs')}</p>
+      <ul>
+        <li>LLM backed narrative analysis for propaganda detection and messaging tracking.</li>
+        <li>Trend forecasting for escalation risk using news, official statements, and open data.</li>
+        <li>Automated summarization of reports from UN, HRW, ICRC and other NGOs.</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('civic.title')}</h3>
+      <p class="muted">{t('civic.intro')}</p>
+      <ul>
+        <li>Legislative vote tracking and public budgets watchers</li>
+        <li>Lobbying transparency trackers and arms export monitoring</li>
+        <li>Citizen dashboards to visualize risks and compile petitions</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('humanitarian.title')}</h3>
+      <p class="muted">{t('humanitarian.intro')}</p>
+      <ul>
+        <li>Use UN OCHA, UNHCR and ICRC datasets to show casualty and displacement trends</li>
+        <li>Maintain a humanitarian corridor tracker to monitor access and violations</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('methodology.monitoring')}</h3>
+      <p class="muted">{t('methodology.monitoring_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('methodology.viz')}</h3>
+      <p class="muted">{t('methodology.viz_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('methodology.crowd')}</h3>
+      <p class="muted">{t('methodology.crowd_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('methodology.safety')}</h3>
+      <p class="muted">{t('methodology.safety')}</p>
+    </article>
+  </section>
+</Base>

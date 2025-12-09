@@ -1,0 +1,35 @@
+Briefing: Prioritize diplomacy — quick facts (AI-assisted briefing template)
+
+Summary: Use this template to create a concise, shareable 1-page briefing that emphasizes diplomatic solutions, humanitarian response, and accountability. The "AI prompt" at the bottom helps your LLM expand, localize, and format the briefing for journalists, coalition partners, or policy makers.
+
+1) Context
+- Ongoing geopolitical tensions — increased risk of direct escalation and civilian harm.
+- Military build-ups and regional arms races heighten miscalculation risks.
+
+2) Key evidence & data sources
+- Military spending trends (SIPRI, national budgets)
+- Arms export licenses and contracts (SIPRI, national transparency portals)
+- Conflict events & civilian harm (ACLED, UN, NGO reports)
+- Satellite indicators of attacks/fires (NASA FIRMS, UNOSAT)
+
+3) Political relevance
+- Increased spending reduces funding for diplomacy and humanitarian needs.
+- Arms transfers may extend or intensify conflicts and civilian harm.
+
+4) Actionable asks (clear demands)
+- Support immediate, transparent ceasefire and humanitarian corridor agreements.
+- Introduce oversight and transparency for arms contracts and export licensing.
+- Reallocate funds to humanitarian response, rapid de-escalation and diplomatic channels.
+
+5) Quick action plan (shareable)
+- Short: Sign the petition and send a personalized MP email using our templates.
+- Mid: Mobilize a non-violent action (press release, petition delivery) and push local media coverage.
+- Long: Advocate for legislation that strengthens export controls and redirects funding to humanitarian assistance.
+
+6) Contacts & coalition partners
+- [List NGOs, researchers, community groups]
+
+AI prompt for expansion (copy into your LLM):
+"Write a one-page briefing for [country/region] in English/Italian with the following: context, short evidence bullets with sources (SIPRI, ACLED, GDELT), political relevance, 3 clear public asks, and a two-paragraph recommended outreach/social media plan. Keep it non-violent, evidence-based, and framed towards diplomacy and humanitarian protection." 
+
+Notes: Replace placeholders with local data, cite evidence links, and attach the extended dataset if available.

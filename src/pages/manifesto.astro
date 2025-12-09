@@ -15,50 +15,102 @@ const t = useTranslations(lang);
   <section>
   <h1>{t('manifesto.title')}</h1>
   <p class="muted">{t('manifesto.subtitle')}</p>
+  <div class="card" style="margin-top:12px">
+    <h3>{t('manifesto.vision.title')}</h3>
+    <p class="muted">{t('manifesto.vision.p1')}</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>{t('issues.title')}</h3>
+    <ul>
+      <li>{t('issues.core')}</li>
+      <li>{t('issues.escalation')}</li>
+      <li>{t('issues.humanitarian')}</li>
+      <li>{t('issues.institutions')}</li>
+    </ul>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>{t('issues.core')}</h3>
+    <p class="muted">{t('issues.core.evidence')}</p>
+    <p class="muted">{t('issues.core.relevance')}</p>
+    <p><strong>Action:</strong> {t('issues.core.action')}</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>{t('issues.escalation')}</h3>
+    <p class="muted">{t('issues.escalation.evidence')}</p>
+    <p class="muted">{t('issues.escalation.relevance')}</p>
+    <p><strong>Action:</strong> {t('issues.escalation.action')}</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>{t('issues.humanitarian')}</h3>
+    <p class="muted">{t('issues.humanitarian.evidence')}</p>
+    <p class="muted">{t('issues.humanitarian.relevance')}</p>
+    <p><strong>Action:</strong> {t('issues.humanitarian.action')}</p>
+  </div>
+
+  <div class="card" style="margin-top:12px">
+    <h3>{t('issues.institutions')}</h3>
+    <p class="muted">{t('issues.institutions.evidence')}</p>
+    <p class="muted">{t('issues.institutions.relevance')}</p>
+    <p><strong>Action:</strong> {t('issues.institutions.action')}</p>
+  </div>
 
     <article class="card" style="margin-top:18px">
-      <h2>Pressione Economica Strategica</h2>
+      <h2>{t('manifesto.methods.title')}</h2>
       <ul>
-        <li>Boicottaggi mirati e organizzati</li>
-        <li>Scioperi strategici che colpiscono infrastrutture critiche</li>
-        <li>Creare alternative economiche e mercati paralleli</li>
+        {t('manifesto.methods.list').map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+
+      <article class="card" style="margin-top:12px">
+        <h2>{t('manifesto.antiwar.title')}</h2>
+        <p>{t('manifesto.antiwar.p1')}</p>
+        <ul>
+          <li>{t('manifesto.antiwar.policies') || 'Policy advocacy for disarmament and arms-export bans'}</li>
+          <li>{t('manifesto.antiwar.divest') || 'Divestment campaigns targeting defense contractors'}</li>
+          <li>{t('manifesto.antiwar.education') || 'Public education on the costs of militarization and peaceful alternatives'}</li>
+        </ul>
+      </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.antiwar.title')}</h2>
+      <p>{t('manifesto.antiwar.p1')}</p>
+      <ul>
+        <li>{t('manifesto.antiwar.policies') || 'Policy advocacy for disarmament and arms-export bans'}</li>
+        <li>{t('manifesto.antiwar.divest') || 'Divestment campaigns targeting defense contractors'}</li>
+        <li>{t('manifesto.antiwar.education') || 'Public education on the costs of militarization and peaceful alternatives'}</li>
       </ul>
     </article>
 
     <article class="card" style="margin-top:12px">
-      <h2>Pressione Digitale e Cyber-Attivismo</h2>
-      <ul>
-        <li>Occupazione digitale e campagne di amplificazione</li>
-        <li>Uso di tecnologie per coordinamento e creazione di contenuti</li>
-      </ul>
-    </article>
-
-    <article class="card" style="margin-top:12px">
-      <h2>Intervento Non-Violento Diretto</h2>
-      <ul>
-        <li>Occupazioni strategiche e disobbedienza civile coordinata</li>
-        <li>Costruzione di istituzioni alternative e zone autonome temporanee</li>
-      </ul>
-    </article>
-
-    <article class="card" style="margin-top:12px">
-      <h2>Fattori di Successo</h2>
+      <h2>{t('manifesto.values.title')}</h2>
       <p>Regola del 3,5%: la ricerca mostra che raggiungere ~3.5% della popolazione attiva può rendere inevitabile il cambiamento politico. Focus su:</p>
       <ul>
-        <li>Diversità: coinvolgere età, classe, professioni e geografie differenti</li>
-        <li>Unità: messaggi chiari e ripetibili</li>
-        <li>Metriche: partecipazione, copertura media, impatto economico stimato</li>
+        {t('manifesto.values.list').map(item => (
+          <li>{item}</li>
+        ))}
       </ul>
     </article>
 
     <article class="card" style="margin-top:12px">
-      <h2>Tattiche Innovative 2024-2025</h2>
-      <p>Proteste creative, performance art, pressioni internazionali e targeting strategico.</p>
+      <h2>{t('manifesto.failures.title')}</h2>
+      <ul>
+        <li>{t('manifesto.failures.environment')}</li>
+        <li>{t('manifesto.failures.energy')}</li>
+        <li>{t('manifesto.failures.investment')}</li>
+        <li>{t('manifesto.failures.health')}</li>
+        <li>{t('manifesto.failures.ai')}</li>
+      </ul>
     </article>
 
     <article class="card" style="margin-top:12px">
-      <h2>Costruire Alleanze</h2>
-      <p>Alleati dentro le istituzioni, coalizioni ampie e strategie di media e narrativa.</p>
+      <h2>{t('manifesto.methods.title')}</h2>
+      <p>{t('manifesto.methods.list')[0]}</p>
     </article>
 
     <article class="card" style="margin-top:12px">
@@ -70,10 +122,21 @@ const t = useTranslations(lang);
         <li>Disobbedienza civile e pressione economica mirata (settimane 12-24)</li>
         <li>Sostenimento e istituzioni alternative (oltre 24 settimane)</li>
       </ol>
-      <p>Mantenere non-violenza, rotazione di responsabilità e supporti contro il burnout.</p>
+  <p>Mantenere non-violenza, rotazione di responsabilità e supporti contro il burnout.</p>
+  <p class="muted" style="margin-top:12px">{t('manifesto.callToAction')}</p>
       <h3>Prompt rapido per organizzatori</h3>
       <p class="muted">Usa questo schema per iniziare: identificare l'obiettivo, mappare punti di leva, stabilire metriche di successo, pianificare fasi, assegnare ruoli, testare una piccola azione pilota.</p>
     </article>
 
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h3>What you can do</h3>
+      <p class="muted">{t('manifesto.callToAction')}</p>
+      <div style="margin-top:10px">
+        <a class="button" href={`/${lang}/get-involved/`}>{t('cta.join')}</a>
+        <a class="secondary" href={`/${lang}/resources/`}>{t('resources.title')}</a>
+      </div>
+    </div>
   </section>
 </Base>

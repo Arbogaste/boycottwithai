@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import ToolCard from '../components/ToolCard.astro';
 import { getLangFromUrl, useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
@@ -36,27 +37,77 @@ const t = useTranslations(lang);
   <section style="margin-top:28px">
     <div class="grid">
       <div class="card">
-        <h4>Mobilization Kits</h4>
-  <p>Bundled resources: posters, chant sheets, accessibility guides, legal observers checklist. Downloadable templates help you move quickly from plan to action.</p>
+        <h4>{t('tools.kits.title')}</h4>
+        <p>{t('tools.kits.desc')}</p>
       </div>
       <div class="card">
-        <h4>Digital Actions</h4>
-  <p>How to run coordinated social media pushes, hashtag campaigns, and doxx-resistant outreach. Tools to measure reach (demo analytics).</p>
+        <h4>{t('tools.digital.title')}</h4>
+        <p>{t('tools.digital.desc')}</p>
       </div>
       <div class="card">
-        <h4>Training</h4>
-  <p>Short modules: de-escalation, affinity group formation, first aid basics, legal rights. Link to open-source curricula (example links).</p>
+        <h4>{t('tools.training.title')}</h4>
+        <p>{t('tools.training.desc')}</p>
+      </div>
+      <div class="card">
+        <h4>{t('tools.ai.monitoring.title')}</h4>
+        <p>{t('tools.ai.monitoring.desc')}</p>
+      </div>
+      <div class="card">
+        <h4>{t('tools.visualization.title')}</h4>
+        <p>{t('tools.visualization.desc')}</p>
+      </div>
+      <div class="card">
+        <h4>{t('tools.policy.title')}</h4>
+        <p>{t('tools.policy.desc')}</p>
+      </div>
+      <div class="card">
+        <h4>{t('tools.divestment.title')}</h4>
+        <p>{t('tools.divestment.desc')}</p>
+      </div>
+      <div class="card">
+        <h4>{t('local.targets.title')}</h4>
+        <p>{t('local.targets.desc')}</p>
       </div>
     </div>
   </section>
   <section style="margin-top:20px">
     <div class="card">
-      <h4>How to Start (4 steps)</h4>
+      <h4>{t('tools.ai.title')}</h4>
+      <p class="muted">{t('tools.ai.desc')}</p>
+      <ul>
+        <li><a href="/templates/ai-prompts-en.txt" target="_blank">AI prompts library (EN)</a></li>
+        <li><a href="/templates/ai-prompts-it.txt" target="_blank">AI prompts library (IT)</a></li>
+  <li><a href="/templates/briefing-en.txt" target="_blank">One-page briefing template (EN)</a></li>
+        <li><a href="/templates/mp-email-en.txt" target="_blank">MP email template (EN)</a></li>
+        <li><a href="/templates/petition-en.txt" target="_blank">Petition template (EN)</a></li>
+  <li><a href="/templates/ai-prompts-en.txt" target="_blank">AI prompts library (EN)</a></li>
+  <li><a href="/templates/monitoring-sample-en.txt" target="_blank">Monitoring script example (EN)</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section style="margin-top:20px">
+    <div class="card">
+      <h4>{t('osint.title')}</h4>
+      <p class="muted">{t('osint.intro')}</p>
+      <div class="grid">
+        <ToolCard name={t('tools.acled.name')} short={t('tools.acled.short')} why={t('tools.acled.why')} example={t('tools.acled.example')} link="https://acleddata.com" />
+        <ToolCard name={t('tools.gdelt.name')} short={t('tools.gdelt.short')} why={t('tools.gdelt.why')} example={t('tools.gdelt.example')} link="https://www.gdeltproject.org" />
+        <ToolCard name={t('tools.bellingcat.name')} short={t('tools.bellingcat.short')} why={t('tools.bellingcat.why')} example={t('tools.bellingcat.example')} link="https://www.bellingcat.com" />
+        <ToolCard name={t('tools.spiderfoot.name')} short={t('tools.spiderfoot.short')} why={t('tools.spiderfoot.why')} example={t('tools.spiderfoot.example')} link="https://www.spiderfoot.net" />
+        <ToolCard name={t('tools.reconng.name')} short={t('tools.reconng.short')} why={t('tools.reconng.why')} example={t('tools.reconng.example')} link="https://github.com/lanmaster53/recon-ng" />
+        <ToolCard name={t('tools.theharvester.name')} short={t('tools.theharvester.short')} why={t('tools.theharvester.why')} example={t('tools.theharvester.example')} link="https://github.com/laramies/theHarvester" />
+      </div>
+    </div>
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h4>{t('tools.quickstart.title')}</h4>
       <ol>
-        <li>Define objective and target (who holds the leverage).</li>
-        <li>Build a coalition and map roles (communications, legal, medics).</li>
-        <li>Run a pilot action and measure results (participation, reach).</li>
-        <li>Scale using phased escalation and accountability metrics.</li>
+        <li>{t('tools.quickstart.step1')}</li>
+        <li>{t('tools.quickstart.step2')}</li>
+        <li>{t('tools.quickstart.step3')}</li>
+        <li>{t('tools.quickstart.step4')}</li>
       </ol>
     </div>
   </section>

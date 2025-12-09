@@ -7,40 +7,63 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<html lang={lang} class="theme-dark">
+<html lang={lang} class="theme-light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BoycottWithAI</title>
-    <meta name="description" content="Tools, guides and community resources to organize strategic, non-violent campaigns and economic pressure. Manifesto, toolkits, and actionable templates in multiple languages." />
+  <meta name="description" content="Tools and community resources to organize non-violent action for peace and demilitarization. Guides, toolkits, and templates to oppose rearmament and promote non-violent solutions." />
     <meta property="og:title" content="BoycottWithAI — Tools for Collective Action" />
     <meta property="og:description" content="Organize strategic, non-violent campaigns. Find toolkits, templates, and a manifesto for sustained pressure." />
     <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
   <link rel="alternate" hreflang="en" href="/en/" />
   <link rel="alternate" hreflang="it" href="/it/" />
   <link rel="alternate" hreflang="fr" href="/fr/" />
   <link rel="alternate" hreflang="es" href="/es/" />
+  <link rel="alternate" hreflang="de" href="/de/" />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {`{
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BoycottWithAI",
+        "url": "https://example.com",
+        "description": "Open tools and templates to organize non-violent campaigns for peace and demilitarization.",
+        "sameAs": ["https://twitter.com/example","https://github.com/example"]
+      }`}
+    </script>
   </head>
   <body class="app-root">
+    <a class="skip-link sr-only-focusable" href="#content">Skip to content</a>
     <header class="site-header">
       <div class="container header-inner">
         <div style="display:flex;flex-direction:column">
           <a class="brand" href={`/${lang}/`}>BoycottWithAI</a>
-          <small class="muted" style="font-weight:600;margin-top:4px">Organize, pressure, and build alternatives</small>
+          <small class="muted" style="font-weight:600;margin-top:4px">Promote peace, oppose war & rearmament</small>
         </div>
         <nav class="main-nav" aria-label="Main navigation">
           <LanguagePicker />
-          <a href={`/${lang}/tools/`}>{t('nav.tools')}</a>
-          <a href={`/${lang}/actions/`}>{t('nav.actions')}</a>
-          <a href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
-          <a href={`/${lang}/feeds/`}>{t('nav.feeds')}</a>
-          <a href="/rss.xml" class="muted">RSS</a>
+          <button class="mobile-hamburger" aria-label="Open navigation" aria-expanded="false" id="mobileNavToggle" aria-controls="mainNavLinks">
+            <svg class="hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
+          </button>
+          <div id="mainNavLinks" class="nav-links">
+            <a href={`/${lang}/tools/`}>{t('nav.tools')}</a>
+            <a href={`/${lang}/actions/`}>{t('nav.actions')}</a>
+            <a href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
+            <a href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
+            <a href={`/${lang}/feeds/`}>{t('nav.feeds')}</a>
+            <a href={`/${lang}/resources/`}>{t('nav.resources')}</a>
+            <a href={`/${lang}/dashboard/`}>{t('nav.dashboard')}</a>
+            <a href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
+            <a href="/rss.xml" class="muted">RSS</a>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
+  <main id="content" class="site-main" role="main" aria-label="Main content">
       <div class="container">
         <slot />
       </div>
@@ -49,7 +72,7 @@ const t = useTranslations(lang);
     <footer class="site-footer">
       <div class="container footer-inner">
         <div class="footer-left">
-          <small>BoycottWithAI — tools, guides and community resources to build sustained, non-violent pressure.</small>
+          <small>BoycottWithAI — tools, guides and community resources to build sustained, non-violent pressure for peace and demilitarization.</small>
         </div>
         <div class="footer-right">
           <LanguagePicker />
@@ -57,11 +80,49 @@ const t = useTranslations(lang);
       </div>
     </footer>
 
-    <script>
+  <script>
       // small accessibility helper: focus outline for keyboard users
       (function(){
         window.addEventListener('keydown', function(e){
           if(e.key === 'Tab') document.documentElement.classList.add('user-is-tabbing');
+        });
+      })();
+      (function(){
+        const btn = document.getElementById('mobileNavToggle');
+        const navLinks = document.getElementById('mainNavLinks');
+        if(!btn || !navLinks) return;
+        const firstLink = navLinks.querySelector('a');
+        const toggleNav = function(open){
+          const expanded = open === undefined ? btn.getAttribute('aria-expanded') === 'true' : !open;
+          const willOpen = !expanded;
+          btn.setAttribute('aria-expanded', String(willOpen));
+          document.documentElement.classList.toggle('nav-open', willOpen);
+          if(willOpen && firstLink){ firstLink.focus(); }
+          if(!willOpen){ btn.focus(); }
+        };
+        btn.addEventListener('click', function(){ toggleNav(); });
+        // Close nav on ESC or when clicking outside the nav
+        document.addEventListener('keydown', function(e){
+          if(e.key === 'Escape' && document.documentElement.classList.contains('nav-open')){
+            toggleNav(false);
+          }
+        });
+        document.addEventListener('click', function(e){
+          if(!document.documentElement.classList.contains('nav-open')) return;
+          const path = e.composedPath ? e.composedPath() : (e.path || []);
+          if(path && !path.includes(navLinks) && !path.includes(btn)){
+            toggleNav(false);
+          }
+        });
+        // Set aria-current on nav links for the current page
+        const links = navLinks.querySelectorAll('a');
+        links.forEach((l) => {
+          const href = l.getAttribute('href');
+          if(!href) return;
+          try {
+            const url = new URL(href, location.href);
+            if(location.pathname.startsWith(url.pathname)) l.setAttribute('aria-current','page');
+          } catch(e) { }
         });
       })();
     </script>

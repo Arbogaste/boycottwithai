@@ -1,0 +1,25 @@
+Oggetto: [Urgente] Prioritizzare diplomazia e protezione umanitaria — [la tua città]
+
+Gentile [Nome del Rappresentante],
+
+Sono residente a [Città/Provincia] e Le scrivo per chiedere un impegno chiaro a favore della diplomazia e della protezione dei civili come priorità politica.
+
+Punti chiave (personalizzare con dati locali):
+- Evidenza: [es. "Il budget militare del nostro paese è aumentato di X% (SIPRI, YYYY)"]
+- Rischio: [es. "I trasferimenti all'azienda X sono correlati a un aumento di segnali di danno civile in regione Y (ACLED/ONG)"]
+
+Richieste concrete:
+- Sostenga la trasparenza sugli appalti e le licenze di esportazione d'armi, con evidenza pubblica e revisione parlamentare.
+- Supporti il finanziamento immediato degli aiuti umanitari e di canali diplomatici per negoziare cessate il fuoco.
+
+Seguire: La invito a incontrare le organizzazioni locali e a rilasciare una dichiarazione pubblica in supporto alla diplomazia e alla limitazione del trasferimento di armi in contesti ad alto rischio.
+
+Cordiali saluti,
+[Il tuo nome] — [Città/Paese]
+
+Prompt AI per personalizzare l'email:
+"Scrivi una mail breve e rispettosa per il parlamentare [NOME] con i fatti: [incolla 2 dati locali], chiedendo: trasparenza sugli appalti, fondi umanitari e un incontro. Mantieni tono calmo e urgente." 
+
+Suggerimenti per oggetto (A/B):
+- "Urgente: Proteggiamo i civili, finanziamo diplomazia — [Città]"
+- "Chiedo trasparenza sulle esportazioni di armi e supporto al cessate il fuoco"

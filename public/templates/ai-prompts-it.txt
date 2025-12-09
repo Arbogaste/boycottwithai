@@ -1,0 +1,23 @@
+AI Prompts: prompt di esempio per generare contenuti sicuri e fattuali
+
+Esempi di istruzioni da usare con un LLM per generare briefing, email a rappresentanti e testi per campagne. Verificare sempre le uscite e citare le fonti originali.
+
+1) Briefing di una pagina
+"Scrivi un briefing di una pagina per [paese/regione] con: contesto, evidenze chiave con fonti, rilevanza politica e 3 richieste concrete. Include un piano di outreach in due paragrafi. Usa linguaggio neutro e cita: SIPRI, ACLED, GDELT, rapporti ONU se esistenti. Massimo 400 parole."
+
+2) Email a Parlamentari
+"Con questi fatti: [inserire 2-3 evidenze e link], scrivi una email breve e rispettosa di 3 paragrafi (suggerisci oggetto) chiedendo azioni per trasparenza sulle esportazioni di armi, aumenti di supporto umanitario e misure diplomatiche. Inserisci una richiesta di dichiarazione pubblica o incontro. Mantieni un tono non conflittuale."
+
+3) Riassunto per petizione
+"Crea un testo di 100-150 parole per una petizione per [paese/città], includendo 1-2 fonti (SIPRI/ACLED/ONU) e una chiamata all'azione chiara. Aggiungi 3 copy social (tweet, post Facebook, LinkedIn)."
+
+4) Piano social localizzato
+"Data l'azione e 3 fatti locali, crea un piano social per 7 giorni con copy, hashtag e suggerimenti di immagine. Prioritizza messaggi non violenti e collegamenti a prove."
+
+5) Estrazione prove
+"Da questa serie di report, estrai tre evidenze cronologiche con link e genera un riassunto TL;DR. Assegna un punteggio di confidenza (Alto/Medio/Basso) spiegando il motivo."
+
+6) Checklist di verifica immagine
+"Data un'immagine e metadati (ora, luogo), crea un piano per verificare la foto: geolocalizzazione, ricerca inversa dell'immagine, confronto con eventi ACLED/GDELT, come annotare e segnalare i risultati." 
+
+Note: Inserire sempre i link alle fonti e non fare affidamento unicamente sul modello; validare con dataset e revisori.

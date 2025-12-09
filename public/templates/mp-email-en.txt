@@ -1,0 +1,27 @@
+Subject: [Urgent] Prioritize diplomacy, humanitarian protection and oversight — [Your Town]
+
+Dear [Representative's Name],
+
+I am a constituent from [City/Town]. I'm writing to urge you to push for urgent diplomatic solutions and transparency measures to reduce the risk of escalation and to protect civilians.
+
+Key points (tailor with local data):
+- Evidence: [One short data point with source: e.g., "Country's military budget increased X% (SIPRI, YYYY)"]
+- Risk: [Short risk line: e.g., "Increased transfers to company X correlate with rising civilian harm in region Y (ACLED)."]
+
+Please support the following measures:
+- Vote for or advocate for conditional export controls and public reporting on arms contracts and export licenses.
+- Back immediate humanitarian funding and support for ceasefire negotiations.
+- Support legislation that strengthens peace-building and reduces reliance on rapid military escalation.
+
+Suggested follow-up: If possible, please publish a public statement supporting transparency and diplomacy, and consider a meeting with civil society groups working on de-escalation.
+
+Sincerely,
+[Your name]
+[Your City/Country]
+
+AI prompt to personalize this email (optional):
+"Given these facts: [paste local data/links], write a concise, localized MP email (3 paragraphs) asking for public action supporting transparency on arms exports, immediate humanitarian assistance, and de-escalation — keep tone non-confrontational but urgent." 
+
+Optional subject lines (test for A/B):
+- "Urgent: Protect Civilians, Fund Diplomacy — [City/Town]"
+- "Ask for Transparency: Arms Exports and Humanitarian Safety"

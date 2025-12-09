@@ -1,0 +1,9 @@
+# TODO: Translate to French (fr)
+Petition: Support diplomatic channels and humanitarian protection
+
+Summary: Use this template to create a shareable petition that asks officials to prioritize diplomacy and humanitarian safety.
+
+Text:
+We, the undersigned, ask that the government prioritize immediate diplomatic negotiations, support humanitarian corridors, and increase transparency on arms exports and procurement. We call for targeted oversight, public reporting, and a reallocation of budgets toward humanitarian and conflict-prevention measures.
+
+Action: Sign and share; send to your local representatives and key ministers; use the AI prompt library to personalize your message for different audiences.

@@ -4,6 +4,10 @@ Improve the page in the best way possible, following these guidelines and best u
 
 You are a SEO expert, a web developer, and a technical writer, with social justice values, use trending and social justice fights topics in the parahraph and use seo keywords and optimizations. 
 
+Priority: 
+1: Code is working and efficient
+2: Clarity and conciseness, minimal
+3: SEO optimizations
 
 # Astro Docs (Routing, i18)
     - Skip to content you need
@@ -427,3 +431,87 @@ import Base from '../../layouts/Base.astro';
     <h1>About me</h1>
     ...
 </Base>
+
+The website should explain current global threats, methodologies for non-violent civic action, and technical tools and resources used by the project. Strengthen structure, clarity, and mission-driven messaging.
+
+1. Current Issues to Expose
+
+Global rearmament and escalation narratives used to justify military spending.
+
+Risks of miscommunication and nuclear escalation between major powers.
+
+Civilian harm, infrastructure attacks, displacement, and humanitarian crises.
+
+Widespread disinformation campaigns, including AI-driven propaganda.
+
+Institutional focus on military solutions over diplomacy and humanitarian protection.
+
+For each issue: provide short evidence, political relevance, and one clear public action.
+
+2. OSINT & Conflict Monitoring Tools
+
+ACLED – global event data on conflicts, violence, and civilian impact.
+
+GDELT Project – global news and narrative tracking for escalation signals.
+
+Bellingcat methodology – geolocation and verification of images/videos.
+
+LiveUAmap / DeepStateMap feeds – real-time conflict mapping.
+
+NASA FIRMS & UNOSAT – satellite imagery of infrastructure attacks and fires.
+
+3. AI-Powered Analysis
+
+LLM-based propaganda detection – detect escalation language, manipulative narratives.
+
+Trend forecasting AI – predict risk of escalation based on news, official statements, military movements.
+
+Automated summarization – synthesize reports from UN, Amnesty, HRW, ICRC.
+
+Automated policy monitoring – track military spending, sanctions, parliamentary votes.
+
+Sentiment & narrative analysis – public opinion, government messaging, media bias.
+
+4. Civic Tech & Transparency Tools
+
+Legislative vote tracking – monitor parliamentary decisions on war, defense budgets.
+
+UN/EU resolution tracker – status of ceasefires, humanitarian corridors, peace resolutions.
+
+SIPRI arms-export database – visualize weapons transfers.
+
+Peace Effort Index – ranking governments by diplomacy vs militarization.
+
+Lobbying influence trackers – public records of defense industry lobbying.
+
+5. Humanitarian Impact Tools
+
+Casualty and displacement datasets – UN OCHA, ICRC, Amnesty reports.
+
+Refugee flows – UNHCR displacement maps.
+
+Humanitarian corridor status – access, blockages, violations.
+
+6. Website Requirements for Copilot
+
+Rewrite all content to be clear, structured, factual, and evidence-based.
+
+Add sections explaining methodology, technical tools, and civic action pipelines.
+
+Include concrete calls-to-action: petitions, MP emails, briefing PDFs, social campaigns.
+
+Create dashboards or visualizations for transparency, monitoring, and humanitarian impact.
+
+Use non-violent, solution-oriented, professional tone.
+
+Reorganize or expand site structure as needed to maximize clarity, credibility, and impact.
+
+7. Optional Enhancements
+
+Infographics and one-page briefing templates for journalists and policymakers.
+
+Metrics/KPIs for each civic action (e.g., signatures, MP responses, media reach).
+
+Verification confidence levels for alerts or claims published on the site.
+
+Coalition-building templates (NGO, faith groups, civil organizations).

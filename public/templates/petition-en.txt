@@ -1,0 +1,24 @@
+To: [Target Organization/Representative]
+
+We, the undersigned, call for immediate measures to prioritize diplomacy, humanitarian protection, and accountability in defense policy. This petition summarizes evidence and demands meant to reduce the risk of conflict escalation and protect civilians.
+
+Why this matters — evidence highlights (example):
+- Increased military spending in [country] by X% (SIPRI YYYY) while humanitarian needs in region Y have grown.
+- Recent arms transfer to company/actor X is associated with increased civilian harm (ACLED/UN reports).
+
+Our demands:
+- Enact public oversight of defense contracts and export licenses (open registries and parliamentary review).
+- Pause new exports to [list of actors] pending an independent review and safeguards for civilian protection.
+- Reallocate a meaningful portion of military budgets to humanitarian aid, conflict prevention and diplomacy.
+
+Actions you can take (shareable & trackable):
+- Sign the petition and share on social media using #[campaign-hashtag] and tag local MPs.
+- Email your MP using our MP letter templates and ask them to sponsor legislation for transparency on arms exports.
+
+Measurable goals/KPIs:
+- 10,000 signatures in 30 days; 20 MPs contacted; 5 local media pickups.
+
+Sincerely,
+[Name] — [City/Country]
+
+AI prompt for customizing the petition: "Use the following data points: [paste evidence links]. Generate a 150-word petition message that is localized to [country/city], includes one strong call to action and a short evidence paragraph citing SIPRI/ACLED/UN sources." 

@@ -1,0 +1,31 @@
+AI Prompts: tailored prompts to power safe, factual civic messages and briefs
+
+Below are suggested LLM prompts you can use to generate content, evidence synthesis, and personalized outreach. Always verify model outputs and cite primary sources.
+
+1) One-page briefing (for journalists / partners)
+"Create a concise one-page briefing for [country/region] covering: context, key evidence (with sources), political relevance, and 3 actionable asks. Include a two-paragraph outreach plan. Use neutral, evidence-first language and cite sources: SIPRI, ACLED, GDELT, UN reports where applicable. Keep length under 400 words."
+
+2) MP Email personalization
+"Given these facts: [paste 2-3 data points and links]. Write a short, respectful 3-paragraph MP email (subject line suggested) asking them to support transparency in arms exports, humanitarian funding, and diplomacy. Add a one-line ask for a public statement or meeting. Keep tone non-confrontational."
+
+3) Petition summary
+"Create a compelling 100-150 word petition summary for [country/city], citing 1-2 reliable sources (SIPRI/ACLED/UN) and include a clear call-to-action for signatures and MP outreach. Add 3 shareable social media messages (one tweet, one Facebook, one LinkedIn)."
+
+4) Localized social media plan
+"Given the campaign objective and 3 local data points, write a 7-day social media cadence with suggested post copy, hashtags, and visuals (text description). Prioritize non-violence messages and explanatory links to evidence." 
+
+5) Evidence extraction
+"From the following collection of reports, extract three key evidence points with dates and links and create a TL;DR for use in a briefing. List sources and provide a confidence score (High/Medium/Low) with short justification." 
+
+6) Verification checklist (for volunteers)
+"Given an uploaded image and metadata (time, location), produce a step-by-step verification plan: (1) geolocation steps, (2) reverse-image search, (3) cross-reference with ACLED/GDELT events, (4) how to flag and annotate in the project database." 
+
+Notes: Always include primary source links in generated text and do not rely solely on the model's memory; validate with datasets and peer reviewers.
+
+7) OSINT tools explained for non-technical readers
+"Write a website section in plain, accessible English aimed at a general audience. Explain that the project uses a set of free and open-source tools to monitor conflicts, investigate arms transfers, detect disinformation, and analyze risks. For each of the following tools: SpiderFoot, Recon-ng, theHarvester, Maltego CE, Shodan, Metagoofil, Creepy, IntelOwl, Sublist3r, Censys, OSINT Framework, OSINT-SPY / OSINT-SH — include:
+- Tool name
+- What the tool does in simple terms
+- Why it matters (what problem it helps to uncover, e.g., transparency, supply chain, disinformation)
+- A short example scenario showing how a concerned citizen, journalist or researcher could use it safely.
+Use a calm, non-technical tone, avoid jargon, and emphasize safety, legality and verification. End with a note that these are free/open-source tools and a reminder to prioritize privacy and non-harmful use."

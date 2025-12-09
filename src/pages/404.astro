@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('errors.notFound.title')} — BoycottWithAI</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content={t('errors.notFound.message')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('errors.notFound.title')}</h1>
+    <p class="muted">{t('errors.notFound.message')}</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('nav.tools')}</h4>
+        <p class="muted">{t('tools.ai.desc')}</p>
+        <a class="button" href={`/${lang}/tools/`}>{t('nav.tools')}</a>
+      </div>
+      <div class="card">
+        <h4>{t('nav.manifesto')}</h4>
+        <p class="muted">{t('manifesto.subtitle')}</p>
+        <a class="button" href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
+      </div>
+      <div class="card">
+        <h4>{t('nav.getinvolved')}</h4>
+        <p class="muted">{t('getinvolved.subtitle')}</p>
+        <a class="button" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
+      </div>
+      <div class="card">
+        <h4>{t('nav.resources')}</h4>
+        <p class="muted">{t('resources.intro')}</p>
+        <a class="button" href={`/${lang}/resources/`}>{t('nav.resources')}</a>
+      </div>
+    </div>
+  </section>
+</Base>

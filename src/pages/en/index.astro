@@ -15,10 +15,11 @@ const t = useTranslations(lang);
   <div class="hero">
     <div class="left">
       <h1>{t('hero.title')}</h1>
-      <p class="lead">{t('hero.subtitle')}</p>
+  <p class="lead">{t('hero.subtitle')}</p>
+  <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
       <div class="cta">
-        <a class="button" href={`/${lang}/tools/`}>{t('cta.explore')}</a>
-        <a class="secondary" href={`/${lang}/actions/`}>{t('cta.start')}</a>
+        <a class="button" href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
+        <a class="secondary" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
       </div>
     </div>
     <div class="card">
@@ -31,23 +32,35 @@ const t = useTranslations(lang);
   <section style="margin-top:28px">
     <div class="grid">
       <div class="card">
-        <h4>How it works</h4>
-        <p class="muted">We provide open tools and guides to plan direct actions, coordinate safe assemblies, and run effective pressure campaigns.</p>
+        <h4>{t('purpose.title')}</h4>
+  <p class="muted">{t('purpose.p1')} {t('purpose.p2')} {t('purpose.p3')} {t('purpose.p4')}</p>
       </div>
       <div class="card">
-        <h4>Privacy-first</h4>
-        <p class="muted">Design choices prioritize participant safety: opt-in sharing, ephemeral events, and minimal data collection.</p>
+        <h4>Privacy & Safety</h4>
+        <p class="muted">Design choices prioritize participant safety and secure reporting: opt-in sharing, ephemeral events, minimal data collection, and anonymity best-practices for reporters.</p>
       </div>
       <div class="card">
         <h4>Community-driven</h4>
-        <p class="muted">Everything here is meant to be adapted by local groups — fork the project and contribute.</p>
+        <p class="muted">Everything here is meant to be adapted by local groups — fork the project, contribute datasets, and collaborate on non-violent civic strategies.</p>
       </div>
+    </div>
+  </section>
+
+  <section style="margin-top:28px">
+    <div class="card">
+      <h4>{t('issues.title')}</h4>
+      <ul>
+        <li>{t('issues.core')}</li>
+        <li>{t('issues.escalation')}</li>
+        <li>{t('issues.humanitarian')}</li>
+        <li>{t('issues.institutions')}</li>
+      </ul>
     </div>
   </section>
   <section style="margin-top:28px">
     <div class="card">
       <h4>From the Manifesto</h4>
-      <p class="muted">This project follows clear, evidence-based principles: build broad coalitions, combine diverse tactics, and progress through calibrated phases to reach mass-critical participation (the 3.5% rule). Use the tools and guides to move from awareness to sustained economic and political pressure while keeping actions non-violent and inclusive.</p>
+  <p class="muted">{t('manifesto.vision.p1')}</p>
       <div style="margin-top:10px">
         <a class="secondary" href={`/${lang}/manifesto/`}>Read the full manifesto</a>
       </div>

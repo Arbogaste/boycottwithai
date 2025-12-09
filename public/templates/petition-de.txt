@@ -1,0 +1,9 @@
+# TODO: Translate to German (de)
+Petition: Unterstützung diplomatischer Kanäle und humanitären Schutz
+
+Zusammenfassung: Verwenden Sie diese Vorlage, um eine teilbare Petition zu erstellen, die Beamte auffordert, Diplomatie und humanitäre Sicherheit zu priorisieren.
+
+Text:
+Wir, die Unterzeichnenden, fordern die Regierung auf, sofortige diplomatische Verhandlungen zu priorisieren, humanitäre Korridore zu unterstützen und die Transparenz bei Waffenexporten und Beschaffungen zu erhöhen. Wir fordern gezielte Aufsicht, öffentliche Berichterstattung und eine Umschichtung der Mittel in Richtung humanitärer Maßnahmen und Konfliktprävention.
+
+Aktion: Unterzeichnen und teilen; senden Sie sie an Ihre örtlichen Vertreter und Minister; verwenden Sie die KI-Prompts zur Personalisierung für verschiedene Zielgruppen.

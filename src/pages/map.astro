@@ -40,6 +40,7 @@ const t = useTranslations(lang);
         <option value="">All</option>
         {Array.from(new Set(companies.flatMap(c => c.tags))).map(t => <option value={t}>{t}</option>)}
       </select>
+      <button id="armsFilterBtn" class="secondary" style="margin-left:8px">{t('map.filter.armsIndustry') || 'Arms industry'}</button>
     </div>
 
     <div style="margin-top:18px" class="grid" id="targetsGrid">
@@ -92,6 +93,27 @@ const t = useTranslations(lang);
         }
         if (sector) sector.addEventListener('change', applyFilters);
         if (tag) tag.addEventListener('change', applyFilters);
+
+        var armsFilterActive = false;
+        var armsBtn = /** @type {HTMLButtonElement | null} */ (document.getElementById('armsFilterBtn'));
+        if (armsBtn) {
+          armsBtn.addEventListener('click', function () {
+            armsFilterActive = !armsFilterActive;
+            if (armsFilterActive) {
+              Array.from(grid.children).forEach(child => {
+                const card = child as HTMLElement;
+                const cs = (card.getAttribute('data-sector') || '').toLowerCase();
+                const ts = (card.getAttribute('data-tags') || '').toLowerCase();
+                const isArms = cs.includes('defense') || ts.includes('arm') || ts.includes('arms') || ts.includes('weapon');
+                card.style.display = isArms ? '' : 'none';
+              });
+              armsBtn.classList.add('active');
+            } else {
+              applyFilters();
+              armsBtn.classList.remove('active');
+            }
+          });
+        }
       })();
     </script>
 

@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('getinvolved.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('getinvolved.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('getinvolved.title')}</h1>
+    <p class="muted">{t('getinvolved.subtitle')}</p>
+
+    <div style="margin-top:18px" class="card">
+      <h3>{t('getinvolved.title')}</h3>
+      <ol>
+        {t('getinvolved.steps').map(step => (
+          <li class="muted">{step}</li>
+        ))}
+      </ol>
+    </div>
+
+    <div style="margin-top:18px" class="grid">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Télécharger une pétition prête à l'emploi : éditez, signez et partagez.</p>
+  <a class="button" href="/templates/petition-fr.txt" download>Télécharger FR</a>
+  <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">Personnaliser avec l'IA (EN)</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">Copier-coller modèle d'email pour contacter députés et représentants locaux.</p>
+  <a class="button" href="/templates/mp-email-fr.txt" download>Télécharger FR</a>
+  <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">Personnaliser (EN)</a>
+      </div>
+      <div class="card">
+        <h4>{t('tools.divestment.title')}</h4>
+        <p class="muted">Trouvez des lettres modèles et étapes pour faire pression sur investisseurs et banques finançant le commerce des armes.</p>
+        <a class="secondary" href={`/${lang}/resources/`}>{t('resources.title')}</a>
+      </div>
+    </div>
+  </section>
+</Base>

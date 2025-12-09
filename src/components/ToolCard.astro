@@ -1,0 +1,12 @@
+---
+const { name, short, why, example, link } = Astro.props;
+const sanitized = (name || '').toLowerCase().replace(/[^a-z0-9]+/g,'-');
+---
+<article class="tool-card" aria-labelledby={`tool-${name}`} aria-describedby={`tool-${sanitized}-why tool-${sanitized}-example`} role="article"> 
+  <div class="tool-accent" aria-hidden="true"></div>
+  <h5 id={`tool-${name}`}>{name}</h5>
+  <p class="muted">{short}</p>
+  <p id={`tool-${sanitized}-why`} class="muted why"><strong>Why: </strong>{why}</p>
+  <p id={`tool-${sanitized}-example`} class="muted example"><strong>Example: </strong>{example}</p>
+  {link ? <a class="secondary" href={link} rel="noopener noreferrer" target="_blank">Learn more</a> : null}
+</article>

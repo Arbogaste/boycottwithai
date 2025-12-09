@@ -1,0 +1,24 @@
+# TODO: Translate to German (de)
+Subject: [Dringend] Diplomatie, humanitärer Schutz und Transparenz priorisieren — [Ihre Stadt]
+
+Sehr geehrte(r) [Name des Abgeordneten],
+
+Ich bin ein(e) Wähler(in) aus [Stadt]. Ich schreibe Ihnen, um Sie zu bitten, dringende diplomatische Lösungen und Transparenzmaßnahmen zu unterstützen, um das Eskalationsrisiko zu verringern und Zivilisten zu schützen.
+
+Schlüsselpunkte (mit lokalen Daten anpassbar):
+- Beleg: [Ein kurzer Datenpunkt mit Quelle: z. B. "Das Militärbudget des Landes stieg um X% (SIPRI, YYYY)"]
+- Risiko: [Kurze Risikolinie: z. B. "Erhöhungen der Lieferungen an Firma X korrelieren mit steigenden zivilen Schäden in Region Y (ACLED)."]
+
+Bitte unterstützen Sie folgende Maßnahmen:
+- Stärken Sie Kontrollen und öffentliche Berichterstattung zu Rüstungsverträgen und Exportlizenzen.
+- Unterstützen Sie sofortige humanitäre Mittel und Verhandlungen für Waffenruhen.
+- Unterstützen Sie Gesetze, die Friedensbildung stärken und die Abhängigkeit von militärischer Eskalation verringern.
+
+Vorgeschlagene Nachverfolgung: Falls möglich, veröffentlichen Sie eine öffentliche Erklärung zur Unterstützung von Transparenz und Diplomatie und treffen Sie sich mit zivilgesellschaftlichen Gruppen.
+
+Mit freundlichen Grüßen,
+[Ihr Name]
+[Ihre Stadt/Land]
+
+AI prompt to personalize this email (optional):
+"Given these facts: [paste local data/links], write a concise, localized MP email (3 paragraphs) asking for public action supporting transparency on arms exports, immediate humanitarian assistance, and de-escalation — keep tone non-confrontational but urgent."

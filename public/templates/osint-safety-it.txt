@@ -1,0 +1,10 @@
+OSINT: regole di sicurezza — Pagina riassuntiva per utenti non tecnici
+
+1) Verifica sempre le fonti: Controlla ogni affermazione con almeno due fonti attendibili (ACLED, report ONU, media consolidati).
+2) Rispetta la privacy: Non pubblicare dati personali o contatti privati di singole persone.
+3) Evita il doxxing e molestie: Punta a istituzioni, aziende e politiche, non a individui.
+4) Sicurezza prima di tutto: Se la condivisione mette a rischio persone, passa l'informazione a giornalisti o ONG esperte.
+5) Conserva le prove: Salva link, screenshot e citazioni, ma redigi dettagli sensibili.
+6) Usa solo dati pubblici: Non cercare o accedere a informazioni protette o illegali.
+
+Per dubbi e supporto, consulta la pagina Metodologia o contatta ONG/giornalisti locali.

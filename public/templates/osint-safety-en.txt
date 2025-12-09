@@ -1,0 +1,10 @@
+OSINT Safety one-pager — Quick rules for non-technical users
+
+1) Always verify sources: Cross-check any claim with two independent trusted sources (news, ACLED, UN reports).
+2) Respect privacy: Never publish personal data or private contact details of individuals.
+3) Avoid doxxing and harassment: Target institutions and policies, not private individuals.
+4) Safety first: If reporting could endanger people, pass info to journalists or NGOs who can handle it safely.
+5) Record evidence: Keep links, screenshots, and citations for claims but redact sensitive details.
+6) Use open, public data: Work with publicly available datasets and avoid illegal access.
+
+For questions or help, consult our methodology page and link with trusted NGOs or local media.

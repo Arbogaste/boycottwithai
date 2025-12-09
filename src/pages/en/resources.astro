@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('resources.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('resources.intro')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('resources.title')}</h1>
+    <p class="muted">{t('resources.intro')}</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Download ready-to-send petitions demanding diplomacy, ceasefires and humanitarian prioritization.</p>
+        <a class="secondary" href="/templates/petition-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">Copy-and-paste email templates to contact MPs and local representatives.</p>
+        <a class="secondary" href="/templates/mp-email-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.briefing.title')}</h4>
+        <p class="muted">One-page briefing templates for journalists and policymakers.</p>
+        <a class="secondary" href="/templates/briefing-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>OSINT safety guide</h4>
+        <p class="muted">Quick rules for safely running open-source investigations and reporting evidence on conflicts without harm.</p>
+        <a class="secondary" href="/templates/osint-safety-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>AI prompt library</h4>
+        <p class="muted">Personalize messages and briefings with our safe AI prompt templates.</p>
+        <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+        <a class="secondary" href="/templates/ai-prompts-it.txt" target="_blank">Prompt AI (IT)</a>
+      </div>
+    </div>
+
+  </section>
+</Base>

@@ -1,0 +1,29 @@
+Esempio di monitoraggio (Python): ingestione ACLED e sintesi con LLM
+
+Nota: esempio minimo, adattare i filtri, le chiavi API e le aree geografiche di interesse.
+
+```python
+import requests
+from datetime import datetime, timedelta
+
+# ACLED sample (può richiedere registrazione/chiave API)
+ACLED_API = 'https://api.acleddata.org/acled/read'
+params = {
+    'country': 'Ukraine',
+    'event_date': (datetime.utcnow() - timedelta(days=7)).strftime('%Y-%m-%d'),
+}
+resp = requests.get(ACLED_API, params=params)
+events = resp.json().get('data', [])
+
+summary = f"{len(events)} eventi di conflitto negli ultimi 7 giorni in paese"
+
+# Esempio di prompt LLM
+prompt = f"Riassumi i seguenti eventi ({len(events)}) con indicatori di rischio e raccomandazioni: {events[:10]}"
+
+print(summary)
+```
+
+Raccomandazioni:
+- Gestire correttamente autenticazione e limiti di chiamata
+- Normalizzare e deduplicare i dati
+- Aggiungere annotazioni e link alle fonti per ogni segnale

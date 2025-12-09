@@ -1,0 +1,38 @@
+Monitoring sample (Python): ingest ACLED & create a summary with an LLM
+
+Note: This is an example, adapt keys/filters for your region and use your API credentials.
+
+```python
+import requests
+from datetime import datetime, timedelta
+from openai import OpenAI  # pseudo-import; use your provider
+
+# ACLED dataset example (ACLED may require a key/registration)
+ACLED_API = 'https://api.acleddata.org/acled/read'
+params = {
+    'country': 'Ukraine',
+    'event_date': (datetime.utcnow() - timedelta(days=7)).strftime('%Y-%m-%d'),
+}
+resp = requests.get(ACLED_API, params=params)
+events = resp.json().get('data', [])
+
+# Aggregate quick stats
+summary = f"{len(events)} conflict events in last 7 days in country"
+
+# Build a short prompt for LLM summarization
+prompt = f"Summarize the following events ({len(events)}) with key risk indicators and recommendations: {events[:10]}"
+
+# Send to your LLM for summarization
+# client = OpenAI(api_key=OPENAI_KEY)
+# answer = client.responses.create(model='gpt-4.1', input=prompt)
+# print(answer.output_text)
+
+print(summary)
+```
+
+This shows a minimal, example ingestion. In production, you'll want:
+- Proper auth and rate limits.
+- Data normalization & deduplication.
+- Metadata capture, evidence links, and a review pipeline.
+
+Use the generated output as a signal for campaign managers and template creation (e.g., use an LLM to write a briefing from the summary).

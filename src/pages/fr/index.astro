@@ -7,8 +7,8 @@ const t = useTranslations(lang);
 ---
 
 <head>
-  <title>BoycottWithAI — Strumenti strategici per campagne non-violente</title>
-  <meta name="description" content="Strumenti, template e un manifesto per organizzare pressioni economiche e azioni civili. Risorse in più lingue." />
+  <title>BoycottWithAI — Outils stratégiques pour des campagnes non violentes</title>
+  <meta name="description" content="Outils ouverts, modèles et un manifeste pour organiser une pression économique et civile stratégique. Ressources en plusieurs langues." />
 </head>
 
 <Base>
@@ -16,16 +16,16 @@ const t = useTranslations(lang);
     <div class="left">
       <h1>{t('hero.title')}</h1>
       <p class="lead">{t('hero.subtitle')}</p>
-        <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
+      <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
       <div class="cta">
         <a class="button" href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
         <a class="secondary" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
       </div>
     </div>
     <div class="card">
-      <h3>Allerte</h3>
-      <p class="muted">Iscriviti al feed RSS per chiamate urgenti e aggiornamenti.</p>
-      <a class="secondary" href="/rss.xml">Iscriviti</a>
+      <h3>Alertes</h3>
+      <p class="muted">Abonnez-vous aux flux RSS pour des appels urgents et des mises à jour.</p>
+      <a class="secondary" href="/rss.xml">S'abonner</a>
     </div>
   </div>
 
@@ -35,17 +35,17 @@ const t = useTranslations(lang);
         <h4>{t('purpose.title')}</h4>
         <p class="muted">{t('purpose.p1')} {t('purpose.p2')} {t('purpose.p3')} {t('purpose.p4')}</p>
       </div>
+      <div class="card">
+        <h4>Confidentialité & Sécurité</h4>
+        <p class="muted">Les choix de conception privilégient la sécurité des participants et le signalement sécurisé : partage sur opt-in, événements éphémères, collecte minimale de données et meilleures pratiques d'anonymat.</p>
       </div>
       <div class="card">
-        <h4>Privacy & Sicurezza</h4>
-        <p class="muted">Le scelte adottate privilegiano la sicurezza dei partecipanti e la segnalazione sicura: opt-in, eventi effimeri, raccolta minima e best-practice per l\'anonimato.</p>
-      </div>
-      <div class="card">
-        <h4>Guida dalla comunità</h4>
-        <p class="muted">Tutto è pensato per essere adattato dai gruppi locali — forkate il progetto, contribuite dataset e collaborate a strategie non-violente.</p>
+        <h4>Communautaire</h4>
+        <p class="muted">Tout ici est destiné à être adapté par des groupes locaux — forkez le projet, contribuez des jeux de données et collaborez sur des stratégies civiques non violentes.</p>
       </div>
     </div>
   </section>
+
   <section style="margin-top:28px">
     <div class="card">
       <h4>{t('issues.title')}</h4>
@@ -59,11 +59,12 @@ const t = useTranslations(lang);
   </section>
   <section style="margin-top:28px">
     <div class="card">
-      <h4>Dal Manifesto</h4>
-        <p class="muted">{t('manifesto.vision.p1')}</p>
+      <h4>Du manifeste</h4>
+      <p class="muted">{t('manifesto.vision.p1')}</p>
       <div style="margin-top:10px">
-        <a class="secondary" href={`/${lang}/manifesto/`}>Leggi il manifesto completo</a>
+        <a class="secondary" href={`/${lang}/manifesto/`}>Lire le manifeste complet</a>
       </div>
     </div>
   </section>
 </Base>
+

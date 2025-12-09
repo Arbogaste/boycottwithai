@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('resources.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('resources.intro')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('resources.title')}</h1>
+  <p class="muted">{t('resources.intro')}</p>
+  <p class="muted">Remarque: Les modèles techniques (prompts IA, guide OSINT, modèles de monitoring et briefing) sont entretenus en anglais et sont disponibles en version EN canonical.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Télécharger des pétitions prêtes à l'emploi pour demander diplomatie, cessez-le-feu et priorisation humanitaire.</p>
+        <a class="secondary" href="/templates/petition-fr.txt" download>Télécharger FR</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">Modèles d'email à coller pour contacter députés et représentants locaux.</p>
+        <a class="secondary" href="/templates/mp-email-fr.txt" download>Télécharger FR</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.briefing.title')}</h4>
+        <p class="muted">Modèles de briefing d'une page pour journalistes et décideurs.</p>
+  <a class="secondary" href="/templates/briefing-en.txt" download>Télécharger (EN)</a>
+      </div>
+      <div class="card">
+        <h4>Guide de sécurité OSINT</h4>
+        <p class="muted">Principes rapides pour mener des enquêtes open-source et rapporter des éléments sans nuire.</p>
+  <a class="secondary" href="/templates/osint-safety-en.txt" download>Télécharger (EN)</a>
+      </div>
+      <div class="card">
+        <h4>Bibliothèque de prompts IA</h4>
+        <p class="muted">Personnalisez messages et briefings avec nos prompts IA sûrs.</p>
+  <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+      </div>
+    </div>
+  </section>
+</Base>

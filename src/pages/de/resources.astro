@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('resources.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('resources.intro')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('resources.title')}</h1>
+  <p class="muted">{t('resources.intro')}</p>
+  <p class="muted">Hinweis: Technische Vorlagen (KI-Prompts, OSINT-Sicherheitsleitfaden, Monitoring-Beispiele und Briefings) werden zentral auf Englisch gepflegt (EN).</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Laden Sie fertig vorbereitete Petitionen herunter: Bearbeiten, unterschreiben und teilen.</p>
+        <a class="secondary" href="/templates/petition-de.txt" download>Download DE</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">E-Mail-Vorlagen zum Kontaktieren von Abgeordneten und lokalen Vertretern.</p>
+        <a class="secondary" href="/templates/mp-email-de.txt" download>Download DE</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.briefing.title')}</h4>
+        <p class="muted">Einseitige Briefingvorlagen für Journalisten und Entscheidungsträger.</p>
+  <a class="secondary" href="/templates/briefing-en.txt" download>Download (EN)</a>
+      </div>
+      <div class="card">
+        <h4>OSINT Sicherheitsleitfaden</h4>
+        <p class="muted">Schnelle Regeln für sichere Open-Source-Recherchen und das Melden von Informationen ohne Schaden.</p>
+  <a class="secondary" href="/templates/osint-safety-en.txt" download>Download (EN)</a>
+      </div>
+      <div class="card">
+        <h4>KI-Prompt Bibliothek</h4>
+        <p class="muted">Personalisieren Sie Meldungen und Briefings mit unseren sicheren KI-Prompts.</p>
+  <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+      </div>
+    </div>
+  </section>
+</Base>

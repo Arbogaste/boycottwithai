@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Dashboard — BoycottWithAI</title>
+  <meta name="description" content="Public dashboards and visualizations to track militarization and humanitarian impact." />
+</head>
+
+<Base>
+  <section>
+    <h1>Dashboard (placeholder)</h1>
+    <p class="muted">Public dashboards are coming: interactive timelines for defense spending, map overlays for humanitarian incidents, and network graphs for industry influence.</p>
+    <div class="card" style="margin-top:18px">
+      <h4>Planned dashboards</h4>
+      <ul>
+        <li>Defense spending vs humanitarian budgets time-series</li>
+        <li>Conflict incident map overlays and civilian harm heatmaps</li>
+        <li>Industry-to-government network graphs for arms contracts</li>
+      </ul>
+    </div>
+  </section>
+</Base>

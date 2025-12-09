@@ -15,9 +15,20 @@ const t = useTranslations(lang);
   <section>
     <h1>{t('manifesto.title')}</h1>
     <p class="muted">{t('manifesto.subtitle')}</p>
+
     <div class="card" style="margin-top:12px">
       <h3>{t('manifesto.vision.title')}</h3>
       <p class="muted">{t('manifesto.vision.p1')}</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h3>{t('issues.title')}</h3>
+      <ul>
+        <li>{t('issues.core')}</li>
+        <li>{t('issues.escalation')}</li>
+        <li>{t('issues.humanitarian')}</li>
+        <li>{t('issues.institutions')}</li>
+      </ul>
     </div>
 
     <article class="card" style="margin-top:18px">
@@ -26,12 +37,6 @@ const t = useTranslations(lang);
         {t('manifesto.methods.list').map(item => (
           <li>{item}</li>
         ))}
-      </ul>
-    </article>
-
-      <ul>
-        <li>Non-violent direct action and peaceful assemblies</li>
-        <li>Community organizing and alternative, non-exploitative institutions</li>
       </ul>
     </article>
 
@@ -64,6 +69,15 @@ const t = useTranslations(lang);
         ))}
       </ul>
     </article>
-
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h3>Que pouvez-vous faire</h3>
+      <p class="muted">{t('manifesto.callToAction')}</p>
+      <div style="margin-top:10px">
+        <a class="button" href={`/${lang}/get-involved/`}>{t('cta.join')}</a>
+        <a class="secondary" href={`/${lang}/resources/`}>{t('resources.title')}</a>
+      </div>
+    </div>
   </section>
 </Base>

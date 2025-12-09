@@ -1,0 +1,35 @@
+Briefing: Prioritizzare la diplomazia — dati rapidi (modello AI)
+
+Sintesi: Usa questo modello per creare un briefing di una pagina, condivisibile con giornalisti, ONG o rappresentanti politici. Troverai la parte "AI prompt" per espandere o localizzare il testo.
+
+1) Contesto
+- Tensioni geopolitiche, rischio di escalation diretta e danni civili.
+- Riarmo e corse agli armamenti aumentano la probabilità di errori e escalation.
+
+2) Evidenza principale & fonti
+- Andamento spesa militare (SIPRI, bilanci nazionali)
+- Esportazioni d'armi e contratti (SIPRI, portali nazionali)
+- Eventi di conflitto & impatto civile (ACLED, rapporti ONU/ONG)
+- Indicatori satellitari (NASA FIRMS, UNOSAT)
+
+3) Importanza politica
+- Il riarmo sottrae risorse a esigenze sociali e umanitarie.
+- Le esportazioni di armi possono prolungare o intensificare i conflitti.
+
+4) Richieste concrete
+- Supporto per cessate il fuoco immediati e corridoi umanitari.
+- Trasparenza pubblica sui contratti d'arma e sulle licenze di esportazione.
+- Ridistribuzione dei fondi dal bilancio militare verso aiuti umanitari e diplomazia.
+
+5) Piano d'azione rapido (shareable)
+- Breve: Firma la petizione e invia l'email al tuo parlamentare usando i nostri modelli.
+- Medio: Organizza un'azione non-violenta locale e promuovi la copertura mediatica.
+- Lungo: Promuovi riforme che rafforzino la trasparenza e la diplomazia.
+
+6) Contatti & partner
+- [Elenco di ONG, gruppi di ricerca, media locali]
+
+Prompt AI per espandere il briefing:
+"Scrivi un briefing di una pagina per [paese/area] in Italiano con contesto, evidenze (con fonti), importanza politica, 3 richieste, e piano di contatto in 2 paragrafi. Mantieni tono non-violento, basato sui fatti e cita SIPRI, ACLED e rapporti ONU quando rilevante."
+
+Note: Sostituisci i segnaposto con dati locali e allega set di dati/rapporti se disponibili.
