@@ -1,0 +1,204 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Responsabilité Corporative — Qui Pollue ? | BoycottWithAI</title>
+  <meta name="description" content="71% de la pollution mondiale provient de 100 entreprises. Tracer les contrats gouvernementaux cachés, la complicité corporative, l'oppression des activistes. Données de transparence, EMAS, monitoring satellite NASA." />
+  <meta name="keywords" content="pollution corporative, responsabilité environnementale, contrats gouvernementaux, transparence, corruption gouvernementale, repression activistes, justice climatique, supply chain responsibility, due diligence" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/fr/corporate-accountability" />
+</head>
+
+<Base>
+  <section>
+    <h1>Responsabilité Corporative</h1>
+    <p class="lead">71% des émissions mondiales proviennent de 100 corporations. Les gouvernements permettent la pollution via des contrats. Les activistes qui dénoncent cela sont arrêtés. Voici comment le prouver.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h4>Pollution Corporative</h4>
+        <p class="muted">Qui déverse réellement les toxines ? Quels fleuves, air, sols ?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Déversements:</strong> Fleuves, mers, eaux souterraines contaminées</li>
+          <li><strong>Émissions:</strong> Pollution atmosphérique (SOx, NOx, particules, GES)</li>
+          <li><strong>Déchets:</strong> Toxiques, nucléaires, plastiques</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Outil:</strong> NASA FIRMS (pollution temps réel) + OpenStreetMap (sites industriels)</p>
+      </div>
+
+      <div class="card">
+        <h4>Contrats Gouvernementaux (Corruption Cachée)</h4>
+        <p class="muted">Les gouvernements payent les pollueurs. Les contrats publics le prouvent.</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Milliards €/an:</strong> Vers les entreprises polluantes (data.gouv.fr)</li>
+          <li><strong>Zéro audit:</strong> Aucun contrôle indépendant</li>
+          <li><strong>Zéro amendes:</strong> Gouvernement ignore les violations</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Cas:</strong> Seine polluta, contrat €100M zéro exécution</p>
+      </div>
+
+      <div class="card">
+        <h4>Oppression des Activistes</h4>
+        <p class="muted">Qui est arrêté ? Les manifestants ou les PDG ?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Arrêtés:</strong> Activistes dénonçant la pollution</li>
+          <li><strong>Impunis:</strong> Cadres exécutifs jamais poursuivis</li>
+          <li><strong>Menaces:</strong> Contre journalistes, lanceurs d'alerte</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Donnée:</strong> Activistes arrêtés 10x plus que PDG pollueurs</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Comment Tracer (Étape par Étape)</h2>
+    
+    <div class="card" style="margin-top:18px">
+      <h4>Étape 1: Identifier la Pollution Locale</h4>
+      <p>Quels fleuves/air/sols dans votre région sont contaminés ?</p>
+      <ul>
+        <li>🔍 Google Maps recherche "usines", "décharges"</li>
+        <li>🛰️ <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">NASA FIRMS</a> — incendies/émissions temps réel</li>
+        <li>📍 <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> — carte sites industriels</li>
+        <li>🌍 <a href="https://earthexplorer.usgs.gov/" target="_blank">Google Earth Pro</a> — historique satellite (10+ ans)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Étape 2: Télécharger Déclarations EMAS</h4>
+      <p><strong>EMAS = obligation légale de divulguer pollution.</strong> Les entreprises ne peuvent pas nier.</p>
+      <p><strong>France:</strong> <a href="https://data.gouv.fr/" target="_blank">data.gouv.fr</a> portail données publiques</p>
+      <p><strong>Rechercher:</strong> Tonnes déversées/an, types chimiques, destinations déchets</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Étape 3: Vérifier Contrats Gouvernementaux</h4>
+      <p><strong>Les gouvernements payent les pollueurs.</strong> Les données publiques prouvent la complicité.</p>
+      <ul>
+        <li><strong>France:</strong> <a href="https://data.gouv.fr/" target="_blank">data.gouv.fr</a> + <a href="https://ted.europa.eu/" target="_blank">TED</a></li>
+        <li><strong>EU:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Appels d'Offres Électroniques)</a></li>
+        <li><strong>Rechercher:</strong> "Entreprise X" + "contrat" + montant + audit (généralement: ZÉRO)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Étape 4: Documenter Oppression</h4>
+      <p><strong>Chronologie:</strong> Quand les activistes protestent contre la pollution, ils sont arrêtés. Cadres exécutifs ? Jamais.</p>
+      <ul>
+        <li><a href="https://acleddata.com/" target="_blank">ACLED</a> — recherche "protestations + nom entreprise"</li>
+        <li>Presse locale — dossiers d'arrestation activistes vs exécutifs</li>
+        <li>Dossiers judiciaires publics — comparer sentences</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Étape 5: Créer Rapport & Agir</h4>
+      <p><strong>Modèle Téléchargeable:</strong> <a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></p>
+      <p><strong>Partager avec:</strong> Médias, ONG environnementales, députés, groupes communautaires</p>
+      <p><strong>Résultat Mesurable:</strong> Enquêtes gouvernementales, audits indépendants, amendes (avec assez de pression)</p>
+    </div>
+
+    <h2 style="margin-top:28px">Outils par Pays</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>🇫🇷 France</h4>
+        <p><strong>Transparence:</strong> <a href="https://data.gouv.fr/" target="_blank">data.gouv.fr</a> (portail données publiques)</p>
+        <p><strong>Contrats:</strong> <a href="https://ted.europa.eu/" target="_blank">TED</a> (appels d'offres EU)</p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparency Register</a></p>
+        <p><strong>FOCUS:</strong> Seine pollution, centrales nucléaires, lobbying agricole</p>
+      </div>
+
+      <div class="card">
+        <h4>🇩🇪 Allemagne</h4>
+        <p><strong>Environnement:</strong> <a href="https://www.umweltbundesamt.de/" target="_blank">UmweltBundesamt</a> (données environnement fédérales)</p>
+        <p><strong>Lobbying:</strong> <a href="https://www.lobbyregister.bundestag.de/" target="_blank">Lobbyregister</a> (qui influence les lois)</p>
+        <p><strong>Contrats:</strong> <a href="https://www.bundesausschreibungen.de/" target="_blank">BundesAusschreibungen</a></p>
+        <p><strong>FOCUS:</strong> Pollution Ruhr, déforestation Bavière, lobbying charbon</p>
+      </div>
+
+      <div class="card">
+        <h4>🇮🇹 Italie</h4>
+        <p><strong>Transparence:</strong> <a href="https://trasparenza.governo.it/" target="_blank">trasparenza.governo.it</a></p>
+        <p><strong>EMAS:</strong> <a href="https://emas.mite.gov.it/" target="_blank">emas.mite.gov.it</a> (déclarations environnementales)</p>
+        <p><strong>Appels d'Offres:</strong> <a href="https://bandi.corruzionebancaria.it/" target="_blank">ANAC Bandi</a></p>
+        <p><strong>FOCUS:</strong> Po pollution, incinérateurs Turin/Milan, forages Adriatique</p>
+      </div>
+
+      <div class="card">
+        <h4>🇪🇺 EU-Étendu</h4>
+        <p><strong>Contrats Publics:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Appels d'Offres)</a></p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparency Register</a></p>
+        <p><strong>Base de Données:</strong> <a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (base entreprises globale)</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Études de Cas (Données Réelles)</h2>
+
+    <div class="card">
+      <h4>🔴 Cas: Seine Polluta (France)</h4>
+      <p><strong>Source:</strong> <a href="https://www.lemonde.fr" target="_blank">Le Monde</a> (enquêtes journalistiques)</p>
+      <p><strong>Entreprise:</strong> Pétrochimie près de Paris déverse toxines</p>
+      <p><strong>Contrat:</strong> Gouvernement paye pour "gestion" (zéro nettoyage réel)</p>
+      <p><strong>Données Cachées:</strong> Taux cancer enfants supprimés des rapports publics</p>
+      <p><strong>Résultat Potentiel:</strong> Procédure infraction UE si pression augmente</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>🔴 Cas: Ruhr Pollution (Allemagne)</h4>
+      <p><strong>Données:</strong> UmweltBundesamt rapports métaux lourds documentés</p>
+      <p><strong>Entreprises:</strong> Aciéries déversent dans fleuve Ruhr</p>
+      <p><strong>Gouvernement:</strong> Contrats €200M "maintenance" (zéro enforcement)</p>
+      <p><strong>Oppression:</strong> Militants arrêtés ; exécutifs jamais poursuivis</p>
+      <p><strong>Résultat:</strong> Pétition 50k+ signatures relance enquête</p>
+    </div>
+
+    <h2 style="margin-top:28px">Ressources & Téléchargements</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>📄 Guides Téléchargeables</h4>
+        <ul>
+          <li><a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></li>
+          <li><a href="/downloads/guides/osint-tools-guide.md">Outils OSINT (ACLED, GDELT, NASA)</a></li>
+          <li><a href="/downloads/guides/scraping-python-guide.md">Scraper Données Publiques</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>🔗 Portails de Transparence</h4>
+        <ul>
+          <li><a href="https://transparencyinternational.org/" target="_blank">Transparency International</a></li>
+          <li><a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (base données entreprises)</li>
+          <li><a href="https://lobbyfacts.eu/" target="_blank">LobbyFacts</a> (qui influence gouvernements)</li>
+          <li><a href="https://acleddata.com/" target="_blank">ACLED</a> (tracking protestations, répression)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>⚖️ Soutien Juridique</h4>
+        <ul>
+          <li><a href="https://www.amnesty.fr/" target="_blank">Amnesty International</a> — assistance légale</li>
+          <li><a href="https://www.fidh.org/" target="_blank">FIDH</a> — recours CEDH/ONU</li>
+          <li><a href="https://www.occrp.org/" target="_blank">OCCRP</a> — Reporting Criminalité Organisée</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Prochaines Étapes</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Identifier pollution locale</strong> (30 min)</li>
+        <li><strong>Télécharger EMAS + contrats gouvernementaux</strong> (1 h)</li>
+        <li><strong>Créer document 1-page avec preuves</strong> (1 h)</li>
+        <li><strong>Partager avec médias + ONG + communauté</strong> (30 min)</li>
+        <li><strong>Signer/organiser pétitions pour audit indépendant</strong> (5 min)</li>
+      </ol>
+      <p style="margin-top:15px"><strong>Temps total:</strong> ~3 heures pour vraie pression civique sur corruption prouvée.</p>
+    </div>
+
+  </section>
+</Base>

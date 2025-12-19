@@ -7,24 +7,28 @@ const t = useTranslations(lang);
 ---
 
 <head>
-  <title>BoycottWithAI — Outils stratégiques pour des campagnes non violentes</title>
-  <meta name="description" content="Outils ouverts, modèles et un manifeste pour organiser une pression économique et civile stratégique. Ressources en plusieurs langues." />
+  <title>BoycottWithAI — Résistance civile contre manipulation, exploitation environnementale et spécisme</title>
+  <meta name="description" content="Outils pratiques pour actions non-violentes : OSINT, IA éthique, guides disruptifs contre fascisme, désinformation, abattages loups, crise climatique. Campagnes, données et ressources pour justice globale." />
+  <meta name="keywords" content="résistance civile France, actions non violentes, contre fascisme 2025, justice environnementale, droits animaux, OSINT éthique, IA transparence, lutte désinformation, crise climatique, spécisme, mutualisme, antifascisme digital" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.com/fr/" />
 </head>
 
 <Base>
   <div class="hero">
     <div class="left">
-      <h1>{t('hero.title')}</h1>
-      <p class="lead">{t('hero.subtitle')}</p>
-      <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
+      <h1>Résistance civile : agissez maintenant contre fascisme, exploitation et spécisme</h1>
+      <p class="lead">Outils numériques et guides pratiques pour exposer manipulation, abattages loups, crise climatique et répression. Défendez vérité, pauvres, environnement et animaux contre pouvoir.</p>
+      <p class="muted">2025 : loups abattus, welfare coupé, désinformation IA, déforestation. N'attendez pas : utilisez ces outils pour changer.</p>
       <div class="cta">
-        <a class="button" href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
-        <a class="secondary" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
+        <a class="button" href={`/${lang}/actions/`}>Actions Disruptives</a>
+        <a class="secondary" href={`/${lang}/tools/`}>Outils OSINT</a>
+        <a class="secondary" href={`/${lang}/resources/`}>Télécharger Guides</a>
       </div>
     </div>
     <div class="card">
-      <h3>Alertes</h3>
-      <p class="muted">Abonnez-vous aux flux RSS pour des appels urgents et des mises à jour.</p>
+      <h3>Alertes Urgentes</h3>
+      <p class="muted">RSS pour mises à jour campagnes, données et appels action.</p>
       <a class="secondary" href="/rss.xml">S'abonner</a>
     </div>
   </div>
@@ -32,38 +36,67 @@ const t = useTranslations(lang);
   <section style="margin-top:28px">
     <div class="grid">
       <div class="card">
-        <h4>{t('purpose.title')}</h4>
-        <p class="muted">{t('purpose.p1')} {t('purpose.p2')} {t('purpose.p3')} {t('purpose.p4')}</p>
+        <h4>Pourquoi maintenant ?</h4>
+        <ul>
+          <li><strong>Manipulation :</strong> Médias contrôlés répandent haine et mensonges.</li>
+          <li><strong>Exploitation :</strong> Capital utilise État pour profit, ignorant pauvres et nature.</li>
+          <li><strong>Répression :</strong> Coupes droits, abattages animaux, contrôle social.</li>
+        </ul>
       </div>
       <div class="card">
-        <h4>Confidentialité & Sécurité</h4>
-        <p class="muted">Les choix de conception privilégient la sécurité des participants et le signalement sécurisé : partage sur opt-in, événements éphémères, collecte minimale de données et meilleures pratiques d'anonymat.</p>
+        <h4>Actions Clés</h4>
+        <ul>
+          <li><a href={`/${lang}/actions/`}>10 Actions Disruptives</a> (cartes spéculation, satire, crowdfund)</li>
+          <li><a href={`/${lang}/tools/`}>Surveillance OSINT & IA</a> (GDELT, Bellingcat, sentiment)</li>
+          <li><a href={`/${lang}/resources/`}>Modèles & Données</a> (pétitions, briefings, dashboards)</li>
+        </ul>
       </div>
       <div class="card">
-        <h4>Communautaire</h4>
-        <p class="muted">Tout ici est destiné à être adapté par des groupes locaux — forkez le projet, contribuez des jeux de données et collaborez sur des stratégies civiques non violentes.</p>
+        <h4>Sécurité</h4>
+        <p class="muted">Anonymat et confidentialité : utilisez Tor, données minimales, signalements sécurisés.</p>
       </div>
     </div>
   </section>
 
   <section style="margin-top:28px">
-    <div class="card">
-      <h4>{t('issues.title')}</h4>
+    <h2>Problèmes Globaux et Spécificités Régionales</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Réarmement et Militarisation</h4>
+        <p class="muted">Dépenses militaires globales +12% en 10 ans (SIPRI). Gouvernements justifient par peurs pour incitations économiques.</p>
+        <p><strong>Action :</strong> Exigez transparence budgets défense, audits contrats.</p>
+      </div>
+      <div class="card">
+        <h4>Crise Environnementale</h4>
+        <p class="muted">Réchauffement >1.5°C, perte biodiversité 70% (IPCC/ONU). Profit privé cause déforestation, pollution.</p>
+        <p><strong>Action :</strong> Transition énergétique juste, fin subventions fossiles, protection zones.</p>
+      </div>
+      <div class="card">
+        <h4>Spécisme et Exploitation Animale</h4>
+        <p class="muted">Abbattages loups Italie +200% depuis 2020, chasse, élevages industriels. Vie animale sacrifiée pour profit.</p>
+        <p><strong>Action :</strong> Interdictions chasse, protection prédateurs, véganisme éthique, droits animaux.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h4>Critiques Spécifiques France 2025</h4>
       <ul>
-        <li>{t('issues.core')}</li>
-        <li>{t('issues.escalation')}</li>
-        <li>{t('issues.humanitarian')}</li>
-        <li>{t('issues.institutions')}</li>
+        <li><strong>Environnement :</strong> Pollution Seine, déforestation Bretagne, crise énergétique post-Ukraine.</li>
+        <li><strong>Animaux :</strong> Chasse renards, élevages industriels, trafic animaux exotiques.</li>
+        <li><strong>Social :</strong> Répression gilets jaunes, austérité, barrières immigration.</li>
       </ul>
+      <p><strong>Actions Concrètes :</strong> Signez pétitions contre chasse, surveillez décrets environnementaux, rejoignez campagnes locales.</p>
     </div>
   </section>
+
   <section style="margin-top:28px">
     <div class="card">
-      <h4>Du manifeste</h4>
-      <p class="muted">{t('manifesto.vision.p1')}</p>
-      <div style="margin-top:10px">
-        <a class="secondary" href={`/${lang}/manifesto/`}>Lire le manifeste complet</a>
-      </div>
+      <h4>Ressources Immédiates</h4>
+      <ul>
+        <li>Téléchargez <a href="/downloads/templates/petition-fr.txt">pétition</a> ou <a href="/downloads/templates/mp-email-fr.txt">email députés</a></li>
+        <li>Consultez <a href={`/${lang}/investigations/`}>enquêtes documentées</a> sur pollution, exploitation, militarisation</li>
+        <li>Accédez <a href={`/${lang}/resources/`}>guides techniques détaillés</a> pour scraping, IA, vidéo</li>
+        <li>Signez campagnes : <a href="https://change.org/stop-loups-abattages" target="_blank">Contre abattages loups</a>, <a href="https://change.org/justice-climatique" target="_blank">Pour justice climatique</a></li>
+      </ul>
     </div>
   </section>
 </Base>

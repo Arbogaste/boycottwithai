@@ -20,7 +20,6 @@ const t = useTranslations(lang);
   <link rel="alternate" hreflang="en" href="/en/" />
   <link rel="alternate" hreflang="it" href="/it/" />
   <link rel="alternate" hreflang="fr" href="/fr/" />
-  <link rel="alternate" hreflang="es" href="/es/" />
   <link rel="alternate" hreflang="de" href="/de/" />
     <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
@@ -51,12 +50,12 @@ const t = useTranslations(lang);
           <div id="mainNavLinks" class="nav-links">
             <a href={`/${lang}/tools/`}>{t('nav.tools')}</a>
             <a href={`/${lang}/actions/`}>{t('nav.actions')}</a>
+            <a href={`/${lang}/investigations/`} style="font-weight:bold">🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
+            <a href={`/${lang}/corporate-accountability/`}>{lang === 'it' ? 'Responsabilità Aziendale' : lang === 'fr' ? 'Responsabilité' : lang === 'de' ? 'Konzernverantwortung' : 'Corporate Accountability'}</a>
             <a href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
             <a href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
             <a href={`/${lang}/feeds/`}>{t('nav.feeds')}</a>
             <a href={`/${lang}/resources/`}>{t('nav.resources')}</a>
-            <a href={`/${lang}/dashboard/`}>{t('nav.dashboard')}</a>
-            <a href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
             <a href="/rss.xml" class="muted">RSS</a>
           </div>
         </nav>

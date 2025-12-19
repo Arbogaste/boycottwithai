@@ -1,0 +1,204 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Traccia Responsabilità Aziendale — Chi Inquina | BoycottWithAI</title>
+  <meta name="description" content="Il 71% inquinamento globale da 100 aziende. Traccia contratti pubblici nascosti, governi complici, oppressione attivisti. Dati trasparenza, EMAS, NASA satellite." />
+  <meta name="keywords" content="inquinamento aziendale, responsabilità corporativa, contratti governativi, trasparenza, mala gestione, corruzione governo, attivisti repressi, due diligence aziende, supply chain, ambiente" />
+  <meta name="robots" content="index, follow" />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('corporate.title')}</h1>
+    <p class="lead">{t('corporate.subtitle')}</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h4>{t('corporate.pollution.title')}</h4>
+        <p class="muted">{t('corporate.pollution.desc')}</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Scarichi:</strong> Fiumi, mari, falde contaminate</li>
+          <li><strong>Emissioni:</strong> Aria inquinata (SOx, NOx, particolato)</li>
+          <li><strong>Rifiuti:</strong> Tossici, nucleari, plastiche</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Strumento:</strong> NASA FIRMS (fuochi in tempo reale) + OpenStreetMap (fabbriche)</p>
+      </div>
+
+      <div class="card">
+        <h4>{t('corporate.contracts.title')}</h4>
+        <p class="muted">{t('corporate.contracts.desc')}</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Milioni:</strong> A ditte inquinanti (trasparenza.it)</li>
+          <li><strong>Audit Mancanti:</strong> Zero controlli indipendenti</li>
+          <li><strong>Sanzioni Assenti:</strong> Governo ignora violazioni</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Prova:</strong> {t('corporate.italia.example')}</p>
+      </div>
+
+      <div class="card">
+        <h4>{t('corporate.oppression.title')}</h4>
+        <p class="muted">{t('corporate.oppression.desc')}</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Arrestati:</strong> Attivisti contro inquinamento</li>
+          <li><strong>Impuniti:</strong> Aziende mai incriminate</li>
+          <li><strong>Minacce:</strong> A reporter e whistleblower</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Dato:</strong> Attivisti arrestati 10x più di CEO inquinatori</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Come Tracciare (Passo per Passo)</h2>
+    
+    <div class="card" style="margin-top:18px">
+      <h4>Passo 1: Identifica Inquinamento Locale</h4>
+      <p>Quali fiumi/aria/suolo della tua zona sono inquinati?</p>
+      <ul>
+        <li>🔍 Google Maps + "fabbriche", "discariche" area</li>
+        <li>🛰️ <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">NASA FIRMS</a> — fuochi/incendi in tempo reale</li>
+        <li>📍 <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> — mappa industrie</li>
+        <li>🌍 <a href="https://earthexplorer.usgs.gov/" target="_blank">Google Earth Pro</a> — satelliti storici</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Passo 2: Scarica Dichiarazioni EMAS</h4>
+      <p><strong>EMAS = obbligo legale di dichiare inquinamento.</strong> Aziende non possono negare.</p>
+      <p><strong>Italia:</strong> <a href="https://emas.mite.gov.it/" target="_blank">emas.mite.gov.it</a> — cerca azienda → scarica PDF dichiarazione</p>
+      <p><strong>Cerchi:</strong> Tonnellate scarico/anno, tipo tossici, destinazione rifiuti</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Passo 3: Confronta con Contratti Pubblici</h4>
+      <p><strong>Governi pagano aziende inquinanti.</strong> Dati pubblici provano.</p>
+      <ul>
+        <li><strong>Italia:</strong> <a href="https://trasparenza.governo.it/" target="_blank">trasparenza.governo.it</a> + <a href="https://bandi.corruzionebancaria.it/" target="_blank">ANAC Bandi</a></li>
+        <li><strong>Cerca:</strong> "Azienda X" + "contratto" + anno</li>
+        <li><strong>Nota:</strong> Importo €, se audit incluso (solitamente NO), sanzioni per inquinamento (solitamente ZERO)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Passo 4: Traccia Oppressione</h4>
+      <p><strong>Timeline:</strong> Quando attivisti protestano, sono arrestati? Mentre azienda inquina impunemente?</p>
+      <ul>
+        <li><a href="https://acleddata.com/" target="_blank">ACLED</a> — ricerca "protestas + azienda"</li>
+        <li>News locali — arresti attivisti vs zero arresti CEO</li>
+        <li>Cartelle penali pubbliche — paragona sentenze</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Passo 5: Crea Report & Agisci</h4>
+      <p><strong>Template Scaricabile:</strong> <a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></p>
+      <p><strong>Condividi con:</strong> Media, ONG ambientali, istituzioni, comunità</p>
+      <p><strong>Risultato Misurato:</strong> Commissioni d'inchiesta, audit indipendenti, sanzioni (se abbastanza pressione)</p>
+    </div>
+
+    <h2 style="margin-top:28px">Strumenti Specifici per Paese</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>🇮🇹 Italia</h4>
+        <p><strong>Trasparenza:</strong> trasparenza.governo.it, trasparenza.provincia.xx.it</p>
+        <p><strong>EMAS:</strong> emas.mite.gov.it (dichiarazioni ambientali)</p>
+        <p><strong>BANDI:</strong> ANAC bandi.corruzionebancaria.it</p>
+        <p><strong>FOCUS:</strong> Po inquinato, inceneritori Torino/Milano, trivellazioni Adriatico</p>
+      </div>
+
+      <div class="card">
+        <h4>🇫🇷 Francia</h4>
+        <p><strong>Transparence:</strong> data.gouv.fr (portale dati pubblici)</p>
+        <p><strong>TED:</strong> ted.europa.eu (appalti EU)</p>
+        <p><strong>REGISTRE:</strong> registretransparencepublic.eu (lobbying)</p>
+        <p><strong>FOCUS:</strong> Seine polluta, nucleare, lobby agricola</p>
+      </div>
+
+      <div class="card">
+        <h4>🇩🇪 Germania</h4>
+        <p><strong>UmweltBundesamt:</strong> umweltbundesamt.de (dati ambiente)</p>
+        <p><strong>LOBBYING:</strong> lobbyregister.bundestag.de (chi influenza leggi)</p>
+        <p><strong>CONTRATTI:</strong> Public contracts — bundesausschreibungen.de</p>
+        <p><strong>FOCUS:</strong> Ruhr inquinato, baviera deforestazione, lobby fossile</p>
+      </div>
+
+      <div class="card">
+        <h4>🇬🇧 UK</h4>
+        <p><strong>Companies House:</strong> companieshouse.gov.uk (dati aziende)</p>
+        <p><strong>EA:</strong> environment-agency.gov.uk (pollution data)</p>
+        <p><strong>PUBLIC CONTRACTS:</strong> contractsfinder.service.gov.uk</p>
+        <p><strong>FOCUS:</strong> Thames pollution, fracking, energy companies</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Casi Studio (Dati Reali)</h2>
+
+    <div class="card">
+      <h4>🔴 Caso: Po Inquinato (Italia)</h4>
+      <p><strong>Azienda:</strong> Ditte chimiche scaricano tossici</p>
+      <p><strong>EMAS:</strong> +500 tons/anno dichiarate (pubblico)</p>
+      <p><strong>Governo:</strong> Contratto €50M per acque reflue (zero audit)</p>
+      <p><strong>Oppressione:</strong> Attivisti No TAV arrestati; azienda mai incriminata</p>
+      <p><strong>Risultato:</strong> Commissione indagine avviata dopo 50k firme petizione + media</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>🔴 Caso: Seine Polluta (Francia)</h4>
+      <p><strong>Fonte:</strong> <a href="https://www.lemonde.fr" target="_blank">Le Monde</a> (giornalismo investigativo)</p>
+      <p><strong>Azienda:</strong> Petrolchimico vicino Parigi</p>
+      <p><strong>Contratto:</strong> Governo francese paga per "gestione" (zero pulizia reale)</p>
+      <p><strong>Nascondimento:</strong> Report dati salute (bambini asma) censurati</p>
+      <p><strong>Risultato Potenziale:</strong> Denuncia CEDU (Corte Europea) se pressione aumenta</p>
+    </div>
+
+    <h2 style="margin-top:28px">Risorse & Download</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>📄 Guide Scaricabili</h4>
+        <ul>
+          <li><a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></li>
+          <li><a href="/downloads/guides/osint-tools-guide.md">OSINT Tools (ACLED, GDELT, NASA)</a></li>
+          <li><a href="/downloads/guides/scraping-python-guide.md">Scraping Dati Pubblici</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>🔗 Portali Trasparenza</h4>
+        <ul>
+          <li><a href="https://transparencyinternational.org/" target="_blank">Transparency International</a></li>
+          <li><a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (dati aziende)</li>
+          <li><a href="https://lobbyfacts.eu/" target="_blank">LobbyFacts</a> (chi influenza governi)</li>
+          <li><a href="https://acleddata.com/" target="_blank">ACLED</a> (proteste, repressione)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>⚖️ Ricorsi Legali</h4>
+        <ul>
+          <li><a href="https://www.amnesty.it/" target="_blank">Amnesty Italia</a> — assistenza legale</li>
+          <li><a href="https://www.fidh.org/" target="_blank">FIDH</a> — ricorsi CEDU/ONU</li>
+          <li><a href="https://www.occrp.org/" target="_blank">OCCRP</a> — Organised Crime Reporting</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Prossimi Passi</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Identifica inquinamento locale</strong> (30 min)</li>
+        <li><strong>Scarica EMAS + contratti pubblici</strong> (1 ora)</li>
+        <li><strong>Crea documento 1-pager con prove</strong> (1 ora)</li>
+        <li><strong>Condividi con media + ONG + comunità</strong> (30 min)</li>
+        <li><strong>Firma/firma petizioni per audit indipendente</strong> (5 min)</li>
+      </ol>
+      <p style="margin-top:15px"><strong>Impatto totale:</strong> ~3 ore per vera pressione civica su corruzione provata.</p>
+    </div>
+
+  </section>
+</Base>

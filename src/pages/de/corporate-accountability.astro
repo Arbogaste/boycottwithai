@@ -1,0 +1,203 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Unternehmensverantwortung Nachverfolgung — Wer Verschmutzt | BoycottWithAI</title>
+  <meta name="description" content="71% der globalen Umweltbelastung kommt von 100 Konzernen. Verfolgen Sie versteckte Staatsverträge, Unternehmenskomplizität und Aktivistenverfolgung. Transparenzdaten, EMAS, NASA-Satellitenüberwachung." />
+  <meta name="keywords" content="Unternehmensumweltbelastung, Umweltverantwortung, Staatsverträge, Transparenz, staatliche Korruption, Aktivistenverfolgung, Umweltgerechtigkeit, Lieferkettenhaftung, Due Diligence, Konzernverantwortung" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/de/corporate-accountability" />
+</head>
+
+<Base>
+  <section>
+    <h1>Unternehmensverantwortung Nachverfolgung</h1>
+    <p class="lead">71% der globalen Emissionen kommen von 100 Konzernen. Regierungen ermöglichen Umweltbelastung durch Verträge. Aktivisten, die dies aufdecken, werden verhaftet. So beweist man es.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h4>Konzernumweltbelastung</h4>
+        <p class="muted">Wer kippt tatsächlich Giftstoffe? Welche Flüsse, Luft, Böden?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Einleitungen:</strong> Flüsse, Meere, Grundwasser kontaminiert</li>
+          <li><strong>Emissionen:</strong> Luftverschmutzung (SOx, NOx, Partikel, THG)</li>
+          <li><strong>Abfälle:</strong> Toxisch, radioaktiv, Plastik</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Werkzeug:</strong> NASA FIRMS (Echtzeit-Emissionen) + OpenStreetMap (Industriestandorte)</p>
+      </div>
+
+      <div class="card">
+        <h4>Staatsverträge (Versteckte Korruption)</h4>
+        <p class="muted">Regierungen zahlen Verschmutzer. Öffentliche Verträge beweisen es.</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Milliarden €/Jahr:</strong> An Verschmutzer-Konzerne (transparenz.de)</li>
+          <li><strong>Keine Audits:</strong> Null unabhängige Kontrollen</li>
+          <li><strong>Keine Geldstrafen:</strong> Regierung ignoriert Verstöße</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Fall:</strong> Ruhr verschmutzt, Vertrag €200M null Durchsetzung</p>
+      </div>
+
+      <div class="card">
+        <h4>Aktivistenverfolgung</h4>
+        <p class="muted">Wer wird verhaftet? Demonstranten oder CEOs?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Verhaftet:</strong> Aktivisten, die Umweltbelastung aufdecken</li>
+          <li><strong>Ungestraft:</strong> Manager nie angeklagt</li>
+          <li><strong>Bedrohungen:</strong> Gegen Journalisten, Whistleblower</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Daten:</strong> Aktivisten 10x häufiger verhaftet als Konzern-CEOs</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Wie man Nachverfolgung Durchführt (Schritt für Schritt)</h2>
+    
+    <div class="card" style="margin-top:18px">
+      <h4>Schritt 1: Lokale Umweltbelastung Identifizieren</h4>
+      <p>Welche Flüsse/Luft/Böden in Ihrer Region sind kontaminiert?</p>
+      <ul>
+        <li>🔍 Google Maps Suche "Fabriken", "Deponien" in der Gegend</li>
+        <li>🛰️ <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">NASA FIRMS</a> — Echtzeit-Emissionen</li>
+        <li>📍 <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> — Industriestandorte</li>
+        <li>🌍 <a href="https://earthexplorer.usgs.gov/" target="_blank">Google Earth Pro</a> — Satellitenhistorie (10+ Jahre)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Schritt 2: EMAS-Erklärungen Herunterladen</h4>
+      <p><strong>EMAS = gesetzliche Pflicht, Umweltbelastung offenzulegen.</strong> Unternehmen können es nicht leugnen.</p>
+      <p><strong>Deutschland:</strong> <a href="https://www.umweltbundesamt.de/" target="_blank">UmweltBundesamt</a> Berichte, <a href="https://www.bundesanzeiger.de/" target="_blank">BundesAnzeiger</a></p>
+      <p><strong>Suchen nach:</strong> Tonnen Einleitung/Jahr, Chemikalientypen, Abfallziele</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Schritt 3: Staatsverträge Überprüfen</h4>
+      <p><strong>Regierungen zahlen Verschmutzer.</strong> Öffentliche Daten beweisen Komplizenschaft.</p>
+      <ul>
+        <li><strong>Deutschland:</strong> <a href="https://www.bundesausschreibungen.de/" target="_blank">BundesAusschreibungen</a></li>
+        <li><strong>EU:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Elektronische Ausschreibungen)</a></li>
+        <li><strong>Suchen:</strong> "Unternehmen X" + "Vertrag" + Betrag + Audit-Anforderungen (normalerweise: KEINE)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Schritt 4: Aktivistenverfolgung Dokumentieren</h4>
+      <p><strong>Zeitleiste:</strong> Wenn Aktivisten gegen Umweltbelastung protestieren, werden sie verhaftet. Manager? Nie.</p>
+      <ul>
+        <li><a href="https://acleddata.com/" target="_blank">ACLED</a> — Suche "Proteste + Unternehmensname"</li>
+        <li>Lokale Nachrichten — Verhaftungsunterlagen Aktivisten vs. Manager</li>
+        <li>Öffentliche Gerichtsakten — Strafen vergleichen</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Schritt 5: Bericht Erstellen & Handeln</h4>
+      <p><strong>Herunterladbare Vorlage:</strong> <a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></p>
+      <p><strong>Teilen mit:</strong> Medien, Umwelt-NGOs, Abgeordnete, Bürgerinitiativen</p>
+      <p><strong>Messbares Ergebnis:</strong> Regierungsuntersuchungen, unabhängige Audits, Geldstrafen (mit ausreichend Druck)</p>
+    </div>
+
+    <h2 style="margin-top:28px">Werkzeuge nach Land</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>🇩🇪 Deutschland</h4>
+        <p><strong>Umwelt:</strong> <a href="https://www.umweltbundesamt.de/" target="_blank">UmweltBundesamt</a> (Bundesumweltdaten)</p>
+        <p><strong>Lobbying:</strong> <a href="https://www.lobbyregister.bundestag.de/" target="_blank">Lobbyregister</a> (wer beeinflusst Gesetze)</p>
+        <p><strong>Ausschreibungen:</strong> <a href="https://www.bundesausschreibungen.de/" target="_blank">BundesAusschreibungen</a></p>
+        <p><strong>FOKUS:</strong> Ruhr-Verschmutzung, Waldbrand Bayer, Kohlelobby</p>
+      </div>
+
+      <div class="card">
+        <h4>🇫🇷 Frankreich</h4>
+        <p><strong>Transparenz:</strong> <a href="https://data.gouv.fr/" target="_blank">data.gouv.fr</a> (Öffentliche Datenportal)</p>
+        <p><strong>Ausschreibungen:</strong> <a href="https://ted.europa.eu/" target="_blank">TED</a> (EU-Ausschreibungen)</p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparenzregister</a></p>
+        <p><strong>FOKUS:</strong> Seine-Verschmutzung, Kernkraftwerke, Agrarlobby</p>
+      </div>
+
+      <div class="card">
+        <h4>🇮🇹 Italien</h4>
+        <p><strong>Transparenz:</strong> <a href="https://trasparenza.governo.it/" target="_blank">trasparenza.governo.it</a></p>
+        <p><strong>EMAS:</strong> <a href="https://emas.mite.gov.it/" target="_blank">emas.mite.gov.it</a> (Umwelterklärungen)</p>
+        <p><strong>Ausschreibungen:</strong> <a href="https://bandi.corruzionebancaria.it/" target="_blank">ANAC Bandi</a></p>
+        <p><strong>FOKUS:</strong> Po-Verschmutzung, Müllverbrennungsanlagen Turin, Adriatische Ölbohrungen</p>
+      </div>
+
+      <div class="card">
+        <h4>🇪🇺 EU-Weit</h4>
+        <p><strong>Öffentliche Verträge:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Elektronische Ausschreibungen)</a></p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparenzregister</a></p>
+        <p><strong>Unternehmensdb:</strong> <a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (globale Datenbank)</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Fallstudien (Echte Daten)</h2>
+
+    <div class="card">
+      <h4>🔴 Fall: Ruhr-Verschmutzung (Deutschland)</h4>
+      <p><strong>Unternehmen:</strong> Stahlwerke leiten Schwermetalle in Fluss</p>
+      <p><strong>UmweltBundesamt-Daten:</strong> Dokumentiert, Grenzwerte überschritten</p>
+      <p><strong>Regierung:</strong> Vertrag €200M für "Instandhaltung" (null Durchsetzung)</p>
+      <p><strong>Verfolgung:</strong> Aktivisten verhaftet; Manager nie angeklagt</p>
+      <p><strong>Ergebnis:</strong> Nach 50k+ Unterschriften öffentliche Untersuchung</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>🔴 Fall: Chemie-Konzern Rhein (Deutschland/NL)</h4>
+      <p><strong>Quelle:</strong> EMAS-Berichte zeigen Schwermetall-Einleitungen</p>
+      <p><strong>Vertrag:</strong> Deutschland zahlt €100M für "Kontrolle" (minimal reale Tests)</p>
+      <p><strong>Versteckte Daten:</strong> Krebsraten in betroffenen Gemeinden aus öffentlichen Berichten gelöscht</p>
+      <p><strong>Potentielles Ergebnis:</strong> EU-Verfahren wegen Verstößen bei mehr Druck</p>
+    </div>
+
+    <h2 style="margin-top:28px">Ressourcen & Downloads</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>📄 Herunterladbare Leitfäden</h4>
+        <ul>
+          <li><a href="/downloads/guides/corporate-accountability-guide.md">Corporate Accountability Guide</a></li>
+          <li><a href="/downloads/guides/osint-tools-guide.md">OSINT-Werkzeuge (ACLED, GDELT, NASA)</a></li>
+          <li><a href="/downloads/guides/scraping-python-guide.md">Öffentliche Daten Scrapen</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>🔗 Transparenz-Portale</h4>
+        <ul>
+          <li><a href="https://transparencyinternational.org/" target="_blank">Transparency International</a></li>
+          <li><a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (Unternehmensdb)</li>
+          <li><a href="https://lobbyfacts.eu/" target="_blank">LobbyFacts</a> (wer beeinflusst Regierungen)</li>
+          <li><a href="https://acleddata.com/" target="_blank">ACLED</a> (Protest-, Verfolgungstracking)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>⚖️ Rechtliche Unterstützung</h4>
+        <ul>
+          <li><a href="https://www.amnesty.de/" target="_blank">Amnesty Deutschland</a> — Rechtsberatung</li>
+          <li><a href="https://www.fidh.org/" target="_blank">FIDH</a> — EMRK/UN-Beschwerde</li>
+          <li><a href="https://www.occrp.org/" target="_blank">OCCRP</a> — Berichterstattung organisierter Verbrechen</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Nächste Schritte</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Lokale Umweltbelastung identifizieren</strong> (30 Min)</li>
+        <li><strong>EMAS + Staatsverträge herunterladen</strong> (1 Std)</li>
+        <li><strong>1-Seiten-Beweisdokument erstellen</strong> (1 Std)</li>
+        <li><strong>Mit Medien + NGOs + Gemeinde teilen</strong> (30 Min)</li>
+        <li><strong>Petitionen für unabhängiges Audit unterschreiben/organisieren</strong> (5 Min)</li>
+      </ol>
+      <p style="margin-top:15px"><strong>Gesamtzeit:</strong> ~3 Stunden für echten Bürgerdruck gegen bewiesene Korruption.</p>
+    </div>
+
+  </section>
+</Base>

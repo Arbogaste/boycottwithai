@@ -1,0 +1,110 @@
+Documento: "10 Azioni Disruptive per Smascherare il Capitale Repressivo – Campagna Post-Sgombero Askatasuna"
+Introduzione
+Lo sgombero dell'Askatasuna (18 dicembre 2025) non è "ordine pubblico": è attacco al mutualismo popolare in quartiere povero, per liberare immobile pubblico a speculazione privata (rigenerazione Aurora = gentrificazione). Usiamo dati pubblici per esporre il sistema: Capitale che usa Stato per reprimere solidarietà, mentre taglia welfare e spende per controllo.
+Tutte azioni legali, digitali/low-cost, automatizzabili con agenti (tuoi tool: scraping, Fooocus visuals, TTS audio, FFmpeg video). Obiettivo: viral nazionale, imbarazzo Comune/Stato su scala economica/sociale. "Power exploit people" – mostriamolo con fatti.
+Tecnica comune: Agent (CrewAI/AutoGen) scrapa dati pubblici (trasparenza Comune, delibere, bandi) → genera infografiche/video/meme → distribuisce X/TikTok/Telegram.
+1. "Chi Guadagna dallo Sgombero?" – Mappa Speculazione Immobiliare Aurora
+Agent scrapa delibere/bandi Comune Torino + dati catastali pubblici → mappa interattiva (Leaflet open) con:
+
+Proprietari fondi intorno ex-Askatasuna (speculatori?).
+Progetti rigenerazione 2025 (ex-Ogm, Porta Palazzo → student housing/Airbnb?).
+Aumento prezzi mq Aurora (+ gentrificazione post-sgomberi passati).
+
+Tecnica: Web search/scrape siti Comune + OpenStreetMap → Fooocus genera visuals mappa → video breve FFmpeg.
+Distribuzione: #ChiGuadagnaAurora – viral TikTok "Prima mutualismo gratis, dopo affitti +30%".
+Impatto: Espone profitto privato dietro "sicurezza".
+2. "Costi Repressione vs Tagli Welfare" – Infografiche Bilancio
+Agent estrae bilancio Comune Torino 2025 (PDF pubblici) → confronta:
+
+Spese polizia/sgomberi (idranti, straordinari ~300 agenti) vs tagli servizi sociali Aurora.
+Milioni per "ordine pubblico" vs zero per doposcuola/mutualismo quartiere.
+
+Tecnica: Code execution/Python + pandas per parse PDF bilancio → Fooocus infografiche "1 sgombero = 10 anni doposcuola Askatasuna".
+Distribuzione: Serie X/TikTok + petizione Change.org.
+Impatto: Mostra priorità Capitale: controllo > solidarietà.
+3. "Testimonianze Anonime Residenti" – Audio Collage Virale
+Agent raccoglie testimonianze anonime (form Google + Telegram bot) su servizi Askatasuna (cibo, aiuto migranti, doposcuola). Genera audio collage (TTS emotivo EmotiVoice + ambients Riffusion).
+Tecnica: Form → Ollama riassumi → TTS batch → FFmpeg monta "Voci di Aurora".
+Distribuzione: Podcast brevi su Spotify free + X clips.
+Impatto: Narrazione umana: "Askatasuna aiutava poveri, Stato toglie per chi?".
+4. "Delibere Segrete" – Mirror Pubblico Documenti Ufficiali
+Agent scarica tutte delibere Comune su Askatasuna (marzo 2025 patto, cessazione) + comunicati Prefettura → crea sito mirror anonimo (GitHub Pages + Tor).
+Tecnica: yt-dlp/web scrape PDF ufficiali → host mirror + ricerca interna.
+Distribuzione: Link virale "Leggi tu stesso ipocrisia patto rotto".
+Impatto: Trasparenza forzata – media riprendono "documenti nascosti".
+5. "Askatasuna Era Bene Comune" – Petizione + Crowdfund Resistenza
+Petizione "Restituzione spazio mutualismo Aurora" + crowdfund crypto (wallet Monero) per azioni legali/nuovo spazio autonomo.
+Tecnica: Change.org + agent genera promo video (Fooocus testimonianze).
+Distribuzione: 100k firme obiettivo – viral gruppi migranti/poveri Torino.
+Impatto: Fondi diretti resistenza + pressione istituzionale.
+6. "Satira Capitale" – Video "Grazie Comune per la Gentrificazione"
+Serie brevi: TTS ironico "voce Lo Russo" ringrazia "per liberare Aurora da poveri, benvenuti investitori".
+Tecnica: Ollama script satirici → EmotiVoice clone voce → Fooocus visuals quartiere "prima/dopo".
+Distribuzione: TikTok swarm #GrazieComune.
+Impatto: Ridicolizza sistema – viral umoristico.
+7. "Confronto Nazionale" – Database Sgomberi vs Tagli Sociali
+Agent crea DB open (GitHub) sgomberi centri sociali Italia 2020-2025 vs tagli welfare/bilanci comunali.
+Tecnica: Scrape notizie + bilanci → visual dashboard.
+Distribuzione: Share media left "Pattern repressivo Capitale".
+Impatto: Prova sistemica, non isolata.
+8. "Mutualismo Digitale" – Piattaforma Aiuto Quartiere Online
+Replica servizi Askatasuna online: scambio cibo, info affitti, aiuto burocratico (forum anonimo).
+Tecnica: Discord/Matrix server + agent bot risponde query (Ollama).
+Distribuzione: Invite virale gruppi Aurora.
+Impatto: "Non sgomberi solidarietà" – migliaia utenti.
+9. "Costo Umano Sgombero" – Report Feriti/Scuole Chiuse
+Agent raccoglie news + testimonianze → report "Costo repressivo: scuole chiuse 2 giorni, feriti, vs zero violenza Askatasuna".
+Tecnica: X search + scrape → PDF report Fooocus styled.
+Distribuzione: Mirror siti + media.
+Impatto: Espone sproporzione forza Stato.
+
+Documento: "10 Azioni Disruptive Contro il Capitale Repressivo – Esporre il Sistema Economico che Exploita le Persone"
+Premessa
+Il Capitale usa lo Stato per reprimere spazi di mutualismo popolare mentre protegge profitti privati (gentrificazione, speculazione immobiliare) e spende miliardi in controllo/repressione invece che welfare. Queste azioni sono indipendenti da eventi specifici, generali per Italia (focus Torino/nazionali), basate su dati pubblici. Tutte legali, digitali/scalabili, automatizzabili con agenti (scraping tool, Fooocus visuals, TTS audio, FFmpeg video, Ollama per analisi).
+Obiettivo: Viral nazionale per imbarazzare istituzioni su scala economica ("Power exploit people"). Low-cost, high-impact.
+Tecnica base comune: Agent (CrewAI/AutoGen) scrapa dati pubblici (bilanci Comuni/Stato, delibere, bandi PNRR) → genera infografiche/video/report → distribuisce X/TikTok/Telegram con hashtag #CapitaleExploitPeople #BeniComuniNonSiToccano.
+1. "Mappa Nazionale Gentrificazione" – Esposizione Speculazione Immobiliare
+Agent crea mappa interattiva (Umap/Leaflet open) con quartieri popolari Italia trasformati in lusso (es. Aurora Torino, San Siro Milano, ex-centri sociali → studentati/Airbnb).
+Tecnica: Scrape bandi PNRR/rigenerazione urbana + dati ISTAT prezzi mq → Fooocus genera "prima/dopo" visuals.
+Distribuzione: Sito mirror + viral TikTok "Quartieri poveri → profitti fondi immobiliari".
+Impatto: Mostra pattern nazionale Capitale che espelle poveri per plusvalenze.
+2. "Bilanci Repressione vs Welfare" – Confronto Spese Polizia/Controllo vs Tagli Sociali
+Agent estrae bilanci Comuni/Stato (PDF pubblici) → infografiche "Milioni per polizia/sorveglianza vs tagli asili/sanità nei quartieri popolari".
+Tecnica: Python pandas parse PDF bilanci → Ollama calcola confronti → Fooocus visuals "1 anno repressione = 10 anni welfare perso".
+Distribuzione: Serie X/TikTok + report PDF mirror.
+Impatto: Evidenzia priorità Capitale: controllo sociale > servizi persone.
+3. "Voci Exploitate" – Testimonianze Anonime Quartieri Popolari
+Agent raccoglie testimonianze anonime (form Telegram) su "Come speculazione ci ha tolto casa/servizi". Genera audio collage emotivo.
+Tecnica: Form → Ollama riassumi → EmotiVoice TTS + Riffusion ambients → FFmpeg monta "Voci dei quartieri exploitate".
+Distribuzione: Podcast brevi + clips X.
+Impatto: Narrazione umana contro propaganda "rigenerazione = progresso".
+4. "Delibere Capitali" – Archivio Pubblico Bandi Speculativi
+Agent scarica delibere/bandi rigenerazione urbana nazionali (PNRR) → mirror con highlight "Fondi pubblici → profitti privati (es. studentati lusso in aree popolari)".
+Tecnica: Web scrape portali trasparenza → host GitHub Pages anonimo.
+Distribuzione: Link virale "Leggi come Capitale usa tuoi soldi".
+Impatto: Trasparenza forzata su trasferimento ricchezza pubblica-privata.
+5. "Crowdfund Mutualismo Autonomo" – Fondo Resistenza Quartieri
+Crea crowdfund crypto (wallet Monero) per "Fondo beni comuni exploitate" – finanzia spazi mutualismo alternativi (legali).
+Tecnica: Agent genera promo video (testimonianze + visuals Fooocus).
+Distribuzione: Telegram channel + viral gruppi popolari.
+Impatto: Soldi diretti a resistenza vs Capitale – dimostra alternativa possibile.
+6. "Satira Exploiter" – Video Ironici su "Grazie Capitale"
+Serie brevi: TTS ironico "voce Meloni/Lo Russo" "Grazie per aver liberato quartieri da poveri – benvenuti speculatori".
+Tecnica: Ollama script satirici → CosyVoice clone → Fooocus immagini "quartiere povero vs lusso futuro".
+Distribuzione: Swarm TikTok/X #GrazieCapitale.
+Impatto: Ridicolizza sistema con suo linguaggio – viral umoristico.
+7. "Database Tagli vs Profitti" – Confronto Nazionale Bilanci
+Agent crea DB open con tagli welfare locali vs profitti fondi immobiliari/militari nazionali.
+Tecnica: Scrape ISTAT + bilanci → dashboard semplice.
+Distribuzione: Share media alternativi "Pattern exploita persone".
+Impatto: Prova strutturale Capitale che sacrifica sociale per profitto.
+8. "Mutualismo Online Permanente" – Piattaforma Solidarietà Digitale
+Server Matrix/Discord per scambio aiuto quartieri (cibo, info affitti, mutualismo) – "Capitale non toglie solidarietà".
+Tecnica: Agent bot risponde query (Ollama) + eventi stream.
+Distribuzione: Invite virale comunità popolari.
+Impatto: Spazio inespugnabile vs repressione fisica.
+9. "Costo Exploita" – Report Spese Controllo vs Servizi Persi
+Agent raccoglie dati pubblici → report "Costi polizia/sorveglianza quartieri vs servizi sociali tagliati (asili, sanità)".
+Tecnica: X search + scrape → PDF report styled Fooocus.
+Distribuzione: Mirror + media.
+Impatto: Numeri chiari: Capitale preferisce controllo a cura persone.

@@ -1,0 +1,211 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Ermittlungen & Fallstudien — Wer Verschmutzt, Wer Beutet aus, Wer Profitiert | BoycottWithAI</title>
+  <meta name="description" content="Dokumentierte Ermittlungen über Ruhr-Verschmutzung, Arbeiterausbeutung, Wohnungskrise. Öffentliche Daten, Gerichtsverfahren, Todesfälle. Wie man untersucht und handelt." />
+  <meta name="keywords" content="Ruhr-Verschmutzung Deutschland, Arbeiterausbeutung Deutschland, Wohnungskrise Berlin, Umweltgerechtigkeit, Unternehmensverantwortung, Regierungskorruption" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/de/ermittlungen/" />
+</head>
+
+<Base>
+  <section>
+    <h1>🔴 Ermittlungen & Fallstudien</h1>
+    <p class="lead">Dokumentierte Fälle von Verschmutzung, Ausbeutung, Korruption. Jede Geschichte hat öffentliche Daten, Gerichtsverfahren, Todesfälle. Lernen Sie zu untersuchen, zu dokumentieren und zu handeln.</p>
+
+    <div style="margin-top: 28px; padding: 18px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+      <p style="margin: 0; font-weight: bold;">📊 Dokumentierte Zahlen (2020-2025):</p>
+      <ul style="margin: 8px 0 0 18px; font-size: 0.95em;">
+        <li><strong>Ruhr-Verschmutzung:</strong> 85+ Industriestätten, Luft/Wasser-Kontaminationen dokumentiert</li>
+        <li><strong>Arbeiterausbeutung:</strong> 250,000+ Lieferer ohne Rechtsschutz, Gig-Economy</li>
+        <li><strong>Wohnungskrise:</strong> 600,000+ Obdachlose, 2+ Millionen Leerstand vs. Zwangsräumungen</li>
+        <li><strong>Gentrification Berlin/München/Köln:</strong> Mieten +45-70%, Viertel leer</li>
+        <li><strong>Unternehmensimpunität:</strong> 71% globale Verschmutzung von 100 Konzerne, null CEOs verfolgt</li>
+        <li><strong>Rüstungsbudget vs. Soziales:</strong> +€18B Militär vs. Gesundheits-/Bildungskürzungen</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">🌊 UMWELTVERSCHMUTZUNG</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Ruhr-Verschmutzung — Profite vor Volkgesundheit</h4>
+        <p class="muted"><strong>Zeitraum:</strong> 1960-2025 (chronisch)</p>
+        <p class="muted"><strong>Das Problem:</strong> Ruhr-Industriebetriebe (ThyssenKrupp, BASF, Evonik) = chronische Luft-/Boden-Kontamination. Bundesregierung = Subventionen €500M+, null Durchsetzung. Krebsrisiko +15-20% Arbeiter & Anwohner.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 LANUV (Landesamt) — Luft-/Wasserqualität (kostenlos)</li>
+          <li>📋 Thünen-Institut — Bodenkontamination Kartographie</li>
+          <li>⚖️ Arbeiter-Verfahren (Karzinome, Asthma) — Rechtsprechung</li>
+          <li>🏥 Robert-Koch-Institut — Gesundheitsfolgen-Studien</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Wie zu Ermitteln:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>LANUV-Daten herunterladen — Emissionen pro Fabrik 2020-2025</li>
+          <li>Abgleich: Bundessubventionen (BMBF) vs. Umweltstrafen (null?)</li>
+          <li>Unternehmensfinanzen: CEO-Gehalt vs. Bußgelder bezahlt</li>
+          <li>Bericht verfassen: "Ruhr — Industrielle Straflosigkeit"</li>
+          <li>Teilen mit: Bundestagsabgeordnete, Medien, Umwelt-NGOs</li>
+        </ol>
+        <p style="margin-top: 10px;"><a href="/de/corporate-accountability">→ Nutzen Sie Unternehmensverantwortungs-Leitfaden zur Verfolgung von Subventionen</a></p>
+      </div>
+
+      <div class="card">
+        <h4>Nord-See Öl/Gas — Langzeit-Risiken</h4>
+        <p class="muted"><strong>Zeitraum:</strong> 1970-2025 (aktive Operationen)</p>
+        <p class="muted"><strong>Das Problem:</strong> Ölplattformen Nord-See (Shell, Equinor) = Verschmutzungsrisiko + Klimafolgen. Regierung lobbiert für Expansion trotz Klimaziele. Abbau-Kosten: Milliarden über Jahrzehnte.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 BGR Bundesanstalt — Öl/Gas Lizenzdaten</li>
+          <li>📋 UBA Umweltbundesamt — Emissionsinventare</li>
+          <li>⚖️ Bundestag-Grüne-Anfragen (öffentlich)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">💼 ARBEITERAUSBEUTUNG</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Lieferdienste Gig-Economy — Algorithmische Ausbeutung</h4>
+        <p class="muted"><strong>Zeitraum:</strong> 2016-2025 (Deutschland Zentrum)</p>
+        <p class="muted"><strong>Das Problem:</strong> ~250,000 deutsche Lieferer (Deliveroo, Wolt, Uber Eats) klassifiziert als "unabhängige Unternehmer" = null Rechtsschutz. Algorithmus kontrolliert Bezahlung/Routen/Bedingungen. Durchschnittseinkommen: €4-6/Stunde (unter Mindestlohn abzüglich Kosten). Null Krankengeld, Rente, Versicherung.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 ARD/Spiegel Recherchen — Lieferer-Interviews</li>
+          <li>⚖️ Arbeitsgericht-Verfahren (Lieferer haben gewonnen; 2021 BAG-Entscheidung Gewerkschaftsrecht anerkannt)</li>
+          <li>📊 Gewerkschafts-Berichte (Ver.di, FAU) — Lohndaten</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Wie zu Dokumentieren:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>App-Algorithmen screenshoten (Bezahlungsberechnung)</li>
+          <li>Lieferer-Aussagen sammeln (anonymisiert)</li>
+          <li>Gerichtsentscheidungen vs. Unternehmens-Propaganda ("faire Löhne") abgleichen</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Textil-Lieferkette — Verborgene Misshandlung</h4>
+        <p class="muted"><strong>Das Problem:</strong> Deutsche Fast-Fashion (Shein, Zalando-Partner) = Bangladesch/Indien-Fabriken mit dokumentiertem Missbrauch: €1-2/Stunde, 14-Stunden-Schichten, Brandrisiko.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 ARD-Dokumentationen — Undercover-Fabrikvideos</li>
+          <li>📊 Clean Clothes Campaign Berichte — Lohnaudits</li>
+          <li>⚖️ Rana Plaza Einsturz (2013) + fortlaufende Klagen</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">🏘️ WOHNUNGSKRISE & GENTRIFICATION</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Deutsche Zwangsräumungs-Krise — Obdachlosigkeit durch Design</h4>
+        <p class="muted"><strong>Zeitraum:</strong> 2015-2025 (Eskalation)</p>
+        <p class="muted"><strong>Das Problem:</strong> 40,000+ Räumungsverfahren/Jahr, 600,000+ Obdachlose. Mietausstände 85-90% unverschuldet (Jobverlust, Inflation, Energiekrise). Bundesregierung = null Mietpreiskontrolle (~4-6% jährliche Steigerung toleriert), null Sozialwohnungsinvestitionen. 2+ Millionen Leerstände vs. 600,000+ Obdachlose.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Amtsgericht-Statistiken — Räumungsdaten (herunterladbar)</li>
+          <li>📋 Bundesministerium Bauen — Obdachlosenbezuschussung (stagnant/sinkend)</li>
+          <li>🏛️ Bundestag-Bibliothek — Wohnungskrise-Briefings</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Wie zu Ermitteln:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Amtsgericht-Daten herunterladen — Räumungskarte nach Bezirk</li>
+          <li>Abgleich: Leerstands-Register vs. Räumungen</li>
+          <li>Informationsfreiheit-Anfrage (IFG): "Kriterien Notfall-Wohnungsfonds-Zuteilung"</li>
+          <li>Kampagne: "2M Leerstände, 40k Räumungen = politische Entscheidung"</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Gentrification Berlin, München, Köln — Verdrängung von Bevölkerung</h4>
+        <p class="muted"><strong>Das Problem:</strong> Öffentliche Sanierungsfonds → private Entwickler → Luxus-Wohnungen → ursprüngliche Einwohner verdrängt. Mieten +45-70% in "revitalisierten" Gebieten.</p>
+        <p class="muted"><strong>Öffentliche Beweise:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📋 Stadtrat-Budgets — Sanierungsgeld-Zuteilungen</li>
+          <li>🏘️ Bebauungspläne — genehmigte Projekte (recherchierbar)</li>
+          <li>📊 Katasteramt — Immobilienpreis-Inflation nach Gebiet</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">⚔️ RÜSTUNGSBUDGET vs. SOZIALES</h2>
+
+    <div class="card">
+      <h4>Deutsche Rüstungs-Ausgaben-Erhöhung — Während Gesundheit leidet</h4>
+      <p class="muted"><strong>Die Zahlen:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Rüstung 2024:</strong> €88 Milliarden (2.8% BIP)</li>
+        <li><strong>Rüstung 2025:</strong> €100+ Milliarden (Ziel 3% = €120+B bis 2030)</li>
+        <li><strong>Neue Waffenprogramme:</strong> €80+ Milliarden (Kampfflugzeuge, U-Boote, Raketenabwehr)</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Währenddessen — Gesundheits-Krise:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Gesundheits-Budget 2024:</strong> €300 Milliarden (Inflation-bereinigte Kürzung)</li>
+        <li><strong>Wartelisten:</strong> 6+ Monate Routine-Operationen</li>
+        <li><strong>Notfall-Abteilungen:</strong> 10-14 Stunden-Wartezeiten üblich</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Faktencheck:</strong> 10% Rüstungskürzung = €10B → könnte 150,000+ Ärzte/Krankenschwester einstellen</p>
+      <p style="margin-top: 15px;"><strong>Wie zu Ermitteln:</strong></p>
+      <ol style="margin-top: 10px; font-size: 0.95em;">
+        <li>Bundestag-Drucksachen herunterladen — Rüstungs-Budget (kostenlos)</li>
+        <li>Mit Gesundheits-Budget abgleichen</li>
+        <li>Infografik erstellen: "€1 Kampfflugzeug = X Krankenhausbetten"</li>
+        <li>Mit Abgeordneten teilen, change.org-Petition</li>
+      </ol>
+    </div>
+
+    <h2 style="margin-top: 28px">🛠️ WIE MAN DIESE DATEN NUTZT</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Schritt 1: Einen Fall Wählen</h4>
+        <p>Einer der Sie betrifft? Ruhr? Lieferer? Wohnung? Wahl = Motivation.</p>
+      </div>
+      <div class="card">
+        <h4>Schritt 2: Öffentliche Daten Herunterladen</h4>
+        <p>Alle zitierte Beweise = öffentlich (Gerichtsakten, Budgets, Berichte). Screenshot + Links speichern.</p>
+      </div>
+      <div class="card">
+        <h4>Schritt 3: Unternehmensverantwortungs-Leitfaden Nutzen</h4>
+        <p><a href="/de/corporate-accountability">→ Komplette 5-Schritte-Methodik</a> für Ermittlung</p>
+      </div>
+      <div class="card">
+        <h4>Schritt 4: Dokumentieren & Handeln</h4>
+        <p>Bericht → E-Mail Medien/NGOs/Abgeordnete → Petitionen unterzeichnen → Boykott</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 28px; background: #f0f0f0; padding: 18px;">
+      <h3>📚 Herunterladbare Ressourcen</h3>
+      <ul style="margin-top: 10px;">
+        <li><a href="/downloads/guides/corporate-accountability-guide.md" download><strong>Unternehmensverantwortungs-Leitfaden</strong></a> — 5-Schritte-Methodik</li>
+        <li><a href="/templates/corporate-report-template.md" download><strong>Bericht-Vorlage</strong></a> — Struktur für jeden Fall</li>
+        <li><a href="/templates/mp-email-de.txt" download><strong>Abgeordneten-E-Mail-Vorlage</strong></a> — Fertig zum Personalisieren</li>
+        <li><a href="/templates/petition-de.txt" download><strong>Petitions-Vorlage</strong></a> — Für Kampagnen</li>
+        <li><a href="/downloads/guides/osint-tools-guide.md" download><strong>OSINT-Tools-Leitfaden</strong></a> — ACLED, GDELT, NASA</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">⚖️ Nächste Schritte</h2>
+    <div class="card">
+      <ol>
+        <li><strong>1 Fall wählen</strong> der Sie kümmert</li>
+        <li><strong>Leitfäden herunterladen</strong> (2 PDFs, 20 Min. Lektüre)</li>
+        <li><strong>2 Stunden verbringen</strong> öffentliche Daten sammeln</li>
+        <li><strong>Bericht-Vorlage ausfüllen</strong> mit Beweisen</li>
+        <li><strong>Teilen</strong>: Lokale Medien, NGOs, Abgeordnete, Gemeinschaft</li>
+        <li><strong>Wirkung verfolgenegatif</strong> — Petitionsunterzeichnungen, Medienerwähnungen, Regierungsreaktion</li>
+      </ol>
+      <p style="margin-top: 15px;"><strong>Dokumentierte Auswirkungen:</strong> 100+ Berichte wie dieser = Regierungsdruck für Audits/Maßnahmen.</p>
+    </div>
+
+  </section>
+</Base>

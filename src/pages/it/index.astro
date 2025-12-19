@@ -6,64 +6,144 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
+
 <head>
-  <title>BoycottWithAI — Strumenti strategici per campagne non-violente</title>
-  <meta name="description" content="Strumenti, template e un manifesto per organizzare pressioni economiche e azioni civili. Risorse in più lingue." />
+  <title>BoycottWithAI — Resistenza civile contro manipolazione, sfruttamento ambientale e specismo</title>
+  <meta name="description" content="Strumenti pratici per azioni non-violente: OSINT, AI etica, guide disruptive contro fascismo, disinformazione, caccia lupi, crisi climatica. Campagne concrete per giustizia sociale, ambientale, animale in Italia e globale. Scarica template, dati, briefing per lotta comune." />
+  <meta name="keywords" content="resistenza civile Italia, azioni non violente, contro fascismo 2025, giustizia ambientale, diritti animali, lotta contro disinformazione, OSINT etico, AI per trasparenza, abbattimenti lupi, crisi climatica, specismo, mutualismo, antifascismo digitale" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.com/it/" />
 </head>
 
 <Base>
+
   <div class="hero">
     <div class="left">
-      <h1>{t('hero.title')}</h1>
-      <p class="lead">{t('hero.subtitle')}</p>
-        <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
+      <h1>Resistenza civile: agisci ora contro fascismo, sfruttamento e specismo</h1>
+      <p class="lead">Strumenti digitali e guide pratiche per smascherare manipolazione, abbattimenti lupi, crisi climatica e repressione. Difendi verità, poveri, ambiente e animali contro il potere.</p>
+      <p class="muted">2025: lupi abbattuti, welfare tagliato, disinformazione AI, deforestazione. Non aspettare: usa questi strumenti per cambiare le cose.</p>
       <div class="cta">
-        <a class="button" href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
-        <a class="secondary" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
+        <a class="button" href={`/${lang}/actions/`}>Azioni Disruptive</a>
+        <a class="secondary" href={`/${lang}/tools/`}>Strumenti OSINT</a>
+        <a class="secondary" href={`/${lang}/resources/`}>Scarica Guide</a>
       </div>
     </div>
     <div class="card">
-      <h3>Allerte</h3>
-      <p class="muted">Iscriviti al feed RSS per chiamate urgenti e aggiornamenti.</p>
+      <h3>Allerte Urgenti</h3>
+      <p class="muted">RSS per aggiornamenti su campagne, dati e chiamate all'azione.</p>
       <a class="secondary" href="/rss.xml">Iscriviti</a>
     </div>
   </div>
 
   <section style="margin-top:28px">
+    <h2>Problemi Globali e Specificità Regionali</h2>
     <div class="grid">
       <div class="card">
-        <h4>{t('purpose.title')}</h4>
-        <p class="muted">{t('purpose.p1')} {t('purpose.p2')} {t('purpose.p3')} {t('purpose.p4')}</p>
-      </div>
-      </div>
-      <div class="card">
-        <h4>Privacy & Sicurezza</h4>
-        <p class="muted">Le scelte adottate privilegiano la sicurezza dei partecipanti e la segnalazione sicura: opt-in, eventi effimeri, raccolta minima e best-practice per l\'anonimato.</p>
+        <h4>Riarmo e Militarizzazione</h4>
+        <p class="muted">Spesa militare globale +12% in 10 anni (SIPRI). Governi giustificano con "minacce" per incentivi economici.</p>
+        <p><strong>Azione:</strong> Chiedi trasparenza budget difesa, audit contratti militari.</p>
       </div>
       <div class="card">
-        <h4>Guida dalla comunità</h4>
-        <p class="muted">Tutto è pensato per essere adattato dai gruppi locali — forkate il progetto, contribuite dataset e collaborate a strategie non-violente.</p>
+        <h4>Crisi Ambientale</h4>
+        <p class="muted">Riscaldamento >1.5°C, perdita biodiversità 70% (IPCC/ONU). Profitto privato causa deforestazione, inquinamento.</p>
+        <p><strong>Azione:</strong> Transizione energetica giusta, fine sussidi fossili, protezione aree naturali.</p>
+      </div>
+      <div class="card">
+        <h4>Specismo e Abbattimenti Animali</h4>
+        <p class="muted">Lupi abbattuti Italia +200% dal 2020, caccia commerciale, allevamenti intensivi. Vita animale sacrificata per profitto.</p>
+        <p><strong>Azione:</strong> Divieti caccia, protezione predatori, veganismo etico, diritti animali.</p>
       </div>
     </div>
   </section>
-  <section style="margin-top:28px">
-    <div class="card">
-      <h4>{t('issues.title')}</h4>
-      <ul>
-        <li>{t('issues.core')}</li>
-        <li>{t('issues.escalation')}</li>
-        <li>{t('issues.humanitarian')}</li>
-        <li>{t('issues.institutions')}</li>
-      </ul>
-    </div>
-  </section>
-  <section style="margin-top:28px">
-    <div class="card">
-      <h4>Dal Manifesto</h4>
-        <p class="muted">{t('manifesto.vision.p1')}</p>
-      <div style="margin-top:10px">
-        <a class="secondary" href={`/${lang}/manifesto/`}>Leggi il manifesto completo</a>
+
+  <section style="margin-top:28px; padding: 24px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+    <h2 style="margin-top: 0;">🔴 Inchieste & Prove Documentate</h2>
+    <p>Casi reali con dati pubblici, processi, morti. Traccia chi inquina, chi sfrutta, chi guadagna:</p>
+    <div class="grid">
+      <div class="card" style="background: white; border: 1px solid #ddd;">
+        <h4>ILVA Taranto: 1.400 morti tumori</h4>
+        <p class="muted">Acciaieria inquina da 2005. Governo emette 16 decreti per salvare azienda. Procedure pubbliche, processi, rischi per salute.</p>
+        <a href={`/${lang}/inchieste/`}>→ Vedi inchiesta completa</a>
+      </div>
+      <div class="card" style="background: white; border: 1px solid #ddd;">
+        <h4>PFAS Piemonte: 350k esposti</h4>
+        <p class="muted">Falde contaminate da aziende chimiche dal 1960. Dati ARPA, perizie tecniche, danni alla salute documentati.</p>
+        <a href={`/${lang}/inchieste/`}>→ Vedi inchiesta completa</a>
+      </div>
+      <div class="card" style="background: white; border: 1px solid #ddd;">
+        <h4>Caporalato Piemonte: 100-230k vittime</h4>
+        <p class="muted">Raccolta frutta e verdura con salari da fame, sfruttamento sistematico. Inchieste FLAI-CGIL e processi disponibili.</p>
+        <a href={`/${lang}/inchieste/`}>→ Vedi inchiesta completa</a>
+      </div>
+      <div class="card" style="background: white; border: 1px solid #ddd;">
+        <h4>Sfratti Morosità: 81k ordini nel 2024</h4>
+        <p class="muted">Tagli sociali + inflazione = famiglie in strada. 2.7 milioni case vuote vs 600k+ senza fissa dimora. Dati Istat, mappe per quartiere.</p>
+        <a href={`/${lang}/inchieste/`}>→ Vedi inchiesta completa</a>
+      </div>
+      <div class="card" style="background: white; border: 1px solid #ddd;">
+        <h4>Spesa Militare vs Welfare</h4>
+        <p class="muted">Sanità -13 miliardi/triennio. Difesa +32-45 miliardi/anno. Confronti diretti: 1 F35 = 2.000 insegnanti × 1 anno.</p>
+        <a href={`/${lang}/inchieste/`}>→ Vedi confronto dati</a>
       </div>
     </div>
   </section>
+
+  <section style="margin-top:28px">
+    <h2>Come Iniziare: 4 Passi</h2>
+    <div class="grid">
+      <div class="card" style="border-left: 3px solid #0ea5a4;">
+        <h4>1. Scarica una Guida</h4>
+        <p class="muted">Scegli tra:</p>
+        <ul>
+          <li><a href="/downloads/guides/corporate-accountability-guide.md" download>Corporate Accountability</a> — Traccia contratti pubblici</li>
+          <li><a href="/downloads/guides/osint-tools-guide.md" download>OSINT Etica</a> — Monitora con GDELT, ACLED, NASA</li>
+          <li><a href="/downloads/guides/ai-for-analysis-guide.md" download>AI Etica</a> — Analizza disinformazione con sentiment analysis</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left: 3px solid #0ea5a4;">
+        <h4>2. Scegli un Caso</h4>
+        <p class="muted">Leggi una inchiesta che ti interessa (ILVA, caporalato, sfratti, ecc.). Tutti i dati sono pubblici.</p>
+      </div>
+      <div class="card" style="border-left: 3px solid #0ea5a4;">
+        <h4>3. Usa i Template</h4>
+        <p class="muted">Scarica e personalizza:</p>
+        <ul>
+          <li><a href="/templates/corporate-report-template.md" download>Report Template</a></li>
+          <li><a href="/templates/petition-it.txt" download>Petizione</a></li>
+          <li><a href="/templates/mp-email-it.txt" download>Email a Politici</a></li>
+        </ul>
+      </div>
+      <div class="card" style="border-left: 3px solid #0ea5a4;">
+        <h4>4. Agisci & Condividi</h4>
+        <p class="muted">Invia report ai media, firma petizioni, organizza campagne locali. Ogni azione conta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="margin-top:28px">
+    <h2>Strumenti & Risorse</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>🛠 Strumenti OSINT</h4>
+        <p class="muted">Monitora conflitti, inquinamento, lobbying, spesa militare con dati pubblici.</p>
+        <a href={`/${lang}/tools/`}>Scopri strumenti →</a>
+      </div>
+      <div class="card">
+        <h4>📊 Responsabilità Aziendale</h4>
+        <p class="muted">Traccia contratti pubblici, governi complici, oppressione di attivisti. 100 aziende = 71% inquinamento globale.</p>
+        <a href={`/${lang}/corporate-accountability/`}>Tracker aziendale →</a>
+      </div>
+      <div class="card">
+        <h4>📚 Metodologia</h4>
+        <p class="muted">Come fare OSINT etico, usare AI responsabilmente, organizzare campagne non-violente.</p>
+        <a href={`/${lang}/methodology/`}>Leggi metodologia →</a>
+      </div>
+      <div class="card">
+        <h4>📰 Manifesto & Valori</h4>
+        <p class="muted">Principi di BoycottWithAI: anti-sfruttamento, anti-specismo, solidarietà, azioni basate su dati.</p>
+        <a href={`/${lang}/manifesto/`}>Scopri di più →</a>
+      </div>
+    </div>
+  </section>
+
 </Base>

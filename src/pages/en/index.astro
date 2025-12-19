@@ -7,24 +7,28 @@ const t = useTranslations(lang);
 ---
 
 <head>
-  <title>BoycottWithAI — Strategic tools for non-violent campaigns</title>
-  <meta name="description" content="Open tools, templates and a manifesto to organize strategic economic and civil pressure. Resources in multiple languages." />
+  <title>BoycottWithAI — Civil resistance against manipulation, environmental exploitation and speciesism</title>
+  <meta name="description" content="Practical tools for non-violent actions: OSINT, ethical AI, disruptive guides against fascism, disinformation, wolf culls, climate crisis. Campaigns, data and resources for global justice." />
+  <meta name="keywords" content="civil resistance UK, non-violent actions, against fascism 2025, environmental justice, animal rights, OSINT ethics, AI transparency, disinformation fight, climate crisis, speciesism, mutualism, antifascism digital" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.com/en/" />
 </head>
 
 <Base>
   <div class="hero">
     <div class="left">
-      <h1>{t('hero.title')}</h1>
-  <p class="lead">{t('hero.subtitle')}</p>
-  <p class="muted" style="margin-top:6px">{t('hero.subtitle2')}</p>
+      <h1>Civil resistance: act now against fascism, exploitation and speciesism</h1>
+      <p class="lead">Digital tools and practical guides to expose manipulation, wolf culls, climate crisis and repression. Defend truth, poor, environment and animals against power.</p>
+      <p class="muted">2025: wolves culled, welfare cut, AI disinformation, deforestation. Don't wait: use these tools to make change.</p>
       <div class="cta">
-        <a class="button" href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
-        <a class="secondary" href={`/${lang}/get-involved/`}>{t('nav.getinvolved')}</a>
+        <a class="button" href={`/${lang}/actions/`}>Disruptive Actions</a>
+        <a class="secondary" href={`/${lang}/tools/`}>OSINT Tools</a>
+        <a class="secondary" href={`/${lang}/resources/`}>Download Guides</a>
       </div>
     </div>
     <div class="card">
-      <h3>Live Alerts</h3>
-      <p class="muted">Subscribe to RSS for urgent calls and updates.</p>
+      <h3>Urgent Alerts</h3>
+      <p class="muted">RSS for campaign updates, data and action calls.</p>
       <a class="secondary" href="/rss.xml">Subscribe</a>
     </div>
   </div>
@@ -32,38 +36,67 @@ const t = useTranslations(lang);
   <section style="margin-top:28px">
     <div class="grid">
       <div class="card">
-        <h4>{t('purpose.title')}</h4>
-  <p class="muted">{t('purpose.p1')} {t('purpose.p2')} {t('purpose.p3')} {t('purpose.p4')}</p>
+        <h4>Why now?</h4>
+        <ul>
+          <li><strong>Manipulation:</strong> Controlled media spread hate and lies.</li>
+          <li><strong>Exploitation:</strong> Capital uses state for profit, ignoring poor and nature.</li>
+          <li><strong>Repression:</strong> Rights cuts, animal culls, social control.</li>
+        </ul>
       </div>
       <div class="card">
-        <h4>Privacy & Safety</h4>
-        <p class="muted">Design choices prioritize participant safety and secure reporting: opt-in sharing, ephemeral events, minimal data collection, and anonymity best-practices for reporters.</p>
+        <h4>Key Actions</h4>
+        <ul>
+          <li><a href={`/${lang}/actions/`}>10 Disruptive Actions</a> (speculation maps, satire, crowdfund)</li>
+          <li><a href={`/${lang}/tools/`}>OSINT & AI Monitoring</a> (GDELT, Bellingcat, sentiment)</li>
+          <li><a href={`/${lang}/resources/`}>Templates & Data</a> (petitions, briefings, dashboards)</li>
+        </ul>
       </div>
       <div class="card">
-        <h4>Community-driven</h4>
-        <p class="muted">Everything here is meant to be adapted by local groups — fork the project, contribute datasets, and collaborate on non-violent civic strategies.</p>
+        <h4>Safety</h4>
+        <p class="muted">Anonymity and privacy: use Tor, minimal data, secure reporting.</p>
       </div>
     </div>
   </section>
 
   <section style="margin-top:28px">
-    <div class="card">
-      <h4>{t('issues.title')}</h4>
+    <h2>Global Issues and Regional Specifics</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>Rearmament and Militarization</h4>
+        <p class="muted">Global military spending +12% in 10 years (SIPRI). Governments justify with fear narratives for economic incentives.</p>
+        <p><strong>Action:</strong> Demand defense budget transparency, audit contracts.</p>
+      </div>
+      <div class="card">
+        <h4>Environmental Crisis</h4>
+        <p class="muted">Warming >1.5°C, 70% biodiversity loss (IPCC/UN). Private profit causes deforestation, pollution.</p>
+        <p><strong>Action:</strong> Just energy transition, end fossil subsidies, protect areas.</p>
+      </div>
+      <div class="card">
+        <h4>Speciesism and Animal Exploitation</h4>
+        <p class="muted">Wolf culls in Italy +200% since 2020, hunting, factory farming. Animal life sacrificed for profit.</p>
+        <p><strong>Action:</strong> Hunting bans, predator protection, ethical veganism, animal rights.</p>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h4>UK-Specific Criticisms 2025</h4>
       <ul>
-        <li>{t('issues.core')}</li>
-        <li>{t('issues.escalation')}</li>
-        <li>{t('issues.humanitarian')}</li>
-        <li>{t('issues.institutions')}</li>
+        <li><strong>Environment:</strong> Deforestation in Scotland, Thames pollution, energy crisis post-Brexit.</li>
+        <li><strong>Animals:</strong> Fox hunting resurgence, factory farming, wildlife trafficking.</li>
+        <li><strong>Social:</strong> Austerity cuts, poverty rise, repression of protests.</li>
       </ul>
+      <p><strong>Concrete Actions:</strong> Sign petitions against hunting, monitor environmental bills, join local campaigns.</p>
     </div>
   </section>
+
   <section style="margin-top:28px">
     <div class="card">
-      <h4>From the Manifesto</h4>
-  <p class="muted">{t('manifesto.vision.p1')}</p>
-      <div style="margin-top:10px">
-        <a class="secondary" href={`/${lang}/manifesto/`}>Read the full manifesto</a>
-      </div>
+      <h4>Immediate Resources</h4>
+      <ul>
+        <li>Download <a href="/downloads/templates/petition-en.txt">petition</a> or <a href="/downloads/templates/mp-email-en.txt">email MPs</a></li>
+        <li>View <a href={`/${lang}/dashboard/`}>data visualizations</a> on military spending and welfare</li>
+        <li>Access <a href={`/${lang}/resources/`}>detailed technical guides</a> for scraping, AI, video</li>
+        <li>Sign campaigns: <a href="https://change.org/stop-wolf-culls" target="_blank">Against wolf culls</a>, <a href="https://change.org/climate-justice" target="_blank">For climate justice</a></li>
+      </ul>
     </div>
   </section>
 </Base>

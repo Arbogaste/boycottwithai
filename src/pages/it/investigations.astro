@@ -1,0 +1,318 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Inchieste & Casi Studio — Chi Inquina, Chi Sfrutta, Chi Guadagna | BoycottWithAI</title>
+  <meta name="description" content="Inchieste documentate su ILVA Taranto, PFAS Piemonte, caporalato Langhe, gentrificazione Torino, economia sommersa. Dati pubblici, processi, morti. Come agire." />
+  <meta name="keywords" content="ILVA Taranto tumori, PFAS Piemonte falde, caporalato Saluzzo Langhe, gentrificazione Torino Aurora, sfratti morosità, economia sommersa Italia, spesa militare sanità, inchieste ambientali" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/it/inchieste/" />
+</head>
+
+<Base>
+  <section>
+    <h1>🔴 Inchieste & Casi Studio</h1>
+    <p class="lead">Casi documentati di inquinamento, sfruttamento, corruzione. Ogni storia ha dati pubblici, processo, morti. Impara a tracciare, documentare e agire.</p>
+
+    <div style="margin-top: 28px; padding: 18px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+      <p style="margin: 0; font-weight: bold;">📊 Cifre Brutali (2005-2025):</p>
+      <ul style="margin: 8px 0 0 18px; font-size: 0.95em;">
+        <li><strong>ILVA Taranto:</strong> ~1.400 morti tumori stimati (+50% Tamburi)</li>
+        <li><strong>Eternit Casale:</strong> ~3.000 morti amianto</li>
+        <li><strong>PFAS Veneto:</strong> 350.000 esposti, falde irrimediabilmente contaminate</li>
+        <li><strong>Caporalato Piemonte:</strong> 100-230k vittime/anno, 26-40 milioni euro sfruttamento</li>
+        <li><strong>Sfratti Italia 2024:</strong> 81k provvedimenti, 40k esecuzioni (record)</li>
+        <li><strong>Economia sommersa:</strong> 217,5 miliardi/anno (10,1% PIL), 3+ milioni lavoratori irregolari</li>
+        <li><strong>Spesa militare 2025:</strong> +32-45 miliardi/anno vs tagli sanità/istruzione -13 miliardi/triennio</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">🏭 INQUINAMENTO INDUSTRIALE</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>ILVA Taranto — Acciaio & Sangue</h4>
+        <p class="muted"><strong>Periodo:</strong> 2005-2025 (espansione post-privatizzazione)</p>
+        <p class="muted"><strong>Il Problema:</strong> Acciaieria +50% emissioni diossina/benzene dopo 2005. Tumori Quartiere Tamburi +50% vs media nazionale. Inchiesta 2011 conferma nesso causale. Governo emette 16 decreti "Salva-ILVA" (2012-2025) = immunità penale manager, produzione forzata nonostante sequestri.</p>
+        <p class="muted"><strong>Morti Stimati:</strong> ~1.400 eccesso tumori (2005-2025).</p>
+        <p class="muted"><strong>Costi Governo:</strong> Diluizione responsabilità legale, perdite sanitarie >1 miliardo/anno nazionale (simile).</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📄 Perizia 2011 (ILVA processo) — confirma +50% tumori</li>
+          <li>⚖️ Sentenza CEDU 2022 — condanna Italia per inadempimento (anche Eternit)</li>
+          <li>🏥 Rapporto WHO 2021 — morti per tonnellata acciaio prodotta (Taranto worst in EU)</li>
+          <li>📋 16 decreti Salva-ILVA — tutte pubblicate Gazzetta Ufficiale (2012-2025)</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Scarica perizia ILVA + decreti Salva-ILVA (GU)</li>
+          <li>Calcola: Divieto produzione per X anni = salverebbe ~Y vite (stima lineare)</li>
+          <li>Scrivi a parlamentari (es. Puglia): "Revoca immunità, bonifica prioritaria, risarcimento Tamburi"</li>
+          <li>Condividi con media ambientale (Legambiente, Greenpeace hanno reportage)</li>
+        </ol>
+        <p style="margin-top: 10px;"><a href="/it/corporate-accountability">→ Usa guida Corporate Accountability per tracciare contratti pubblici ILVA</a></p>
+      </div>
+
+      <div class="card">
+        <h4>PFAS Piemonte — Veleno Duraturo</h4>
+        <p class="muted"><strong>Periodo:</strong> 2007-2025 (scoperta progressiva)</p>
+        <p class="muted"><strong>Il Problema:</strong> Solvay (ora Syensqo) Spinetta Marengo + Miteni Trissino (Veneto) scarici PFAS illegali = contaminazione falde Po. Nel 2025, 70 comuni Piemonte a rischio, acqua potabile picchi. Costi bonifica stimati decine di milioni, irrecuperabili secoli.</p>
+        <p class="muted"><strong>Esposti:</strong> 350.000+ Veneto, altrettanti Piemonte potenziale (2025).</p>
+        <p class="muted"><strong>Malattie Correlate:</strong> Cancro reni/pancreas +30%, colesterolo alto (PFOA esposto per vita).</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Arpa Piemonte rapporti — falde contaminate (pubblici da 2013+)</li>
+          <li>⚖️ Processo Miteni 2021-2025 — condanne, pero bonifica lenta (141 anni carcere totali)</li>
+          <li>🔬 Studio EEA — PFAS EU costs 52-84 miliardi/anno</li>
+          <li>🏥 ECHA classificazione — "sostanze inquietanti persistenti"</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Scarica rapporti ARPA (link: <a href="https://www.arpa.piemonte.it/" target="_blank">arpa.piemonte.it</a>)</li>
+          <li>Verifica: La tua città rientra nei 70 comuni? → Chiedi dati acqua locale</li>
+          <li>FOIA: Richiedi a Regione — "Bonifica timeline Spinetta Marengo"</li>
+          <li>Denuncia internazionale: ECHR + CEDU (come modello CEDU 2022 ILVA)</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Eternit Casale Monferrato — Amianto & Impunità</h4>
+        <p class="muted"><strong>Periodo:</strong> 2006-2025 (chiusura lenta, inquinamento persiste)</p>
+        <p class="muted"><strong>Il Problema:</strong> Fabbrica chiusa 2006, ma falde Casale contaminate per decenni. Amianto disperso quartieri → tumori mesotelioma +. Processi lenti: primo grado 2014, sentenza prescritta 2020 (Schmidheiny), bis inizia 2017.</p>
+        <p class="muted"><strong>Morti Stimati:</strong> ~3.000 amianto Italia/anno (~10% Casale area).</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📋 Processi Eternit (pubblici, accesso Tribunale Alessandria)</li>
+          <li>⚖️ CEDU condanna 2022 — Italia per inadempimento (Casale)</li>
+          <li>🏥 Registri mesotelioma regionali — dati Piemonte</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Accedi procedimenti penali (Portale Giustizia)</li>
+          <li>Traccia: Compensi vittime vs costi bonifica (sproporzionato)</li>
+          <li>Richiesta internazionale: ECHR + monitoraggio adempimento CEDU</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">💼 SFRUTTAMENTO LAVORO</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Caporalato Piemonte — Profitto su Schiavitù</h4>
+        <p class="muted"><strong>Periodo:</strong> 2010-2025 (escalation visibilità)</p>
+        <p class="muted"><strong>Il Problema:</strong> Langhe & Saluzzo: viticoltura Barolo/Barbaresco (export ~1,36 miliardi) costruita su braccianti 3-5€/ora, tuguri, violenze. "Iron Rod" 2023-2024 = inchieste documental bastoni su migranti. Vittime stimate 100-230k/anno nazionale, 26-40 milioni euro sfruttamento solo Langhe.</p>
+        <p class="muted"><strong>Profilo Vittime:</strong> Migranti africani/asiatici 80%, mogli/figli complici di struttamento.</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 Inchieste giornalistiche — La Stampa "Iron Rod" (2023-2024)</li>
+          <li>📊 Rapporti FLAI-CGIL — vittime stimate, mappa regionale</li>
+          <li>📍 Google Maps + OpenStreetMap — localizzazione campi/tuguri</li>
+          <li>⚖️ Processi migranti — casi Common Ground/Oxfam documentati</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Scarica rapporto FLAI 2024 (disponibile online)</li>
+          <li>Traccia: Produzione vino tonnellate/valore vs salari braccianti (calcola rapporto)</li>
+          <li>FOIA Comuni: "Controlli alloggi migranti 2024" (spesso ZERO)</li>
+          <li>Denunci a Carabinieri NAS (reato caporalato, schiavitù moderna) + ONG</li>
+          <li>Pressione etichettatura: "Fair Trade Langhe" (non esiste, opportunità)</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Economia Sommersa — 217 Miliardi Nascosti</h4>
+        <p class="muted"><strong>Periodo:</strong> Strutturale 2005-2025</p>
+        <p class="muted"><strong>Il Problema:</strong> Lavoro nero stimato 217,5 miliardi/anno (2023), 10,1% PIL. 3+ milioni lavoratori irregolari. Boom post-COVID (+7,5% 2023 vs crescita PIL). Zero reddito contributivo = assenza tutele, pensioni povere, sanità a rischio.</p>
+        <p class="muted"><strong>Settori Colpiti:</strong> Logistica (Amazon), domestico, agricoltura, edilizia, ristorazione.</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 ISTAT rapporto lavoro sommerso (2022-2023)</li>
+          <li>📋 INPS dati assicurazione (copertura settori)</li>
+          <li>🏛️ MEF stime evasione (bilanci pubblici)</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Calcola: 217 miliardi sommersi × 19% tassa media = ~41 miliardi mancanti annui</li>
+          <li>Confronta: Tagli sanità -13 miliardi/triennio = "potrebbe essere coperto da 3 mesi evasione"</li>
+          <li>Traccia aziende locali: Google, documenti, "zero dipendenti online" ma consegne quotidiane = lavoro sommerso</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Riders & Platform Gig Economy — Cottimo Algoritmo</h4>
+        <p class="muted"><strong>Periodo:</strong> 2016-2025 (Torino epicentro)</p>
+        <p class="muted"><strong>Il Problema:</strong> Foodora + Deliveroo + Uber Eats = ~50k riders Italia, zero tutele legali (autonomi). Torino epicentro scioperi 2016+. Controllo algoritmo su tempi/percorsi, paghe tagliuzzate, no malattia/ferie. Amazon logistica Brandizzo infortuni +.</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 Reportage Rai/Corriere — testimonanze riders</li>
+          <li>⚖️ Cause legali — alcuni rider già vinti (tutele parziali)</li>
+          <li>📊 INAIL dati infortuni logistica (pubblici, ricerca "Amazon Brandizzo")</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Scarica rapporti sindacali SiCoBaS/Riderempres</li>
+          <li>Documenta: Tracking app aloritmi (screenshots, CUI/come decidono paghe)</li>
+          <li>Boicotta: Cancella account Foodora/Uber, supporta rider locali/col</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">🏘️ GENTRIFICAZIONE & CRISI ABITATIVA</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Torino: Aurora, Barriera, Porta Palazzo — Espulsione Pianificata</h4>
+        <p class="muted"><strong>Periodo:</strong> 2015-2025 (accelerazione)</p>
+        <p class="muted"><strong>Il Problema:</strong> Masterplan rigenerazione (PNRR + fondi comunali) = 25-300 milioni verso studentati lusso/Mercato Centrale/Nuvola Lavazza. Affitti +53-60% centri 2020-2025. Sfratti Torino record Italia (~1.400/anno), morosità 80-86% (poveri, non evasori).</p>
+        <p class="muted"><strong>Meccanismo:</strong> Fondi pubblici → aree riqualificate → vendite a privati → lusso → espulsione poveri originali.</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📋 Bilancio Comune Torino 2025 — allocazione fondi PNRR (pubblico)</li>
+          <li>🏘️ Catasto + immobiliare — tracking affitti/compravendite</li>
+          <li>⚖️ Tribunali Torino — fascicoli sfratti (accesso pubblico)</li>
+          <li>📰 Reportage Rai/Stampa — interviste espulsi</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Scarica bilancio Comune Torino + masterplan Aurora</li>
+          <li>Traccia: Beneficiari privati → database aziende → proprietà</li>
+          <li>FOIA Comune: "Criteri selezione beneficiari rigenerazione" (spesso assenti/opachi)</li>
+          <li>Denuncia urbanistica: Violazione vincoli sociali (se presenti in bandi)</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Sfratti Morosità — Crisi Strutturale Ignorata</h4>
+        <p class="muted"><strong>Periodo:</strong> 2020-2025 (esplosione COVID+)</p>
+        <p class="muted"><strong>Il Problema:</strong> 81k provvedimenti sfratti 2024 (Italia), 40k esecuzioni. Morosità incolpevole 80-86% (poveri, no reddito COVID, inflazione energia). Governo Zero rifinanziamento fondo affitti/morosità 2025. Costi sociali >1 miliardo/anno (polizia/sfratti, assistenza social/homeless).</p>
+        <p class="muted"><strong>Contraddizione:</strong> 2,7 milioni case sfitte vs 81k sfratti = politica deliberata espulsione anzichè risoluzione.</p>
+        <p class="muted"><strong>Prove Pubbliche:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Istat/INPS dati sfratti (provinciali disponibili)</li>
+          <li>🏛️ Bilancio stato — allocazione fondo affitti (stagnante/calante)</li>
+          <li>⚖️ Tribunali — fascicoli sfratti (trend</li>
+          <li>📰 Rai Inchieste — servizi homeless/sfratti</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Come Agire:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Accedi dati INPS provincia → calcola trend sfratti vs case sfitte</li>
+          <li>Richiesta FOIA ministero: "Criteri allocazione fondo affitti 2024-2025"</li>
+          <li>Campagna: "2,7 milioni case sfitte, 81k sfratti → requisizione per emergenza abitativa"</li>
+        </ol>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">⚔️ SPESA MILITARE vs WELFARE</h2>
+
+    <div class="card">
+      <h4>Esplosione Armamenti (2020-2025) — Mentre Sanità & Scuola Tagliano</h4>
+      <p class="muted"><strong>Cifre Brutali:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Militare 2020:</strong> ~25-27 miliardi (1,4% PIL)</li>
+        <li><strong>Militare 2025:</strong> 32 miliardi "diretti" (Mil€x), 45 miliardi "NATO ricalcolato" (+32 miliardi vs 2024, +12,4% record)</li>
+        <li><strong>Armamenti nuovi:</strong> 13 miliardi (77% aumento 5 anni)</li>
+        <li><strong>Programmi pluriennali:</strong> F35/missili/carri ~130 miliardi prossimi 15 anni</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Nel Frattempo — Sanità:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>FSN 2023-2025:</strong> -13.1 miliardi reali (vs mantenimento quota PIL)</li>
+        <li><strong>Quota PIL:</strong> 7.4% (2020) → 6.2% (2025) → 5.8% (proiezione 2028)</li>
+        <li><strong>Impatto:</strong> Liste attesa +, rinunce cure 5,8 milioni italiani (2024), 41 miliardi spesa privata famiglie</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Nel Frattempo — Istruzione:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>MIUR 2025:</strong> Tagli -5.660 docenti, -2.174 ATA, turn-over bloccato 25%</li>
+        <li><strong>Quota PIL:</strong> 3.5-4% (vs media UE 4,7%)</li>
+        <li><strong>Impatto:</strong> Classi pollaio, precari+, edifici scuola fatiscenti (miliardi bonifica mancanti)</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Prove Pubbliche:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li>📊 Mil€x Osservatorio Spesa Militare (Milano) — dati annuali certificati</li>
+        <li>📋 Gimbe Rapporti Sanità (Bologna) — underfinanziamento documentato</li>
+        <li>📄 Legge Bilancio 2025 — allocazioni ministeriali (Gazzetta Ufficiale)</li>
+        <li>🏛️ NADEF MEF — programmi pluriennali armamenti</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Confronto Diretto (per Campagne):</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li>Aumento armamenti 2025 (+3,5 miliardi) = totale "perdita reale" sanità triennio</li>
+        <li>Se 2% PIL militare = +10 miliardi mancanti (Mil€x), equivalenti coprire TUTTI tagli sanità+istruzione</li>
+        <li>1 F35 = ~100 milioni = 2000 insegnanti precari pagati 1 anno</li>
+        <li>Spesa ordine pubblico "straordinario" (~1-2 miliardi/anno, idranti/manifestazioni) vs ZERO aumento welfare periferie</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Come Agire:</strong></p>
+      <ol style="margin-top: 10px; font-size: 0.95em;">
+        <li>Scarica Mil€x rapporto + Gimbe rapporto sanità</li>
+        <li>Calcola: "Se dimezzassimo armamenti = X miliardi per sanità"</li>
+        <li>Crea infografica: "1 F35 = Y insegnanti", condividi social</li>
+        <li>Firma petizioni: "Trasferire 10% spesa militare a sanità/istruzione/welfare"</li>
+        <li>Email a parlamentari: "Voto dipende da posizione sanità vs armi"</li>
+      </ol>
+    </div>
+
+    <h2 style="margin-top: 28px">🛠️ COME USARE QUESTI DATI</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Step 1: Scegli un'inchiesta</h4>
+        <p>Una ti tocca? ILVA? Caporalato? Gentrificazione? Scelta = motivazione.</p>
+      </div>
+      <div class="card">
+        <h4>Step 2: Scarica fonti pubbliche</h4>
+        <p>Tutte le prove citate = pubbliche (processi, bilanci, rapporti). Scarica screenshot + link.</p>
+      </div>
+      <div class="card">
+        <h4>Step 3: Usa Corporate Accountability Template</h4>
+        <p><a href="/it/corporate-accountability">→ Guida completa tracciamento</a> con 5 step + template download</p>
+      </div>
+      <div class="card">
+        <h4>Step 4: Documenta & Agisci</h4>
+        <p>Report → Email a media/ONG/MP → Firma petizioni → Boicotta</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 28px; background: #f0f0f0; padding: 18px;">
+      <h3>📚 Template & Risorse Scaricabili</h3>
+      <ul style="margin-top: 10px;">
+        <li><a href="/downloads/guides/corporate-accountability-guide.md" download><strong>Corporate Accountability Guide</strong></a> — Metodologia 5-step (incl. questi casi)</li>
+        <li><a href="/templates/corporate-report-template.md" download><strong>Template Report</strong></a> — Struttura per documentare qualunque caso</li>
+        <li><a href="/templates/petition-it.txt" download><strong>Modello Petizione</strong></a> — Pronto da adattare + link case</li>
+        <li><a href="/templates/mp-email-it.txt" download><strong>Email Parlamentari</strong></a> — Con prove ILVA/PFAS/sfratti</li>
+        <li><a href="/downloads/guides/osint-tools-guide.md" download><strong>OSINT Tools</strong></a> — ACLED (caporalato), GDELT (inquinamento), NASA FIRMS</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">📊 Dataset & Verifiche Rapide</h2>
+
+    <div class="card">
+      <p><strong>Verifiche che puoi fare tu (5 minuti):</strong></p>
+      <ul style="margin-top: 10px;">
+        <li><strong>ILVA:</strong> Scarica decreti Salva-ILVA da Gazzetta Ufficiale, conta (16 totali), condividi con didascalia "16 volte governo ha scelto acciaio > salute"</li>
+        <li><strong>PFAS:</strong> Visita Arpa Piemonte, scarica mappa falde contaminate 2025, verifica se tuo comune rientra</li>
+        <li><strong>Caporalato:</strong> Google Maps, cerca "campi Langhe" + "migranti", triangola con inchieste La Stampa</li>
+        <li><strong>Gentrificazione Torino:</strong> Immobiliare.it tracking affitti Aurora 2020 vs 2025 (pubblica grafico)</li>
+        <li><strong>Sfratti:</strong> Visita tribunale Torino, fascicoli sfratti online (alcuni), calcola trend</li>
+        <li><strong>Spesa militare:</strong> Mil€x rapporto 2024-2025, confronta con Gimbe + Legge Bilancio (3 PDF, 30 min analisi)</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">⚖️ Prossimi Step</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Scegli 1 caso</strong> che ti tocca personalmente</li>
+        <li><strong>Scarica guide + template</strong> (5 link sopra)</li>
+        <li><strong>Passa 2 ore</strong> a raccogliere prove (pubbliche)</li>
+        <li><strong>Compila report</strong> con template</li>
+        <li><strong>Condividi</strong>: media locali, ONG, MP, comunità</li>
+        <li><strong>Traccia impatto</strong> — firma petizioni, risposte, inchieste conseguenti</li>
+      </ol>
+      <p style="margin-top: 15px;"><strong>Impatto Misurato:</strong> 100+ report simili = governo pressione per audit/sanzioni. Succede.</p>
+    </div>
+
+  </section>
+</Base>

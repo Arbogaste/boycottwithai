@@ -1,0 +1,121 @@
+---
+import Base from '../../layouts/Base.astro';
+import companies from '../../data/boycott_response.json';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('map.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('map.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>
+        <h1>{t('map.title')}</h1>
+        <p class="muted">{t('map.subtitle')}</p>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <small class="muted">{t('map.phasesLabel')}</small>
+        <div class="secondary">{t('map.phase.awareness')}</div>
+        <div class="secondary">{t('map.phase.mobilize')}</div>
+        <div class="secondary">{t('map.phase.escalate')}</div>
+        <div class="secondary">{t('map.phase.sustain')}</div>
+      </div>
+    </div>
+
+    <div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+      <label class="muted">{t('map.filter.sector')}</label>
+      <select id="sectorFilter" class="secondary">
+        <option value="">All</option>
+        {Array.from(new Set(companies.map(c => c.sector))).map(s => <option value={s}>{s}</option>)}
+      </select>
+
+      <label class="muted">{t('map.filter.tag')}</label>
+      <select id="tagFilter" class="secondary">
+        <option value="">All</option>
+        {Array.from(new Set(companies.flatMap(c => c.tags))).map(tg => <option value={tg}>{tg}</option>)}
+      </select>
+      <button id="armsFilterBtn" class="secondary" style="margin-left:8px">{t('map.filter.armsIndustry') || 'Arms industry'}</button>
+    </div>
+
+    <div style="margin-top:18px" class="grid" id="targetsGrid">
+      {companies.map(company => (
+        <article class="card" data-sector={company.sector} data-tags={company.tags.join(',')}>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <h3>{company.name}</h3>
+              <small class="muted">{company.sector}</small>
+            </div>
+            <div style="text-align:right">
+              <div style="font-weight:800;color:var(--accent)">{company.score}</div>
+              <small class="muted">risk</small>
+            </div>
+          </div>
+
+          <p style="margin-top:10px">{company.reason}</p>
+
+          <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center">
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              {company.tags.map(tag => (
+                <span class="secondary" style="padding:6px 8px;border-radius:999px;font-size:0.8rem">{tag}</span>
+              ))}
+            </div>
+            <div>
+              <a class="button" href={company.boycott_url} target="_blank" rel="noopener noreferrer">{t('map.button.support')}</a>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <script>
+      (() => {
+        const sector = document.getElementById('sectorFilter');
+        const tag = document.getElementById('tagFilter');
+        const grid = document.getElementById('targetsGrid');
+        function applyFilters(){
+          const s = sector ? sector.value : '';
+          const t = tag ? tag.value : '';
+          if (!grid) return;
+          Array.from(grid.children).forEach(child => {
+            const card = child;
+            const cs = card.getAttribute('data-sector') || '';
+            const ts = (card.getAttribute('data-tags') || '').split(',');
+            const okSector = !s || cs === s;
+            const okTag = !t || ts.includes(t);
+            card.style.display = (okSector && okTag) ? '' : 'none';
+          });
+        }
+        if (sector) sector.addEventListener('change', applyFilters);
+        if (tag) tag.addEventListener('change', applyFilters);
+
+        var armsFilterActive = false;
+        var armsBtn = document.getElementById('armsFilterBtn');
+        if (armsBtn) {
+          armsBtn.addEventListener('click', function () {
+            armsFilterActive = !armsFilterActive;
+            if (armsFilterActive) {
+              Array.from(grid.children).forEach(child => {
+                const card = child;
+                const cs = (card.getAttribute('data-sector') || '').toLowerCase();
+                const ts = (card.getAttribute('data-tags') || '').toLowerCase();
+                const isArms = cs.includes('defense') || ts.includes('arm') || ts.includes('arms') || ts.includes('weapon');
+                card.style.display = isArms ? '' : 'none';
+              });
+              armsBtn.classList.add('active');
+            } else {
+              applyFilters();
+              armsBtn.classList.remove('active');
+            }
+          });
+        }
+      })();
+    </script>
+
+  </section>
+</Base>

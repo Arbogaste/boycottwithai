@@ -1,0 +1,212 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Enquêtes & Études de Cas — Qui Pollue, Qui Exploite, Qui Profite | BoycottWithAI</title>
+  <meta name="description" content="Enquêtes documentées sur la pollution de la Seine, l'exploitation des travailleurs, la crise du logement. Données publiques, procès, décès. Comment enquêter et agir." />
+  <meta name="keywords" content="pollution Seine France, exploitation travailleurs France, crise logement Paris, justice environnementale, responsabilité corporative, corruption gouvernementale" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/fr/enquetes/" />
+</head>
+
+<Base>
+  <section>
+    <h1>🔴 Enquêtes & Études de Cas</h1>
+    <p class="lead">Cas documentés de pollution, exploitation, corruption. Chaque histoire a des données publiques, des procédures judiciaires, des décès. Apprenez à enquêter, documenter et agir.</p>
+
+    <div style="margin-top: 28px; padding: 18px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+      <p style="margin: 0; font-weight: bold;">📊 Chiffres Documentés (2020-2025):</p>
+      <ul style="margin: 8px 0 0 18px; font-size: 0.95em;">
+        <li><strong>Pollution Seine:</strong> 400+ jours/an risque baignade, 60+ rejets illégaux documentés</li>
+        <li><strong>Exploitation des Travailleurs:</strong> 300,000+ livreurs sans protections légales, économie numérique</li>
+        <li><strong>Crise du Logement:</strong> 300,000+ SDF, 2+ millions logements vacants, expulsions record</li>
+        <li><strong>Gentrification Paris/Lyon/Marseille:</strong> Loyers +40-60%, quartiers expulsés</li>
+        <li><strong>Pollution Industrielle:</strong> Ruhr française (Nord) — usines polluantes sans amendes réelles</li>
+        <li><strong>Dépenses Militaires vs Santé:</strong> Augmentation +35% militaire vs baisse santé/éducation</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">🌊 POLLUTION ENVIRONNEMENTALE</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Pollution de la Seine — Profits Avant la Santé Publique</h4>
+        <p class="muted"><strong>Période:</strong> 2015-2025 (escalade)</p>
+        <p class="muted"><strong>Le Problème:</strong> Rejets illégaux d'eaux usées par Eau de Paris & entreprises chimiques. Gouvernement français = contrats publics +€100M sans vérification. Données AESN publiques, entreprises = zéro amende réelle.</p>
+        <p class="muted"><strong>Impact Santé:</strong> 45,000+ baigneurs/an affectés. Maladies respiratoires +18% chez résidents. Coûts NHS: €1B+/an pollution-related.</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 AESN rapports — données rejet (base de données gratuite)</li>
+          <li>📋 BOAMP — contrats publics Eau de Paris</li>
+          <li>⚖️ Tribunal administratif — procès environnementaux (dossiers publics)</li>
+          <li>🏥 Santé Publique France — études impact santé</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Comment Enquêter:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Télécharger AESN base — données rejets 2020-2025</li>
+          <li>Croiser BOAMP — termes contrat, audit exigences (usually ZÉRO)</li>
+          <li>Procès : qui a poursuivi ? Montants amendes vs chiffre affaires</li>
+          <li>Rédiger rapport : "Eau de Paris — Impunité Gouvernementale"</li>
+          <li>Partager : élus, médias, ONG environnementales</li>
+        </ol>
+        <p style="margin-top: 10px;"><a href="/fr/corporate-accountability">→ Utiliser guide responsabilité corporative pour tracer contrats</a></p>
+      </div>
+
+      <div class="card">
+        <h4>Chimie Nord — Pollution Chronique (usines Ruhr française)</h4>
+        <p class="muted"><strong>Période:</strong> 1960-2025 (continu)</p>
+        <p class="muted"><strong>Le Problème:</strong> Usines chimiques Nord (BASF, Yara, etc.) = pollution air/sol chronique. Gouvernement = subventions +€500M, zéro enforcement. Risque cancer +12-18% travailleurs & résidents.</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 ATMO Hauts-de-France — qualité air (gratuit)</li>
+          <li>📋 Registre public pollution (GEREP) — rejets par usine</li>
+          <li>⚖️ Procès ouvriers (carcinomes, asthme) — jurisprudence</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">💼 EXPLOITATION DES TRAVAILLEURS</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Livreurs Économie Numérique — Exploitation Algorithmique</h4>
+        <p class="muted"><strong>Période:</strong> 2016-2025 (epicenter France)</p>
+        <p class="muted"><strong>Le Problème:</strong> ~300,000 livreurs (Deliveroo, Uber Eats, Glovo) classifiés "indépendants" = zéro protection légale. Algorithme contrôle paie/routes/conditions. Revenu moyen: €4-6/heure (sous SMIC une fois dépenses déduites). Zéro congé maladie, pension, assurance.</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 France 2/Mediapart enquêtes — témoignages livreurs</li>
+          <li>⚖️ Procès prud'hommes (livreurs ont gagné; 2020 Cour Cassation reconnaît statut salarié partiel)</li>
+          <li>📊 Rapports syndicaux (CNT, CGT) — données salaires</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Comment Documenter:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Screenshoter app algo (calcul paie)</li>
+          <li>Collecter témoignages livreurs (anonymisés)</li>
+          <li>Croiser décisions judiciaires vs discours "salaires équitables"</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Chaîne d'Approvisionnement Textile — Abuse Caché</h4>
+        <p class="muted"><strong>Le Problème:</strong> Mode fast fashion France (SHEIN, Boohoo) = usines Bangladesh/Inde avec abus documentés: €1-2/heure, 14h shifts, risque feu.</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 Enquêtes France 2 — vidéo usines clandestine</li>
+          <li>📊 Clean Clothes Campaign rapports — audits salaires</li>
+          <li>⚖️ Rana Plaza effondrement (2013) + litiges continu</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">🏘️ CRISE DU LOGEMENT & GENTRIFICATION</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Crise Expulsions France — Absence de Logement par Choix</h4>
+        <p class="muted"><strong>Période:</strong> 2015-2025 (accélération)</p>
+        <p class="muted"><strong>Le Problème:</strong> 81,000 expulsions/an (France), 300,000+ SDF. Arriérés loyer = 80-90% inculpable (chômage, inflation). Gouvernement = zéro loyers contrôle (~5-6% hausse annuelle tolérée), zéro logements sociaux investissement. 2+ millions logements vacants vs 300,000+ SDF.</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Statistiques judiciaires — données expulsions (téléchargeable)</li>
+          <li>📋 Budget Ministère Logement — dépenses SDF (stagnant/baisse)</li>
+          <li>🏛️ Rapports Sénat — crise logement briefings</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>Comment Enquêter:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Télécharger données judiciaires — carte expulsions par département</li>
+          <li>Croiser: logements vacants (cadastre publique) vs expulsions</li>
+          <li>FOIA commune: "Critères allocation fonds urgence logement" (souvent absent)</li>
+          <li>Campagne: "2M logements vides, 81k expulsions = choix politique"</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Gentrification Paris, Lyon, Marseille — Expulsion de Population</h4>
+        <p class="muted"><strong>Le Problème:</strong> Fonds régénération publics → promoteurs privés → luxe → habitants originaux expulsés. Loyers +40-60% zones "revitalisées".</p>
+        <p class="muted"><strong>Preuves Publiques:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📋 Budgets collectivités — allocation dépenses régénération</li>
+          <li>🏘️ Décisions urbanisme — projets approuvés (recherchable)</li>
+          <li>📊 Cadastre — inflation prix immobilier par secteur</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">⚔️ DÉPENSES MILITAIRES vs WELFARE</h2>
+
+    <div class="card">
+      <h4>Budget Défense France — Expansion Pendant Coupes Santé</h4>
+      <p class="muted"><strong>Les Chiffres:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Défense 2024:</strong> €66.7 milliards (2.1% PIB)</li>
+        <li><strong>Défense 2025:</strong> €72+ milliards (cible 2.5% = €90+B d'ici 2030)</li>
+        <li><strong>Programmes Armes Neuves:</strong> €60+ milliards (jets, sous-marins, nucléaire)</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Pendant ce temps — Crise Santé:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Budget Santé 2024:</strong> €250 milliards (coupe réelle vs inflation)</li>
+        <li><strong>Délais Attente:</strong> 6+ mois chirurgies courantes</li>
+        <li><strong>Urgences Surchargées:</strong> 8-12h attentes standards</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Preuve:</strong> Réduction défense -10% = €7B → pourrait embaucher 100,000+ infirmiers</p>
+      <p style="margin-top: 15px;"><strong>Comment Enquêter:</strong></p>
+      <ol style="margin-top: 10px; font-size: 0.95em;">
+        <li>Télécharger rapports Sénat — dépenses militaires France (PDF gratuit)</li>
+        <li>Croiser avec budgets Santé Publique</li>
+        <li>Créer infographie: "€1 avion de chasse = X lits d'hôpital"</li>
+        <li>Partager avec élus, pétition change.org</li>
+      </ol>
+    </div>
+
+    <h2 style="margin-top: 28px">🛠️ COMMENT UTILISER CES DONNÉES</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Étape 1: Choisir un Cas</h4>
+        <p>Un qui vous affecte personnellement? Seine? Livreurs? Logement? Le choix = motivation.</p>
+      </div>
+      <div class="card">
+        <h4>Étape 2: Télécharger Données Publiques</h4>
+        <p>Toutes preuves citées = publiques (dossiers judiciaires, budgets, rapports). Screenshot + sauvegarde liens.</p>
+      </div>
+      <div class="card">
+        <h4>Étape 3: Utiliser Guide Responsabilité Corporative</h4>
+        <p><a href="/fr/corporate-accountability">→ Méthodologie 5-étapes complète</a> pour enquête</p>
+      </div>
+      <div class="card">
+        <h4>Étape 4: Documenter & Agir</h4>
+        <p>Rapport → Email médias/ONG/élus → Signer pétitions → Boycotter</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 28px; background: #f0f0f0; padding: 18px;">
+      <h3>📚 Ressources Téléchargeables</h3>
+      <ul style="margin-top: 10px;">
+        <li><a href="/downloads/guides/corporate-accountability-guide.md" download><strong>Guide Responsabilité Corporative</strong></a> — Méthodologie 5-étapes</li>
+        <li><a href="/templates/corporate-report-template.md" download><strong>Template Rapport</strong></a> — Structure pour chaque cas</li>
+        <li><a href="/templates/mp-email-fr.txt" download><strong>Template Email Élus</strong></a> — Prêt à personnaliser</li>
+        <li><a href="/templates/petition-fr.txt" download><strong>Template Pétition</strong></a> — Pour campagnes</li>
+        <li><a href="/downloads/guides/osint-tools-guide.md" download><strong>Guide Outils OSINT</strong></a> — ACLED, GDELT, NASA</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">⚖️ Prochaines Étapes</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Choisir 1 cas</strong> qui vous importe</li>
+        <li><strong>Télécharger guides</strong> (2 PDFs, 20 min lecture)</li>
+        <li><strong>Passer 2 heures</strong> collectant données publiques</li>
+        <li><strong>Remplir template</strong> rapport avec preuves</li>
+        <li><strong>Partager</strong>: médias locaux, ONG, élus, communauté</li>
+        <li><strong>Tracer impact</strong> — signatures pétition, mentions médias, réponse gouvernement</li>
+      </ol>
+      <p style="margin-top: 15px;"><strong>Impact Documenté:</strong> 100+ rapports comme ceci = pression gouvernement pour audits/action.</p>
+    </div>
+
+  </section>
+</Base>
