@@ -1,0 +1,20 @@
+# Modelli di prompt — Italiano
+
+# 1) Riassunto
+Prompt: "Riassumi il seguente rapporto in 5 punti, includi fatti, date e fonti. Non fare congetture. Lingua di output: Italiano."
+
+# 2) Verifica immagine
+Prompt: "Dato questo URL immagine e i metadati, fornisci una checklist di verifica (geolocalizzazione, reverse image, campi metadata) e indica segnali ad alta affidabilità."
+
+# 3) Traduzione per contatti (IT→EN)
+Prompt: "Traduci il seguente messaggio in inglese, mantenendo tono formale per email a ONG."
+
+# 4) Varianti post social
+Prompt: "Crea 6 post brevi (max 220 caratteri) che riassumono questa evidenza verificata. Includi un hashtag e una call-to-action neutra. Evita nomi di privati."
+
+# 5) Estrazione dati da testo
+Prompt: "Estrai i campi strutturati: data, luogo, attore, tipo_evento, fonte. Restituisci array JSON con punteggi di confidenza."
+
+# Note d'uso
+- Non usare questi prompt per creare istruzioni operative illegali.
+- Quando chiedi procedure tecniche, richiedi sempre controlli legali ed etici prima di agire.

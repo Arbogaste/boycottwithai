@@ -1,0 +1,180 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('actions.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('actions.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('actions.title')}</h1>
+    <p class="muted">{t('actions.subtitle')}</p>
+
+    <article class="card" style="margin-top:18px;border:1px solid #f0a;padding:12px">
+      <h3>🔒 Sicurezza Prima: Protezione Digitale</h3>
+      <p>Prima di agire, proteggiti. Gli attivisti in contesti ad alto rischio affrontano sorveglianza e ritorsioni. Ecco cosa devi sapere:</p>
+      
+      <strong>Perché importa:</strong> Le tue comunicazioni, posizione e attività online possono rivelare la tua identità e mettere a rischio gli alleati.
+
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ Strumenti essenziali (clicca per espandere)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>Tor Browser</strong> — Nascondi il tuo IP e posizione quando ricerchi argomenti sensibili. <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">Scarica</a></li>
+          <li><strong>Signal</strong> — Messaggistica con crittografia end-to-end. <a href="https://signal.org/" target="_blank" rel="noopener">Scarica</a></li>
+          <li><strong>ProtonMail</strong> — Email crittografata per contatti sensibili. <a href="https://protonmail.com/" target="_blank" rel="noopener">Iscriviti</a></li>
+          <li><strong>VeraCrypt</strong> — Cripta il tuo disco rigido. <a href="https://www.veracrypt.fr/" target="_blank" rel="noopener">Scarica</a></li>
+          <li><strong>KeePass</strong> — Gestore di password sicuro. <a href="https://keepass.info/" target="_blank" rel="noopener">Scarica</a></li>
+        </ul>
+        <p style="margin-top:12px;font-size:0.9em;color:#666">Per threat modeling dettagliato e come scegliere i tool giusti, consulta la nostra guida completa <a href="/downloads/guides/privacy-security-tools-it.md" download><strong>Privacy & Sicurezza</strong></a> (PDF).</p>
+      </details>
+
+      <strong style="display:block;margin-top:12px">Checklist veloce prima di agire:</strong>
+      <ul style="padding-left:20px">
+        <li>Usa un dispositivo o account separato per lavoro sensibile</li>
+        <li>Abilita l'autenticazione a due fattori su tutti gli account importanti</li>
+        <li>Usa password uniche e forti (con KeePass)</li>
+        <li>Evita di collegare attività anonima e identificata</li>
+        <li>Non fare screenshot—usa registrazione schermo invece</li>
+        <li>Elimina messaggi e conversazioni regolarmente</li>
+      </ul>
+    </article>
+
+    <h2 style="margin-top:28px">Metodi di Campagna</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+          <h4>Pressione economica mirata</h4>
+          <p>Identifica la leva economica su aziende e istituzioni che sostengono il riarmo, promuovendo campagne di disinvestimento e pressione ai consumatori per ridurre gli incentivi al conflitto.</p>
+        </div>
+      <div class="card">
+        <h4>Assemblea Civile</h4>
+        <p>Pianificazione percorsi, osservatori legali, squadre di de-escalation, accomodamenti di accessibilità e script per l'ufficio stampa — mappati alle fasi della campagna.</p>
+      </div>
+      <div class="card">
+        <h4>Politica e Advocacy</h4>
+        <p>Costruisci campagne politiche per promuovere il disarmo, restrizioni alle esportazioni di armi e maggiori fondi per soluzioni diplomatiche e non belliche ai conflitti.</p>
+      </div>
+      <div class="card">
+        <h4>Mutuo Aiuto</h4>
+        <p>Coordina supporto per comunità colpite: distribuzione trasparente, form di iscrizione e accountability. Metriche di impatto, liste di verifiche e valutazioni.</p>
+      </div>
+    </div>
+
+    <section style="margin-top:18px">
+      <h3>Template Condivisibili</h3>
+      <p class="muted">I template scaricabili includono una checklist allineata alle fasi, script per media e un foglio di valutazione per misurare l'impatto rispetto agli obiettivi.</p>
+      <ul>
+        <li>Volantino A4 — Inglese / Italiano</li>
+        <li>Comunicato stampa — markdown modificabile</li>
+        <li>Calendario social media — CSV di esempio</li>
+      </ul>
+    </section>
+
+    <!-- METHODOLOGY SECTION -->
+    <h2 style="margin-top:32px">Metodologia: Monitoraggio, Investigazione & Documentazione</h2>
+    <p class="muted">{t('methodology.subtitle')}</p>
+
+    <div class="card" style="margin-top:12px">
+      <h3>Situazione Attuale: 2024–2025</h3>
+      <ul>
+        <li><strong>Escalation & danno civile:</strong> Oltre 30.000 civili uccisi a Gaza (OCHA, 2024), massicci sfollamenti in Sudan e Yemen, e attacchi record alle infrastrutture. ONU e agenzie umanitarie avvertono di carestia e corridoi di aiuto bloccati.</li>
+        <li><strong>Collasso climatico:</strong> Il 2024 ha visto emissioni di CO₂ record e oltre 40 milioni di sfollati climatici (IDMC). COP28 non ha consegnato l'uscita vincolante dai combustibili fossili.</li>
+        <li><strong>Fallimento istituzionale:</strong> Consiglio di sicurezza ONU bloccato dai veti; UE e G7 aumentano le esportazioni di armi e i bilanci militari, ignorando gli appelli per il cessate il fuoco e l'accesso umanitario.</li>
+        <li><strong>Cosa puoi fare:</strong> Usa <a href="/templates/monitoring-sample-it.txt" download>template di monitoraggio</a> per tracciare gli impatti locali, documentare le prove e condividere con giornalisti e rappresentanti. Esempio: registra ogni attacco alle infrastrutture civili nella tua città o regione e invia rapporti mensili ai rappresentanti locali e ai media.</li>
+      </ul>
+      <p class="muted">Fonti dati: OCHA, SIPRI, IDMC, UNHCR, ACLED. Vedi <a href="/it/tools-resources/">Strumenti & Risorse</a> per template e guide.</p>
+    </div>
+
+    <article class="card" style="margin-top:18px">
+      <h3>{t('methodology.analysis')}</h3>
+      <p class="muted">{t('methodology.analysis_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>Workflow nel Mondo Reale: Da Prove a Denuncia Internazionale</h3>
+      <ol>
+        <li>Raccogli prove (screenshot, PDF, dati pubblici, testimonianze) e conservale in modo sicuro (Nextcloud, Proton Drive, OnionShare).</li>
+        <li>Verifica e incrocia i dati con fonti pubbliche e database internazionali (<a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat</a>, <a href="https://www.lighthousereports.com/">Lighthouse Reports</a>, <a href="https://www.occrp.org/">OCCRP</a>).</li>
+        <li>Prepara un rapporto chiaro o una visualizzazione e pubblica su un dashboard pubblico (<a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>) o invialo a giornalisti/ONG.</li>
+        <li>Per violazioni gravi, usa template FIDH/Amnesty e deposita presso CEDU, ONU o autorità nazionali (<a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty</a>).</li>
+        <li>Rendi pubblica la causa: più è visibile, più difficile è coprirla. Usa media, briefing, social media e pressione istituzionale.</li>
+      </ol>
+      <p class="muted">Per sicurezza, vedi la <a href="/templates/osint-safety-it.txt" download>Guida di Sicurezza OSINT</a>. Tutte queste risorse sono utilizzate da giornalisti e attivisti che hanno ottenuto processi, dimissioni e cambiamenti legali nell'UE.</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>Checklist rapido di inizio OSINT</h3>
+      <ol>
+        <li class="muted">Scegli un target ristretto: azienda/contratto con una cronologia chiara o ID di transazione.</li>
+        <li class="muted">Raccogli 3 fonti primarie: notizie, rapporto ONG o immagine satellitare. Salva permalink e timestamp.</li>
+        <li class="muted">Crea un briefing di una pagina usando <a href="/templates/briefing-it.txt" download>briefing-it.txt</a>: mantienilo a un A4 e dichiara la richiesta.</li>
+        <li class="muted">Scegli un template di monitoraggio <a href="/templates/monitoring-sample-it.txt" download>monitoring-sample-it.txt</a> e traccia gli sviluppi.</li>
+        <li class="muted">Esegui la checklist di sicurezza OSINT (<a href="/templates/osint-safety-it.txt" download>osint-safety-it.txt</a>) prima di pubblicare eventuali affermazioni o immagini.</li>
+      </ol>
+      <p class="muted">Output: un briefing per giornalisti, una petizione e un log di monitoraggio. Archivia i log e le risposte come prove in un'unica cartella condivisa per ulteriore escalation.</p>
+    </article>
+
+    <!-- CORPORATE ACCOUNTABILITY SECTION -->
+    <h2 style="margin-top:32px">Traccia la Responsabilità Corporativa & Investigazioni</h2>
+    <p class="muted">Il 71% dell'inquinamento globale proviene da 100 aziende. Governi abilitano l'inquinamento tramite contratti. Attivisti che denunciano sono arrestati. Ecco come provarlo.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Inquinamento Corporativo</h4>
+        <p class="muted">Chi scarica effettivamente tossine? Quali fiumi, aria, suolo?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Scarichi:</strong> Fiumi, mari, acque sotterranee contaminate</li>
+          <li><strong>Emissioni:</strong> Inquinamento atmosferico (SOx, NOx, particolati, GHG)</li>
+          <li><strong>Rifiuti:</strong> Scarico tossico, nucleare, plastica</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Strumento:</strong> NASA FIRMS (fuoco/inquinamento in tempo reale) + OpenStreetMap (siti industriali)</p>
+      </div>
+
+      <div class="card">
+        <h4>Contratti Governativi (Corruzione Nascosta)</h4>
+        <p class="muted">I governi pagano gli inquinatori. I contratti pubblici lo provano.</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Miliardi €/anno:</strong> A società inquinatrici (transparency.gov)</li>
+          <li><strong>Nessun controllo:</strong> Zero monitoraggio indipendente</li>
+          <li><strong>Nessuna multa:</strong> Il governo ignora i violazioni</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Caso:</strong> Inquinamento del Tamigi €50M contratto, zero enforcement</p>
+      </div>
+
+      <div class="card">
+        <h4>Oppressione di Attivisti</h4>
+        <p class="muted">Chi viene arrestato? Manifestanti o CEO?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Arrestati:</strong> Attivisti che denunciano l'inquinamento</li>
+          <li><strong>Impuniti:</strong> Dirigenti aziendali mai accusati</li>
+          <li><strong>Minacce:</strong> Contro giornalisti e informatori</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Dati:</strong> Attivisti arrestati 10x più dei CEO inquinatori</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Guida di Responsabilità Corporativa</h4>
+      <p class="muted">Metodologia a 5 step: identifica → traccia → documenta → esponi → agisci. Template di rapporto, richieste FOIA, sicurezza legale.</p>
+      <a class="secondary" href="/downloads/guides/corporate-accountability-guide.md" download>Scarica Guida PDF</a>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Template di Rapporto Corporativo</h4>
+      <p class="muted">Template strutturato per documentare l'inquinamento, i contratti governativi, l'oppressione di attivisti. Pronto per media e istituzioni.</p>
+      <a class="secondary" href="/templates/corporate-report-template.md" download>Scarica Template</a>
+    </div>
+
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h3>Pronto per Iniziare?</h3>
+      <p class="muted">Se sei pronto per agire, avvia una campagna o unisciti a una esistente usando i nostri template di avvio e checklist. Controlla <a href={`/${lang}/tools-resources/`}>Strumenti & Risorse</a> per materiali di campagna scaricabili.</p>
+    </div>
+  </section>
+</Base>

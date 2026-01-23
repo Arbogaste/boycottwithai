@@ -1,0 +1,23 @@
+# Multilingual Prompt Templates — English
+
+# 1) Summarize report
+Prompt: "Summarize the following report in 5 bullet points, include key facts, dates, and sources. Do not speculate. Output language: English."
+
+# 2) Verify image metadata checklist
+Prompt: "Given this image URL and metadata, produce a checklist of verification steps (geolocation, reverse image, metadata fields to check) and list the high-confidence indicators. Output as JSON."
+
+# 3) Translate for outreach (EN→IT)
+Prompt: "Translate the following message to Italian, preserving tone for an NGO outreach email. Keep it concise and formal."
+
+# 4) Generate ethical social post variants
+Prompt: "Create 6 short social posts (max 220 characters) summarizing this verified finding. Include one hashtag and a neutral call to action. Avoid naming private individuals."
+
+# 5) Data extraction from text
+Prompt: "Extract structured fields from this text: date, location, actor, event-type, source. Return JSON array of matches with confidence scores."
+
+# 6) Meme / satire safe templates
+Prompt: "Draft 4 short satirical captions about a public policy decision. Ensure content avoids false factual claims, targeted harassment, or defamation. Keep it clearly satirical."
+
+# Usage notes
+- Adjust language codes for other locales (FR, DE, IT).
+- Add explicit safety checks when prompts request operational steps.

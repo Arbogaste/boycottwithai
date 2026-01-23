@@ -1,0 +1,91 @@
+---
+import Base from '../../layouts/Base.astro';
+import internalFeed from '../../data/internal_feed.json';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+export async function get() {
+  return { props: { items: internalFeed } };
+}
+---
+
+<head>
+  <title>{t('manifesto.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('manifesto.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('manifesto.title')}</h1>
+    <p class="muted">{t('manifesto.subtitle')}</p>
+
+    <div class="card" style="margin-top:12px">
+      <h3>Situation actuelle : 2024–2025</h3>
+      <ul>
+        <li><strong>Échec climatique :</strong> La COP28 s'est terminée sans engagement contraignant, avec des subventions record aux énergies fossiles. Les émissions mondiales de CO₂ atteignent un nouveau sommet (AIE), et plus de 40 millions de personnes déplacées par des catastrophes (IDMC).</li>
+        <li><strong>Moyen-Orient & génocide :</strong> Plus de 30 000 civils tués à Gaza (OCHA, 2024), l'ONU alerte sur la famine et la destruction systématique des infrastructures. Soudan et Yémen : déplacements massifs et cessez-le-feu ignorés.</li>
+        <li><strong>Institutions inertes :</strong> Conseil de sécurité de l'ONU bloqué par les vétos ; UE et G7 augmentent les budgets militaires et les exportations d'armes, ignorant les appels au cessez-le-feu et à l'aide humanitaire.</li>
+        <li><strong>Réarmement mondial :</strong> Les dépenses militaires mondiales dépassent 2,4 trillions de dollars (SIPRI, 2024), alors que les résolutions de paix stagnent et la protection des civils est négligée.</li>
+      </ul>
+      <p class="muted">Nos institutions échouent à répondre aux causes profondes de la violence, du dérèglement climatique et des déplacements massifs. Ce projet vise à dénoncer ces échecs et à outiller l'action citoyenne directe.</p>
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <h3>{t('manifesto.vision.title')}</h3>
+      <p class="muted">{t('manifesto.vision.p1')}</p>
+    </div>
+
+    <article class="card" style="margin-top:18px">
+      <h2>{t('manifesto.methods.title')}</h2>
+      <ul>
+        {t('manifesto.methods.list').map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.antiwar.title')}</h2>
+      <p>{t('manifesto.antiwar.p1')}</p>
+      <ul>
+        <li>{t('manifesto.antiwar.policies')}</li>
+        <li>{t('manifesto.antiwar.divest')}</li>
+        <li>{t('manifesto.antiwar.education')}</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.values.title')}</h2>
+      <ul>
+        {t('manifesto.values.list').map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+
+    <!-- FEEDS SECTION -->
+    <h2 style="margin-top:32px">{t('feeds.title')}</h2>
+    <p class="muted">{t('feeds.subtitle')}</p>
+
+    <div style="margin:16px 0">
+      <a class="button" href="/combined-rss.xml">S'abonner au flux unifié</a>
+    </div>
+
+    <div class="grid">
+      {Astro.props.items && Astro.props.items.length ? (
+        (Astro.props.items as any[]).slice(0, 30).map(item => (
+          <div class="card">
+            <a href={item.link}><h4>{item.title}</h4></a>
+            <p class="muted">{item.pubDate}</p>
+            <p class="muted">{item.contentSnippet || item.content || item.description}</p>
+          </div>
+        ))
+      ) : (
+        <div class="card">Aucun élément disponible pour le moment.</div>
+      )}
+    </div>
+
+  </section>
+</Base>

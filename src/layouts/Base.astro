@@ -48,15 +48,10 @@ const t = useTranslations(lang);
             <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
           </button>
           <div id="mainNavLinks" class="nav-links">
-            <a href={`/${lang}/tools/`}>{t('nav.tools')}</a>
-            <a href={`/${lang}/actions/`}>{t('nav.actions')}</a>
-            <a href={`/${lang}/investigations/`} style="font-weight:bold">🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
-            <a href={`/${lang}/corporate-accountability/`}>{lang === 'it' ? 'Responsabilità Aziendale' : lang === 'fr' ? 'Responsabilité' : lang === 'de' ? 'Konzernverantwortung' : 'Corporate Accountability'}</a>
-            <a href={`/${lang}/methodology/`}>{t('nav.methodology')}</a>
-            <a href={`/${lang}/manifesto/`}>{t('nav.manifesto')}</a>
-            <a href={`/${lang}/feeds/`}>{t('nav.feeds')}</a>
-            <a href={`/${lang}/resources/`}>{t('nav.resources')}</a>
-            <a href="/rss.xml" class="muted">RSS</a>
+            <a href={`/${lang}/tools-resources/`}>{t('nav.tools')} & {t('nav.resources')}</a>
+            <a href={`/${lang}/actions-methodology/`} style="font-weight:bold">{t('nav.actions')} • 🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
+            <a href={`/${lang}/manifesto-feeds/`}>{t('nav.manifesto')} & {lang === 'it' ? 'Feed' : lang === 'fr' ? 'Flux' : lang === 'de' ? 'Feeds' : 'Feeds'}</a>
+            <a href="/rss.xml" class="muted" style="font-size:0.9em">RSS</a>
           </div>
         </nav>
       </div>
