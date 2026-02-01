@@ -28,7 +28,7 @@
 - Accedere a notizie sensibili o documenti trapelati.
 - Ricercare obiettivi (aziendali, governativi) senza rivelare il tuo interesse.
 - Inviare suggerimenti a giornalisti o ONG in modo anonimo.
-- Leggere guide sull'attivismo o la resistenza (nei paesi ad alto rischio).
+ - Leggere risorse sull'attivismo o la resistenza (nei paesi ad alto rischio).
 
 **Scarica:** https://www.torproject.org/download/
 
@@ -244,8 +244,8 @@
 
 ## Letture Ulteriori
 
-- [EFF Security Startup Guide](https://ssd.eff.org/)
-- [OWASP Privacy Guide](https://owasp.org/www-community/Privacy)
+- [EFF Security Startup Resources](https://ssd.eff.org/)
+- [OWASP Privacy Resources](https://owasp.org/www-community/Privacy)
 - [Amnesty International Security Handbook](https://www.amnesty.org/)
 - [Front Line Defenders Manual](https://www.frontlinedefenders.org/)
 

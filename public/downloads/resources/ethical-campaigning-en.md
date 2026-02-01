@@ -1,6 +1,6 @@
-# Ethical Campaigning & Civic Tech — Practical Guide
+# Ethical Campaigning & Civic Tech — Practical Approach
 
-This guide presents non-violent, legal, and ethically-sound approaches to research, campaigning and public accountability. Harmful or illegal tactics are intentionally excluded. Use these methods to inform, document, and advocate.
+This document presents non-violent, legal, and ethically-sound approaches to research, campaigning and public accountability. Harmful or illegal tactics are intentionally excluded. Use these methods to inform, document, and advocate.
 
 ## 1. Principles
 - Respect the law and human safety.
@@ -32,7 +32,7 @@ This guide presents non-violent, legal, and ethically-sound approaches to resear
 See the `ai-prompts-en.txt` templates for ethical automation, translations, and summarization.
 
 ## 8. Further reading
-- OSINT safety: public guides from Amnesty, Bellingcat.
+- OSINT safety: public resources from Amnesty, Bellingcat.
 - Data ethics: university research ethics pages.
 
 ---

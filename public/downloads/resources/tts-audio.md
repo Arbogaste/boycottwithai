@@ -1,4 +1,4 @@
-# Guida Completa: Crea Audio Emotivo con TTS (Text-to-Speech) per Campagne
+# Crea Audio Emotivo con TTS (Text-to-Speech) per Campagne
 
 ## Introduzione
 Converti testo in audio realistico per testimonianze, satire o annunci. Usa EmotiVoice per voce emotiva, o CosyVoice per clonazione voce. Perfetto per collage audio virali.
@@ -54,4 +54,4 @@ Usa Audacity (gratuito):
 - Tutorial clonazione: YouTube "CosyVoice voice cloning"
 
 Scarica script batch: [tts-batch.py](https://github.com/tuo-repo/tts-batch.py)</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/tts-audio-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/tts-audio.md

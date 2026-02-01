@@ -1,4 +1,4 @@
-# Guida Completa: Genera Infografiche e Visualizzazioni con Fooocus AI
+# Genera Infografiche e Visualizzazioni con Fooocus AI
 
 ## Introduzione
 Fooocus è un tool gratuito per generare immagini AI realistiche senza bisogno di GPU potente. Perfetto per creare infografiche su speculazione immobiliare, mappe "prima/dopo" o satire visive per campagne.
@@ -37,7 +37,7 @@ Aspetta il download iniziale (5-10 minuti). Si apre una finestra browser su loca
 Salva immagini in alta risoluzione (clicca "Save" > "High Quality").
 
 ## Passo 5: Integrazione con Altri Tool
-- Usa immagini generate per video FFmpeg (vedi guida FFmpeg).
+-- Usa immagini generate per video FFmpeg (vedi FFmpeg).
 - Combina con dati scraping per visualizzazioni accurate.
 
 ## Passo 6: Ottimizzazioni
@@ -58,4 +58,4 @@ Salva immagini in alta risoluzione (clicca "Save" > "High Quality").
 Scarica preset prompt per campagne: [fooocus-prompts.txt](https://github.com/tuo-repo/fooocus-prompts.txt)
 
 Per supporto, segnala su nostro GitHub.</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/fooocus-visuals-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/fooocus-visuals.md

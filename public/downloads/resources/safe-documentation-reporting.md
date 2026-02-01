@@ -1,4 +1,4 @@
-# Safe Documentation & Reporting — High-level Guide
+# Safe Documentation & Reporting — High-level
 
 > Scopo: aiutare giornalisti, difensori dei diritti e attivisti a documentare abusi in modo responsabile, proteggendo vittime e testimoni. Questo testo evita istruzioni operative rischiose e fornisce raccomandazioni etiche e procedurali ad alto livello.
 
@@ -23,7 +23,7 @@
 - Evita di pubblicare qualsiasi cosa che faciliti atti violenti o illegali.
 
 ## Risorse utili
-- Linee guida di Amnesty e Bellingcat su raccolta e verifica.
+- Raccomandazioni di Amnesty e Bellingcat su raccolta e verifica.
 - Contatti di relay services per giornalisti e ONG che accettano materiale sensibile.
 
 ---

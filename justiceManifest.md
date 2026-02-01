@@ -166,7 +166,7 @@ STRATEGIC BOYCOTT ANALYSIS FOR: {TARGET_ENTITY}
 - List specific products/services to boycott with alternatives
 - Calculate potential revenue impact with participation rates (1%, 5%, 10%)
 - Identify their highest-margin products for maximum impact
-- Create "boycott substitution guide" for consumers
+- Create "boycott substitution resource" for consumers
 
 **Tier 2 - B2B Pressure:**
 - Map corporate clients, suppliers, and business partners
@@ -195,9 +195,9 @@ STRATEGIC BOYCOTT ANALYSIS FOR: {TARGET_ENTITY}
 **SUCCESS METRICS:**
 - Define measurable impact goals (revenue drop %, media coverage, policy changes)
 - Create monitoring systems for tracking effectiveness
-- Establish escalation/de-escalation triggers
+ - Establish escalation/de-escalation indicators
 
-**LEGAL/ETHICAL GUIDELINES:**
+**LEGAL/ETHICAL Resources:**
 - Ensure all tactics remain within legal boundaries
 - Maintain nonviolent resistance principles
 - Include accountability measures to prevent harassment

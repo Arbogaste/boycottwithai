@@ -1,4 +1,4 @@
-# Guida Completa: Crea Agenti AI Automatizzati con CrewAI per Campagne
+# Crea Agenti AI Automatizzati con CrewAI per Campagne
 
 ## Introduzione
 CrewAI permette agenti AI che collaborano: uno scrapa dati, uno genera prompt, uno distribuisce. Perfetto per automatizzare azioni disruptive.
@@ -85,4 +85,4 @@ social_agent = Agent(
 - Tutorial: "Building AI Agents with CrewAI"
 
 Scarica template: [crewai-template.py](https://github.com/tuo-repo/crewai-template.py)</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/crewai-agents-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/crewai-agents.md

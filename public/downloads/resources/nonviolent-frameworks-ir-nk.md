@@ -6,7 +6,7 @@
 - Scopo: offrire strategie non-violente, verificabili e misurabili per aumentare la pressione internazionale, documentare abusi e costruire solidarietà.
 - Limiti: non includiamo istruzioni per sabotaggi, danneggiamenti o azioni che possano causare danni fisici o crimini; chiedere o condividere tali istruzioni può esporre le persone a gravi rischi.
 
-## Principi guida
+## Principi
 - Priorità alla sicurezza delle persone: minimizzare esposizione e rischio legale.
 - Verificabilità: ogni affermazione pubblicata deve essere verificabile o chiaramente etichettata come informazione preliminare.
 - Non-violenza e responsabilità etica.
@@ -25,7 +25,7 @@ Ogni punto qui sotto riassume un tema tratto dal materiale originale e propone a
 
 3) Raccolta e inquinamento dati (come tattica nei materiali originali)
 - Alternative etiche: migliorare la qualità dei dataset esistenti tramite raccolta di testimonianze, monitoraggio di open-data, segnalare discrepanze alle piattaforme e proporre correzioni pubbliche.
-- Strumenti: guide di verifica, modelli per segnalazioni formali alle piattaforme, collaborazioni con ricercatori.
+- Strumenti: procedure di verifica, modelli per segnalazioni formali alle piattaforme, collaborazioni con ricercatori.
 
 4) Azioni digitali che impattano servizi (tattiche rischiose nei materiali originali)
 - Alternative: advocacy per la trasparenza dei servizi pubblici, petizioni per migliorare servizi essenziali, uso di canali legali per denunciare malfunzionamenti.
@@ -33,10 +33,10 @@ Ogni punto qui sotto riassume un tema tratto dal materiale originale e propone a
 
 5) Campagne di reputazione (recensioni, SEO)
 - Alternative etica: campagne informative che promuovono evidenze documentate, recensioni veritiere da parte di consumatori reali e chiamate alla responsabilità aziendale.
-- Strumenti: toolkit per whistleblowers, guide per invio di briefing ai giornali d'inchiesta.
+- Strumenti: toolkit per whistleblowers, procedure per invio di briefing ai giornali d'inchiesta.
 
 6) Meme, satira e narrazioni
-- Linea guida: la satira può essere efficace, ma evitare attacchi personali, diffamazione, o la creazione di account falsi coordinati.
+- Indicazione: la satira può essere efficace, ma evitare attacchi personali, diffamazione, o la creazione di account falsi coordinati.
 - Strumenti: template per satire etiche, suggerimenti per verificare che le affermazioni siano chiaramente satiriche.
 
 ## Azioni pratiche e sicure

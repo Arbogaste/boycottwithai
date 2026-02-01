@@ -1,4 +1,4 @@
-# AI for Campaigns: A Practical Guide for Activists
+# AI for Campaigns: A Practical Resource for Activists
 
 ## Introduction
 
@@ -310,4 +310,4 @@ Share your experience:
 - Email us with your workflow
 - Join our community calls
 
-**Your insights help us improve this guide for everyone.**
+**Your insights help us improve this resource for everyone.**

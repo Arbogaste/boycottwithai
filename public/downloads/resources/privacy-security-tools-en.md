@@ -28,7 +28,7 @@
 - Accessing sensitive news or leaked documents.
 - Researching targets (corporate, government) without revealing your interest.
 - Submitting tips to journalists or NGOs anonymously.
-- Reading guides on activism or resistance (in high-risk countries).
+ - Reading resources on activism or resistance (in high-risk countries).
 
 **Download:** https://www.torproject.org/download/
 
@@ -244,8 +244,8 @@
 
 ## Further Reading
 
-- [EFF Security Startup Guide](https://ssd.eff.org/)
-- [OWASP Privacy Guide](https://owasp.org/www-community/Privacy)
+- [EFF Security Startup](https://ssd.eff.org/)
+- [OWASP Privacy](https://owasp.org/www-community/Privacy)
 - [Amnesty International Security Handbook](https://www.amnesty.org/)
 - [Front Line Defenders Manual](https://www.frontlinedefenders.org/)
 

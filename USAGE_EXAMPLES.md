@@ -7,37 +7,24 @@
 **Path**: Homepage → Scroll to hero section → Click 🔴 "Responsabilità Aziendale" in menu
 
 **What they find**:
-- Clear explanation: 71% of global pollution from 100 corporations
-- Step-by-step guide: How to track locally
-- Case studies: Po River (Italy), Thames (UK), Seine (France), Ruhr (Germany)
-- Tools: Country-specific transparency portals
 
-**Action**: Download "Corporate Accountability Guide" (markdown, 20 min read)
+**Action**: Download "Corporate Accountability" resource (markdown, 20 min read)
 
----
 
 ### Scenario 2: "I've identified local pollution—how do I prove government complicity?"
 
 **Path**: Visit country-specific corporate accountability page  
 Example: `/it/corporate-accountability` for Italian users
 
-**Step-by-Step Process**:
-1. **Identify** — Use NASA FIRMS satellite data to locate sources
-2. **Track** — Access government contract database (trasparenza.governo.it for Italy)
-3. **Document** — Download EMAS declarations (legal requirement, public)
 4. **Template** — Download "Corporate Report Template" from resources page
 5. **Evidence** — Fill template with 5 sections (polluter, contracts, oppression, data, action)
 6. **Share** — Email to journalists, MPs, NGOs, community
-
 **Time**: 3-4 hours for complete report
 
 ---
 
 ### Scenario 3: "I want to create visual content for social media"
 
-**Path**: Resources page → Download "Fooocus AI Guide"
-
-**Tools Provided**:
 - How to generate "before/after" maps (satellite imagery)
 - Create infographics (71% pollution stat, company logos)
 - Generate satirical posters
@@ -49,7 +36,6 @@ Example: `/it/corporate-accountability` for Italian users
 
 ### Scenario 4: "I want to organize a campaign with automated tools"
 
-**Path**: Resources page → Download "CrewAI Agents Guide"
 
 **Tools Provided**:
 - Multi-agent AI system for research → content → distribution
@@ -61,7 +47,6 @@ Example: `/it/corporate-accountability` for Italian users
 Input: "Po River pollution by Italian chemical company"
 Output: 
   - Full investigation report (EMAS + contracts)
-  - 10 social media posts (Twitter, TikTok, Instagram)
   - Email template to 50 MPs
   - PDF briefing for journalists
 ```
@@ -83,12 +68,12 @@ Output:
 
 ---
 
-### Translating Guides
+### Translating Resources
 
-**Example**: Translate corporate accountability guide to Spanish
+**Example**: Translate corporate accountability resource to Spanish
 
-1. Copy `/public/downloads/guides/corporate-accountability-guide.md`
-2. Rename to `corporate-accountability-guide-es.md`
+1. Copy `/public/downloads/resources/corporate-accountability.md`
+2. Rename to `corporate-accountability-es.md`
 3. Translate content (tools section customized for Spain: APAT, etc.)
 4. Link from Spanish resources page
 5. Update `src/pages/es/resources.astro` with new card
@@ -213,7 +198,7 @@ Output:
    - Mobile usability issues
 
 **Key Metrics to Track**:
-- "responsabilità aziendale" (Italian) ranking position (target: top 3)
+- "responsabilità aziendale" (Italian) ranking position (target: high ranking positions)
 - "corporate accountability" (English) CTR (target: 10%+)
 - "pollution tracking" keyword volume (target: 500+ monthly searches)
 
@@ -232,8 +217,8 @@ Output:
 ```
 
 **Metrics**:
-- Page views per guide (target: 1,000+/month per guide)
-- Download rates (target: 20% of visitors download a guide)
+- Page views per resource (target: 1,000+/month per resource)
+- Download rates (target: 20% of visitors download a resource)
 - Time on page (target: 3+ minutes for corporate accountability)
 - Referrer sources (NGOs, media, social)
 
@@ -356,12 +341,12 @@ export const ui = {
 ### 1. Content Marketing
 - **Update corporate accountability case studies monthly** (new violations discovered, government responses)
 - **Create infographics** (71% stat, regional company examples, arrest data)
-- **Guest post on NGO blogs** (link to corporate accountability guide)
+- **Guest post on NGO blogs** (link to corporate accountability resource)
 
 ### 2. SEO
 - **Target long-tail keywords**: "how to track corporate pollution Italy", "government contract transparency UK"
 - **Build backlinks**: Reach out to journalists, environmental blogs, watchdog sites
-- **Optimize for featured snippets**: Clear step-by-step guides (already done!)
+- **Optimize for featured snippets**: Clear step-by-step resources (already done!)
 
 ### 3. Community
 - **Create email newsletter**: Weekly corporate accountability cases
@@ -370,8 +355,8 @@ export const ui = {
 
 ### 4. Technical
 - **API Integration**: Auto-pull latest government contracts, ACLED data
-- **Mobile App**: Offline guide access, GPS-based local pollution tracker
-- **Chatbot**: Answer questions about corporate accountability, guide users
+- **Mobile App**: Offline resource access, GPS-based local pollution tracker
+- **Chatbot**: Answer questions about corporate accountability, resource users
 
 ---
 

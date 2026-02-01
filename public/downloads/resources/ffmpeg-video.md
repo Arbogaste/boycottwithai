@@ -1,4 +1,4 @@
-# Guida Completa: Monta Video Virali con FFmpeg
+# Monta Video Virali con FFmpeg
 
 ## Introduzione
 FFmpeg è tool gratuito per editare video/audio senza GUI. Combina immagini Fooocus, audio TTS, per video satirici o informativi.
@@ -61,4 +61,4 @@ ffmpeg -framerate 0.5 -i mappa_%d.png -i voce_satira.wav -c:v libx264 -c:a aac -
 - Tutorial: "FFmpeg for beginners"
 
 Scarica script: [ffmpeg-batch.sh](https://github.com/tuo-repo/ffmpeg-batch.sh)</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/ffmpeg-video-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/ffmpeg-video.md

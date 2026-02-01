@@ -9,8 +9,8 @@
   - French: `/fr/corporate-accountability`
   - German: `/de/corporate-accountability`
 
-- **New Guides & Templates**:
-  - `corporate-accountability-guide.md` - 5-step methodology for tracking pollution and government contracts
+- **New Resources & Templates**:
+  - `corporate-accountability.md` - 5-step methodology for tracking pollution and government contracts
   - `corporate-report-template.md` - Structured template for documenting corporate-government malfeasance
 
 - **Navigation Update**: Main menu now features prominent "🔴 Responsabilità Aziendale" (Corporate Accountability) link
@@ -24,7 +24,7 @@
 
 ### Content Improvements
 - All resources pages now feature corporate accountability section
-- Guides include country-specific transparency portals (Italy, France, Germany, UK)
+- resources include country-specific transparency portals (Italy, France, Germany, UK)
 - Case studies with real data (Po River, Thames, Seine, Ruhr pollution)
 - Practical toolkit with ACLED, NASA FIRMS, OpenStreetMap, government contract databases
 
@@ -35,7 +35,7 @@
 **BoycottWithAI** is a civic resistance platform combining:
 1. **Evidence-based narrative**: 71% of global pollution from 100 corporations; governments enable via contracts
 2. **Practical tools**: OSINT (ACLED, GDELT), AI (Fooocus, CrewAI), data scraping (Python, BeautifulSoup)
-3. **Guides & templates**: Downloadable markdown guides for tools; petitions, MP emails, briefings
+3. **Resources & templates**: Downloadable markdown resources for tools; petitions, MP emails, briefings
 4. **Multi-language support**: Italian, English, French, German (+ Spanish planned)
 5. **Transparency focus**: Link to government contracts, pollution declarations, corporate lobbying data
 
@@ -89,7 +89,7 @@ Before deploying, verify:
 #### Italian (`/it/`)
 - `index.astro` - Homepage: resistance hero, global issues, Italy-specific (Po pollution, wolf hunting, welfare)
 - `corporate-accountability.astro` - NEW: Track corporate responsibility with tools by country
-- `resources.astro` - Downloadable guides, templates, toolkits
+- `resources.astro` - Downloadable resources, templates, toolkits
 - `tools.astro` - Featured tools (ACLED, Bellingcat, OSINT)
 - `actions.astro` - Civic action templates
 - `methodology.astro` - Investigative methodology
@@ -104,17 +104,17 @@ Before deploying, verify:
 #### German (`/de/`)
 - Similar with Germany specifics (Ruhr pollution, forestry, coal)
 
-### Guides (Downloadable)
+### Resources (Downloadable)
 
-Located in `/public/downloads/guides/`:
-1. `scraping-python-guide.md` - Extract public data (Python, BeautifulSoup)
-2. `fooocus-visuals-guide.md` - AI image generation
-3. `tts-audio-guide.md` - Text-to-speech with emotional voices
-4. `ffmpeg-video-guide.md` - Video montage for social campaigns
-5. `crewai-agents-guide.md` - Multi-agent AI automation
-6. `osint-tools-guide.md` - ACLED, GDELT, Bellingcat, NASA usage
-7. `corporate-accountability-guide.md` - **NEW**: 5-step corporate tracking methodology
-8. `example-script-guide.md` - Working code examples
+Located in `/public/downloads/resources/`:
+1. `scraping-python.md` - Extract public data (Python, BeautifulSoup)
+2. `fooocus-visuals.md` - AI image generation
+3. `tts-audio.md` - Text-to-speech with emotional voices
+4. `ffmpeg-video.md` - Video montage for social campaigns
+5. `crewai-agents.md` - Multi-agent AI automation
+6. `osint-tools.md` - ACLED, GDELT, Bellingcat, NASA usage
+7. `corporate-accountability.md` - **NEW**: 5-step corporate tracking methodology
+8. `example-script.md` - Working code examples
 
 ### Templates (Downloadable)
 
@@ -193,7 +193,7 @@ To add new content:
 ## Key Features
 
 ### 1. Corporate Tracking
-- Step-by-step guide to identify polluters
+- Step-by-step to identify polluters
 - Access government contracts (trasparenza.it, data.gouv.fr, BundesAusschreibungen)
 - Download EMAS pollution declarations
 - Document activist arrests vs. unpunished executives
@@ -231,7 +231,7 @@ To add new content:
 - [ ] `npm run build` succeeds (no errors)
 - [ ] `dist/` folder contains `sitemap.xml`, `robots.txt`
 - [ ] All language pages generated: `/en/`, `/it/`, `/fr/`, `/de/`
-- [ ] All new guides present: `/en/corporate-accountability/`, `/it/corporate-accountability/`, etc.
+- [ ] All new resources present: `/en/corporate-accountability/`, `/it/corporate-accountability/`, etc.
 
 ### Post-Deployment
 - [ ] Test site at live URL
@@ -261,7 +261,7 @@ boycottwithai/
 │   ├── robots.txt             # SEO: Search engine crawl rules
 │   ├── sitemap.xml            # SEO: URL index
 │   ├── styles.css             # Global stylesheet
-│   ├── downloads/guides/      # Downloadable markdown guides
+│   ├── downloads/resources/      # Downloadable markdown resources
 │   └── templates/             # Text/markdown templates
 ├── src/
 │   ├── pages/
@@ -295,10 +295,10 @@ boycottwithai/
 ## Support & Maintenance
 
 ### For Questions About:
-- **Astro routing**: https://docs.astro.build/en/guides/routing/
+- **Astro routing**: https://docs.astro.build/en/resources/routing/
 - **i18n setup**: See `src/i18n/utils.ts` for examples
 - **SEO**: Check meta tags in each page's `<head>`
-- **Guides**: All markdown files in `public/downloads/guides/`
+- **Resources**: All markdown files in `public/downloads/resources/`
 
 ### To Add New Content:
 1. Create new page in `src/pages/[lang]/newpage.astro`
@@ -315,7 +315,7 @@ boycottwithai/
 ### Tracked Metrics:
 - Site traffic (unique visitors, pages/session, bounce rate)
 - Petition signatures collected
-- Guide downloads
+- downloads
 - Social media shares & engagement
 - Media coverage & backlinks
 - Policy changes resulting from pressure

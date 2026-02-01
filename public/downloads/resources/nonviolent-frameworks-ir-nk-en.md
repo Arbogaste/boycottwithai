@@ -25,7 +25,7 @@ Below are themes inspired by the original material, reframed as safe, non-operat
 
 3) Data integrity and responsible reporting
 - Safe alternatives: improve data quality through verified testimony collection, open-data monitoring, and formal discrepancy reports to platforms.
-- Tools: verification guides, templates for formal platform reports, collaboration with researchers.
+- Tools: verification resources, templates for formal platform reports, collaboration with researchers.
 
 4) Service accountability (instead of disruptive interference)
 - Alternatives: advocacy for public service transparency, legal complaints about failures, and requests for audits.

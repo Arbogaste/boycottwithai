@@ -8,4 +8,4 @@ We will not publish, distribute, or integrate instructions that enable illegal o
 - OSINT verification techniques and safety best practices.
 - Multilingual prompt templates for research, summarization, translation, and safe counter-messaging.
 
-If you have material that is intended for legal research, journalism, or harm-minimisation training, share it only with vetted partners and follow applicable laws and organizational policies. For assistance converting investigation notes into safe public briefings, use the `ethical-campaigning-guide-en.md` and the `ai-prompts-*.txt` templates as a starting point.
+If you have material that is intended for legal research, journalism, or harm-minimisation training, share it only with vetted partners and follow applicable laws and organizational policies. For assistance converting investigation notes into safe public briefings, use the ethical campaigning resource and the `ai-prompts-*.txt` templates as a starting point.

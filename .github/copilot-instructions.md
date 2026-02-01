@@ -256,7 +256,7 @@ Because Astro uses HTML streaming in on-demand rendering, redirects must be done
 
 ## i18n features
 
-In v4.0, Astro added built-in support for i18n routing that allows you to configure default and supported languages and includes valuable helper functions to assist you in serving an international audience. If you want to use this instead, see our internationalization guide to learn about these features.
+In v4.0, Astro added built-in support for i18n routing that allows you to configure default and supported languages and includes valuable helper functions to assist you in serving an international audience. If you want to use this instead, see our internationalization resources to learn about these features.
 
 This example serves each language at its own subpath, e.g. example.com/en/blog for English and example.com/fr/blog for French.
 

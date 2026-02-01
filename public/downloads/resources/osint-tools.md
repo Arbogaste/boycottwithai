@@ -1,4 +1,4 @@
-# Guida Completa: Usa Strumenti OSINT per Monitoraggio Civico
+# Strumenti OSINT per Monitoraggio Civico
 
 ## Introduzione
 OSINT (Open Source Intelligence) raccoglie dati pubblici per esporre verità nascoste. Strumenti come ACLED, GDELT aiutano a tracciare conflitti, propaganda, spese.
@@ -13,7 +13,7 @@ OSINT (Open Source Intelligence) raccoglie dati pubblici per esporre verità nas
 1. Vai su [acleddata.com](https://acleddata.com/).
 2. Registrati gratis.
 3. Filtra: Paese Italia, Event Type "Riots/Protests".
-4. Scarica CSV: analizza con Excel o Python (vedi guida scraping).
+4. Scarica CSV: analizza con Excel o Python (vedi scraping).
 5. Esempio: Trova proteste contro sgomberi.
 
 ## GDELT: Analisi Media
@@ -40,4 +40,4 @@ OSINT (Open Source Intelligence) raccoglie dati pubblici per esporre verità nas
 - Corso: Bellingcat Online Investigations
 
 Scarica checklist: [osint-checklist.md](https://github.com/tuo-repo/osint-checklist.md)</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/osint-tools-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/osint-tools.md

@@ -1,4 +1,4 @@
-# Guida Pratica: Tracciare la Responsabilità Aziendale e Governativa
+# Risorsa Pratica: Tracciare la Responsabilità Aziendale e Governativa
 
 ## Introduzione: Chi Inquina Realmente?
 
@@ -8,7 +8,7 @@
 
 **Fatto**: Quando aziende e governi nascondono dati, usano oppressione (criminalizzazione di attivisti, censura, infiltrazione).
 
-Questa guida ti insegna a:
+Questo documento ti insegna a:
 1. **Tracciare** quale azienda inquina e come
 2. **Documentare** contratti e responsabilità governativa
 3. **Esporre** bugie e nascondimenti

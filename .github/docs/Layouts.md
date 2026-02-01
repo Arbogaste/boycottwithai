@@ -161,7 +161,7 @@ Markdown Layout Props
 A Markdown layout will have access to the following information via Astro.props:
 
 file - The absolute path of this file (e.g. /home/user/projects/.../file.md).
-url - The URL of the page (e.g. /en/guides/markdown-content).
+url - The URL of the page (e.g. /en/resources/markdown-content).
 frontmatter - All frontmatter from the Markdown or MDX document.
 frontmatter.file - The same as the top-level file property.
 frontmatter.url - The same as the top-level url property.
@@ -219,7 +219,7 @@ const { title, fancyJsHelper } = Astro.props;
 
 When using any layout (either through the frontmatter layout property or by importing a layout), you must include the <meta charset="utf-8"> tag in your layout as Astro will no longer add it automatically to your MDX page.
 
-Learn more about Astro’s Markdown and MDX support in our Markdown guide.
+Learn more about Astro’s Markdown and MDX support in our Markdown.
 Nesting Layouts
 Layout components do not need to contain an entire page worth of HTML. You can break your layouts into smaller components, and combine layout components to create even more flexible, page templates. This pattern is useful when you want to share some code across multiple layouts.
 

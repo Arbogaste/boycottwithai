@@ -1,7 +1,7 @@
-# Guida Completa: Scraping Dati Pubblici con Python per Azioni Civili
+# Risorsa Completa: Scraping Dati Pubblici con Python per Azioni Civili
 
 ## Introduzione
-Questa guida ti insegna a raccogliere dati pubblici (come bilanci comunali, delibere, prezzi immobiliari) usando Python. È legale se i dati sono pubblici e non violi termini di servizio. Usa per esporre speculazione o spese militari.
+Questo documento ti insegna a raccogliere dati pubblici (come bilanci comunali, delibere, prezzi immobiliari) usando Python. È legale se i dati sono pubblici e non violi termini di servizio. Usa per esporre speculazione o spese militari.
 
 **Prerequisiti:**
 - Computer con Windows/Mac/Linux
@@ -118,4 +118,4 @@ for pdf_url in pdf_links[:5]:  # Primi 5 PDF
 Scarica questo script completo: [scraper_completo.py](https://github.com/tuo-repo/scraper_completo.py)
 
 Per aiuto, unisciti al nostro forum o apri issue su GitHub.</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/scraping-python-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/scraping-python.md

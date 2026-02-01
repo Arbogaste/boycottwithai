@@ -10,7 +10,7 @@
 **Solution**: Created dedicated section exposing that 71% of global pollution from 100 corporations.
 
 - **New Pages** (4 languages):
-  - `/it/corporate-accountability` — Italian tracking guide
+  - `/it/corporate-accountability` — Italian tracking resource
   - `/en/corporate-accountability` — English version (UK focus)
   - `/fr/corporate-accountability` — French version (France focus)
   - `/de/corporate-accountability` — German version (Germany focus)
@@ -28,9 +28,9 @@
   - **France**: data.gouv.fr, TED, EU Transparency Register
   - **Germany**: UmweltBundesamt, Lobbyregister, BundesAusschreibungen
 
-### 2. Practical Templates & Guides ✅
+### 2. Practical Templates & Resources ✅
 
-**New Guide**: `corporate-accountability-guide.md` (350+ lines)
+**New Resource**: `corporate-accountability.md` (350+ lines)
 - Step-by-step methodology for tracking corporate pollution
 - Government contract verification workflows
 - Safety checklists & legal protection guidelines
@@ -55,8 +55,8 @@
 
 **Resources Pages Updated**:
 - All 4 languages now feature corporate accountability section
-- Links to full guide + downloadable template
-- Integrated with existing guides (OSINT, Python, AI tools)
+- Links to full resource + downloadable template
+- Integrated with existing resources (OSINT, Python, AI tools)
 
 ### 4. SEO Optimization ✅
 
@@ -96,7 +96,7 @@ dist/
 ├── fr/corporate-accountability/index.html
 ├── de/corporate-accountability/index.html
 ├── templates/corporate-report-template.md
-├── downloads/guides/corporate-accountability-guide.md
+├── downloads/resources/corporate-accountability.md
 └── [all other pages & assets]
 ```
 
@@ -109,7 +109,7 @@ dist/
 | Total pages | 50+ |
 | Languages | 4 (IT, EN, FR, DE) |
 | New corporate pages | 4 |
-| New guides | 1 (corporate-accountability-guide.md) |
+| New resources | 1 (corporate-accountability.md) |
 | New templates | 1 (corporate-report-template.md) |
 | Translation keys | 850+ |
 | Case studies included | 3 (Po, Thames, Seine, Ruhr) |
@@ -162,7 +162,7 @@ Each claim backed by:
 - [ ] Submit sitemap.xml to Google Search Console
 - [ ] Verify hreflang tags in source
 - [ ] Test language picker navigation
-- [ ] Verify download links (guides, templates)
+- [ ] Verify download links (resources, templates)
 
 ### Ongoing Maintenance
 - [ ] Monitor Google Search Console for crawl errors
@@ -176,7 +176,7 @@ Each claim backed by:
 ## 📝 Content Quality Checklist
 
 ✅ **Accuracy**: All data from public sources (EMAS, government portals, ACLED, NASA)  
-✅ **Clarity**: Step-by-step guides for beginners  
+✅ **Clarity**: Step-by-step instructions for beginners  
 ✅ **Actionability**: Downloadable templates, copy-paste letters to MPs  
 ✅ **Safety**: Checklists for OSINT, legal protections, no personal data  
 ✅ **Localization**: Country-specific tools, examples, languages  
@@ -214,9 +214,9 @@ Each claim backed by:
 
 ### Medium Priority (Week 2-3)
 1. [ ] Create infographics (71% pollution stat, company examples)
-2. [ ] Record short videos (how to use corporate accountability guide)
+2. [ ] Record short videos (how to use corporate accountability resources)
 3. [ ] Add interactive tracker (corporate contracts by country)
-4. [ ] Translate guides into additional languages (ES, PT, RU)
+4. [ ] Translate resources into additional languages (ES, PT, RU)
 5. [ ] Create email campaign templates for list building
 
 ### Long-Term (Month 2+)
@@ -232,14 +232,14 @@ Each claim backed by:
 
 ### Traffic Goals (3 Months)
 - 1,000+ monthly unique visitors
-- 500+ guide downloads
+- 500+ resources downloads
 - 200+ corporate reports filed (user-generated)
 - 50+ media mentions
 - 5+ policy changes/inquiries initiated
 
 ### Engagement Goals
 - Average page time: 3+ minutes
-- Guide download rate: 20% of visitors
+- Resource download rate: 20% of visitors
 - Template usage rate: 10% of visitors
 - Social shares: 500+ per month
 - Email newsletter: 1,000+ subscribers
@@ -264,7 +264,7 @@ Each claim backed by:
 - **Astro Docs**: https://docs.astro.build/
 - **i18n Setup**: See `src/i18n/utils.ts` comments
 - **SEO**: See meta tags in each page `<head>`
-- **Guides**: All markdown in `/public/downloads/guides/`
+- **Resources**: All markdown in `/public/downloads/resources/`
 
 ---
 
@@ -274,7 +274,7 @@ Each claim backed by:
 ✅ **Corporate Accountability Framework**: Fully implemented  
 ✅ **SEO Optimization**: Complete (robots.txt, sitemap.xml, meta tags)  
 ✅ **Multi-Language Support**: All 4 languages updated  
-✅ **Documentation**: Full deployment guide created  
+✅ **Documentation**: Full deployment resources created  
 ✅ **Ready for Production**: Yes, cleared for launch  
 
 ---

@@ -8,16 +8,14 @@ Our goal is to be useful fast, not polished forever. Here's what that means:
 - Everything works, but can be better
 - Every section needs human eyes—yours
 - Inaccuracies or tone problems? Flag them. Improve them.
-- Over time: more guides, more case studies, more real examples from real campaigns
+- Over time: more resources, more case studies, more real examples from real campaigns
 - Your experience + corrections shape what this becomes
 
 **Not waiting for perfect. Building toward useful.** If something here helps you fight for what you believe in, use it. If it needs work, tell us.
 
 ---
 
-Tools and guides for people who care about peace, justice, and accountability. Built by activists and coders working together.
-
-**This project started simple:** Someone needed templates to pressure politicians about arms sales. Another wanted OSINT guides that didn't hide behind jargon. So we built them. Then we kept going—because the work is real, and it matters.
+Tools and resources for people who care about peace, justice, and accountability. Built by activists and coders working together.
 
 We use AI and code, but never as a substitute for human judgment. Every tool serves the people doing the hard work: researchers, activists, organizers, journalists. The technology is just scaffolding.
 
@@ -42,10 +40,10 @@ Real campaigns have won using these tools. You can too.
 
 ## What's in here
 
-- **Templates people actually use:** Petitions, MP emails, briefings, safety guides
+- **Templates people actually use:** Petitions, MP emails, briefings, safety materials
 - **Case studies:** How people exposed corporate abuse and won
 - **Data & research:** Free tools to investigate and monitor
-- **Guides:** Step-by-step, no hidden complexity
+- **Resources:** Step-by-step, no hidden complexity
 - **Available in:** Italian, English, French, German
 
 ## Add your own cause or research
@@ -55,15 +53,15 @@ This isn't a closed archive. **You can add your fight.**
 **Found something that needs exposure?**
 - Write a case study documenting what you discovered
 - Share your research—timeline, evidence, impact
-- Add it as a guide so others can learn from your work
+- Add it as a resource so others can learn from your work
 
 **Building a campaign?**
 - Create a briefing template specific to your issue
-- Add a monitoring guide for tracking your target
+- Add a monitoring resource for tracking your target
 - Share the petition language that works
 
 **Have tools that helped you?**
-- Write a practical guide showing how you used them
+- Write a practical resource showing how you used them
 - Document what worked, what didn't
 - Translate it to another language
 
@@ -78,7 +76,7 @@ This isn't a closed archive. **You can add your fight.**
 
 **For researchers & writers:**
 - Document what you find—we'll publish it
-- Improve guides and templates
+- Improve resources and templates
 - Fact-check and verify sources
 - Your analysis teaches others
 
@@ -90,7 +88,7 @@ This isn't a closed archive. **You can add your fight.**
 
 **For translators:**
 - Help us reach more people in your language
-- Guides, templates, UI—all need care in multiple languages
+ - Resources, templates, UI—all need care in multiple languages
 
 **We mean this:** The best contributions are the ones that solve real problems for real people. If it helps you fight for something you believe in, we want to know about it.
 
@@ -99,16 +97,18 @@ This isn't a closed archive. **You can add your fight.**
 
 ## What's included
 
-- **Templates:** Ready-to-use petitions, MP emails, briefings, OSINT safety guides (`/public/templates/`)
+- **Templates:** Ready-to-use petitions, MP emails, briefings, OSINT safety materials (`/public/templates/`)
 - **Case studies:** 20+ documented investigations with evidence links and actionable steps
 - **Data:** Corporate accountability database with company risk scores and sector breakdowns
 - **Methodology:** Non-violent civic action playbook with phase examples
 - **Multi-language:** UI and templates in Italian, English, French, German
 - **AI & Data tools:** 
-  - [**AI for Campaigns guide**](./public/downloads/guides/ai-for-campaigns-en.md) — Practical workflows for activists (summarizing reports, finding patterns, training models, automating tasks)
-  - Integration guides for fine-tuning, dataset creation, and campaign automation
+- **AI & Data tools:** 
+  - [**AI for Campaigns**](./public/downloads/resources/ai-for-campaigns-en.md) — Practical workflows for activists (summarizing reports, finding patterns, training models, automating tasks)
+  - Integration resources for fine-tuning, dataset creation, and campaign automation
   - Safety rules for AI in high-surveillance countries
   - Tools: LLaMA Factory, OLLAMA, OpenRefine, Dolt, Apache Airflow
+  - **Infringement report templates:** [Download templates (EN/IT)](./public/templates/infringement-report-en.md) — Reporting templates and evidence checklist for Italy, France, Germany
 
 ## Contribute
 
@@ -130,7 +130,7 @@ We welcome **anyone** — coders, writers, translators, researchers, organizers.
 **For non-coders:**
 - Suggest improvements, case studies, and corrections via issues
 - Help fact-check and verify sources
-- Translate guides to your language
+- Translate resources to your language
 - Share your own resources (see "Add your own cause or research" above)
 
 ## Add your own cause or research
@@ -140,22 +140,22 @@ This isn't a closed archive. **You can add your fight.**
 **Found something that needs exposure?**
 - Write a case study documenting what you discovered
 - Share your research—timeline, evidence, impact
-- Add it as a guide so others can learn from your work
+- Add it as a resource so others can learn from your work
 
 **Building a campaign?**
 - Create a briefing template specific to your issue
-- Add a monitoring guide for tracking your target
+- Add a monitoring resource for tracking your target
 - Share the petition language that works
 
 **Have tools that helped you?**
-- Write a practical guide showing how you used them
+- Write a practical resource showing how you used them
 - Document what worked, what didn't
 - Translate it to another language
 
 **No GitHub experience?** Open an issue or email—we'll help integrate your contribution. Your voice and work belong here.
 
 **More detailed:**
-- Case studies go in `/public/downloads/guides/` (`.md` format, any language)
+- Case studies go in `/public/downloads/resources/` (`.md` format, any language)
 - Templates in `/public/templates/` (copy-paste ready, with clear instructions)
 - UI text in `src/i18n/ui.ts` (translations help us reach more people)
 - Page content in `src/pages/<lang>/` (your language, your perspective)
@@ -166,9 +166,9 @@ Every contribution teaches someone else how to organize, how to research, how to
 
 - **Non-violent, lawful action only** — we emphasize diplomacy, transparency, and institutional pressure.
 - **Evidence-based** — every claim links to sources (UN reports, satellite data, leaked documents, news archives).
-- **Safe** — OSINT and monitoring guides protect sources and PII. Always follow local law.
+- **Safe** — OSINT and monitoring resources protect sources and PII. Always follow local law.
 - **Practical** — no theory-only content; templates are copy-paste ready.
-- **Open & accessible** — code, guides, and data are freely shared. Community contributions shape priorities.
+- **Open & accessible** — code, resources, and data are freely shared. Community contributions shape priorities.
 
 ## AI & Automation Tools
 
@@ -187,7 +187,7 @@ This project integrates AI-assisted development and workflow automation:
 - **Dolt** — Version-controlled databases for tracking changes in contracts, spending, and corporate records
 - **Apache Airflow** — Workflow automation for data pipelines
 
-**Safety first:** See the [Privacy & Security guide](/downloads/guides/privacy-security-tools-en.md) for how to use AI and automation tools safely in high-risk contexts. Never trust outputs without human verification—always fact-check and cite sources.
+**Safety first:** See the [Privacy & Security resource](/downloads/resources/privacy-security-tools-en.md) for how to use AI and automation tools safely in high-risk contexts. Never trust outputs without human verification—always fact-check and cite sources.
 
 ## Run locally
 

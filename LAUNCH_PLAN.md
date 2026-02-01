@@ -19,7 +19,7 @@ Then visit http://localhost:3000 and:
 - [ ] Test Italian homepage (`/it/`)
 - [ ] Click 🔴 "Responsabilità Aziendale" menu (should be prominent)
 - [ ] Verify `/it/corporate-accountability` loads
-- [ ] Download one guide (should work)
+   - [ ] Download one resource (should work)
 - [ ] Test language picker (switch to EN/FR/DE)
 - [ ] Check mobile responsiveness (open DevTools)
 
@@ -42,12 +42,12 @@ vercel --prod
 **Option C: GitHub Pages (Free, Slower)**
 - Push repo to GitHub
 - Enable GitHub Pages in settings
-- Build auto-triggers
+ - Build automated signals/indicators
 
 ### 4. Post-Deployment (Next Day)
 - [ ] Test live URL on all devices (desktop, tablet, mobile)
 - [ ] Verify all links work (check for 404s)
-- [ ] Test download buttons (guides, templates)
+- [ ] Test download buttons (resources, templates)
 - [ ] Verify meta tags in page source (right-click → View Page Source)
 
 ---
@@ -71,13 +71,13 @@ vercel --prod
 
 ### Build Backlinks (High Impact for SEO)
 1. **Email to environmental NGOs**:
-   - Send: "New free resource: Corporate Accountability Guide"
+   - Send: "New free resource: Corporate Accountability"
    - Request: Link from their resources page
    - Example targets: Greenpeace, WWF, Amnesty, FIDH
 
 2. **Press Release**:
    - Submit to: PRWeb, EuroScienceNews, EnviroGuardian
-   - Headline: "71% of Global Pollution from 100 Corporations—New Tracking Guide Released"
+   - Headline: "71% of Global Pollution from 100 Corporations—New Tracking Resource Released"
    - Link back to `/[lang]/corporate-accountability`
 
 3. **Social Media**:
@@ -95,7 +95,7 @@ vercel --prod
 Governi pagano questi inquinatori.
 Attivisti che denunciano sono arrestati.
 
-Guida GRATUITA per tracciare e provare la corruzione:
+Risorsa GRATUITA per tracciare e provare la corruzione:
 [link to /it/corporate-accountability]
 
 Scarica, agisci, condividi.
@@ -104,13 +104,13 @@ Scarica, agisci, condividi.
 
 ### Email Outreach
 **To Environmental Media**:
-- Subject: "New Guide: Track Corporate Pollution & Government Corruption"
-- Body: Brief summary + link to guide
-- CTA: "Download free guide, use template to file report"
+- Subject: "New Resource: Track Corporate Pollution & Government Corruption"
+- Body: Brief summary + link to resource
+- CTA: "Download resource, use template to file report"
 
 **To Activist Groups**:
 - Subject: "Free Tools for Tracking Corporate Accountability"
-- Body: What the guide offers + step-by-step process
+- Body: What the resource offers + step-by-step process
 - CTA: "Join our community, use template, get legal support"
 
 **To MPs/Policy Makers**:
@@ -136,8 +136,8 @@ Scarica, agisci, condividi.
 
 **Metrics to Track**:
 - Traffic source (search, social, direct)
-- Top pages (which guides/templates most popular)
-- Guide downloads (% of visitors who download)
+- Top pages (which resources/templates most popular)
+- Resource downloads (% of visitors who download)
 - Time on page (should be 3+ minutes for corporate accountability)
 
 ### Google Analytics (Alternative)
@@ -165,7 +165,7 @@ Scarica, agisci, condividi.
 - [ ] Meta tags verified (title, description, keywords)
 - [ ] Mobile responsiveness checked
 - [ ] All links functional (no 404s)
-- [ ] Downloads work (guides, templates)
+- [ ] Downloads work (resources, templates)
 
 ### Deployment (Tomorrow)
 - [ ] Deploy to Netlify/Vercel
@@ -193,7 +193,7 @@ Scarica, agisci, condividi.
 71% of global emissions from 100 corporations.
 Governments enable. Activists are arrested.
 
-We created a FREE guide to track corporate pollution 
+We created a FREE resource to track corporate pollution 
 + government complicity with public data.
 
 Download now. Use the template. File a report.
@@ -205,7 +205,7 @@ Download now. Use the template. File a report.
 ### Twitter/X
 **Thread Starter**:
 ```
-🧵 Today we're releasing a FREE guide to track 
+🧵 Today we're releasing a FREE resource to track 
 corporate pollution and government complicity.
 
 Here's what you'll learn:
@@ -223,7 +223,7 @@ Here's what you'll learn:
 [0-5s] Show Earth, overlay: "71% of pollution from 100 companies"
 [5-15s] Show government contract database
 [15-25s] Show EMAS declaration, case study
-[25-30s] Call-to-action: "Link in bio for free guide"
+[25-30s] Call-to-action: "Link in bio for free resource"
 ```
 
 ---
@@ -240,7 +240,7 @@ Here's what you'll learn:
 
 ### Partnerships
 1. **NGO Collaborations**: Greenpeace, WWF, Amnesty, FIDH, OCCRP
-   - Cross-promote guides
+   - Cross-promote resources
    - Co-author case studies
    - Shared events/webinars
 
@@ -250,7 +250,7 @@ Here's what you'll learn:
    - Request citation/backlink
 
 3. **Educational Institutions**: Universities with environmental programs
-   - Use guide in curriculum
+   - Use resource in curriculum
    - Student projects using platform
    - Academic research partnerships
 
@@ -276,8 +276,8 @@ Here's what you'll learn:
 - [ ] Include: Environment Agency data, overflow events
 - [ ] Host: Webinar "How to Use Government Contract Databases"
 
-### Week 4: Guide Translation
-- [ ] Translate corporate accountability guide to Spanish
+### Week 4: Resource Translation
+- [ ] Translate corporate accountability resource to Spanish
 - [ ] Launch Spanish pages
 - [ ] Announce: "Now Available in 5 Languages"
 
@@ -303,14 +303,14 @@ Here's what you'll learn:
 
 ### Traffic Goals
 - [ ] 500+ unique visitors
-- [ ] 100+ guide downloads
+- [ ] 100+ resource downloads
 - [ ] 50+ template downloads
 - [ ] 5+ media mentions
 - [ ] 10+ backlinks from NGO sites
 
 ### Engagement Goals
 - [ ] Avg. 3+ minutes on corporate accountability page
-- [ ] 20% download rate (visitors → guides)
+- [ ] 20% download rate (visitors → resources)
 - [ ] 100+ social shares
 - [ ] 50+ newsletter signups
 
@@ -328,7 +328,7 @@ Here's what you'll learn:
 CONTENT:
   ✅ All 4 languages complete (IT, EN, FR, DE)
   ✅ Corporate accountability pages created
-  ✅ Guides & templates downloadable
+   ✅ Resources & templates downloadable
   ✅ Navigation updated
   ✅ All links functional
 

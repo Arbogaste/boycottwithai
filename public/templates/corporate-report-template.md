@@ -157,7 +157,7 @@ Before publishing, verify:
 ☐ No personal information of activists disclosed
 ☐ All numbers double-checked against original documents
 ☐ Report shared with journalist/NGO for peer review
-☐ Legal safety reviewed (consult Amnesty / FIDH guide)
+☐ Legal safety reviewed (consult Amnesty / FIDH )
 
 ---
 

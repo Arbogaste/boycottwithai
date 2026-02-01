@@ -84,4 +84,4 @@ print("Risultato:", result)
 - Integra con scraping Python per dati locali.
 
 Scarica completo: [disruptive_action.py](https://github.com/tuo-repo/disruptive_action.py)</content>
-<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/guides/example-script-guide.md
+<parameter name="filePath">/home/arbogaste/Documenti/attack/AI_marxist/boycottwithai/public/downloads/resources/example-script.md
