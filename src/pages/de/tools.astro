@@ -14,6 +14,9 @@ const t = useTranslations(lang);
 </head>
 
 <Base>
+  <section>
+    <h1>{t('hero.title')}</h1>
+    <p class="muted">{t('hero.subtitle')}</p>
       <div class="grid">
         <ToolCard name={t('tools.acled.name')} short={t('tools.acled.short')} why={t('tools.acled.why')} example={t('tools.acled.example')} link="https://acleddata.com" />
         <ToolCard name={t('tools.gdelt.name')} short={t('tools.gdelt.short')} why={t('tools.gdelt.why')} example={t('tools.gdelt.example')} link="https://www.gdeltproject.org" />
@@ -35,43 +38,43 @@ const t = useTranslations(lang);
         </ol>
       </div>
       <div class="card">
-        <h4>{t('tools.safety.title')}</h4>
+        <h2>{t('tools.safety.title')}</h2>
         <p class="muted">{t('tools.safety.desc')}</p>
   <a class="secondary" href="/templates/osint-safety-en.txt" download>OSINT safety resources (EN)</a>
       </div>
       <div class="card">
-        <h4>{t('tools.digital.title')}</h4>
+        <h2>{t('tools.digital.title')}</h2>
         <p>{t('tools.digital.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('tools.training.title')}</h4>
+        <h2>{t('tools.training.title')}</h2>
         <p>{t('tools.training.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('tools.ai.monitoring.title')}</h4>
+        <h2>{t('tools.ai.monitoring.title')}</h2>
         <p>{t('tools.ai.monitoring.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('tools.visualization.title')}</h4>
+        <h2>{t('tools.visualization.title')}</h2>
         <p>{t('tools.visualization.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('tools.policy.title')}</h4>
+        <h2>{t('tools.policy.title')}</h2>
         <p>{t('tools.policy.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('tools.divestment.title')}</h4>
+        <h2>{t('tools.divestment.title')}</h2>
         <p>{t('tools.divestment.desc')}</p>
       </div>
       <div class="card">
-        <h4>{t('local.targets.title')}</h4>
+        <h2>{t('local.targets.title')}</h2>
         <p>{t('local.targets.desc')}</p>
       </div>
     </div>
   </section>
   <section style="margin-top:20px">
     <div class="card">
-  <h4>{t('tools.ai.title')}</h4>
+  <h2>{t('tools.ai.title')}</h2>
   <p class="muted">{t('tools.ai.desc')}</p>
       <ul>
         <li><a href="/templates/ai-prompts-en.txt" target="_blank">AI prompts library (EN)</a></li>

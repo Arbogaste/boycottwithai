@@ -7,11 +7,15 @@
     "build": "astro build",
     "check:templates": "node ./scripts/verify-templates.js",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "a11y": "node ./scripts/a11y-check.js"
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
     "astro": "^5.14.1",
     "rss-parser": "^3.12.0"
+  },
+  "devDependencies": {
+    "jsdom": "^22.1.0"
   }
 }

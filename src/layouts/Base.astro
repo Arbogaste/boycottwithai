@@ -7,7 +7,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<html lang={lang} class="theme-light">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -43,6 +43,7 @@ const t = useTranslations(lang);
         </div>
         <nav class="main-nav" aria-label="Main navigation">
           <LanguagePicker />
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark mode"></button>
           <button class="mobile-hamburger" aria-label="Open navigation" aria-expanded="false" id="mobileNavToggle" aria-controls="mainNavLinks">
             <svg class="hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
@@ -51,7 +52,7 @@ const t = useTranslations(lang);
             <a href={`/${lang}/tools-resources/`}>{t('nav.tools')} & {t('nav.resources')}</a>
             <a href={`/${lang}/actions-methodology/`} style="font-weight:bold">{t('nav.actions')} • 🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
             <a href={`/${lang}/manifesto-feeds/`}>{t('nav.manifesto')} & {lang === 'it' ? 'Feed' : lang === 'fr' ? 'Flux' : lang === 'de' ? 'Feeds' : 'Feeds'}</a>
-            <a href="/rss.xml" class="muted" style="font-size:0.9em">RSS</a>
+            <a href="/rss.xml" class="muted" style="font-size:0.9em" aria-label="Subscribe to RSS feed">RSS</a>
           </div>
         </nav>
       </div>
@@ -75,7 +76,6 @@ const t = useTranslations(lang);
           </div>
         </div>
         <div class="footer-right">
-          <LanguagePicker />
         </div>
       </div>
     </footer>
@@ -123,6 +123,32 @@ const t = useTranslations(lang);
             const url = new URL(href, location.href);
             if(location.pathname.startsWith(url.pathname)) l.setAttribute('aria-current','page');
           } catch(e) { }
+        });
+      })();
+      // Dark mode theme toggle with localStorage
+      (function(){
+        const html = document.documentElement;
+        const themeToggle = document.getElementById('themeToggle');
+        const themeKey = 'boycottwithai-theme';
+        
+        // Load saved theme or default to light
+        const savedTheme = localStorage.getItem(themeKey) || 'light';
+        html.classList.toggle('theme-dark', savedTheme === 'dark');
+        
+        // Update button text
+        const updateButtonText = () => {
+          const isDark = html.classList.contains('theme-dark');
+          themeToggle.textContent = isDark ? '☀️' : '🌙';
+          themeToggle.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+        };
+        updateButtonText();
+        
+        // Toggle theme on click
+        themeToggle.addEventListener('click', () => {
+          const isDark = html.classList.contains('theme-dark');
+          html.classList.toggle('theme-dark', !isDark);
+          localStorage.setItem(themeKey, isDark ? 'light' : 'dark');
+          updateButtonText();
         });
       })();
     </script>

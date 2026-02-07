@@ -1,0 +1,192 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('actions.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('actions.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('actions.title')}</h1>
+    <p class="muted">{t('actions.subtitle')}</p>
+
+    <article class="card" style="margin-top:18px;border:1px solid #f0a;padding:12px">
+      <h3> Safety First: Digital Security & Privacy</h3>
+      <p>Before you start, protect yourself. Activists in high-risk contexts face surveillance and retaliation. Here's what you need to know:</p>
+      
+      <strong>Why it matters:</strong> Your communications, location, and online activity can reveal your identity and put allies at risk.
+
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ Essential tools (click to expand)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>Tor Browser</strong> — Hide your IP and location when researching sensitive topics. <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">Download</a></li>
+          <li><strong>Signal</strong> — End-to-end encrypted messaging. <a href="https://signal.org/" target="_blank" rel="noopener">Download</a></li>
+          <li><strong>ProtonMail</strong> — Encrypted email for sensitive contact. <a href="https://protonmail.com/" target="_blank" rel="noopener">Sign up</a></li>
+          <li><strong>VeraCrypt</strong> — Encrypt your hard drive. <a href="https://www.veracrypt.fr/" target="_blank" rel="noopener">Download</a></li>
+          <li><strong>KeePass</strong> — Secure password manager. <a href="https://keepass.info/" target="_blank" rel="noopener">Download</a></li>
+        </ul>
+        <p style="margin-top:12px;font-size:0.9em;color:#666">For in-depth threat modeling and how to choose the right tools, see our <a href="/downloads/resources/privacy-security-tools-en.md" download><strong>Privacy & Security resource</strong></a> (PDF).</p>
+      </details>
+
+      <strong style="display:block;margin-top:12px">Quick checklist before acting:</strong>
+      <ul style="padding-left:20px">
+        <li>Use a separate device or account for sensitive work</li>
+        <li>Enable two-factor authentication on all important accounts</li>
+        <li>Use unique, strong passwords (with KeePass)</li>
+        <li>Avoid linking anonymous and identified activity</li>
+        <li>Don't take screenshots—use screen recording instead</li>
+        <li>Delete messages and conversations regularly</li>
+      </ul>
+    </article>
+
+    <h2 style="margin-top:28px">Campaign Methods</h2>
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Targeted Economic Pressure</h4>
+        <p>Use boycotts, divestment campaigns, and shareholder activism to reduce incentives for war profiteering.</p>
+      </div>
+      <div class="card">
+        <h4>Peaceful Assemblies</h4>
+        <p>Plan accessible, lawful and non-violent gatherings with trained observers and clear communication plans.</p>
+      </div>
+      <div class="card">
+        <h4>Policy & Advocacy</h4>
+        <p>Advocate for arms export transparency, budget audits, and increased funding for diplomacy and humanitarian aid.</p>
+      </div>
+      <div class="card">
+        <h4>Mutual Aid</h4>
+        <p>Coordinate support for affected communities: transparent distribution, sign-up forms and accountability.</p>
+      </div>
+    </div>
+
+    <section style="margin-top:18px">
+      <h3>Shareable Templates</h3>
+      <p class="muted">Downloadable templates include a phase-aligned checklist, media scripts, and an evaluation sheet to measure impact against objectives.</p>
+      <ul>
+        <li>Leaflet A4 — English / Italian</li>
+        <li>Press release — editable markdown</li>
+        <li>Social media calendar — example CSV</li>
+      </ul>
+    </section>
+
+    <!-- METHODOLOGY SECTION -->
+    <h2 style="margin-top:32px">Methodology: Monitoring, Investigation & Documentation</h2>
+    <p class="muted">{t('methodology.subtitle')}</p>
+
+    <div class="card" style="margin-top:12px">
+      <h3>Current Situation: 2024–2025</h3>
+      <ul>
+        <li><strong>Escalation & civilian harm:</strong> Over 30,000 civilians killed in Gaza (OCHA, 2024), mass displacement in Sudan and Yemen, and record attacks on infrastructure. UN and humanitarian agencies warn of famine and blocked aid corridors.</li>
+        <li><strong>Climate breakdown:</strong> 2024 saw record CO₂ emissions and over 40 million climate refugees (IDMC). COP28 failed to deliver binding fossil fuel phase-out.</li>
+        <li><strong>Institutional failure:</strong> UN Security Council blocked by vetoes; EU and G7 increase arms exports and military budgets, ignoring calls for ceasefire and humanitarian access.</li>
+        <li><strong>What you can do:</strong> Use <a href="/templates/monitoring-sample-en.txt" download>monitoring templates</a> to track local impacts, document evidence, and share with journalists and MPs. Example: log every attack on civilian infrastructure in your city or region, and send monthly reports to local representatives and media.</li>
+      </ul>
+      <p class="muted">Data sources: OCHA, SIPRI, IDMC, UNHCR, ACLED. See <a href="/en/tools-resources/">Tools & Resources</a> for templates and resources.</p>
+    </div>
+
+    <article class="card" style="margin-top:18px">
+      <h3>{t('methodology.analysis')}</h3>
+      <p class="muted">{t('methodology.analysis_detail')}</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>Real-World Workflow: From Evidence to International Complaint</h3>
+      <ol>
+        <li>Gather evidence (screenshots, PDFs, public data, testimonies) and store securely (Nextcloud, Proton Drive, OnionShare).</li>
+        <li>Verify and cross-check data with public sources and international databases (<a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat</a>, <a href="https://www.lighthousereports.com/">Lighthouse Reports</a>, <a href="https://www.occrp.org/">OCCRP</a>).</li>
+        <li>Prepare a clear report or visualization and publish on a public dashboard (<a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>) or send to journalists/NGOs.</li>
+        <li>For serious violations, use FIDH/Amnesty templates and file with ECHR, UN, or national authorities (<a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty</a>).</li>
+        <li>Make the case public: the more visible, the harder to cover up. Use media, briefings, social media, and institutional pressure.</li>
+      </ol>
+      <p class="muted">For safety, see the <a href="/templates/osint-safety-en.txt" download>OSINT Safety</a>. All these resources are used by journalists and activists who have achieved trials, resignations, and law changes in the EU.</p>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>{t('osint.title')}</h3>
+      <p class="muted">{t('osint.intro')}</p>
+      <ul>
+        <li><a href="https://acleddata.com">{t('osint.acled')}</a></li>
+        <li><a href="https://www.gdeltproject.org">{t('osint.gdelt')}</a></li>
+        <li><a href="https://www.bellingcat.com">{t('osint.bellingcat')}</a></li>
+        <li><a href="https://liveuamap.com">{t('osint.liveuamap')}</a></li>
+        <li><a href="https://earthdata.nasa.gov/firms">{t('osint.nasa')}</a></li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h3>Quick OSINT starter checklist</h3>
+      <ol>
+        <li class="muted">Pick a narrow target: company/contract with a clear timeline or transaction ID.</li>
+        <li class="muted">Gather 3 primary sources: news, NGO report, or satellite image. Save permalinks and timestamps.</li>
+        <li class="muted">Create a one-page briefing using <a href="/templates/briefing-en.txt" download>briefing-en.txt</a>: keep it to one A4 and state the ask.</li>
+        <li class="muted">Choose a monitoring template <a href="/templates/monitoring-sample-en.txt" download>monitoring-sample-en.txt</a> and track developments.</li>
+        <li class="muted">Run the OSINT safety checklist (<a href="/templates/osint-safety-en.txt" download>osint-safety-en.txt</a>) before publishing any claims or images.</li>
+      </ol>
+      <p class="muted">Outputs: one brief for journalists, a petition, and a monitoring log. Store logs and replies as evidence in a single shared folder for further escalation.</p>
+    </article>
+
+    <!-- CORPORATE ACCOUNTABILITY SECTION -->
+    <h2 style="margin-top:32px">Track Corporate Responsibility & Investigations</h2>
+    <p class="muted">71% of global emissions from 100 corporations. Governments enable pollution via contracts. Activists who expose this are arrested. Here's how to prove it.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Corporate Pollution</h4>
+        <p class="muted">Who actually dumps toxins? Which rivers, air, soil?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Discharges:</strong> Rivers, seas, groundwater contaminated</li>
+          <li><strong>Emissions:</strong> Air pollution (SOx, NOx, particulates, GHG)</li>
+          <li><strong>Waste:</strong> Toxic, nuclear, plastic dumping</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Tool:</strong> NASA FIRMS (real-time fire/pollution) + OpenStreetMap (industrial sites)</p>
+      </div>
+
+      <div class="card">
+        <h4>Government Contracts (Hidden Corruption)</h4>
+        <p class="muted">Governments pay polluters. Public contracts prove it.</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Billions €/yr:</strong> To polluting companies (transparency.gov)</li>
+          <li><strong>No Audits:</strong> Zero independent monitoring</li>
+          <li><strong>No Fines:</strong> Government ignores violations</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Case:</strong> Thames pollution £50M contract zero enforcement</p>
+      </div>
+
+      <div class="card">
+        <h4>Activist Oppression</h4>
+        <p class="muted">Who gets arrested? Protesters or CEOs?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Arrested:</strong> Activists exposing pollution</li>
+          <li><strong>Unpunished:</strong> Corporate executives never charged</li>
+          <li><strong>Threats:</strong> Against journalists, whistleblowers</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Data:</strong> Activists arrested 10x more than polluting CEOs</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Corporate Accountability Resources</h4>
+      <p class="muted">5-step methodology: identify → track → document → expose → act. Report templates, FOIA requests, legal safety.</p>
+      <a class="secondary" href="/downloads/resources/corporate-accountability.md" download>Download PDF Resources</a>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Corporate Report Template</h4>
+      <p class="muted">Structured template to document pollution, government contracts, activist oppression. Ready for media & institutions.</p>
+      <a class="secondary" href="/templates/corporate-report-template.md" download>Download Template</a>
+    </div>
+
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h3>Ready to Start?</h3>
+      <p class="muted">If you're ready to take action, start a campaign or join an existing one using our starter templates and checklists. Check <a href={`/${lang}/tools-resources/`}>Tools & Resources</a> for downloadable campaign materials.</p>
+    </div>
+  </section>
+</Base>

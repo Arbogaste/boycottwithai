@@ -1,0 +1,136 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('actions.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('actions.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('actions.title')}</h1>
+    <p class="muted">{t('actions.subtitle')}</p>
+
+    <article class="card" style="margin-top:18px;border:1px solid #f0a;padding:12px">
+      <h3>Sicherheit an erster Stelle: Digitale Sicherheit & Datenschutz</h3>
+      <p>Bevor du anfängst, schütze dich selbst. Aktivisten in risikoreichen Kontexten sehen sich Überwachung und Vergeltung gegenüber. Hier ist, was du wissen musst:</p>
+      
+      <strong>Warum es wichtig ist:</strong> Deine Kommunikation, dein Standort und deine Online-Aktivität können deine Identität offenbaren und Verbündete gefährden.
+
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ Wichtige Werkzeuge (zum Erweitern klicken)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>Tor Browser</strong> — Verberge deine IP und deinen Standort beim Recherchieren sensiblerer Themen. <a href="https://www.torproject.org/download/" target="_blank" rel="noopener">Herunterladen</a></li>
+          <li><strong>Signal</strong> — Nachrichtenübermittlung mit End-to-End-Verschlüsselung. <a href="https://signal.org/" target="_blank" rel="noopener">Herunterladen</a></li>
+          <li><strong>ProtonMail</strong> — Verschlüsselte E-Mail für sensible Kontakte. <a href="https://protonmail.com/" target="_blank" rel="noopener">Registrieren</a></li>
+          <li><strong>VeraCrypt</strong> — Verschlüssele deine Festplatte. <a href="https://www.veracrypt.fr/" target="_blank" rel="noopener">Herunterladen</a></li>
+          <li><strong>KeePass</strong> — Sicherer Passwort-Manager. <a href="https://keepass.info/" target="_blank" rel="noopener">Herunterladen</a></li>
+        </ul>
+        <p style="margin-top:12px;font-size:0.9em;color:#666">Für umfassende Bedrohungsmodellierung und wie man die richtigen Werkzeuge auswählt, siehe unsere vollständige <a href="/downloads/resources/privacy-security-tools-de.md" download aria-label="Download Datenschutz- und Sicherheitsressourcen PDF"><strong>Datenschutz- & Sicherheitsressourcen</strong></a> (PDF).</p>
+      </details>
+
+      <strong style="display:block;margin-top:12px">Schnelle Checkliste vor dem Handeln:</strong>
+      <ul style="padding-left:20px">
+        <li>Verwende ein separates Gerät oder Konto für sensible Arbeiten</li>
+        <li>Aktiviere Zwei-Faktor-Authentifizierung auf allen wichtigen Konten</li>
+        <li>Verwende eindeutige, starke Passwörter (mit KeePass)</li>
+        <li>Vermeide Verknüpfung von anonymer und identifizierter Aktivität</li>
+        <li>Mache keine Screenshots—verwende stattdessen Bildschirmaufnahme</li>
+        <li>Lösche Nachrichten und Unterhaltungen regelmäßig</li>
+      </ul>
+    </article>
+
+    <div class="card" style="margin-top:18px;border:2px solid var(--accent);background:rgba(255,107,107,0.05)">
+      <h3>🚨 Nimm deine sozialen Medien zurück: Bekämpfe Falschinformationen & giftige Feeds</h3>
+      <p style="font-weight:600;margin-top:8px">Wenn du noch auf Instagram, Facebook oder Twitter bist, handele jetzt:</p>
+      
+      <div style="margin-top:16px">
+        <h4 style="color:var(--accent)">Schritt 1: Melden & Blockieren von Desinformation</h4>
+        <ol style="margin-top:8px">
+          <li><strong>Finde Beiträge</strong>, die Falschinformationen, gewalttätigen Inhalt oder Propaganda von Medien oder öffentlichen Personen verbreiten</li>
+          <li><strong>Melde den Beitrag</strong> — klicke auf "Beitrag melden" und wähle "Irreführende Informationen" oder "Gewalttätiger Inhalt"</li>
+          <li><strong>Melde das Profil</strong> — besuche das Profil und wähle "Konto melden", wenn es sich um Serienverbrecher handelt</li>
+          <li><strong>Blockiere es</strong> — verwende die Blockierungsfunktion, um deren Inhalte aus deinem Feed zu entfernen</li>
+          <li><strong>Mache Screenshots von Beweisen</strong> (vorsichtig, zur Archivierung), bevor Plattformen gemeldete Inhalte löschen</li>
+        </ol>
+      </div>
+
+      <div style="margin-top:16px">
+        <h4 style="color:var(--accent)">Schritt 2: Verlasse giftige Plattformen (schwierig)</h4>
+        <ul style="margin-top:8px">
+          <li>❌ <strong>Lösche deine TikTok-, Facebook- und Instagram-Konten</strong> — sie profitieren von Sucht und Aufmerksamkeit, bewaffnet von Staats- und Unternehmensschauspielern</li>
+          <li>✅ <strong>Abonniere <a href="https://upscrolled.com/en/" target="_blank" rel="noopener">Upscrolled</a></strong> — kuratierte, werbefreie, von Menschen bearbeitete Newsletter mit Fokus auf Lösungen, nicht auf Empörung</li>
+          <li>✅ <strong>Verwende Nachrichten-RSS-Feeds</strong> — abonniere seriöse Nachrichtenquellen (Guardian, BBC, NPR) über RSS-Reader (Feedly, NetNewsWire) für Kontrolle</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:16px">
+        <h4 style="color:var(--accent)">Schritt 3: Sichere deine Kommunikation</h4>
+        <ul style="margin-top:8px">
+          <li>🔴 <strong style="color:var(--accent)">Höre auf, WhatsApp zu verwenden</strong> für sensible Organisierung oder Informationsaustausch — es gehört zu Meta (Facebook)</li>
+          <li>🟢 <strong style="color:var(--accent)">Verwende stattdessen Signal</strong> (verschlüsselt, Open-Source, von einer Nonprofit geführt). Laden Sie Ihr Signal-Profil herunter, nicht Ihre Telefonnummer</li>
+          <li>🟡 <strong style="color:var(--accent)">Telegram</strong> nur wenn nötig (verschlüsselt, aber Closed-Source; verwende "Secret Chats" für Verschlüsselung)</li>
+        </ul>
+      </div>
+
+      <p class="muted" style="margin-top:16px;font-size:0.9em">💡 <strong>Warum es wichtig ist:</strong> Diese Plattformen verstärken algorithmisch gesagt divisiven Inhalt und Desinformation. Sie verkaufen deine Daten an Werbetreibende und Regierungen. Das Verlassen oder Begrenzen der Nutzung reduziert ihre Macht und deine Exposition gegenüber Manipulation.</p>
+    </div>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Gezielte wirtschaftliche Druck</h4>
+        <p>Verwende Boykotte, Desinvestitionskampagnen und Aktionärsaktivismus, um Anreize für Kriegsgewinne zu reduzieren.</p>
+      </div>
+      <div class="card">
+        <h4>Friedliche Versammlungen</h4>
+        <p>Plane zugängliche, legale und gewaltfreie Versammlungen mit geschulten Beobachtern und klaren Kommunikationsplänen.</p>
+      </div>
+      <div class="card">
+        <h4>Politik & Interessensvertretung</h4>
+        <p>Setze dich für Transparenz bei Rüstungsexporten, Budgetaudits und erhöhte Finanzierung für Diplomatie und humanitäre Hilfe ein.</p>
+      </div>
+      <div class="card">
+        <h4>Gegenseitige Hilfe</h4>
+        <p>Koordiniere Unterstützung für betroffene Gemeinschaften: transparente Verteilung, Anmeldungsformulare und Rechenschaftenpflicht.</p>
+      </div>
+    </div>
+
+    <section style="margin-top:18px">
+      <h3>Teilbare Vorlagen</h3>
+      <p class="muted">Herunterladbare Vorlagen enthalten eine phasengerichtete Checkliste, Medienskripte und ein Evaluierungsblatt zur Messung der Auswirkungen gegen Ziele.</p>
+      <ul>
+        <li>Flugblatt A4 — Englisch / Italienisch</li>
+        <li>Pressemitteilung — bearbeitbares Markdown</li>
+        <li>Social-Media-Kalender — Beispiel CSV</li>
+      </ul>
+    </section>
+  <section style="margin-top:18px">
+    <div class="card">
+      <h4>Bereit zu starten?</h4>
+      <p class="muted">Wenn du bereit bist zu handeln, starten Sie eine Kampagne oder treten Sie einer vorhandenen bei und verwenden Sie unsere Starter-Vorlagen und Checklisten.</p>
+      <a class="button" href={`/${lang}/resources/`}>Vorlagen & Ressourcen abrufen</a>
+    </div>
+  </section>
+  </section>
+  <section style="margin-top:20px">
+    <div class="card">
+      <h4>{t('actions.quickstart.title')}</h4>
+      <ol>
+        {
+          (() => {
+            const raw = t('actions.quickstart.steps');
+            if (Array.isArray(raw)) {
+              return raw.map((step) => <li>{step}</li>);
+            }
+            return <li>{String(raw)}</li>;
+          })()
+        }
+      </ol>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Country Quick Reference — BoycottWithAI</title>
+  <meta name="description" content="Country-specific data sources, key contacts, and research tools. Quick reference for Italy, France, and Germany to access public procurement, environmental data, and parliamentary records." />
+</head>
+
+<Base>
+  <section>
+    <h1>Country Quick Reference</h1>
+    <p class="muted">One-page cheat sheets: Where to find government contracts, environmental data, lobbyist registries, and MP contact info by country.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h3>🇮🇹 ITALY</h3>
+        
+        <h4>Public Procurement</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.trasparenza.gov.it/" target="_blank" rel="noopener">trasparenza.gov.it</a></strong> — Contracts, spending, transparency portal</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — EU contracts (above €139k)</li>
+          <li><strong><a href="https://dati.gov.it/" target="_blank" rel="noopener">data.gov.it</a></strong> — Open government datasets</li>
+        </ul>
+
+        <h4>Environmental Data</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.arpa.piemonte.it/" target="_blank" rel="noopener">ARPA</a></strong> — Regional environmental agency (regional portals vary)</li>
+          <li><strong><a href="https://www.istat.it/" target="_blank" rel="noopener">ISTAT</a></strong> — National statistics (environmental + economic)</li>
+          <li><strong>Focus:</strong> Po River pollution, industrial waste (Lombard region)</li>
+        </ul>
+
+        <h4>Lobbyists & Corruption</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.registrotrasparenza.it/" target="_blank" rel="noopener">Registro Trasparenza</a></strong> — Lobbying register</li>
+          <li><strong><a href="https://www.antimafia.camera.it/" target="_blank" rel="noopener">Antimafia Commission</a></strong> — Public inquiries on organized crime + corporate collusion</li>
+        </ul>
+
+        <h4>MP Contacts</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.camera.it/" target="_blank" rel="noopener">Chamber of Deputies</a></strong> — Search MP + email</li>
+          <li><strong><a href="https://www.senato.it/" target="_blank" rel="noopener">Senate</a></strong> — Senator lookup</li>
+          <li><strong>Template:</strong> <a href="/templates/mp-email-it.txt" target="_blank">Italian MP Email</a></li>
+        </ul>
+
+        <h4>Key Topics</h4>
+        <p style="font-size:0.85em">Po River industrial pollution • Mafia infiltration of EU funds • Milan air quality</p>
+      </div>
+
+      <div class="card">
+        <h3>🇫🇷 FRANCE</h3>
+        
+        <h4>Public Procurement</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://data.gouv.fr/" target="_blank" rel="noopener">data.gouv.fr</a></strong> — France's open data portal (contracts, transparency)</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — EU contracts</li>
+          <li><strong><a href="https://marches-publics.gouv.fr/" target="_blank" rel="noopener">marches-publics.gouv.fr</a></strong> — National public contracts portal</li>
+        </ul>
+
+        <h4>Environmental Data</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.brgm.fr/" target="_blank" rel="noopener">BRGM</a></strong> — French geological + environmental surveys</li>
+          <li><strong><a href="https://www.drieat.ile-de-france.developpement-durable.gouv.fr/" target="_blank" rel="noopener">DRIEAT (Île-de-France)</a></strong> — Regional environmental data</li>
+          <li><strong>Focus:</strong> Seine River contamination, nuclear plant permits</li>
+        </ul>
+
+        <h4>Lobbyists & Corruption</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">EU Transparency Register</a></strong> — EU-level lobbyists</li>
+          <li><strong><a href="https://www.hatvp.gouv.fr/" target="_blank" rel="noopener">HATVP</a></strong> — French ethics watchdog (politician conflicts of interest)</li>
+        </ul>
+
+        <h4>MP Contacts</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.assemblee-nationale.fr/" target="_blank" rel="noopener">National Assembly</a></strong> — Deputy lookup + contact</li>
+          <li><strong><a href="https://www.senat.fr/" target="_blank" rel="noopener">Senate</a></strong> — Senator directory</li>
+          <li><strong>Template:</strong> <a href="/templates/mp-email-fr.txt" target="_blank">French MP Email</a></li>
+        </ul>
+
+        <h4>Key Topics</h4>
+        <p style="font-size:0.85em">Agricultural water pollution • Nuclear industry lobbying • Offshore wind permits</p>
+      </div>
+
+      <div class="card">
+        <h3>🇩🇪 GERMANY</h3>
+        
+        <h4>Public Procurement</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundesausschreibungen.de/" target="_blank" rel="noopener">BundesAusschreibungen</a></strong> — Federal procurement portal</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — EU contracts</li>
+          <li><strong><a href="https://www.govdata.de/" target="_blank" rel="noopener">GovData</a></strong> — Open data + transparency portal</li>
+        </ul>
+
+        <h4>Environmental Data</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.umweltbundesamt.de/" target="_blank" rel="noopener">UmweltBundesamt (UBA)</a></strong> — Federal environmental agency (air, water, waste)</li>
+          <li><strong><a href="https://www.lanuv.nrw.de/" target="_blank" rel="noopener">LANUV (NRW)</a></strong> — North Rhine-Westphalia environmental data (industrial region)</li>
+          <li><strong>Focus:</strong> Ruhr Valley pollution, coal industry legacy, Rhine contamination</li>
+        </ul>
+
+        <h4>Lobbyists & Corruption</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.lobbyregister.bundestag.de/" target="_blank" rel="noopener">Lobbyregister (Bundestag)</a></strong> — Federal parliament lobbying register</li>
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">EU Transparency Register</a></strong> — EU-level lobbying</li>
+        </ul>
+
+        <h4>MP Contacts</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundestag.de/" target="_blank" rel="noopener">Bundestag (Federal Parliament)</a></strong> — Deputy lookup + contact</li>
+          <li><strong><a href="https://www.bundesrat.de/" target="_blank" rel="noopener">Bundesrat</a></strong> — State representation</li>
+          <li><strong>Template:</strong> <a href="/templates/mp-email-de.txt" target="_blank">German MP Email</a></li>
+        </ul>
+
+        <h4>Key Topics</h4>
+        <p style="font-size:0.85em">Ruhr Valley industrial pollution • Bavarian deforestation • Coal phase-out lobbying • Rhine shipping pollution</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:28px">
+      <h2>How to Use This Reference</h2>
+      <ol>
+        <li>Pick your country and data source above</li>
+        <li>Search for the company or contract of interest (use TED for EU-wide searches)</li>
+        <li>Cross-reference with environmental data (ARPA, BRGM, UBA)</li>
+        <li>Document evidence in our <a href="/templates/corporate-report-template.md" target="_blank">Corporate Accountability Template</a></li>
+        <li>Contact your MP using our <a href="/templates/mp-email-en.txt" target="_blank">email template</a></li>
+      </ol>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid var(--accent);background:rgba(14,165,164,0.05)">
+      <h3>💡 Pro Tips</h3>
+      <ul style="margin-top:12px">
+        <li><strong>TED.europa.eu</strong> is searchable by company name, country, and sector — use it first for EU-wide patterns</li>
+        <li><strong>MP email templates</strong> are pre-written; just customize the company/issue name and send</li>
+        <li><strong>Cross-reference</strong> contracts with environmental data to prove government enabled pollution</li>
+        <li><strong>Archive evidence</strong> using Wayback Machine if sites are updated or taken down</li>
+        <li><strong>Check local media</strong> (regional news) for context around specific cases</li>
+      </ul>
+    </div>
+  </section>
+</Base>

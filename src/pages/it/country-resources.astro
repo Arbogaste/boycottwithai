@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Riferimento Rapido per Paese — BoycottWithAI</title>
+  <meta name="description" content="Fonti dati specifiche per paese, contatti chiave e strumenti di ricerca. Riferimento rapido per Italia, Francia e Germania per accedere agli appalti pubblici, ai dati ambientali e ai registri parlamentari." />
+</head>
+
+<Base>
+  <section>
+    <h1>Riferimento Rapido per Paese</h1>
+    <p class="muted">Foglie di aiuto che tengono traccia: Dove trovare contratti governativi, dati ambientali, registri dei lobbisti e informazioni di contatto dei deputati per paese.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h3>🇮🇹 ITALIA</h3>
+        
+        <h4>Appalti Pubblici</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.trasparenza.gov.it/" target="_blank" rel="noopener">trasparenza.gov.it</a></strong> — Contratti, spese, portale trasparenza</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — Contratti EU (sopra €139k)</li>
+          <li><strong><a href="https://dati.gov.it/" target="_blank" rel="noopener">data.gov.it</a></strong> — Set di dati governativi aperti</li>
+        </ul>
+
+        <h4>Dati Ambientali</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.arpa.piemonte.it/" target="_blank" rel="noopener">ARPA</a></strong> — Agenzia ambientale regionale (i portali regionali variano)</li>
+          <li><strong><a href="https://www.istat.it/" target="_blank" rel="noopener">ISTAT</a></strong> — Statistiche nazionali (ambientali + economiche)</li>
+          <li><strong>Focus:</strong> Inquinamento del Po, rifiuti industriali (regione Lombardia)</li>
+        </ul>
+
+        <h4>Lobbisti e Corruzione</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.registrotrasparenza.it/" target="_blank" rel="noopener">Registro Trasparenza</a></strong> — Registro lobbismo</li>
+          <li><strong><a href="https://www.antimafia.camera.it/" target="_blank" rel="noopener">Commissione Antimafia</a></strong> — Inchieste pubbliche su criminalità organizzata + collusione corporate</li>
+        </ul>
+
+        <h4>Contatti Deputati</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.camera.it/" target="_blank" rel="noopener">Camera dei Deputati</a></strong> — Ricerca deputato + email</li>
+          <li><strong><a href="https://www.senato.it/" target="_blank" rel="noopener">Senato</a></strong> — Ricerca senatore</li>
+          <li><strong>Modello:</strong> <a href="/templates/mp-email-it.txt" target="_blank">Email Deputato Italiano</a></li>
+        </ul>
+
+        <h4>Argomenti Chiave</h4>
+        <p style="font-size:0.85em">Inquinamento industriale del Po • Infiltrazione mafiosa dei fondi EU • Qualità dell'aria di Milano</p>
+      </div>
+
+      <div class="card">
+        <h3>🇫🇷 FRANCE</h3>
+        
+        <h4>Appalti Pubblici</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://data.gouv.fr/" target="_blank" rel="noopener">data.gouv.fr</a></strong> — Portale dati aperti francese (contratti, trasparenza)</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — Contratti EU</li>
+          <li><strong><a href="https://marches-publics.gouv.fr/" target="_blank" rel="noopener">marches-publics.gouv.fr</a></strong> — Portale nazionale appalti pubblici</li>
+        </ul>
+
+        <h4>Dati Ambientali</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.brgm.fr/" target="_blank" rel="noopener">BRGM</a></strong> — Indagini geologiche e ambientali francesi</li>
+          <li><strong><a href="https://www.drieat.ile-de-france.developpement-durable.gouv.fr/" target="_blank" rel="noopener">DRIEAT (Île-de-France)</a></strong> — Dati ambientali regionali</li>
+          <li><strong>Focus:</strong> Contaminazione della Senna, permessi impianti nucleari</li>
+        </ul>
+
+        <h4>Lobbisti e Corruzione</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">Registro Trasparenza UE</a></strong> — Lobbisti a livello EU</li>
+          <li><strong><a href="https://www.hatvp.gouv.fr/" target="_blank" rel="noopener">HATVP</a></strong> — Organo di controllo etica francese (conflitti di interesse politici)</li>
+        </ul>
+
+        <h4>Contatti Deputati</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.assemblee-nationale.fr/" target="_blank" rel="noopener">Assemblea Nazionale</a></strong> — Ricerca deputato + contatto</li>
+          <li><strong><a href="https://www.senat.fr/" target="_blank" rel="noopener">Senato</a></strong> — Directory senatori</li>
+          <li><strong>Modello:</strong> <a href="/templates/mp-email-fr.txt" target="_blank">Email Deputato Francese</a></li>
+        </ul>
+
+        <h4>Argomenti Chiave</h4>
+        <p style="font-size:0.85em">Inquinamento dell'acqua agricola • Lobbismo industria nucleare • Permessi eolici offshore</p>
+      </div>
+
+      <div class="card">
+        <h3>🇩🇪 GERMANY</h3>
+        
+        <h4>Appalti Pubblici</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundesausschreibungen.de/" target="_blank" rel="noopener">BundesAusschreibungen</a></strong> — Portale appalti federali</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — Contratti EU</li>
+          <li><strong><a href="https://www.govdata.de/" target="_blank" rel="noopener">GovData</a></strong> — Portale dati aperti + trasparenza</li>
+        </ul>
+
+        <h4>Dati Ambientali</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.umweltbundesamt.de/" target="_blank" rel="noopener">UmweltBundesamt (UBA)</a></strong> — Agenzia ambientale federale (aria, acqua, rifiuti)</li>
+          <li><strong><a href="https://www.lanuv.nrw.de/" target="_blank" rel="noopener">LANUV (NRW)</a></strong> — Dati ambientali Nord Reno-Westfalia (regione industriale)</li>
+          <li><strong>Focus:</strong> Inquinamento della Valle della Ruhr, eredità dell'industria carbonifera, contaminazione del Reno</li>
+        </ul>
+
+        <h4>Lobbisti e Corruzione</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.lobbyregister.bundestag.de/" target="_blank" rel="noopener">Lobbyregister (Bundestag)</a></strong> — Registro lobbismo parlamento federale</li>
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">Registro Trasparenza UE</a></strong> — Lobbismo a livello EU</li>
+        </ul>
+
+        <h4>Contatti Deputati</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundestag.de/" target="_blank" rel="noopener">Bundestag (Parlamento Federale)</a></strong> — Ricerca deputato + contatto</li>
+          <li><strong><a href="https://www.bundesrat.de/" target="_blank" rel="noopener">Bundesrat</a></strong> — Rappresentanza statale</li>
+          <li><strong>Modello:</strong> <a href="/templates/mp-email-de.txt" target="_blank">Email Deputato Tedesco</a></li>
+        </ul>
+
+        <h4>Argomenti Chiave</h4>
+        <p style="font-size:0.85em">Inquinamento della Valle della Ruhr • Deforestazione bavarese • Lobbismo fase carbone • Inquinamento navigazione sul Reno</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:28px">
+      <h2>Come Usare Questo Riferimento</h2>
+      <ol>
+        <li>Scegli il tuo paese e la fonte dati sopra</li>
+        <li>Ricerca l'azienda o il contratto di interesse (usa TED per ricerche a livello EU)</li>
+        <li>Fai un riferimento incrociato con i dati ambientali (ARPA, BRGM, UBA)</li>
+        <li>Documenta le prove nel nostro <a href="/templates/corporate-report-template.md" target="_blank">Modello di Responsabilità Aziendale</a></li>
+        <li>Contatta il tuo deputato usando il nostro <a href="/templates/mp-email-it.txt" target="_blank">modello email</a></li>
+      </ol>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid var(--accent);background:rgba(14,165,164,0.05)">
+      <h3>💡 Consigli Pro</h3>
+      <ul style="margin-top:12px">
+        <li><strong>TED.europa.eu</strong> è ricercabile per nome azienda, paese e settore — usalo prima per pattern a livello EU</li>
+        <li><strong>I modelli email dei deputati</strong> sono pre-scritti; basta personalizzare il nome dell'azienda/il tema e inviare</li>
+        <li><strong>Fai riferimenti incrociati</strong> tra contratti e dati ambientali per provare che il governo ha abilitato l'inquinamento</li>
+        <li><strong>Archivia le prove</strong> usando Wayback Machine se i siti vengono aggiornati o rimossi</li>
+        <li><strong>Controlla i media locali</strong> (notizie regionali) per contesto su casi specifici</li>
+      </ul>
+    </div>
+  </section>
+</Base>

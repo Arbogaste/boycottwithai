@@ -30,13 +30,13 @@ const t = useTranslations(lang);
 
     <div style="margin-top:12px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
   <label class="muted">{t('map.filter.sector') || 'Sector:'}</label>
-      <select id="sectorFilter" class="secondary">
+      <select id="sectorFilter" class="secondary" aria-label="Filter targets by sector">
         <option value="">All</option>
         {Array.from(new Set(companies.map(c => c.sector))).map(s => <option value={s}>{s}</option>)}
       </select>
 
   <label class="muted">{t('map.filter.tag') || 'Tag:'}</label>
-      <select id="tagFilter" class="secondary">
+      <select id="tagFilter" class="secondary" aria-label="Filter targets by tag">
         <option value="">All</option>
         {Array.from(new Set(companies.flatMap(c => c.tags))).map(t => <option value={t}>{t}</option>)}
       </select>

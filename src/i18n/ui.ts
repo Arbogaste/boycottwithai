@@ -367,7 +367,7 @@ export const ui = {
   'methodology.monitoring_detail': 'Data ingestion and normalization pipelines: military budgets, public statements, contract awards, and financial flows.',
   'methodology.viz_detail': 'Maps, time-series, and network graphs that expose relationships between defense industry actors, contracts, and money flows.',
   'methodology.crowd_detail': 'A reporting platform for local escalation, anonymous evidence uploads, and volunteer verification workflows.',
-  'methodology.safety': 'Participant safety and privacy: guidelines for protecting informants and activists in campaigns.',
+  'methodology.safety': 'Participant safety and privacy: recommendations for protecting informants and activists in campaigns.',
   // Tools translations
   'tools.acled.name': 'ACLED',
   'tools.acled.short': 'Event data on conflicts & civilian harm',
@@ -458,7 +458,7 @@ export const ui = {
   'local.targets.title': 'Local targets & institutions',
   'local.targets.desc': 'Typical targets: arms exporters, defense contractors, MPs who vote for procurement; adapt this list to your country and institutional channels.',
   'tools.safety.title': 'OSINT safety',
-  'tools.safety.desc': 'Follow safety guidance: protect privacy, avoid doxxing, and hand off sensitive reports to professionals',
+  'tools.safety.desc': 'Follow safety recommendations: protect privacy, avoid doxxing, and hand off sensitive reports to professionals',
   'methodology.quick_verify_title': 'Quick checks for images and media',
   'methodology.quick_verify_steps': ['Check the date and original source', 'Geolocate using visible landmarks', 'Cross-check with ACLED/GDELT or official feeds', 'Search for previous versions and metadata'],
   'methodology.osint_starter_title': 'Simple OSINT starters for non-technical users',

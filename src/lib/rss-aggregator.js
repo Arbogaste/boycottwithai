@@ -9,7 +9,7 @@ const EXTERNAL_FEEDS = [
 const INTERNAL_ITEMS = [
   {
     title: 'Internal: Rapid solidarity call',
-    description: 'Internal alert: local meeting at 18:00. Check safety guidance.',
+    description: 'Internal alert: local meeting at 18:00. Check safety recommendations.',
     link: '/actions/',
     pubDate: new Date().toUTCString(),
   }

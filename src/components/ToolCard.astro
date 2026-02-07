@@ -4,7 +4,7 @@ const sanitized = (name || '').toLowerCase().replace(/[^a-z0-9]+/g,'-');
 ---
 <article class="tool-card" aria-labelledby={`tool-${name}`} aria-describedby={`tool-${sanitized}-why tool-${sanitized}-example`} role="article"> 
   <div class="tool-accent" aria-hidden="true"></div>
-  <h5 id={`tool-${name}`}>{name}</h5>
+  <h3 id={`tool-${name}`}>{name}</h3>
   <p class="muted">{short}</p>
   <p id={`tool-${sanitized}-why`} class="muted why"><strong>Why: </strong>{why}</p>
   <p id={`tool-${sanitized}-example`} class="muted example"><strong>Example: </strong>{example}</p>

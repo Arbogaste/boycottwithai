@@ -1,0 +1,212 @@
+---
+import Base from '../../layouts/Base.astro';
+import ToolCard from '../../components/ToolCard.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('hero.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('hero.subtitle')} />
+  <meta name="keywords" content="peace, non-violent action, OSINT, monitoring, civic tech, divestment, anti-rearmament, templates" />
+</head>
+
+<Base>
+  <section>
+    <h1>Tools & Resources</h1>
+    <p class="muted">Everything you need to monitor, investigate, and take action for peace and demilitarization.</p>
+
+    <h2 style="margin-top:24px">OSINT & Investigation Tools</h2>
+    <p class="muted">{t('osint.intro')}</p>
+    
+    <div class="grid" style="margin-top:18px">
+      <ToolCard name={t('tools.acled.name')} short={t('tools.acled.short')} why={t('tools.acled.why')} example={t('tools.acled.example')} link="https://acleddata.com" />
+      <ToolCard name={t('tools.gdelt.name')} short={t('tools.gdelt.short')} why={t('tools.gdelt.why')} example={t('tools.gdelt.example')} link="https://www.gdeltproject.org" />
+      <ToolCard name={t('tools.bellingcat.name')} short={t('tools.bellingcat.short')} why={t('tools.bellingcat.why')} example={t('tools.bellingcat.example')} link="https://www.bellingcat.com" />
+      <ToolCard name={t('tools.spiderfoot.name')} short={t('tools.spiderfoot.short')} why={t('tools.spiderfoot.why')} example={t('tools.spiderfoot.example')} link="https://www.spiderfoot.net" />
+      <ToolCard name={t('tools.reconng.name')} short={t('tools.reconng.short')} why={t('tools.reconng.why')} example={t('tools.reconng.example')} link="https://github.com/lanmaster53/recon-ng" />
+      <ToolCard name={t('tools.theharvester.name')} short={t('tools.theharvester.short')} why={t('tools.theharvester.why')} example={t('tools.theharvester.example')} link="https://github.com/laramies/theHarvester" />
+      <ToolCard name={t('tools.maltego.name')} short={t('tools.maltego.short')} why={t('tools.maltego.why')} example={t('tools.maltego.example')} link="https://www.maltego.com" />
+      <ToolCard name={t('tools.shodan.name')} short={t('tools.shodan.short')} why={t('tools.shodan.why')} example={t('tools.shodan.example')} link="https://www.shodan.io" />
+      <ToolCard name={t('tools.metagoofil.name')} short={t('tools.metagoofil.short')} why={t('tools.metagoofil.why')} example={t('tools.metagoofil.example')} link="https://github.com/laramies/metagoofil" />
+      <ToolCard name={t('tools.creepy.name')} short={t('tools.creepy.short')} why={t('tools.creepy.why')} example={t('tools.creepy.example')} link="https://github.com/ilektrojohn/creepy" />
+      <ToolCard name={t('tools.intelowl.name')} short={t('tools.intelowl.short')} why={t('tools.intelowl.why')} example={t('tools.intelowl.example')} link="https://github.com/intelowlproject/IntelOwl" />
+      <ToolCard name={t('tools.sublist3r.name')} short={t('tools.sublist3r.short')} why={t('tools.sublist3r.why')} example={t('tools.sublist3r.example')} link="https://github.com/aboul3la/Sublist3r" />
+      <ToolCard name={t('tools.censys.name')} short={t('tools.censys.short')} why={t('tools.censys.why')} example={t('tools.censys.example')} link="https://censys.io" />
+      <ToolCard name={t('tools.foca.name')} short={t('tools.foca.short')} why={t('tools.foca.why')} example={t('tools.foca.example')} link="https://www.elevenpaths.com/labstools/foca/index.html" />
+      <ToolCard name={t('tools.osintbox.name')} short={t('tools.osintbox.short')} why={t('tools.osintbox.why')} example={t('tools.osintbox.example')} link="https://github.com/doctorfree/osint" />
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.safety.title')}</h4>
+      <p class="muted">{t('tools.safety.desc')}</p>
+      <a class="secondary" href="/templates/osint-safety-en.txt" download>OSINT Safety</a>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.digital.title')}</h4>
+      <p>{t('tools.digital.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.training.title')}</h4>
+      <p>{t('tools.training.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.ai.monitoring.title')}</h4>
+      <p>{t('tools.ai.monitoring.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.visualization.title')}</h4>
+      <p>{t('tools.visualization.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.policy.title')}</h4>
+      <p>{t('tools.policy.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('tools.divestment.title')}</h4>
+      <p>{t('tools.divestment.desc')}</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>{t('local.targets.title')}</h4>
+      <p>{t('local.targets.desc')}</p>
+    </div>
+
+    <!-- RESOURCES SECTION -->
+    <h2 style="margin-top:32px">Campaign Templates & Materials</h2>
+    <p class="muted">{t('resources.intro')}</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Download ready-to-send petitions demanding diplomacy, ceasefires and humanitarian prioritization.</p>
+        <a class="secondary" href="/templates/petition-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">Copy-and-paste email templates to contact MPs and local representatives.</p>
+        <a class="secondary" href="/templates/mp-email-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.briefing.title')}</h4>
+        <p class="muted">One-page briefing templates for journalists and policymakers.</p>
+        <a class="secondary" href="/templates/briefing-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>AI prompt library</h4>
+        <p class="muted">Personalize messages and briefings with our safe AI prompt templates.</p>
+        <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+        <a class="secondary" href="/templates/ai-prompts-it.txt" target="_blank">Prompt AI (IT)</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>How to use templates in 10 minutes</h3>
+      <ol>
+        <li class="muted">Open the most relevant template (petition, mp-email, briefing).</li>
+        <li class="muted">Edit the first line to add target, dates and a short ask—avoid jargon.</li>
+        <li class="muted">Add 1–2 evidence lines and link to the briefing or monitoring log.</li>
+        <li class="muted">Run OSINT safety checklist: citations, image provenance, doxxing checks.</li>
+        <li class="muted">Publish, then log the link and key metrics (signatures, replies, mentions).</li>
+      </ol>
+      <p class="muted">Quick MP message example (copy-and-paste):</p>
+      <pre class="muted" style="white-space:pre-wrap; margin-top:8px;">Dear [MP Name],
+I'm a constituent and I urge you to request an independent audit of contract [#] due to concerns about [brief impact]. Please ask the minister to pause any further disbursements until the review is complete.</pre>
+      <p class="muted">See the briefing template for evidence structure. When in doubt, consult the OSINT safety resources before publishing.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Toolkit: Investigation, Whistleblowing & Real Impact</h3>
+      <ul>
+        <li><strong>OSINT & Investigative Journalism:</strong> <a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat How-To</a>, <a href="https://www.lighthousereports.com/">Lighthouse Reports</a>, <a href="https://www.occrp.org/">OCCRP</a> for image verification, arms tracking, satellite analysis, collaborative investigations.</li>
+        <li><strong>Secure Whistleblowing:</strong> <a href="https://www.globaleaks.org/">GlobaLeaks</a>, <a href="https://ddosecrets.com/submit">DDoSecrets</a>, <a href="https://securedrop.org/">SecureDrop</a> for anonymous reporting of abuse and corruption.</li>
+        <li><strong>Scraping & Data Leaks:</strong> Open-source tools for extracting procurement, lobbying, arms export data. Cross-check with <a href="https://lobbyfacts.eu/">LobbyFacts</a> and <a href="https://transparency.org/">Transparency International</a>.</li>
+        <li><strong>Legal Support & International Complaints:</strong> <a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty International</a>, <a href="https://www.transparency.org/en">Transparency International</a> for templates to file with ECHR, UN, and free legal aid.</li>
+        <li><strong>Public Dashboards & Campaigns:</strong> <a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>, Google Sheets for publishing findings and building public pressure.</li>
+      </ul>
+    </div>
+
+    <!-- AI & AUTOMATION SECTION -->
+    <h2 style="margin-top:32px">AI & Automation for Campaigns</h2>
+    <p class="muted">Use AI and open-source tools to automate research, data cleaning, and coordination. Always verify AI outputs with human fact-checking.</p>
+
+    <div class="card" style="margin-top:18px;border:1px solid #ff9;padding:12px">
+      <h3>⚙️ Practical AI Workflows</h3>
+      <p><strong>Don't let AI do your thinking for you.</strong> Use it to save time on boring stuff so you can focus on what matters: understanding your issue, talking to people, organizing action.</p>
+      
+      <p><strong>📖 Read the full resources →</strong> <a href="/downloads/resources/ai-for-campaigns-en.md" download><strong>AI for Campaigns: A Practical Resources for Activists</strong></a></p>
+      
+      <strong style="display:block;margin-top:12px">Real use cases:</strong>
+      <ul>
+        <li><strong>Summarizing reports:</strong> Feed a 100-page UN report to an LLM, get a 1-page summary with key facts. Then verify it against the original.</li>
+        <li><strong>Finding patterns:</strong> Train a model on news articles to detect when escalation language appears. Helps you spot when things are getting worse.</li>
+        <li><strong>Cleaning messy data:</strong> You have a spreadsheet of corporate contracts in 5 different formats? Use data tools to standardize and cross-check.</li>
+        <li><strong>Generating outreach:</strong> AI can help personalize emails to MPs at scale. But YOU write the message, YOU verify the facts.</li>
+        <li><strong>Organizing evidence:</strong> Use version-controlled databases to track who said what, when. Tamper-proof record keeping.</li>
+      </ul>
+    </div>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>SmashingLearning: Train Models on Your Data</h4>
+        <p class="muted">Use LLaMA Factory and easy-dataset to create datasets and fine-tune models on campaign-specific language, terminology, and evidence patterns.</p>
+        <p style="font-size:0.9em;margin-top:8px"><strong>Example:</strong> Train a model to recognize propaganda narratives in news feeds, detect fake claims in corporate statements, or summarize witness testimony consistently.</p>
+        <a class="secondary" href="https://github.com/Arbogaste/smashingLearning" target="_blank" rel="noopener">→ GitHub Repo & Resources</a>
+      </div>
+
+      <div class="card">
+        <h4>Open-source LLMs: Run Models Locally</h4>
+        <p class="muted"><a href="https://llama.meta.com/">LLaMA 2</a> • <a href="https://mistral.ai/">Mistral</a> • <a href="https://ollama.ai/">OLLAMA</a></p>
+        <p style="font-size:0.9em;margin-top:8px">Run on your own hardware. No cloud dependency. No API logging. Perfect for sensitive campaigns in countries with surveillance.</p>
+      </div>
+
+      <div class="card">
+        <h4>Data Validation & Cleaning</h4>
+        <p class="muted"><a href="https://www.openrefine.org/">OpenRefine</a> — Hands-on data cleaning without coding. <a href="https://www.dolthub.com/">Dolt</a> — Version-controlled databases.</p>
+        <p style="font-size:0.9em;margin-top:8px">Track changes in contracts, spending, corporate records. See who changed what, when. Build an auditable trail.</p>
+      </div>
+
+      <div class="card">
+        <h4>Workflow Automation</h4>
+        <p class="muted"><a href="https://airflow.apache.org/">Apache Airflow</a> — Schedule and monitor data pipelines. Run reports automatically.</p>
+        <p style="font-size:0.9em;margin-top:8px">Example: Every morning, download latest arms export data, cross-check against your target list, flag new contracts.</p>
+      </div>
+
+      <div class="card">
+        <h4>Sentiment & Narrative Analysis</h4>
+        <p class="muted">Detect propaganda, escalation language, and disinformation in real time.</p>
+        <p style="font-size:0.9em;margin-top:8px"><strong>Use case:</strong> Monitor official statements and news feeds. When language shifts toward war rhetoric, alert your network. Get ahead of escalation.</p>
+      </div>
+
+      <div class="card">
+        <h4>Collaborative Investigation</h4>
+        <p class="muted">Tools for teams to organize evidence securely and share findings responsibly.</p>
+        <p style="font-size:0.9em;margin-top:8px"><a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat methodology</a> • Shared spreadsheets with access controls • Encrypted document stores.</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:1px solid #ff9;padding:12px">
+      <h3>Safety & Ethics: Using AI Responsibly</h3>
+      <p><strong>Never trust AI alone.</strong> It's a tool. It makes mistakes. It can hallucinate. It can be biased.</p>
+      
+      <strong style="display:block;margin-top:12px">Rules:</strong>
+      <ul>
+        <li>✓ Verify every claim against primary sources</li>
+        <li>✓ Use local models in high-risk countries (no cloud API logging)</li>
+        <li>✓ Keep datasets encrypted and version-controlled</li>
+        <li>✓ Train models only on verified data</li>
+        <li>✗ Never expose sources in plaintext to commercial LLM APIs</li>
+      </ul>
+      <p class="muted" style="margin-top:12px">See <a href="/downloads/resources/privacy-security-tools-en.md" download><strong>Privacy & Security resources</strong></a> for threat modeling and safe AI use in restricted contexts.</p>
+    </div>
+
+  </section>
+</Base>
