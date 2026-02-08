@@ -17,61 +17,6 @@ const t = useTranslations(lang);
   <section>
     <h1>{t('hero.title')}</h1>
     <p class="muted">{t('hero.subtitle')}</p>
-      <div class="grid">
-        <ToolCard name={t('tools.acled.name')} short={t('tools.acled.short')} why={t('tools.acled.why')} example={t('tools.acled.example')} link="https://acleddata.com" />
-        <ToolCard name={t('tools.gdelt.name')} short={t('tools.gdelt.short')} why={t('tools.gdelt.why')} example={t('tools.gdelt.example')} link="https://www.gdeltproject.org" />
-        <ToolCard name={t('tools.bellingcat.name')} short={t('tools.bellingcat.short')} why={t('tools.bellingcat.why')} example={t('tools.bellingcat.example')} link="https://www.bellingcat.com" />
-        <ToolCard name={t('tools.spiderfoot.name')} short={t('tools.spiderfoot.short')} why={t('tools.spiderfoot.why')} example={t('tools.spiderfoot.example')} link="https://www.spiderfoot.net" />
-        <ToolCard name={t('tools.reconng.name')} short={t('tools.reconng.short')} why={t('tools.reconng.why')} example={t('tools.reconng.example')} link="https://github.com/lanmaster53/recon-ng" />
-        <ToolCard name={t('tools.theharvester.name')} short={t('tools.theharvester.short')} why={t('tools.theharvester.why')} example={t('tools.theharvester.example')} link="https://github.com/laramies/theHarvester" />
-        <ToolCard name={t('tools.maltego.name')} short={t('tools.maltego.short')} why={t('tools.maltego.why')} example={t('tools.maltego.example')} link="https://www.maltego.com" />
-        <ToolCard name={t('tools.shodan.name')} short={t('tools.shodan.short')} why={t('tools.shodan.why')} example={t('tools.shodan.example')} link="https://www.shodan.io" />
-        <ToolCard name={t('tools.metagoofil.name')} short={t('tools.metagoofil.short')} why={t('tools.metagoofil.why')} example={t('tools.metagoofil.example')} link="https://github.com/laramies/metagoofil" />
-        <ToolCard name={t('tools.creepy.name')} short={t('tools.creepy.short')} why={t('tools.creepy.why')} example={t('tools.creepy.example')} link="https://github.com/ilektrojohn/creepy" />
-        <ToolCard name={t('tools.intelowl.name')} short={t('tools.intelowl.short')} why={t('tools.intelowl.why')} example={t('tools.intelowl.example')} link="https://github.com/intelowlproject/IntelOwl" />
-        <ToolCard name={t('tools.sublist3r.name')} short={t('tools.sublist3r.short')} why={t('tools.sublist3r.why')} example={t('tools.sublist3r.example')} link="https://github.com/aboul3la/Sublist3r" />
-        <ToolCard name={t('tools.censys.name')} short={t('tools.censys.short')} why={t('tools.censys.why')} example={t('tools.censys.example')} link="https://censys.io" />
-        <ToolCard name={t('tools.foca.name')} short={t('tools.foca.short')} why={t('tools.foca.why')} example={t('tools.foca.example')} link="https://www.elevenpaths.com/labstools/foca/index.html" />
-        <ToolCard name={t('tools.osintbox.name')} short={t('tools.osintbox.short')} why={t('tools.osintbox.why')} example={t('tools.osintbox.example')} link="https://github.com/doctorfree/osint" />
-      </div>
-          <li class="muted">{t('tools.safety.note')}</li>
-        </ol>
-      </div>
-      <div class="card">
-        <h2>{t('tools.safety.title')}</h2>
-        <p class="muted">{t('tools.safety.desc')}</p>
-        <a class="secondary" href="/templates/osint-safety-en.txt" download>OSINT Safety</a>
-      </div>
-      <div class="card">
-        <h2>{t('tools.digital.title')}</h2>
-        <p>{t('tools.digital.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('tools.training.title')}</h2>
-        <p>{t('tools.training.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('tools.ai.monitoring.title')}</h2>
-        <p>{t('tools.ai.monitoring.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('tools.visualization.title')}</h2>
-        <p>{t('tools.visualization.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('tools.policy.title')}</h2>
-        <p>{t('tools.policy.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('tools.divestment.title')}</h2>
-        <p>{t('tools.divestment.desc')}</p>
-      </div>
-      <div class="card">
-        <h2>{t('local.targets.title')}</h2>
-        <p>{t('local.targets.desc')}</p>
-      </div>
-    </div>
-  </section>
   <section style="margin-top:20px">
     <div class="card">
   <h2>{t('tools.ai.title')}</h2>
@@ -132,4 +77,231 @@ const t = useTranslations(lang);
       </ol>
     </div>
   </section>
+
+  <section style="margin-top:28px">
+    <h2>Why Open-Source? The Corporate Digital Collapse</h2>
+    <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
+      <h3>Corporate platforms are losing their value. Here's why your alternative matters.</h3>
+      <p style="margin-top:12px"><strong>The problem:</strong> For over a decade, corporate digital services relied on a closed model: proprietary platforms, opaque pricing, licensing lock-in, and centralized control. This worked because there were no credible alternatives at scale.</p>
+      
+      <p style="margin-top:12px"><strong>That condition no longer exists.</strong> Large language models (LLMs) combined with mature open-source ecosystems are structurally undermining the value proposition of big tech products.</p>
+      
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ How corporate digital services decay to zero (click to expand)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>1. Compression by LLMs:</strong> Search (replaced by ChatGPT), customer support (chatbots), analytics (self-service BI), content production, translation—features that cost $5K+/month now cost $20/month or $0.</li>
+          <li><strong>2. Open-source defeats proprietary:</strong> Every corporate tool has an open equivalent gaining adoption. Metabase eats Tableau. Mattermost replaces Slack. Jitsi destroys Zoom's premium moat. Users vote with their data.</li>
+          <li><strong>3. The asymptote to zero:</strong> As alternatives multiply, corporate pricing power collapses first. Then users leave (lock-in weakens). Then the product becomes maintenance liability—strategic importance reaches zero. Google Meet didn't kill Zoom through competition; Zoom killed itself with pricing and paywalls.</li>
+          <li><strong>4. Institutional distrust accelerates collapse:</strong> US Big Tech companies are weaponized by state and capital: surveillance (NSA/GCHQ partnerships), censorship (arbitrary bans), regulatory capture (lobbying dominance), geopolitical coercion (sanctions, data seizure), data exploitation (behavioral targeting, ad monopoly). Users no longer believe these platforms serve them. Trust erosion is not sentiment—it's structural. When alternatives exist, defection is inevitable.</li>
+          <li><strong>5. Community-driven wins on speed:</strong> Open-source teams move faster than corporations constrained by legal risk, internal politics, and shareholder expectations. Ollama (local LLMs) shipped in weeks. OpenAI spent years securing capital.</li>
+        </ul>
+        <p style="margin-top:12px;font-style:italic;color:#666"><strong>Example trajectory:</strong> Slack → adopted for chat → pricing increases → Mattermost/Rocketchat available → evaluation period → migration to open alternative → Slack becomes legacy software → zero strategic value. This happens at scale. Once it starts, it is irreversible.</p>
+      </details>
+
+      <p style="margin-top:18px;font-weight:600">What this means for you:</p>
+      <ul style="padding-left:20px;margin-top:8px">
+        <li><strong>Evaluate alternatives:</strong> Before buying a corporate tool, check if an open-source or community-driven equivalent exists.</li>
+        <li><strong>Build your own stack:</strong> Combine specialized open tools instead of relying on one corporate platform.</li>
+        <li><strong>Support interoperable systems:</strong> Prefer tools that export data, use open standards, and don't lock you in.</li>
+        <li><strong>Join communities, not platforms:</strong> Open-source projects are controlled by users, not shareholders.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section style="margin-top:28px">
+    <h2>Public APIs & Open Data Resources</h2>
+    <div class="card">
+      <h3>Build Your Own Solutions</h3>
+      <p style="margin-top:12px">Instead of relying on corporate data services, use free and open-source APIs to collect, analyze, and visualize data directly. These resources are maintained by communities and trusted organizations.</p>
+      
+      <div style="margin-top:16px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📊 Data & Analytics</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>ACLED</strong> — Armed conflict events and patterns globally</li>
+            <li><strong>GDELT</strong> — News narratives, geopolitical signals, escalation monitoring</li>
+            <li><strong>UNOSAT</strong> — Satellite imagery for infrastructure and humanitarian impact</li>
+            <li><strong>SIPRI</strong> — Military spending, arms transfers, military budgets</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔍 Investigation & OSINT</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Bellingcat</strong> — Geolocation, image verification, open-source methods</li>
+            <li><strong>Shodan</strong> — Internet device discovery and mapping</li>
+            <li><strong>SpiderFoot</strong> — Automated reconnaissance and OSINT automation</li>
+            <li><strong>theHarvester</strong> — Email, subdomain, and host discovery</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Developer APIs</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Public APIs directory</strong> — Thousands of free APIs for every purpose (see full guide below)</li>
+            <li><strong>GitHub</strong> — Open-source repositories, collaborative development</li>
+            <li><strong>OpenWeather, GeoNames</strong> — Free geolocation and environmental data</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📋 Corporate & Lobbying Data</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>LobbyFacts</strong> — EU lobbying register with company and spending data</li>
+            <li><strong>Transparency International</strong> — Corruption, government spending databases</li>
+            <li><strong>SIPRI Arms Database</strong> — Weapons transfers by country, company</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🌍 Environmental & Procurement</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Copernicus (ESA)</strong> — Free satellite data for climate and environment</li>
+            <li><strong>TradeHub / COMTRADE</strong> — UN trade statistics</li>
+            <li><strong>National transparency portals</strong> — Public procurement in ES, IT, FR, DE</li>
+          </ul>
+        </div>
+      </div>
+
+      <p style="margin-top:18px;font-weight:600">→ Download the complete Public APIs Guide (5,000+ free APIs):</p>
+      <a class="secondary" href="/downloads/public-apis-full-guide.md" download style="margin-top:8px">Public APIs Full Guide (EN)</a>
+    </div>
+  </section>
+
+  <section style="margin-top:28px">
+    <div class="card">
+      <h3>Quick Reference: Open-Source Alternatives to Corporate Products</h3>
+      <table style="width:100%;border-collapse:collapse;font-size:0.9em;margin-top:12px">
+        <thead>
+          <tr style="border-bottom:2px solid var(--accent)">
+            <th style="padding:8px;text-align:left;font-weight:600">Corporate Service</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Open-Source Alternative</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Google Suite</strong> (Gmail, Docs)</td>
+            <td style="padding:8px">NextCloud, OnlyOffice, LibreOffice</td>
+            <td style="padding:8px">Self-hosted, no data extraction, portable</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Zoom</strong></td>
+            <td style="padding:8px">Jitsi Meet, Element (Matrix), BigBlueButton</td>
+            <td style="padding:8px">End-to-end encrypted, federated, community-run</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Slack</strong></td>
+            <td style="padding:8px">Mattermost, Rocketchat, Zulip</td>
+            <td style="padding:8px">Transparent, full data control, export anytime</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Salesforce/HubSpot</strong> (CRM)</td>
+            <td style="padding:8px">Odoo, SuiteCRM, Pimcore</td>
+            <td style="padding:8px">Customizable, no vendor lock-in, lower cost</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>ChatGPT</strong> (Proprietary AI)</td>
+            <td style="padding:8px">Ollama, LLaMA, GPT4All (local models)</td>
+            <td style="padding:8px">Run locally, no data sent to servers, free</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Tableau/PowerBI</strong> (Analytics)</td>
+            <td style="padding:8px">Metabase, Apache Superset, Grafana</td>
+            <td style="padding:8px">Dashboard control, SQL direct, community support</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>AWS</strong> (Cloud)</td>
+            <td style="padding:8px">OpenStack, Nextcloud, Ucloud</td>
+            <td style="padding:8px">Self-hosted or federated, no corporate dependency</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Redis Enterprise</strong> (Caching/Database)</td>
+            <td style="padding:8px">Redis (open-source), MinIO (object storage cache)</td>
+            <td style="padding:8px">Exact same features, no licensing, community-maintained</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section style="margin-top:28px;border-top:2px solid var(--accent);padding-top:28px">
+    <h2>Reclaim Your Digital Life: Legitimate Alternatives</h2>
+    <div class="card">
+      <h4 style="margin-bottom:12px">Why reclaim digital infrastructure?</h4>
+      <ul style="padding-left:20px;margin-bottom:18px;font-size:0.95em">
+        <li><strong>Corporate control = data weaponization:</strong> Google, Amazon, Meta, Apple track everything. Your location, communications, purchases, health data are sold or shared with state agencies (NSA, GCHQ, law enforcement).</li>
+        <li><strong>Algorithmic manipulation:</strong> Corporate platforms optimize for engagement (addiction), polarization (conflict), and compliance. Your feed is a behavioral control tool, not information.</li>
+        <li><strong>Arbitrary enforcement:</strong> Sudden bans, account suspensions, content removal without due process. No appeal. No transparency. You build on rented landfor nothing.</li>
+        <li><strong>Planned obsolescence:</strong> Features you pay for disappear. Pricing increases. Quality declines. Alternatives are available and often superior.</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">🌐 Browser & Search — Reclaim Privacy</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Chrome (Google tracking) →</strong> <code>Brave</code> (built-in ad-blocking, no tracking), <code>Firefox</code> (open-source), <code>Ungoogled Chromium</code> (privacy fork). Same speed, zero surveillance.</li>
+        <li><strong>Google Search →</strong> <code>DuckDuckGo</code> (no IP logging), <code>SearXNG</code> (privacy metasearch), <code>Stract</code> (community index). Better results, no behavioral tracking.</li>
+        <li><strong>YouTube (algorithm trap) →</strong> <code>Invidious</code> (YouTube without tracking/algorithm), or use Brave Browser for built-in ad-blocking on YouTube.</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">💬 Social Media & Communication — Escape Propaganda</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Instagram, TikTok, Threads →</strong> <code>Mastodon</code> (federated, no algorithm), <code>Pixelfed</code> (photo sharing, no ads), <code>Lemmy</code> (community discussions). You own your data. Algorithm is transparent. No corporate intermediary.</li>
+        <li><strong>Twitter/X →</strong> <code>Mastodon</code> (open, decentralized), <code>Bluesky</code> (protocol-based, not platform-locked), community forums, email newsletters. Escape the rage machine.</li>
+        <li><strong>Facebook →</strong> <code>Diaspora</code> (federated social), encrypted messaging (<code>Signal</code>), email lists, local organizing. Real community, not data extraction.</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">🎬 Media Centers (Video, Music, Files)</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Netflix, Disney+ paywalls →</strong> <code>Jellyfin</code> (self-hosted media library), <code>Kodi</code> (open media center), <code>Plex</code> (free streaming). Host your own media. Own it forever.</li>
+        <li><strong>Spotify low-pay exploitation →</strong> <code>Subsonic</code>, <code>Airsonic</code> (self-hosted music), support artists directly on Bandcamp/Patreon. Artists earn 100%, not $0.003/track.</li>
+      </ul>
+
+      <p style="margin-top:18px;font-size:0.95em;color:#666"><strong>All of these are legal, production-ready, and often superior to corporate alternatives. Migration takes 1 hour. You keep your data. No account bans. No algorithm deciding what you see.</strong></p>
+    </div>
+  </section>
+
+  <section style="margin-top:28px;border-top:2px solid #f0a;padding-top:28px">
+    <h2>Informational: The Black/Grey Zone Ecosystem</h2>
+    <div class="card" style="background:rgba(240,0,170,0.05)">
+      <p style="margin-top:12px;font-weight:600">⚠️ For information purposes only. The following describes categories that operate in unregulated, contested, or legally ambiguous zones. We document them for analytical transparency, NOT as recommendations.</p>
+      
+      <h4 style="margin-top:18px;margin-bottom:12px;color:#f0a">Why this ecosystem exists:</h4>
+      <p style="padding-left:20px;font-size:0.95em;margin-bottom:12px">Corporate streaming, music, and social platforms enforce artificial scarcity (paywalls, licensing) to maximize profit despite marginal cost approaching zero. Communities have built alternatives that redistribute content. These operate in grey/black zones in most jurisdictions.</p>
+
+      <h4 style="margin-top:18px;margin-bottom:12px;color:#f0a">📺 Streaming (Grey/Black Zone)</h4>
+      <p style="padding-left:20px;font-size:0.9em;margin-bottom:8px">Platform names and categories exist but are maintained in regulatory grey zones and often rapidly domain-shift to evade law enforcement. Search engines regularly remove these from results. Some jurisdictions classify them as piracy; others tolerate them for public health reasons (entertainment access). The platforms:</p>
+      <ul style="padding-left:40px;font-size:0.9em;margin-bottom:12px">
+        <li>Aggregate content from multiple sources (some licensed, many not)</li>
+        <li>Offer streaming comparable to Netflix/Disney+ at zero cost or minimal subscription</li>
+        <li>Host thousands of titles including back-catalog unavailable on paid platforms</li>
+        <li>For examples: NetMirror, Flixio, FlixHD, Flixtor, MovieBox, Streamly, CineHub, ShowZone, GlitchTV, EpicFlix, DocuStream, Lyra, eSound</li>
+        <li>Operate primarily on decentralized or resilient infrastructure to evade shutdown</li>
+      </ul>
+      <p style="padding-left:20px;font-size:0.85em;color:#999;margin-bottom:12px">Examples include streaming platforms for movies (cinema releases, originals, documentaries), TV shows, anime, and premium sports. Search queries like "watch [movie title] free" or "[show] streaming free" will surface these communities.</p>
+
+      <h4 style="margin-top:18px;margin-bottom:12px;color:#f0a">🎵 Music (Grey/Black Zone)</h4>
+      <p style="padding-left:20px;font-size:0.9em;margin-bottom:8px">Similar infrastructures exist for music. RIAA/major labels aggressively fight these platforms, but they persist by:</p>
+      <ul style="padding-left:40px;font-size:0.9em;margin-bottom:12px">
+        <li>Mirroring content across distributed nodes (torrent swarms, IPFS)</li>
+        <li>Hosting metadata separately from audio files</li>
+        <li>Operating under jurisdictions with weak IP enforcement</li>
+        <li>Rotating domain names and infrastructure when targeted</li>
+      </ul>
+      <p style="padding-left:20px;font-size:0.85em;color:#999">Examples include music download/streaming platforms aggregating content without licensing deals. Typically branded as "free music libraries" or "community archives."</p>
+
+      <h4 style="margin-top:18px;margin-bottom:12px;color:#f0a">🌍 Decentralized Social Media (Contested)</h4>
+      <p style="padding-left:20px;font-size:0.9em;margin-bottom:12px">Some decentralized/federated platforms exist but are contested because they host community content (including copyrighted material) without centralized moderation. Different legal status by country. Generally legal to run; may be illegal to host certain content.</p>
+
+      <h4 style="margin-top:18px;margin-bottom:12px;color:#f0a">Legal & Ethical Notes</h4>
+      <ul style="padding-left:20px;font-size:0.9em">
+        <li><strong>Jurisdictional variance:</strong> What's "piracy" in the US may be legal distribution in other countries.</li>
+        <li><strong>DMCA & Copyright:</strong> US law makes circumventing copy protection illegal even for personal use. Other jurisdictions have fair-use exceptions.</li>
+        <li><strong>Artist harm debate:</strong> Major labels capture 70%+ of revenue; artists earn $0.003/stream on Spotify. Grey/black zone alternatives may actually benefit creators by reducing middleman rent extraction.</li>
+        <li><strong>Surveillance state angle:</strong> Governments monitor piracy heavily for geopolitical reasons (China/Russia blocklist enforcement, US export controls). Using these platforms can flag you in surveillance systems.</li>
+      </ul>
+
+      <p style="margin-top:18px;font-weight:600;color:#f0a">⚠️ Bottom line: We document this ecosystem because it exists and shapes digital culture. We do NOT recommend participation without understanding local legal risk. The legitimate alternatives (Jellyfin, Mastodon, Brave, Subsonic) provide most of the value with zero legal liability.</p>
+    </div>
+  </section>
+
 </Base>

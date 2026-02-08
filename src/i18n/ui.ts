@@ -499,7 +499,32 @@ export const ui = {
       'Choose tactics that fit your capacity (boycott, assembly, mutual aid).',
       'Assign roles, create safety and legal plans, and communicate clearly.',
       'Measure impact and iterate: adapt messaging and escalate responsibly.'
-    ]
+    ],
+    'tools.opensource.title': 'Why Open-Source? The Corporate Digital Collapse',
+    'tools.opensource.subtitle': 'Corporate platforms are losing their value. Here\'s why your alternative matters.',
+    'tools.opensource.problem': 'For over a decade, corporate digital services relied on a closed model: proprietary platforms, opaque pricing, licensing lock-in, and centralized control. This worked because there were no credible alternatives at scale.',
+    'tools.opensource.change': 'That condition no longer exists. Large language models (LLMs) combined with mature open-source ecosystems are structurally undermining the value proposition of big tech products.',
+    'tools.opensource.llm': 'LLMs compress entire product categories: Search, customer support, analytics, content production, translation, coding assistance—once defensible corporate moats, now reproducible, cheaper, and community-driven.',
+    'tools.opensource.community': 'Open-source communities optimize for resilience, transparency, and portability, not quarterly earnings. Users move from services to stacks, from subscriptions to ownership, from brands to protocols.',
+    'tools.opensource.decay': 'Corporate products don\'t fail explosively—they decay: Pricing power disappears first, then user lock-in, then strategic importance. This is not competition; it is irrelevance.',
+    'tools.opensource.trust': 'Trust in the US-centric big tech system is eroding: Sudden ToS changes, arbitrary account bans, opaque moderation, regulatory capture, geopolitical pressure, data exploitation, forced subscriptions.',
+    'tools.opensource.action1': 'Evaluate alternatives: Before buying a corporate tool, check if an open-source or community-driven equivalent exists.',
+    'tools.opensource.action2': 'Build your own stack: Combine specialized open tools instead of relying on one corporate platform.',
+    'tools.opensource.action3': 'Support interoperable systems: Prefer tools that export data, use open standards, and don\'t lock you in.',
+    'tools.opensource.action4': 'Join communities, not platforms: Open-source projects are controlled by users, not shareholders.',
+    'tools.publicapis.title': 'Public APIs & Open Data Resources',
+    'tools.publicapis.subtitle': 'Build Your Own Solutions',
+    'tools.publicapis.intro': 'Instead of relying on corporate data services, use free and open-source APIs to collect, analyze, and visualize data directly. These resources are maintained by communities and trusted organizations.',
+    'tools.publicapis.download': 'Public APIs Full Guide (5,000+ free APIs)',
+    'home.opensource.title': 'Build with Open Tools. Don\'t Buy Corporate Platforms.',
+    'home.opensource.subtitle': 'Corporate digital services are decaying. LLMs and open-source ecosystems are replacing proprietary platforms at every layer.',
+    'home.opensource.why': 'Why it matters for us:',
+    'home.opensource.data': 'Data sovereignty: Open-source tools run on your infrastructure—your data stays yours.',
+    'home.opensource.novendor': 'No vendor lock-in: Export all data anytime. Avoid corporate ToS traps.',
+    'home.opensource.cost': 'Lower cost: Free alternatives to Salesforce, Zoom, Slack, AWS are production-ready.',
+    'home.opensource.community': 'Community control: Projects evolve with users, not shareholders. Transparency is built in.',
+    'home.opensource.start': 'Start here:',
+    'home.opensource.learnmore': 'See full list of 5,000+ free public APIs and open-source alternatives'
   }
   ,
   // Tools translations added below
