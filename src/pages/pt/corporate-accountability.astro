@@ -1,0 +1,259 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Rastreie a Responsabilidade Corporativa — Quem Polui | BoycottWithAI</title>
+  <meta name="description" content="71% of global pollution from 100 companies. Track hidden government contracts, corporate complicity, activist oppression. Transparency data, EMAS, NASA satellite monitoring." />
+  <meta name="keywords" content="corporate pollution, environmental accountability, government contracts, transparency, corporate malfeasance, regulatory capture, activist repression, environmental justice, supply chain responsibility, due diligence" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/en/corporate-accountability" />
+</head>
+
+<Base>
+  <section>
+    <h1>Rastreie a Responsabilidade Corporativa</h1>
+    <p class="lead">71% das emissões globais vêm de 100 corporações. Governos viabilizam a poluição via contratos. Ativistas que expõem isso são presos. Saiba como provar.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h4>Poluição Corporativa</h4>
+        <p class="muted">Who actually dumps toxins? Which rivers, air, soil?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Discharges:</strong> Rivers, seas, groundwater contaminated</li>
+          <li><strong>Emissions:</strong> Air pollution (SOx, NOx, particulates, GHG)</li>
+          <li><strong>Waste:</strong> Toxic, nuclear, plastic dumping</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Tool:</strong> NASA FIRMS (real-time fire/pollution) + OpenStreetMap (industrial sites)</p>
+      </div>
+
+      <div class="card">
+        <h4>Contratos Governamentais (Corrupção Oculta)</h4>
+        <p class="muted">Governments pay polluters. Public contracts prove it.</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Billions €/yr:</strong> To polluting companies (transparency.gov)</li>
+          <li><strong>No Audits:</strong> Zero independent monitoring</li>
+          <li><strong>No Fines:</strong> Government ignores violations</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Case:</strong> Thames pollution £50M contract zero enforcement</p>
+      </div>
+
+      <div class="card">
+        <h4>Opressão a Ativistas</h4>
+        <p class="muted">Who gets arrested? Protesters or CEOs?</p>
+        <ul style="margin-top:10px; font-size:0.9em">
+          <li><strong>Arrested:</strong> Activists exposing pollution</li>
+          <li><strong>Unpunished:</strong> Corporate executives never charged</li>
+          <li><strong>Threats:</strong> Against journalists, whistleblowers</li>
+        </ul>
+        <p style="margin-top:10px"><strong>Data:</strong> Activists arrested 10x more than polluting CEOs</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">How to Track (Step-by-Step)</h2>
+    
+    <div class="card" style="margin-top:18px">
+      <h4>Step 1: Identify Local Pollution</h4>
+      <p>What rivers/air/soil in your region are contaminated?</p>
+      <ul>
+        <li>🔍 Google Maps search "factories", "landfills" in area</li>
+        <li>🛰️ <a href="https://firms.modaps.eosdis.nasa.gov/" target="_blank">NASA FIRMS</a> — real-time fires/industrial emissions</li>
+        <li>📍 <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> — map industrial sites</li>
+        <li>🌍 <a href="https://earthexplorer.usgs.gov/" target="_blank">Google Earth Pro</a> — satellite history (10+ years)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Step 2: Download EMAS Declarations</h4>
+      <p><strong>EMAS = legal obligation to disclose pollution.</strong> Companies can't deny it.</p>
+      <p><strong>UK:</strong> <a href="https://www.gov.uk/government/organisations/environment-agency" target="_blank">Environment Agency</a> reports, <a href="https://companieshouse.gov.uk/" target="_blank">Companies House</a></p>
+      <p><strong>Search for:</strong> Tons of discharge/year, chemical types, waste destinations</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Step 3: Cross-Check Government Contracts</h4>
+      <p><strong>Governments pay polluters.</strong> Public data proves complicity.</p>
+      <ul>
+        <li><strong>UK:</strong> <a href="https://contractsfinder.service.gov.uk/" target="_blank">ContractsFinder</a> + <a href="https://companieshouse.gov.uk/" target="_blank">Companies House</a></li>
+        <li><strong>EU:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Tender Electronic Daily)</a></li>
+        <li><strong>Search:</strong> "Company X" + "contract" + amount + audit requirements (usually: ZERO)</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Step 4: Document Oppression</h4>
+      <p><strong>Timeline:</strong> When activists protest pollution, they're arrested. Corporate executives? Never.</p>
+      <ul>
+        <li><a href="https://acleddata.com/" target="_blank">ACLED</a> — search "protests + company name"</li>
+        <li>Local news — arrest records for activists vs executives</li>
+        <li>Public court records — compare sentences</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>Step 5: Create Report & Take Action</h4>
+      <p><strong>Downloadable Template:</strong> <a href="/downloads/resources/corporate-accountability.md">Corporate Accountability Resources</a></p>
+      <p><strong>Share with:</strong> Media, environmental NGOs, MPs, community groups</p>
+      <p><strong>Measured Result:</strong> Government inquiries, independent audits, fines (with enough pressure)</p>
+    </div>
+
+    <h2 style="margin-top:28px">Tools by Country</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>🇬🇧 United Kingdom</h4>
+        <p><strong>Transparency:</strong> <a href="https://contractsfinder.service.gov.uk/" target="_blank">ContractsFinder</a>, <a href="https://companieshouse.gov.uk/" target="_blank">Companies House</a></p>
+        <p><strong>Environment:</strong> <a href="https://environment-agency.gov.uk/" target="_blank">Environment Agency</a> reports</p>
+        <p><strong>Lobbying:</strong> <a href="https://www.parliament.uk/mps-lords-and-offices/standards-and-propriety/parliamentary-commissioner-for-standards/the-register-of-members-financial-interests/" target="_blank">Register of Interests</a></p>
+        <p><strong>FOCUS:</strong> Thames pollution, fracking, energy company contracts</p>
+      </div>
+
+      <div class="card">
+        <h4>🇫🇷 France</h4>
+        <p><strong>Transparency:</strong> <a href="https://data.gouv.fr/" target="_blank">data.gouv.fr</a> (public data portal)</p>
+        <p><strong>Contracts:</strong> <a href="https://ted.europa.eu/" target="_blank">TED</a> (EU tenders)</p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparency Register</a></p>
+        <p><strong>FOCUS:</strong> Seine pollution, nuclear plants, agricultural lobbying</p>
+      </div>
+
+      <div class="card">
+        <h4>🇩🇪 Germany</h4>
+        <p><strong>Environment:</strong> <a href="https://www.umweltbundesamt.de/" target="_blank">UmweltBundesamt</a> (federal environment data)</p>
+        <p><strong>Lobbying:</strong> <a href="https://www.lobbyregister.bundestag.de/" target="_blank">Lobbyregister</a> (who influences laws)</p>
+        <p><strong>Contracts:</strong> <a href="https://www.bundesausschreibungen.de/" target="_blank">BundesAusschreibungen</a></p>
+        <p><strong>FOCUS:</strong> Ruhr pollution, Bavaria deforestation, coal industry lobbying</p>
+      </div>
+
+      <div class="card">
+        <h4>🇪🇺 EU-Wide</h4>
+        <p><strong>Public Contracts:</strong> <a href="https://ted.europa.eu/" target="_blank">TED (Tender Electronic Daily)</a></p>
+        <p><strong>Lobbying:</strong> <a href="https://registretransparencepublic.eu/" target="_blank">EU Transparency Register</a></p>
+        <p><strong>Corporate Data:</strong> <a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (global company database)</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Case Studies (Real Data)</h2>
+
+    <div class="card">
+      <h4>🔴 Case: Thames Pollution (UK)</h4>
+      <p><strong>Company:</strong> Water utility dumps sewage into river</p>
+      <p><strong>Public Data:</strong> Environment Agency reports: 3,000+ overflow events/year (documented)</p>
+      <p><strong>Government:</strong> £50M+ contract for "maintenance" (zero enforcement)</p>
+      <p><strong>Oppression:</strong> Activists arrested for trespassing at spillage sites; executives fined £0</p>
+      <p><strong>Result:</strong> Public inquiry opened after 100k+ signatures + media pressure</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h4>🔴 Case: Rhine Pollution (Germany/NL)</h4>
+      <p><strong>Source:</strong> Chemical plants discharge heavy metals (documented EMAS reports)</p>
+      <p><strong>Contract:</strong> German government pays for "monitoring" (actual testing: minimal)</p>
+      <p><strong>Hidden Data:</strong> Cancer rates in affected communities suppressed from public reporting</p>
+      <p><strong>Potential Result:</strong> EU infringement proceedings if pressure increases</p>
+    </div>
+
+    <h2 style="margin-top:28px">Resources & Downloads</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>📄 Downloadable Resources</h4>
+        <ul>
+          <li><a href="/downloads/resources/corporate-accountability.md">Corporate Accountability Resources</a></li>
+          <li><a href="/downloads/resources/osint-tools.md">OSINT Tools (ACLED, GDELT, NASA)</a></li>
+          <li><a href="/downloads/resources/scraping-python.md">Scraping Public Data</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>🔗 Transparency Portals</h4>
+        <ul>
+          <li><a href="https://transparencyinternational.org/" target="_blank">Transparency International</a></li>
+          <li><a href="https://opencorporates.com/" target="_blank">OpenCorporates</a> (company database)</li>
+          <li><a href="https://lobbyfacts.eu/" target="_blank">LobbyFacts</a> (who influences governments)</li>
+          <li><a href="https://acleddata.com/" target="_blank">ACLED</a> (protests, repression tracking)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>⚖️ Legal Support</h4>
+        <ul>
+          <li><a href="https://www.amnesty.org/" target="_blank">Amnesty International</a> — legal assistance</li>
+          <li><a href="https://www.fidh.org/" target="_blank">FIDH</a> — ECHR/UN complaints</li>
+          <li><a href="https://www.occrp.org/" target="_blank">OCCRP</a> — Organized Crime & Corruption Reporting</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">🌍 2026 Landmark Trials — Africa: Corporate Impunity Crumbling</h2>
+    <p class="muted" style="font-weight:600">As of February 2026, the European legal system is systematically dismantling corporate immunity for resource extraction in Africa. Three landmark trials define the new accountability landscape:</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card" style="border:2px solid #d4af37;background:rgba(212,175,55,0.05)">
+        <h4>⚖️ TotalEnergies: Duty of Vigilance Trial (LIVE)</h4>
+        <p class="muted"><strong>Status:</strong> Live hearings Paris, February 19–20, 2026</p>
+        <p style="margin-top:8px"><strong>The Case:</strong> Sherpa, Friends of the Earth, City of Paris demanding TotalEnergies STOP fossil fuel expansion (EACOP pipeline Uganda/Tanzania) to meet climate goals.</p>
+        <p style="margin-top:8px"><strong>Key Demand:</strong> 37% reduction in oil production by 2030 (legally enforceable)</p>
+        <p style="margin-top:8px"><strong>Why It Matters:</strong> First time judges decide if a multinational can be FORCED to abandon projects to meet climate law.</p>
+        <p style="margin-top:12px"><strong>Resources:</strong> <a href="https://www.asso-sherpa.org" target="_blank" rel="noopener">Sherpa Case Archive</a> | <a href="https://www.stopeacop.net" target="_blank" rel="noopener">StopEACOP Official Site</a></p>
+      </div>
+
+      <div class="card" style="border:2px solid #27ae60;background:rgba(39,174,96,0.05)">
+        <h4>✊ Shell: Legacy Pollution Victory</h4>
+        <p class="muted"><strong>Status:</strong> Merits Trial scheduled March 2027</p>
+        <p style="margin-top:8px"><strong>The Win (June 2025):</strong> UK High Court ruled Shell PLC LIABLE for "legacy pollution" from decades-old oil spills—regardless of current ownership or "sabotage" claims.</p>
+        <p style="margin-top:8px"><strong>Legal Precedent:</strong> Failing to clean up old spills = "continuous breach" of law. Victims can sue years after damage.</p>
+        <p style="margin-top:8px"><strong>Current Plaintiffs:</strong> 14,000 Nigerians from Bille & Ogale communities suing in London RIGHT NOW.</p>
+        <p style="margin-top:12px"><strong>Resources:</strong> <a href="https://www.leighday.co.uk" target="_blank" rel="noopener">Leigh Day - Nigeria Cases</a> | <a href="https://www.amnesty.org" target="_blank" rel="noopener">Amnesty International Niger Delta</a></p>
+      </div>
+
+      <div class="card" style="border:2px solid #c0392b;background:rgba(192,57,43,0.05)">
+        <h4>🔨 Glencore: Individual Accountability</h4>
+        <p class="muted"><strong>Status:</strong> Criminal trial scheduled October 2027</p>
+        <p style="margin-top:8px"><strong>The Shift:</strong> After $1.3B corporate fines (2022), prosecutors are now targeting individual executives. Former top traders pleaded "not guilty" to bribery charges in West Africa (Nov 2025–Feb 2026).</p>
+        <p style="margin-top:8px"><strong>Why It Matters:</strong> Signals end of "corporate fines = get out of jail free" model. Individual leaders now face criminal prosecution.</p>
+        <p style="margin-top:12px"><strong>Resources:</strong> <a href="https://www.sfo.gov.uk" target="_blank" rel="noopener">UK SFO Investigation</a> | <a href="https://www.corruptionwatch.org.za" target="_blank" rel="noopener">Corruption Watch DRC</a></p>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">🔗 Take Action: Africa Resource Extraction Accountability</h2>
+    <div class="grid">
+      <div class="card">
+        <h4>📂 Global Tracking Resources</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.business-humanrights.org/" target="_blank" rel="noopener">Business & Human Rights Resource Centre</a>:</strong> Gold standard for tracking corporate allegations in Africa</li>
+          <li><strong><a href="https://www.banktrack.org/" target="_blank" rel="noopener">BankTrack</a>:</strong> Which banks (Standard Bank, ICBC, SMBC) fund extraction projects</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>✊ Grassroots Movements</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.afiego.org/" target="_blank" rel="noopener">AFIEGO</a>:</strong> Leading legal fight against EACOP/Tilenga (Uganda)</li>
+          <li><strong><a href="https://erafoen.org/" target="_blank" rel="noopener">Environmental Rights Action (ERA)</a>:</strong> Friends of the Earth Nigeria, Ken Saro-Wiwa legacy</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>💰 Legal Aid & Donations</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://secure.avaaz.org" target="_blank" rel="noopener">Avaaz - Stop the Monster Pipeline</a>:</strong> Crowdfund legal fees vs TotalEnergies & Shell</li>
+          <li><strong><a href="https://nigeria.actionaid.org/" target="_blank" rel="noopener">ActionAid Nigeria</a>:</strong> Support for displaced women farmers</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Next Steps</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Identify local pollution</strong> (30 min)</li>
+        <li><strong>Download EMAS + government contracts</strong> (1 hour)</li>
+        <li><strong>Create 1-pager evidence document</strong> (1 hour)</li>
+        <li><strong>Share with media + NGOs + community</strong> (30 min)</li>
+        <li><strong>Sign/organize petitions for independent audit</strong> (5 min)</li>
+      </ol>
+      <p style="margin-top:15px"><strong>Total time invested:</strong> ~3 hours for real civic pressure on proven corruption.</p>
+    </div>
+
+  </section>
+</Base>

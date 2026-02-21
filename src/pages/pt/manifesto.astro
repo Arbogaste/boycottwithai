@@ -1,0 +1,79 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('manifesto.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('manifesto.subtitle')} />
+</head>
+
+<Base>
+  <section>
+    <h1>Manifesto</h1>
+    <p class="muted">Responsabilidade, transparência e resistência civil em face de crises globais.</p>
+    <div class="card" style="margin-top:12px">
+      <h3>Current Situation: 2024–2025</h3>
+      <ul>
+        <li><strong>Climate failure:</strong> COP28 ended with record fossil fuel subsidies and no binding phase-out. Global CO₂ emissions hit a new high in 2024 (IEA), while extreme weather displaced over 40 million people (IDMC).</li>
+        <li><strong>Middle East & Genocide:</strong> Over 30,000 civilians killed in Gaza (OCHA, 2024), with UN agencies warning of famine and systematic targeting of infrastructure. Sudan and Yemen face mass displacement and ignored ceasefire violations.</li>
+        <li><strong>Institutional inaction:</strong> UN Security Council blocked by vetoes; EU and G7 increase arms exports and military budgets, ignoring calls for ceasefire and humanitarian corridors.</li>
+        <li><strong>Escalation & rearmament:</strong> Global military spending surpassed $2.4 trillion (SIPRI, 2024), while peace resolutions stall and civilian protection is deprioritized.</li>
+      </ul>
+      <p class="muted">Our institutions are failing to address the root causes of violence, climate breakdown, and mass displacement. This project exists to expose these failures and empower direct civic action.</p>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <h3>Visão</h3>
+      <p class="muted">Construir um movimento global não-violento baseado em dados para responsabilizar corporações e governos.</p>
+    </div>
+
+    <article class="card" style="margin-top:18px">
+      <h2>{t('manifesto.methods.title')}</h2>
+      <ul>
+        {t('manifesto.methods.list').map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+
+      <ul>
+        <li>Non-violent direct action and peaceful assemblies</li>
+        <li>Community organizing and alternative, non-exploitative institutions</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.antiwar.title')}</h2>
+      <p>{t('manifesto.antiwar.p1')}</p>
+      <ul>
+        <li>{t('manifesto.antiwar.policies')}</li>
+        <li>{t('manifesto.antiwar.divest')}</li>
+        <li>{t('manifesto.antiwar.education')}</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.failures.title')}</h2>
+      <ul>
+        <li>{t('manifesto.failures.environment')}</li>
+        <li>{t('manifesto.failures.energy')}</li>
+        <li>{t('manifesto.failures.investment')}</li>
+        <li>{t('manifesto.failures.health')}</li>
+        <li>{t('manifesto.failures.ai')}</li>
+      </ul>
+    </article>
+
+    <article class="card" style="margin-top:12px">
+      <h2>{t('manifesto.values.title')}</h2>
+      <ul>
+        {t('manifesto.values.list').map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </article>
+
+  </section>
+</Base>

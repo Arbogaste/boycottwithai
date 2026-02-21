@@ -10,15 +10,15 @@ const t = useTranslations(lang);
 <head>
   <title>{t('hero.title')} — BoycottWithAI</title>
   <meta name="description" content={t('hero.subtitle')} />
-  <meta name="keywords" content="pace, azione non violenta, OSINT, monitoraggio, civic tech, disinvestimento, opposizione al riarmo, template" />
+  <meta name="keywords" content="peace, non-violent action, OSINT, monitoring, civic tech, divestment, anti-rearmament, templates" />
 </head>
 
 <Base>
   <section>
-    <h1>Strumenti & Risorse</h1>
-    <p class="muted">Tutto quello che serve per monitorare, investigare e agire per la pace e il disarmo.</p>
+    <h1>Tools & Resources</h1>
+    <p class="muted">Everything you need to monitor, investigate, and take action for peace, justice, and non-violent social change.</p>
 
-    <h2 style="margin-top:24px">Strumenti OSINT & Investigazione</h2>
+    <h2 style="margin-top:24px">OSINT & Investigation Tools</h2>
     <p class="muted">{t('osint.intro')}</p>
     
     <div class="grid" style="margin-top:18px">
@@ -39,124 +39,338 @@ const t = useTranslations(lang);
       <ToolCard name={t('tools.osintbox.name')} short={t('tools.osintbox.short')} why={t('tools.osintbox.why')} example={t('tools.osintbox.example')} link="https://github.com/doctorfree/osint" />
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.safety.title')}</h4>
-      <p class="muted">{t('tools.safety.desc')}</p>
-      <a class="secondary" href="/templates/osint-safety-it.txt" download aria-label="Scarica risorsa sicurezza OSINT (IT)">Scarica risorsa</a>
+    <h2 style="margin-top:28px">📄 Document Processing & OCR Tools</h2>
+    <div class="card">
+      <p class="muted">Extract text from scanned documents, images, and PDFs with open-source OCR engines. Essential for archival research, leaked document analysis, and historical record digitization.</p>
+      <div class="grid" style="margin-top:18px">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔤 Open-Source OCR Engines</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/UKPLab/Tesseract_Framework" target="_blank" rel="noopener">Tesseract 5</a></strong> — Industry standard OCR; supports 100+ languages; command-line and library</li>
+            <li><strong><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener">PaddleOCR</a></strong> — Multilingual, fast, pre-trained models; easy Python integration</li>
+            <li><strong><a href="https://github.com/JaidedAI/EasyOCR" target="_blank" rel="noopener">EasyOCR</a></strong> — High accuracy, 80+ languages, PyTorch-based, simple API</li>
+            <li><strong><a href="https://github.com/rednote-hilab/dots.ocr" target="_blank" rel="noopener">Dots OCR (RedNote HiLab)</a></strong> — Lightweight, efficient document processing, optimized for Chinese/multilingual text</li>
+            <li><strong><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2" target="_blank" rel="noopener">DeepSeek-OCR-2</a></strong> — Advanced vision language model for document analysis, structured data extraction, table recognition</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Text Processing Pipeline</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/Textualize/rich" target="_blank" rel="noopener">Rich</a></strong> — Format and display OCR output with syntax highlighting</li>
+            <li><strong><a href="https://github.com/psf/requests" target="_blank" rel="noopener">Python Requests + PIL/Pillow</a></strong> — Batch download images/PDFs, resize, preprocess</li>
+            <li><strong><a href="https://github.com/jbarlow83/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></strong> — Embed OCR text layer into PDFs while preserving original layout</li>
+            <li><strong><a href="https://github.com/kba/kraken" target="_blank" rel="noopener">Kraken</a></strong> — High-accuracy OCR for historical documents and manuscripts</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">💾 Data Organization</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://www.sqlite.org/fts5.html" target="_blank" rel="noopener">SQLite FTS5</a></strong> — Full-text search on extracted text; fast queries</li>
+            <li><strong><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></strong> — Distributed search engine for large document collections</li>
+            <li><strong><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener">Weaviate</a></strong> — Vector database for semantic document search</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Workflow Example:</strong> Download leaked PDFs → OCR with DeepSeek/PaddleOCR → Extract entities (names, amounts, dates) → Store in SQLite FTS5 → Search and cross-reference → Export findings as structured CSV/JSON.</p>
+    </div>
+
+    <h2 style="margin-top:28px">Public APIs & Open Data Resources</h2>
+    <div class="card">
+      <h3>Build Your Own Solutions</h3>
+      <p style="margin-top:12px">Instead of relying on corporate data services, use free and open-source APIs to collect, analyze, and visualize data directly. These resources are maintained by communities and trusted organizations.</p>
+      
+      <div style="margin-top:16px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📊 Data & Analytics</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>ACLED</strong> — Armed conflict events and patterns globally</li>
+            <li><strong>GDELT</strong> — News narratives, geopolitical signals, escalation monitoring</li>
+            <li><strong>UNOSAT</strong> — Satellite imagery for infrastructure and humanitarian impact</li>
+            <li><strong>SIPRI</strong> — Military spending, arms transfers, military budgets</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔍 Investigation & OSINT</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Bellingcat</strong> — Geolocation, image verification, open-source methods</li>
+            <li><strong>Shodan</strong> — Internet device discovery and mapping</li>
+            <li><strong>SpiderFoot</strong> — Automated reconnaissance and OSINT automation</li>
+            <li><strong>theHarvester</strong> — Email, subdomain, and host discovery</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Developer APIs</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Public APIs directory</strong> — Thousands of free APIs for every purpose</li>
+            <li><strong>GitHub</strong> — Open-source repositories, collaborative development</li>
+            <li><strong>OpenWeather, GeoNames</strong> — Free geolocation and environmental data</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📋 Corporate & Lobbying Data</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>LobbyFacts</strong> — EU lobbying register with company and spending data</li>
+            <li><strong>Transparency International</strong> — Corruption, government spending databases</li>
+            <li><strong>SIPRI Arms Database</strong> — Weapons transfers by country, company</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🌍 Environmental & Procurement</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Copernicus (ESA)</strong> — Free satellite data for climate and environment</li>
+            <li><strong>TradeHub / COMTRADE</strong> — UN trade statistics</li>
+            <li><strong>National transparency portals</strong> — Public procurement in ES, IT, FR, DE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="margin-top:28px">Why Open-Source? The Corporate Digital Collapse</h2>
+    <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
+      <h3>Corporate platforms are losing their value. Here's why your alternative matters.</h3>
+      <p style="margin-top:12px"><strong>The problem:</strong> For over a decade, corporate digital services relied on a closed model: proprietary platforms, opaque pricing, licensing lock-in, and centralized control. This worked because there were no credible alternatives at scale.</p>
+      
+      <p style="margin-top:12px"><strong>That condition no longer exists.</strong> Large language models (LLMs) combined with mature open-source ecosystems are structurally undermining the value proposition of big tech products.</p>
+      
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ How corporate digital services decay to zero (click to expand)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>1. Compression by LLMs:</strong> Search (replaced by ChatGPT), customer support (chatbots), analytics (self-service BI), content production—features that cost $5K+/month now cost $20/month or $0.</li>
+          <li><strong>2. Open-source defeats proprietary:</strong> Every corporate tool has an open equivalent gaining adoption. Metabase eats Tableau. Mattermost replaces Slack. Users vote with their data.</li>
+          <li><strong>3. Institutional distrust accelerates collapse:</strong> US Big Tech companies are weaponized by state and capital: surveillance, censorship, regulatory capture, geopolitical coercion. When alternatives exist, defection is inevitable.</li>
+          <li><strong>4. Community-driven wins on speed:</strong> Open-source teams move faster than corporations. Ollama shipped in weeks. OpenAI spent years securing capital.</li>
+        </ul>
+      </details>
+
+      <p style="margin-top:18px;font-weight:600">What this means for you:</p>
+      <ul style="padding-left:20px;margin-top:8px">
+        <li><strong>Evaluate alternatives:</strong> Before buying a corporate tool, check if an open-source equivalent exists.</li>
+        <li><strong>Build your own stack:</strong> Combine specialized open tools instead of relying on one corporate platform.</li>
+        <li><strong>Support interoperable systems:</strong> Prefer tools that export data, use open standards, and don't lock you in.</li>
+        <li><strong>Join communities, not platforms:</strong> Open-source projects are controlled by users, not shareholders.</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top:28px">Open-Source Alternatives to Corporate Products</h2>
+    <div class="card">
+      <table style="width:100%;border-collapse:collapse;font-size:0.9em;margin-top:12px">
+        <thead>
+          <tr style="border-bottom:2px solid var(--accent)">
+            <th style="padding:8px;text-align:left;font-weight:600">Corporate Service</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Open-Source Alternative</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Google Suite</strong> (Gmail, Docs)</td>
+            <td style="padding:8px">NextCloud, OnlyOffice, LibreOffice</td>
+            <td style="padding:8px">Self-hosted, no data extraction, portable</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Zoom</strong></td>
+            <td style="padding:8px">Jitsi Meet, Element (Matrix), BigBlueButton</td>
+            <td style="padding:8px">End-to-end encrypted, federated, community-run</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Slack</strong></td>
+            <td style="padding:8px">Mattermost, Rocketchat, Zulip</td>
+            <td style="padding:8px">Transparent, full data control, export anytime</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Salesforce/HubSpot</strong> (CRM)</td>
+            <td style="padding:8px">Odoo, SuiteCRM, Pimcore</td>
+            <td style="padding:8px">Customizable, no vendor lock-in, lower cost</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>ChatGPT</strong> (Proprietary AI)</td>
+            <td style="padding:8px">Ollama, LLaMA, GPT4All (local models)</td>
+            <td style="padding:8px">Run locally, no data sent to servers, free</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Tableau/PowerBI</strong> (Analytics)</td>
+            <td style="padding:8px">Metabase, Apache Superset, Grafana</td>
+            <td style="padding:8px">Dashboard control, SQL direct, community support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="margin-top:28px">Power Networks: The Epstein Files Investigation</h2>
+    <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
+      <h3>Why This Matters</h3>
+      <p style="margin-top:12px">In 2025, over 60,000 pages of Epstein-related documents were officially released by the U.S. House Oversight Committee and federal courts. These documents expose institutional failures, complicity networks, and power dynamics that enabled decades of abuse.</p>
+      
+      <h4 style="margin-top:18px;margin-bottom:12px">📊 Complete Analysis Guide</h4>
+      <p style="margin-bottom:12px;font-size:0.95em">Download the comprehensive guide: document acquisition workflow, full-text search database setup, entity extraction, co-occurrence analysis, and reproducible methodology for investigating power networks.</p>
+      
+      <a class="button" href="/downloads/resources/epstein_files.md" download style="display:inline-block;margin-top:12px">📥 Download Complete Guide (200 KB)</a>
+      
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Includes:</strong> JMail.world email database, text extraction pipeline (Python + OCR), SQLite FTS5 database, entity mapping, co-occurrence analysis, timeline reconstruction.</p>
+    </div>
+
+    <h2 style="margin-top:28px">Reclaim Your Digital Life: Legitimate Alternatives</h2>
+    <div class="card">
+      <h4 style="margin-bottom:12px">Why reclaim digital infrastructure?</h4>
+      <ul style="padding-left:20px;margin-bottom:18px;font-size:0.95em">
+        <li><strong>Corporate control = data weaponization:</strong> Google, Amazon, Meta, Apple track everything. Your data is sold to state agencies (NSA, GCHQ, law enforcement).</li>
+        <li><strong>Algorithmic manipulation:</strong> Corporate platforms optimize for engagement, polarization, and compliance. Your feed is a behavioral control tool.</li>
+        <li><strong>Arbitrary enforcement:</strong> Sudden bans, suspensions, content removal without due process. No appeal. No transparency.</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">🌐 Browser & Search — Reclaim Privacy</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Chrome (Google tracking) →</strong> <code>Brave</code> (built-in ad-blocking), <code>Firefox</code> (open-source), <code>Ungoogled Chromium</code> (privacy fork).</li>
+        <li><strong>Google Search →</strong> <code>DuckDuckGo</code> (no IP logging), <code>SearXNG</code> (privacy metasearch).</li>
+        <li><strong>YouTube →</strong> <code>Invidious</code> (YouTube without tracking/algorithm).</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">💬 Social Media & Communication</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Instagram, TikTok →</strong> <code>Mastodon</code> (federated, no algorithm), <code>Pixelfed</code> (photo sharing).</li>
+        <li><strong>Twitter/X →</strong> <code>Mastodon</code> (open, decentralized).</li>
+        <li><strong>Facebook →</strong> <code>Diaspora</code> (federated), <code>Signal</code> (encrypted messaging).</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">🎬 Media Centers</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Netflix, Disney+ →</strong> <code>Jellyfin</code> (self-hosted media), <code>Kodi</code> (media center).</li>
+        <li><strong>Spotify →</strong> <code>Subsonic</code>, <code>Airsonic</code> (self-hosted music).</li>
+      </ul>
+
+      <p style="margin-top:18px;font-size:0.95em;color:#666"><strong>All of these are legal, production-ready, and often superior to corporate alternatives. You keep your data. No account bans. No algorithm.</strong></p>
     </div>
 
     <!-- RESOURCES SECTION -->
-    <h2 style="margin-top:32px">Template di Campagna & Materiali</h2>
+    <h2 style="margin-top:32px">Campaign Templates & Materials</h2>
     <p class="muted">{t('resources.intro')}</p>
 
     <div class="grid" style="margin-top:18px">
       <div class="card">
         <h4>{t('resources.petition.title')}</h4>
-        <p class="muted">Scarica petizioni pronte per chiedere diplomaticità, oggettività umanitaria e fine delle logiche di riarmo.</p>
-        <a class="secondary" href="/templates/petition-it.txt" download>Download IT</a>
+        <p class="muted">Download ready-to-send petitions demanding diplomacy, ceasefires and humanitarian prioritization.</p>
+        <a class="secondary" href="/templates/petition-en.txt" download>Download EN</a>
       </div>
       <div class="card">
         <h4>{t('resources.mp.title')}</h4>
-        <p class="muted">Template email per contattare i rappresentanti e chiedere azioni politiche per la pace.</p>
-        <a class="secondary" href="/templates/mp-email-it.txt" download>Download IT</a>
+        <p class="muted">Copy-and-paste email templates to contact MPs and local representatives.</p>
+        <a class="secondary" href="/templates/mp-email-en.txt" download>Download EN</a>
       </div>
       <div class="card">
         <h4>{t('resources.briefing.title')}</h4>
-        <p class="muted">Briefing di una pagina per giornalisti e policymaker.</p>
-        <a class="secondary" href="/templates/briefing-it.txt" download>Download IT</a>
+        <p class="muted">One-page briefing templates for journalists and policymakers.</p>
+        <a class="secondary" href="/templates/briefing-en.txt" download>Download EN</a>
       </div>
       <div class="card">
-        <h4>Prompt AI</h4>
-        <p class="muted">Template di prompt AI per personalizzare messaggi e briefing in modo sicuro e verificabile.</p>
-        <a class="secondary" href="/templates/ai-prompts-it.txt" target="_blank">Prompt AI (IT)</a>
+        <h4>AI prompt library</h4>
+        <p class="muted">Personalize messages and briefings with our safe AI prompt templates.</p>
         <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+        <a class="secondary" href="/templates/ai-prompts-it.txt" target="_blank">Prompt AI (IT)</a>
       </div>
     </div>
 
     <div class="card" style="margin-top:18px">
-      <h3>Come usare i template in 10 minuti</h3>
+      <h3>How to use templates in 10 minutes</h3>
       <ol>
-        <li class="muted">Apri il template più rilevante (petizione, email MP, briefing).</li>
-        <li class="muted">Modifica la prima riga per aggiungere target, date e una richiesta chiara—evita il gergo.</li>
-        <li class="muted">Aggiungi 1–2 righe di prova e collega al briefing o al log di monitoraggio.</li>
-        <li class="muted">Esegui la checklist di sicurezza OSINT: citazioni, provenienza dell'immagine, controlli doxxing.</li>
-        <li class="muted">Pubblica, poi registra il link e le metriche chiave (firme, risposte, menzioni).</li>
+        <li class="muted">Open the most relevant template (petition, mp-email, briefing).</li>
+        <li class="muted">Edit the first line to add target, dates and a short ask—avoid jargon.</li>
+        <li class="muted">Add 1–2 evidence lines and link to the briefing or monitoring log.</li>
+        <li class="muted">Run OSINT safety checklist: citations, image provenance, doxxing checks.</li>
+        <li class="muted">Publish, then log the link and key metrics (signatures, replies, mentions).</li>
       </ol>
-      <p class="muted">Vedi il template di briefing per la struttura delle prove. In caso di dubbi, consulta la risorsa di sicurezza OSINT prima di pubblicare.</p>
+      <p class="muted">Quick MP message example (copy-and-paste):</p>
+      <pre class="muted" style="white-space:pre-wrap; margin-top:8px;">Dear [MP Name],
+I'm a constituent and I urge you to request an independent audit of contract [#] due to concerns about [brief impact]. Please ask the minister to pause any further disbursements until the review is complete.</pre>
+      <p class="muted">See the briefing template for evidence structure. When in doubt, consult the OSINT safety resources before publishing.</p>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Toolkit: Investigation, Whistleblowing & Real Impact</h3>
+      <ul>
+        <li><strong>OSINT & Investigative Journalism:</strong> <a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat How-To</a>, <a href="https://www.lighthousereports.com/">Lighthouse Reports</a>, <a href="https://www.occrp.org/">OCCRP</a> for image verification, arms tracking, satellite analysis, collaborative investigations.</li>
+        <li><strong>Secure Whistleblowing:</strong> <a href="https://www.globaleaks.org/">GlobaLeaks</a>, <a href="https://ddosecrets.com/submit">DDoSecrets</a>, <a href="https://securedrop.org/">SecureDrop</a> for anonymous reporting of abuse and corruption.</li>
+        <li><strong>Scraping & Data Leaks:</strong> Open-source tools for extracting procurement, lobbying, arms export data. Cross-check with <a href="https://lobbyfacts.eu/">LobbyFacts</a> and <a href="https://transparency.org/">Transparency International</a>.</li>
+        <li><strong>Legal Support & International Complaints:</strong> <a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty International</a>, <a href="https://www.transparency.org/en">Transparency International</a> for templates to file with ECHR, UN, and free legal aid.</li>
+        <li><strong>Public Dashboards & Campaigns:</strong> <a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>, Google Sheets for publishing findings and building public pressure.</li>
+      </ul>
     </div>
 
     <!-- AI & AUTOMATION SECTION -->
-    <h2 style="margin-top:32px">AI & Automazione per Campagne</h2>
-    <p class="muted">Usa AI e strumenti open-source per automatizzare ricerca, pulizia dei dati, coordinamento. Verifica sempre con controllo umano.</p>
+    <h2 style="margin-top:32px">AI & Automation for Campaigns</h2>
+    <p class="muted">Use AI and open-source tools to automate research, data cleaning, and coordination. Always verify AI outputs with human fact-checking.</p>
 
     <div class="card" style="margin-top:18px;border:1px solid #ff9;padding:12px">
-      <h3> Flussi AI Pratici</h3>
-      <p><strong>Non lasciare che l'AI pensi per te.</strong> Usala per risparmiare tempo su cose noiose, così puoi concentrarti su quello che conta: capire il tuo tema, parlare con le persone, organizzare l'azione.</p>
+      <h3>⚙️ Practical AI Workflows</h3>
+      <p><strong>Don't let AI do your thinking for you.</strong> Use it to save time on boring stuff so you can focus on what matters: understanding your issue, talking to people, organizing action.</p>
       
-      <p><strong>📖 Leggi la risorsa completa →</strong> <a href="/downloads/resources/ai-for-campaigns-en.md" download><strong>AI for Campaigns: A Practical Resource for Activists</strong></a></p>
+      <p><strong>📖 Read the full resources →</strong> <a href="/downloads/resources/ai-for-campaigns-en.md" download><strong>AI for Campaigns: A Practical Resources for Activists</strong></a></p>
       
-      <strong style="display:block;margin-top:12px">Casi d'uso reali:</strong>
+      <strong style="display:block;margin-top:12px">Real use cases:</strong>
       <ul>
-        <li><strong>Riassumere rapporti:</strong> Dai un rapporto UN di 100 pagine a un LLM, ottieni un riassunto di 1 pagina con i fatti chiave. Poi verifica contro l'originale.</li>
-        <li><strong>Trovare pattern:</strong> Addestra un modello su articoli di notizie per rilevare quando appare linguaggio di escalation. Ti aiuta a capire quando le cose peggiorano.</li>
-        <li><strong>Pulire dati sporchi:</strong> Hai un foglio di calcolo con contratti aziendali in 5 formati diversi? Usa strumenti per standardizzare e cross-checkare.</li>
-        <li><strong>Generare outreach:</strong> L'AI può personalizzare email agli MP in scala. Ma TU scrivi il messaggio, TU verifichi i fatti.</li>
-        <li><strong>Organizzare prove:</strong> Usa database versionati per tracciare chi ha detto cosa, quando. Registrazione a prova di manomissione.</li>
+        <li><strong>Summarizing reports:</strong> Feed a 100-page UN report to an LLM, get a 1-page summary with key facts. Then verify it against the original.</li>
+        <li><strong>Finding patterns:</strong> Train a model on news articles to detect when escalation language appears. Helps you spot when things are getting worse.</li>
+        <li><strong>Cleaning messy data:</strong> You have a spreadsheet of corporate contracts in 5 different formats? Use data tools to standardize and cross-check.</li>
+        <li><strong>Generating outreach:</strong> AI can help personalize emails to MPs at scale. But YOU write the message, YOU verify the facts.</li>
+        <li><strong>Organizing evidence:</strong> Use version-controlled databases to track who said what, when. Tamper-proof record keeping.</li>
       </ul>
     </div>
 
     <div class="grid" style="margin-top:18px">
       <div class="card">
-        <h4>SmashingLearning: Addestra modelli sui tuoi dati</h4>
-        <p class="muted">Usa LLaMA Factory e easy-dataset per creare dataset e fine-tune modelli su linguaggio specifico della campagna, terminologia, e pattern di evidenza.</p>
-        <p style="font-size:0.9em;margin-top:8px"><strong>Esempio:</strong> Addestra un modello a riconoscere narrazioni propagandistiche nei feed di notizie, rilevare affermazioni false in dichiarazioni aziendali, o riassumere testimonianze in modo consistente.</p>
-        <a class="secondary" href="https://github.com/Arbogaste/smashingLearning" target="_blank" rel="noopener">→ Repo GitHub & Risorsa</a>
+        <h4>SmashingLearning: Train Models on Your Data</h4>
+        <p class="muted">Use LLaMA Factory and easy-dataset to create datasets and fine-tune models on campaign-specific language, terminology, and evidence patterns.</p>
+        <p style="font-size:0.9em;margin-top:8px"><strong>Example:</strong> Train a model to recognize propaganda narratives in news feeds, detect fake claims in corporate statements, or summarize witness testimony consistently.</p>
+        <a class="secondary" href="https://github.com/Arbogaste/smashingLearning" target="_blank" rel="noopener">→ GitHub Repo & Resources</a>
       </div>
 
       <div class="card">
-        <h4>LLM open-source: Esegui modelli in locale</h4>
+        <h4>Open-source LLMs: Run Models Locally</h4>
         <p class="muted"><a href="https://llama.meta.com/">LLaMA 2</a> • <a href="https://mistral.ai/">Mistral</a> • <a href="https://ollama.ai/">OLLAMA</a></p>
-        <p style="font-size:0.9em;margin-top:8px">Esegui sul tuo hardware. Nessuna dipendenza cloud. Nessun API logging. Perfetto per campagne sensibili in paesi con sorveglianza.</p>
+        <p style="font-size:0.9em;margin-top:8px">Run on your own hardware. No cloud dependency. No API logging. Perfect for sensitive campaigns in countries with surveillance.</p>
       </div>
 
       <div class="card">
-        <h4>Validazione & pulizia dati</h4>
-        <p class="muted"><a href="https://www.openrefine.org/">OpenRefine</a> — Pulizia dati pratica senza coding. <a href="https://www.dolthub.com/">Dolt</a> — Database versionati.</p>
-        <p style="font-size:0.9em;margin-top:8px">Traccia cambiamenti in contratti, spesa, registri aziendali. Vedi chi ha cambiato cosa, quando. Costruisci una traccia verificabile.</p>
+        <h4>Data Validation & Cleaning</h4>
+        <p class="muted"><a href="https://www.openrefine.org/">OpenRefine</a> — Hands-on data cleaning without coding. <a href="https://www.dolthub.com/">Dolt</a> — Version-controlled databases.</p>
+        <p style="font-size:0.9em;margin-top:8px">Track changes in contracts, spending, corporate records. See who changed what, when. Build an auditable trail.</p>
       </div>
 
       <div class="card">
-        <h4>Automazione flussi di lavoro</h4>
-        <p class="muted"><a href="https://airflow.apache.org/">Apache Airflow</a> — Pianifica e monitora pipeline dati. Esegui rapporti automaticamente.</p>
-        <p style="font-size:0.9em;margin-top:8px">Esempio: Ogni mattina, scarica ultimi dati su esportazioni di armi, cross-check contro tua lista di target, segnala nuovi contratti.</p>
+        <h4>Workflow Automation</h4>
+        <p class="muted"><a href="https://airflow.apache.org/">Apache Airflow</a> — Schedule and monitor data pipelines. Run reports automatically.</p>
+        <p style="font-size:0.9em;margin-top:8px">Example: Every morning, download latest arms export data, cross-check against your target list, flag new contracts.</p>
       </div>
 
       <div class="card">
-        <h4>Analisi sentiment & narrativa</h4>
-        <p class="muted">Rileva propaganda, linguaggio di escalation, disinformazione in tempo reale.</p>
-        <p style="font-size:0.9em;margin-top:8px"><strong>Caso d'uso:</strong> Monitora dichiarazioni ufficiali e feed di notizie. Quando il linguaggio vira verso retorica di guerra, avvisa la tua rete. Stai davanti all'escalation.</p>
+        <h4>Sentiment & Narrative Analysis</h4>
+        <p class="muted">Detect propaganda, escalation language, and disinformation in real time.</p>
+        <p style="font-size:0.9em;margin-top:8px"><strong>Use case:</strong> Monitor official statements and news feeds. When language shifts toward war rhetoric, alert your network. Get ahead of escalation.</p>
       </div>
 
       <div class="card">
-        <h4>Indagine collaborativa</h4>
-        <p class="muted">Strumenti per team per organizzare prove in modo sicuro e condividere scoperte responsabilmente.</p>
-        <p style="font-size:0.9em;margin-top:8px"><a href="https://www.bellingcat.com/resources/how-tos/">Metodologia Bellingcat</a> • Fogli condivisi con controlli di accesso • Storage documenti crittografati.</p>
+        <h4>Collaborative Investigation</h4>
+        <p class="muted">Tools for teams to organize evidence securely and share findings responsibly.</p>
+        <p style="font-size:0.9em;margin-top:8px"><a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat methodology</a> • Shared spreadsheets with access controls • Encrypted document stores.</p>
       </div>
     </div>
 
     <div class="card" style="margin-top:18px;border:1px solid #ff9;padding:12px">
-      <h3>Sicurezza & etica: Usare AI responsabilmente</h3>
-      <p><strong>Non fidati mai solo dell'AI.</strong> È uno strumento. Fa errori. Può allucinare. Può essere biased.</p>
+      <h3>Safety & Ethics: Using AI Responsibly</h3>
+      <p><strong>Never trust AI alone.</strong> It's a tool. It makes mistakes. It can hallucinate. It can be biased.</p>
       
-      <strong style="display:block;margin-top:12px">Regole:</strong>
+      <strong style="display:block;margin-top:12px">Rules:</strong>
       <ul>
-        <li>✓ Verifica ogni affermazione contro fonti primarie</li>
-        <li>✓ Usa modelli locali in paesi ad alto rischio (no cloud API logging)</li>
-        <li>✓ Mantieni dataset crittografati e versionati</li>
-        <li>✓ Addestra modelli solo su dati verificati</li>
-        <li>✗ Non esporre fonti in plaintext a API LLM commerciali</li>
+        <li>✓ Verify every claim against primary sources</li>
+        <li>✓ Use local models in high-risk countries (no cloud API logging)</li>
+        <li>✓ Keep datasets encrypted and version-controlled</li>
+        <li>✓ Train models only on verified data</li>
+        <li>✗ Never expose sources in plaintext to commercial LLM APIs</li>
       </ul>
-      <p class="muted" style="margin-top:12px">Vedi <a href="/downloads/resources/privacy-security-tools-it.md" download><strong>risorsa Privacy & Security</strong></a> per threat modeling e uso sicuro di AI in contesti ristretti.</p>
+      <p class="muted" style="margin-top:12px">See <a href="/downloads/resources/privacy-security-tools-en.md" download><strong>Privacy & Security resources</strong></a> for threat modeling and safe AI use in restricted contexts.</p>
     </div>
 
   </section>

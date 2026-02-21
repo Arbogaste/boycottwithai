@@ -1,0 +1,259 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Investigations & Case Studies — Who Pollutes, Who Exploits, Who Profits | BoycottWithAI</title>
+  <meta name="description" content="Documented investigations on Thames pollution, worker exploitation, housing crisis. Public data, court cases, deaths. How to investigate and take action." />
+  <meta name="keywords" content="Thames water pollution, worker exploitation UK, housing crisis evictions, environmental justice, corporate accountability cases, government corruption investigations" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://boycottwithai.org/en/investigations/" />
+</head>
+
+<Base>
+  <section>
+    <h1>🔴 Investigations & Case Studies</h1>
+    <p class="lead">Documented cases of pollution, exploitation, corruption. Each story has public data, court records, deaths. Learn to investigate, document, and act.</p>
+
+    <div style="margin-top: 28px; padding: 18px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+      <p style="margin: 0; font-weight: bold;">📊 Hard Numbers (Documented 2020-2025):</p>
+      <ul style="margin: 8px 0 0 18px; font-size: 0.95em;">
+        <li><strong>Thames Sewage:</strong> 3,248+ overflow events/year, 8,900 tons discharge</li>
+        <li><strong>Worker Exploitation UK:</strong> 50,000+ riders zero legal protection, gig economy sprawl</li>
+        <li><strong>Housing Crisis:</strong> 81,000 eviction orders (2024), 2.7 million empty homes vs 400,000+ homeless</li>
+        <li><strong>Pollution & Health:</strong> Environmental inequality affects 5+ million vulnerable residents</li>
+        <li><strong>Corporate Impunity:</strong> 71% of global pollution from 100 corporations, zero CEO prosecutions</li>
+        <li><strong>Government Complicity:</strong> Billions in contracts to polluters, zero enforcement</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">🌊 ENVIRONMENTAL POLLUTION</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Thames Sewage Scandal — Profits Over Public Health</h4>
+        <p class="muted"><strong>Period:</strong> 2010-2025 (escalation)</p>
+        <p class="muted"><strong>The Problem:</strong> Thames Water (UK's largest utility) dumps sewage ~3,248+ times/year. Government contract £50M+ for "infrastructure maintenance" (zero enforcement). Environment Agency data public, but water company faces near-zero penalties.</p>
+        <p class="muted"><strong>Public Health Impact:</strong> 45,000+ swimmers/year affected. Respiratory disease in riverside communities up 12-15%. Costs: NHS £1B+/year for pollution-related illness.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Environment Agency reports — overflow data (free, searchable database)</li>
+          <li>📋 ContractsFinder — government contracts with Thames Water</li>
+          <li>⚖️ Companies House — financial filings, executive salaries vs fines paid</li>
+          <li>🏥 Public Health England — health impact studies</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>How to Investigate:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Access Environment Agency database — download Thames overflow data (2020-2025)</li>
+          <li>Cross-check ContractsFinder — £50M contract terms (audit requirements usually ZERO)</li>
+          <li>Companies House — CEO compensation vs fines imposed (usually: CEO £1-2M, fines £0)</li>
+          <li>Draft report: "Thames Water Government Complicity" using template</li>
+          <li>Share with: MPs (especially riverside constituencies), media, health NGOs</li>
+        </ol>
+        <p style="margin-top: 10px;"><a href="/en/corporate-accountability">→ Use Corporate Accountability resources to track contracts</a></p>
+      </div>
+
+      <div class="card">
+        <h4>Fracking & Water Contamination — Long-Term Threats</h4>
+        <p class="muted"><strong>Period:</strong> 2013-2025 (active operations)</p>
+        <p class="muted"><strong>The Problem:</strong> Shale gas fracking in England (North Sea, Lancashire) risks water table contamination. Companies lobby government for expansion despite environmental concerns. Costs of water remediation: billions over decades.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 BEIS/UKRI research reports</li>
+          <li>📋 Oil & Gas Authority licensing data</li>
+          <li>⚖️ Parliamentary inquiries (public record)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">💼 WORKER EXPLOITATION</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Gig Economy Riders — Algorithmic Exploitation</h4>
+        <p class="muted"><strong>Period:</strong> 2016-2025 (UK epicenter)</p>
+        <p class="muted"><strong>The Problem:</strong> ~50,000 UK riders (Deliveroo, Uber Eats, Foodora) classified as "independent contractors" = zero legal protection. Algorithm controls pay/routes/working conditions. Average income: £4-6/hour (below minimum wage once expenses deducted). Zero sick pay, pension, or liability insurance.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 BBC/The Guardian investigations — rider testimonies</li>
+          <li>⚖️ Employment tribunal cases (some riders won; precedent: February 2021 ruling)</li>
+          <li>📊 Trade union reports (GMB, IWGB) — wage data</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>How to Document:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Screenshot rider app algorithms (how pay calculated)</li>
+          <li>Collect rider testimonies (anonymized)</li>
+          <li>Cross-check tribunal cases vs company claims ("fair wages")</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Supply Chain & Garment Workers — Hidden Abuse</h4>
+        <p class="muted"><strong>The Problem:</strong> UK fast fashion (ASOS, Boohoo, Shein) relies on Bangladesh/India garment factories with documented worker abuse: £1-2/hour wages, 14-hour shifts, fire hazards.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📰 Channel 4 investigations — undercover factory footage</li>
+          <li>📊 Clean Clothes Campaign reports — wage audits</li>
+          <li>⚖️ Rana Plaza collapse (2013) + ongoing litigation</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">🏘️ HOUSING CRISIS & GENTRIFICATION</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>UK Eviction Crisis — Homelessness by Design</h4>
+        <p class="muted"><strong>Period:</strong> 2020-2025 (acceleration)</p>
+        <p class="muted"><strong>The Problem:</strong> 81,000 eviction orders (2024), 40,000 enforced. Rent arrears 80-86% inculpable (job loss, inflation, energy crisis). Government allows zero rents hikes (5-6% annually), but zero social housing investment. 2.7 million empty homes vs 400,000+ homelessness.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📊 Tribunal service data — eviction statistics (downloadable)</li>
+          <li>📋 Ministry of Housing budget — homelessness spend (stagnant/declining)</li>
+          <li>🏛️ House of Commons Library — housing crisis briefings</li>
+        </ul>
+        <p style="margin-top: 10px;"><strong>How to Investigate:</strong></p>
+        <ol style="font-size: 0.9em;">
+          <li>Download tribunal data — map evictions by postcode</li>
+          <li>Cross-check: Empty homes registry (some councils publish) vs evictions</li>
+          <li>FOIA council: "Criteria for allocating emergency housing funds" (often absent)</li>
+          <li>Campaign: "2.7 million empty homes, 81k evictions = policy choice"</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h4>Gentrification & Displacement — London, Manchester, Bristol</h4>
+        <p class="muted"><strong>The Problem:</strong> Public regeneration funds → private developers → luxury housing → original residents expelled. Rents +40-60% in "revitalized" areas.</p>
+        <p class="muted"><strong>Public Evidence:</strong></p>
+        <ul style="font-size: 0.9em;">
+          <li>📋 Local authority budgets — regeneration spending allocation</li>
+          <li>🏘️ Council planning decisions — approved projects (publicly searchable)</li>
+          <li>📊 Land Registry — property price inflation by area</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 28px">⚔️ MILITARY SPENDING vs WELFARE</h2>
+
+    <div class="card">
+      <h4>UK Defence Budget Expansion — While NHS Faces Cuts</h4>
+      <p class="muted"><strong>The Numbers:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>Military 2024:</strong> £68.4 billion (2.3% GDP, NATO target 2%)</li>
+        <li><strong>Military 2025:</strong> Projected £72+ billion (target 2.5% by 2030 = £90+B)</li>
+        <li><strong>New Weapons Programs:</strong> £50+ billion (fighter jets, submarines, nuclear)</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Meanwhile — NHS Crisis:</strong></p>
+      <ul style="margin-top: 10px; font-size: 0.95em;">
+        <li><strong>NHS Budget 2024:</strong> £151 billion (real-terms cut vs inflation)</li>
+        <li><strong>Waiting Lists:</strong> 7.3 million+ (longest in 70 years)</li>
+        <li><strong>A&E Crisis:</strong> 12-hour waits standard in many hospitals</li>
+      </ul>
+      <p style="margin-top: 15px;"><strong>Proof:</strong> If UK reduced military by 10% = £7 billion → could hire 100,000+ NHS staff</p>
+      <p style="margin-top: 15px;"><strong>How to Investigate:</strong></p>
+      <ol style="margin-top: 10px; font-size: 0.95em;">
+        <li>Download House of Commons Library briefing — UK military spending (free PDF)</li>
+        <li>Cross-check with NHS England budget data</li>
+        <li>Create infographic: "£1 fighter jet = X hospital beds"</li>
+        <li>Share with MPs, petition change.org</li>
+      </ol>
+    </div>
+
+    <h2 style="margin-top: 28px">🛠️ HOW TO USE THIS DATA</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h4>Step 1: Choose a Case</h4>
+        <p>One that affects you? Thames? Gig economy? Housing? Choice = motivation.</p>
+      </div>
+      <div class="card">
+        <h4>Step 2: Download Public Data</h4>
+        <p>All evidence cited = public (court records, budgets, reports). Screenshot + save links.</p>
+      </div>
+      <div class="card">
+        <h4>Step 3: Use Corporate Accountability Resources</h4>
+        <p><a href="/en/corporate-accountability">→ Complete 5-step methodology</a> for investigation</p>
+      </div>
+      <div class="card">
+        <h4>Step 4: Document & Act</h4>
+        <p>Report → Email media/NGOs/MPs → Sign petitions → Boycott</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 28px; background: #f0f0f0; padding: 18px;">
+      <h3>📚 Downloadable Resources</h3>
+      <ul style="margin-top: 10px;">
+        <li><a href="/downloads/resources/corporate-accountability.md" download><strong>Corporate Accountability Resources</strong></a> — 5-step methodology</li>
+        <li><a href="/templates/corporate-report-template.md" download><strong>Report Template</strong></a> — Structure for any case</li>
+        <li><a href="/templates/mp-email-en.txt" download><strong>MP Email Template</strong></a> — Ready to personalize</li>
+        <li><a href="/templates/petition-en.txt" download><strong>Petition Template</strong></a> — For campaigns</li>
+        <li><a href="/downloads/resources/osint-tools.md" download><strong>OSINT Tools Resources</strong></a> — ACLED, GDELT, NASA</li>
+      </ul>
+    </div>
+
+    <h2 style="margin-top: 28px">🌍 AFRICA: Resource Extraction & Landmark Trials (2026)</h2>
+    <p class="muted" style="font-weight:600">February 2026: European courts are dismantling corporate immunity for resource extraction in Africa. Three active trials redefine accountability for TotalEnergies, Shell, and Glencore.</p>
+
+    <div class="card" style="margin-top:18px;border:2px solid #d4af37;background:rgba(212,175,55,0.05)">
+      <h4>💯 TotalEnergies EACOP Trial: Duty of Vigilance (LIVE Feb 19-20, 2026)</h4>
+      <p style="margin-top:12px"><strong>Public Evidence to Collect:</strong></p>
+      <ul style="font-size:0.9em;padding-left:20px">
+        <li>Sherpa legal briefs + court filings (available online)</li>
+        <li>EACOP pipeline environmental impact assessments (IGG Uganda reports)</li>
+        <li>Climate scientist testimonies on 37% emission reduction feasibility</li>
+        <li>Affected communities' testimonies from Uganda/Tanzania</li>
+        <li>TotalEnergies shareholder disclosures on climate targets</li>
+      </ul>
+      <p style="margin-top:12px"><strong>Why It Matters:</strong> First time judges decide if a multinational can be forcibly STOPPED from expanding fossil fuels for climate compliance. Sets precedent for all future resource extraction.</p>
+      <p style="margin-top:12px"><strong>Action:</strong> Sign Sherpa's support letter + donate to legal fund</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid #27ae60;background:rgba(39,174,96,0.05)">
+      <h4>💯 Shell Nigeria "Legacy Pollution": 14,000 Nigerians vs Shell (Merits Trial March 2027)</h4>
+      <p style="margin-top:12px"><strong>Current Case Status:</strong> Bille & Ogale communities won an unprecedented ruling (June 2025). UK High Court decided Shell is LIABLE for "legacy pollution"—meaning cleanup failures from decades-old spills.</p>
+      <p style="margin-top:12px"><strong>Public Evidence to Track:</strong></p>
+      <ul style="font-size:0.9em;padding-left:20px">
+        <li>Shell internal memos on spill cleanup delays (via Freedom of Information)</li>
+        <li>Nigerian government monitoring data on oil lake contamination</li>
+        <li>Health studies linking spills to respiratory/skin disease</li>
+        <li>Comparison: Netherlands cleaned similar spills in 2 years; Shell Nigeria delayed 30+ years</li>
+        <li>Shell financial documents showing profit while ignoring cleanup</li>
+      </ul>
+      <p style="margin-top:12px"><strong>Why It Matters:</strong> "Legacy pollution" ruling means old spills = endless liability. Changes power dynamic: companies can't hide behind "sabotage" excuses or statute of limitations.</p>
+      <p style="margin-top:12px"><strong>Action:</strong> Support 14,000 victims' legal fund via Leigh Day or Amnesty</p>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid #c0392b;background:rgba(192,57,43,0.05)">
+      <h4>💯 Glencore: Individual Leaders Criminally Charged (Trial Oct 2027)</h4>
+      <p style="margin-top:12px"><strong>Current Status:</strong> While Glencore HQ paid $1.3B corporate fines (2022), prosecutors are now targeting individual traders. They're charged with bribery across West Africa & DRC mining operations.</p>
+      <p style="margin-top:12px"><strong>Evidence Pool (Public Records):</strong></p>
+      <ul style="font-size:0.9em;padding-left:20px">
+        <li>SFO (UK Serious Fraud Office) investigation documents</li>
+        <li>Glencore internal emails + compliance failures (leaked/FOIA)</li>
+        <li>Witness testimonies from local DRC/Guinea officials</li>
+        <li>Financial trails: shell company transfers to government officials</li>
+        <li>Comparison timeline: mining concessions granted after suspicious payments</li>
+      </ul>
+      <p style="margin-top:12px"><strong>Why It Matters:</strong> Signals END of "corporation pays fine, individuals walk free" model. Individual criminal liability is the new frontier of corporate accountability.</p>
+      <p style="margin-top:12px"><strong>Action:</strong> Follow SFO investigation + file FOIA requests for trial documents</p>
+    </div>
+
+    <h2 style="margin-top: 28px">⚖️ Next Steps</h2>
+    <div class="card">
+      <ol>
+        <li><strong>Pick 1 case</strong> that matters to you</li>
+        <li><strong>Download resources</strong> (2 PDFs, 20 min read)</li>
+        <li><strong>Spend 2 hours</strong> collecting public data</li>
+        <li><strong>Fill report template</strong> with evidence</li>
+        <li><strong>Share</strong>: Local media, NGOs, MPs, community</li>
+        <li><strong>Track impact</strong> — track petition signatures, media mentions, government response</li>
+      </ol>
+      <p style="margin-top: 15px;"><strong>Documented Impact:</strong> 100+ reports like this = government pressure for audits/action.</p>
+    </div>
+
+  </section>
+</Base>

@@ -16,7 +16,7 @@ const t = useTranslations(lang);
 <Base>
   <section>
     <h1>Tools & Resources</h1>
-    <p class="muted">Everything you need to monitor, investigate, and take action for peace and demilitarization.</p>
+    <p class="muted">Everything you need to monitor, investigate, and take action for peace, justice, and non-violent social change.</p>
 
     <h2 style="margin-top:24px">OSINT & Investigation Tools</h2>
     <p class="muted">{t('osint.intro')}</p>
@@ -39,45 +39,210 @@ const t = useTranslations(lang);
       <ToolCard name={t('tools.osintbox.name')} short={t('tools.osintbox.short')} why={t('tools.osintbox.why')} example={t('tools.osintbox.example')} link="https://github.com/doctorfree/osint" />
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.safety.title')}</h4>
-      <p class="muted">{t('tools.safety.desc')}</p>
-      <a class="secondary" href="/templates/osint-safety-en.txt" download>OSINT Safety</a>
+    <h2 style="margin-top:28px">📄 Document Processing & OCR Tools</h2>
+    <div class="card">
+      <p class="muted">Extract text from scanned documents, images, and PDFs with open-source OCR engines. Essential for archival research, leaked document analysis, and historical record digitization.</p>
+      <div class="grid" style="margin-top:18px">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔤 Open-Source OCR Engines</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/UKPLab/Tesseract_Framework" target="_blank" rel="noopener">Tesseract 5</a></strong> — Industry standard OCR; supports 100+ languages; command-line and library</li>
+            <li><strong><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener">PaddleOCR</a></strong> — Multilingual, fast, pre-trained models; easy Python integration</li>
+            <li><strong><a href="https://github.com/JaidedAI/EasyOCR" target="_blank" rel="noopener">EasyOCR</a></strong> — High accuracy, 80+ languages, PyTorch-based, simple API</li>
+            <li><strong><a href="https://github.com/rednote-hilab/dots.ocr" target="_blank" rel="noopener">Dots OCR (RedNote HiLab)</a></strong> — Lightweight, efficient document processing, optimized for Chinese/multilingual text</li>
+            <li><strong><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2" target="_blank" rel="noopener">DeepSeek-OCR-2</a></strong> — Advanced vision language model for document analysis, structured data extraction, table recognition</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Text Processing Pipeline</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/Textualize/rich" target="_blank" rel="noopener">Rich</a></strong> — Format and display OCR output with syntax highlighting</li>
+            <li><strong><a href="https://github.com/psf/requests" target="_blank" rel="noopener">Python Requests + PIL/Pillow</a></strong> — Batch download images/PDFs, resize, preprocess</li>
+            <li><strong><a href="https://github.com/jbarlow83/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></strong> — Embed OCR text layer into PDFs while preserving original layout</li>
+            <li><strong><a href="https://github.com/kba/kraken" target="_blank" rel="noopener">Kraken</a></strong> — High-accuracy OCR for historical documents and manuscripts</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">💾 Data Organization</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://www.sqlite.org/fts5.html" target="_blank" rel="noopener">SQLite FTS5</a></strong> — Full-text search on extracted text; fast queries</li>
+            <li><strong><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></strong> — Distributed search engine for large document collections</li>
+            <li><strong><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener">Weaviate</a></strong> — Vector database for semantic document search</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Workflow Example:</strong> Download leaked PDFs → OCR with DeepSeek/PaddleOCR → Extract entities (names, amounts, dates) → Store in SQLite FTS5 → Search and cross-reference → Export findings as structured CSV/JSON.</p>
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.digital.title')}</h4>
-      <p>{t('tools.digital.desc')}</p>
+    <h2 style="margin-top:28px">Public APIs & Open Data Resources</h2>
+    <div class="card">
+      <h3>Build Your Own Solutions</h3>
+      <p style="margin-top:12px">Instead of relying on corporate data services, use free and open-source APIs to collect, analyze, and visualize data directly. These resources are maintained by communities and trusted organizations.</p>
+      
+      <div style="margin-top:16px;display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📊 Data & Analytics</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>ACLED</strong> — Armed conflict events and patterns globally</li>
+            <li><strong>GDELT</strong> — News narratives, geopolitical signals, escalation monitoring</li>
+            <li><strong>UNOSAT</strong> — Satellite imagery for infrastructure and humanitarian impact</li>
+            <li><strong>SIPRI</strong> — Military spending, arms transfers, military budgets</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔍 Investigation & OSINT</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Bellingcat</strong> — Geolocation, image verification, open-source methods</li>
+            <li><strong>Shodan</strong> — Internet device discovery and mapping</li>
+            <li><strong>SpiderFoot</strong> — Automated reconnaissance and OSINT automation</li>
+            <li><strong>theHarvester</strong> — Email, subdomain, and host discovery</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Developer APIs</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Public APIs directory</strong> — Thousands of free APIs for every purpose</li>
+            <li><strong>GitHub</strong> — Open-source repositories, collaborative development</li>
+            <li><strong>OpenWeather, GeoNames</strong> — Free geolocation and environmental data</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">📋 Corporate & Lobbying Data</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>LobbyFacts</strong> — EU lobbying register with company and spending data</li>
+            <li><strong>Transparency International</strong> — Corruption, government spending databases</li>
+            <li><strong>SIPRI Arms Database</strong> — Weapons transfers by country, company</li>
+          </ul>
+        </div>
+
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🌍 Environmental & Procurement</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong>Copernicus (ESA)</strong> — Free satellite data for climate and environment</li>
+            <li><strong>TradeHub / COMTRADE</strong> — UN trade statistics</li>
+            <li><strong>National transparency portals</strong> — Public procurement in ES, IT, FR, DE</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.training.title')}</h4>
-      <p>{t('tools.training.desc')}</p>
+    <h2 style="margin-top:28px">Why Open-Source? The Corporate Digital Collapse</h2>
+    <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
+      <h3>Corporate platforms are losing their value. Here's why your alternative matters.</h3>
+      <p style="margin-top:12px"><strong>The problem:</strong> For over a decade, corporate digital services relied on a closed model: proprietary platforms, opaque pricing, licensing lock-in, and centralized control. This worked because there were no credible alternatives at scale.</p>
+      
+      <p style="margin-top:12px"><strong>That condition no longer exists.</strong> Large language models (LLMs) combined with mature open-source ecosystems are structurally undermining the value proposition of big tech products.</p>
+      
+      <details style="margin-top:12px">
+        <summary style="cursor:pointer;font-weight:bold">→ How corporate digital services decay to zero (click to expand)</summary>
+        <ul style="margin-top:12px;padding-left:20px">
+          <li><strong>1. Compression by LLMs:</strong> Search (replaced by ChatGPT), customer support (chatbots), analytics (self-service BI), content production—features that cost $5K+/month now cost $20/month or $0.</li>
+          <li><strong>2. Open-source defeats proprietary:</strong> Every corporate tool has an open equivalent gaining adoption. Metabase eats Tableau. Mattermost replaces Slack. Users vote with their data.</li>
+          <li><strong>3. Institutional distrust accelerates collapse:</strong> US Big Tech companies are weaponized by state and capital: surveillance, censorship, regulatory capture, geopolitical coercion. When alternatives exist, defection is inevitable.</li>
+          <li><strong>4. Community-driven wins on speed:</strong> Open-source teams move faster than corporations. Ollama shipped in weeks. OpenAI spent years securing capital.</li>
+        </ul>
+      </details>
+
+      <p style="margin-top:18px;font-weight:600">What this means for you:</p>
+      <ul style="padding-left:20px;margin-top:8px">
+        <li><strong>Evaluate alternatives:</strong> Before buying a corporate tool, check if an open-source equivalent exists.</li>
+        <li><strong>Build your own stack:</strong> Combine specialized open tools instead of relying on one corporate platform.</li>
+        <li><strong>Support interoperable systems:</strong> Prefer tools that export data, use open standards, and don't lock you in.</li>
+        <li><strong>Join communities, not platforms:</strong> Open-source projects are controlled by users, not shareholders.</li>
+      </ul>
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.ai.monitoring.title')}</h4>
-      <p>{t('tools.ai.monitoring.desc')}</p>
+    <h2 style="margin-top:28px">Open-Source Alternatives to Corporate Products</h2>
+    <div class="card">
+      <table style="width:100%;border-collapse:collapse;font-size:0.9em;margin-top:12px">
+        <thead>
+          <tr style="border-bottom:2px solid var(--accent)">
+            <th style="padding:8px;text-align:left;font-weight:600">Corporate Service</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Open-Source Alternative</th>
+            <th style="padding:8px;text-align:left;font-weight:600">Benefits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Google Suite</strong> (Gmail, Docs)</td>
+            <td style="padding:8px">NextCloud, OnlyOffice, LibreOffice</td>
+            <td style="padding:8px">Self-hosted, no data extraction, portable</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Zoom</strong></td>
+            <td style="padding:8px">Jitsi Meet, Element (Matrix), BigBlueButton</td>
+            <td style="padding:8px">End-to-end encrypted, federated, community-run</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Slack</strong></td>
+            <td style="padding:8px">Mattermost, Rocketchat, Zulip</td>
+            <td style="padding:8px">Transparent, full data control, export anytime</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Salesforce/HubSpot</strong> (CRM)</td>
+            <td style="padding:8px">Odoo, SuiteCRM, Pimcore</td>
+            <td style="padding:8px">Customizable, no vendor lock-in, lower cost</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>ChatGPT</strong> (Proprietary AI)</td>
+            <td style="padding:8px">Ollama, LLaMA, GPT4All (local models)</td>
+            <td style="padding:8px">Run locally, no data sent to servers, free</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--accent)">
+            <td style="padding:8px"><strong>Tableau/PowerBI</strong> (Analytics)</td>
+            <td style="padding:8px">Metabase, Apache Superset, Grafana</td>
+            <td style="padding:8px">Dashboard control, SQL direct, community support</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.visualization.title')}</h4>
-      <p>{t('tools.visualization.desc')}</p>
+    <h2 style="margin-top:28px">Power Networks: The Epstein Files Investigation</h2>
+    <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
+      <h3>Why This Matters</h3>
+      <p style="margin-top:12px">In 2025, over 60,000 pages of Epstein-related documents were officially released by the U.S. House Oversight Committee and federal courts. These documents expose institutional failures, complicity networks, and power dynamics that enabled decades of abuse.</p>
+      
+      <h4 style="margin-top:18px;margin-bottom:12px">📊 Complete Analysis Guide</h4>
+      <p style="margin-bottom:12px;font-size:0.95em">Download the comprehensive guide: document acquisition workflow, full-text search database setup, entity extraction, co-occurrence analysis, and reproducible methodology for investigating power networks.</p>
+      
+      <a class="button" href="/downloads/resources/epstein_files.md" download style="display:inline-block;margin-top:12px">📥 Download Complete Guide (200 KB)</a>
+      
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Includes:</strong> JMail.world email database, text extraction pipeline (Python + OCR), SQLite FTS5 database, entity mapping, co-occurrence analysis, timeline reconstruction.</p>
     </div>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.policy.title')}</h4>
-      <p>{t('tools.policy.desc')}</p>
-    </div>
+    <h2 style="margin-top:28px">Reclaim Your Digital Life: Legitimate Alternatives</h2>
+    <div class="card">
+      <h4 style="margin-bottom:12px">Why reclaim digital infrastructure?</h4>
+      <ul style="padding-left:20px;margin-bottom:18px;font-size:0.95em">
+        <li><strong>Corporate control = data weaponization:</strong> Google, Amazon, Meta, Apple track everything. Your data is sold to state agencies (NSA, GCHQ, law enforcement).</li>
+        <li><strong>Algorithmic manipulation:</strong> Corporate platforms optimize for engagement, polarization, and compliance. Your feed is a behavioral control tool.</li>
+        <li><strong>Arbitrary enforcement:</strong> Sudden bans, suspensions, content removal without due process. No appeal. No transparency.</li>
+      </ul>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('tools.divestment.title')}</h4>
-      <p>{t('tools.divestment.desc')}</p>
-    </div>
+      <h4 style="margin-top:18px;margin-bottom:12px">🌐 Browser & Search — Reclaim Privacy</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Chrome (Google tracking) →</strong> <code>Brave</code> (built-in ad-blocking), <code>Firefox</code> (open-source), <code>Ungoogled Chromium</code> (privacy fork).</li>
+        <li><strong>Google Search →</strong> <code>DuckDuckGo</code> (no IP logging), <code>SearXNG</code> (privacy metasearch).</li>
+        <li><strong>YouTube →</strong> <code>Invidious</code> (YouTube without tracking/algorithm).</li>
+      </ul>
 
-    <div class="card" style="margin-top:18px">
-      <h4>{t('local.targets.title')}</h4>
-      <p>{t('local.targets.desc')}</p>
+      <h4 style="margin-top:18px;margin-bottom:12px">💬 Social Media & Communication</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Instagram, TikTok →</strong> <code>Mastodon</code> (federated, no algorithm), <code>Pixelfed</code> (photo sharing).</li>
+        <li><strong>Twitter/X →</strong> <code>Mastodon</code> (open, decentralized).</li>
+        <li><strong>Facebook →</strong> <code>Diaspora</code> (federated), <code>Signal</code> (encrypted messaging).</li>
+      </ul>
+
+      <h4 style="margin-top:18px;margin-bottom:12px">🎬 Media Centers</h4>
+      <ul style="padding-left:20px;font-size:0.9em;margin-bottom:18px">
+        <li><strong>Netflix, Disney+ →</strong> <code>Jellyfin</code> (self-hosted media), <code>Kodi</code> (media center).</li>
+        <li><strong>Spotify →</strong> <code>Subsonic</code>, <code>Airsonic</code> (self-hosted music).</li>
+      </ul>
+
+      <p style="margin-top:18px;font-size:0.95em;color:#666"><strong>All of these are legal, production-ready, and often superior to corporate alternatives. You keep your data. No account bans. No algorithm.</strong></p>
     </div>
 
     <!-- RESOURCES SECTION -->

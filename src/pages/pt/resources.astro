@@ -1,0 +1,104 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>{t('resources.title')} — BoycottWithAI</title>
+  <meta name="description" content={t('resources.intro')} />
+</head>
+
+<Base>
+  <section>
+    <h1>{t('resources.title')}</h1>
+    <p class="muted">{t('resources.intro')}</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>{t('resources.petition.title')}</h4>
+        <p class="muted">Download ready-to-send petitions demanding diplomacy, ceasefires and humanitarian prioritization.</p>
+        <a class="secondary" href="/templates/petition-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.mp.title')}</h4>
+        <p class="muted">Copy-and-paste email templates to contact MPs and local representatives.</p>
+        <a class="secondary" href="/templates/mp-email-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>{t('resources.briefing.title')}</h4>
+        <p class="muted">One-page briefing templates for journalists and policymakers.</p>
+        <a class="secondary" href="/templates/briefing-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>OSINT safety resources</h4>
+        <p class="muted">Quick rules for safely running open-source investigations and reporting evidence on conflicts without harm.</p>
+        <a class="secondary" href="/templates/osint-safety-en.txt" download>Download EN</a>
+      </div>
+      <div class="card">
+        <h4>AI prompt library</h4>
+        <p class="muted">Personalize messages and briefings with our safe AI prompt templates.</p>
+        <a class="secondary" href="/templates/ai-prompts-en.txt" target="_blank">AI prompts (EN)</a>
+        <a class="secondary" href="/templates/ai-prompts-it.txt" target="_blank">Prompt AI (IT)</a>
+      </div>
+    </div>
+    <div class="card" style="margin-top:18px">
+      <h3>How to use these templates in 10 minutes</h3>
+      <ol>
+        <li class="muted">Open the most relevant template (petition, mp-email, briefing).</li>
+        <li class="muted">Edit the first line to add target, dates and a short ask—avoid jargon.</li>
+        <li class="muted">Add 1–2 evidence lines and link to the briefing or monitoring log.</li>
+        <li class="muted">Run OSINT safety checklist: citations, image provenance, doxxing checks.</li>
+        <li class="muted">Publish, then log the link and key metrics (signatures, replies, mentions).</li>
+      </ol>
+      <p class="muted">Quick MP message example (copy-and-paste):</p>
+      <pre class="muted" style="white-space:pre-wrap; margin-top:8px;">Dear [MP Name],
+I’m a constituent and I urge you to request an independent audit of contract [#] due to concerns about [brief impact]. Please ask the minister to pause any further disbursements until the review is complete.</pre>
+      <p class="muted">See the briefing template for evidence structure. When in doubt, consult the OSINT safety resources before publishing.</p>
+    </div>
+
+    <h2 style="margin-top:28px">Corporate Accountability & Transparency</h2>
+    <p class="muted">71% of global pollution from 100 corporations. Governments pay these polluters. Activists who expose this are arrested. Download the complete resources to track and prove government-corporate corruption.</p>
+
+    <div class="grid" style="margin-top:18px">
+      <div class="card">
+        <h4>Track Corporate Responsibility</h4>
+        <p class="muted">Identify local polluters, download pollution declarations, cross-check government contracts, document activist oppression. Tools by country.</p>
+        <a class="secondary" href="/en/corporate-accountability">Open Resources</a>
+      </div>
+      <div class="card">
+        <h4>Corporate Accountability Resource</h4>
+        <p class="muted">5-step methodology: identify → track → document → expose → act. Report templates, FOIA requests, legal safety.</p>
+        <a class="secondary" href="/downloads/resources/corporate-accountability.md" download>Download PDF</a>
+      </div>
+      <div class="card">
+        <h4>Corporate Report Template</h4>
+        <p class="muted">Structured template to document pollution, government contracts, activist oppression. Ready for media & institutions.</p>
+        <a class="secondary" href="/templates/corporate-report-template.md" download>Download Template</a>
+      </div>
+    </div>
+
+  </section>
+  </Base>
+  <div class="card" style="margin-top:18px">
+    <h3>Toolkit: Investigation, Whistleblowing & Real Impact</h3>
+    <ul>
+      <li><strong>OSINT & Investigative Journalism:</strong> <a href="https://www.bellingcat.com/resources/how-tos/">Bellingcat How-To</a>, <a href="https://www.lighthousereports.com/">Lighthouse Reports</a>, <a href="https://www.occrp.org/">OCCRP</a> for image verification, arms tracking, satellite analysis, collaborative investigations.</li>
+      <li><strong>Secure Whistleblowing:</strong> <a href="https://www.globaleaks.org/">GlobaLeaks</a>, <a href="https://ddosecrets.com/submit">DDoSecrets</a>, <a href="https://securedrop.org/">SecureDrop</a> for anonymous reporting of abuse and corruption.</li>
+      <li><strong>Scraping & Data Leaks:</strong> Open-source tools for extracting procurement, lobbying, arms export data. Cross-check with <a href="https://lobbyfacts.eu/">LobbyFacts</a> and <a href="https://transparency.org/">Transparency International</a>.</li>
+      <li><strong>Legal Support & International Complaints:</strong> <a href="https://www.fidh.org/">FIDH</a>, <a href="https://www.amnesty.org/">Amnesty International</a>, <a href="https://www.transparency.org/en">Transparency International</a> for templates to file with ECHR, UN, and free legal aid.</li>
+      <li><strong>Public Dashboards & Campaigns:</strong> <a href="https://datawrapper.de/">Datawrapper</a>, <a href="https://flourish.studio/">Flourish</a>, Google Sheets for publishing findings and building public pressure.</li>
+    </ul>
+    <h4 style="margin-top:10px">Workflow: From Discovery to International Complaint</h4>
+    <ol>
+      <li>Gather evidence (screenshots, PDFs, public data, testimonies) and store securely (Nextcloud, Proton Drive, OnionShare).</li>
+      <li>Verify and cross-check data with public sources and international databases.</li>
+      <li>Prepare a clear report or visualization and publish on a dashboard or send to journalists/NGOs.</li>
+      <li>For serious violations, use FIDH/Amnesty templates and file with ECHR, UN, or national authorities.</li>
+      <li>Engage media, activists, and the public: the more public the case, the harder to cover up.</li>
+    </ol>
+    <p class="muted">All these resources are used by journalists and activists who have achieved trials, resignations, and law changes in the EU. For safety, see the <a href="/templates/osint-safety-en.txt" download>OSINT Safety Resources</a>.</p>
+  </div>
+</Base>
