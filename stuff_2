@@ -1,61 +1,62 @@
-https://github.com/public-apis/public-apis
+Africa
 
-Corporate platforms vs LLMs and open-source communities
+As of **February 2026**, the legal and activist landscape surrounding resource exploitation in Africa has reached a critical boiling point. The traditional "corporate impunity" model is being systematically dismantled in European courts.
 
-For over a decade, corporate digital services have relied on a closed model: proprietary platforms, opaque pricing, licensing lock-in, and centralized control. This model worked because there were no credible alternatives at scale. That condition no longer exists.
+Below are the most current details, legal resources, and direct calls to action for your web app.
 
-The rise of large language models, combined with mature open-source ecosystems, is structurally undermining the value proposition of big tech products. What corporations sell as “premium services” are increasingly reduced to thin interfaces over capabilities that are now reproducible, cheaper, and community-driven.
+---
 
-LLMs compress entire product categories. Search, customer support, basic analytics, content production, translation, coding assistance, media curation: these were once defensible corporate moats. Today they are features anyone can self-host, fine-tune, or replace using open models and open tools. The marginal value of the corporate layer trends toward zero.
+## 🏛️ Landmark Trials & 2026 Legal Status
 
-At the same time, trust in the US-centric big tech system is eroding. This is not ideological; it is practical. Repeated patterns—sudden ToS changes, arbitrary account bans, opaque moderation, regulatory capture, geopolitical pressure, data exploitation, and forced subscriptions—have made corporations unreliable partners for users, developers, and even enterprises.
+### **1. TotalEnergies: The French Duty of Vigilance Trial**
 
-Open-source communities operate under a different incentive structure. They optimize for resilience, transparency, and portability, not quarterly earnings. When paired with LLMs, these communities move faster than corporations constrained by legal risk, internal politics, and shareholder expectations. Innovation is no longer top-down; it is emergent.
+* **Current Status:** **Live Hearings (Feb 19–20, 2026).** A historic trial is currently underway in Paris. For the first time, judges are deciding if a multinational can be legally forced to stop fossil fuel expansion (specifically targeting projects like EACOP in Uganda/Tanzania) to meet climate goals.
+* **The Goal:** Plaintiffs (Sherpa, Friends of the Earth, and the City of Paris) are demanding a **37% reduction in oil production** by 2030.
+* **Resource:** [Sherpa’s Case Archive](https://www.asso-sherpa.org) | [#StopEACOP Official Website](https://www.stopeacop.net)
 
-The result is a gradual but irreversible decoupling. Users stop trusting platforms and start trusting tools. They move from services to stacks, from subscriptions to ownership, from brands to protocols. Once that shift happens, corporate products are no longer default choices; they must justify themselves on pure utility and cost. Most cannot.
+### **2. Shell: The "Legacy Pollution" Victory**
 
-This does not end with competition. It ends with irrelevance. As open models improve and communities standardize around interoperable systems, the corporate premium collapses. What remains is infrastructure and compliance, not value creation.
+* **Current Status:** **Upcoming Merits Trial (March 2027).** In June 2025, the UK High Court delivered a massive win for the Bille and Ogale communities, ruling that Shell PLC **can be held liable** for "legacy pollution" dating back decades, regardless of current ownership or "sabotage" claims.
+* **Key Finding:** The judge ruled that failing to clean up an old oil spill is a **"continuous breach"** of law, allowing victims to sue years after the initial damage.
+* **Resource:** [Leigh Day - Shell Nigeria Cases](https://www.leighday.co.uk) | [Amnesty International - Niger Delta](https://www.amnesty.org)
 
-In this scenario, the trajectory is clear: corporate digital products do not fail explosively. They decay. Their pricing power disappears first, then their user lock-in, and finally their strategic importance. Zero is not a crash; it is an asymptote.
+### **3. Glencore: Individual Accountability**
 
-This is just the start:
+* **Current Status:** **Criminal Pleas (Nov 2025 – Feb 2026).** While Glencore paid $1.3B in corporate fines in 2022, the focus has shifted to its leaders. In late 2025, former top traders pleaded "not guilty" to bribery charges in West Africa. A full criminal trial is scheduled for **October 2027**.
+* **Resource:** [SFO Glencore Investigation](https://www.sfo.gov.uk) | [Corruption Watch DRC](https://www.corruptionwatch.org.za)
 
-Mapping diretto: piattaforma corporate → zona grigia / nera (non e' un consiglio, ma un'analisi della situazione: non ufficiali, frequentemente contestate)
-Video / Streaming
+---
 
-(only for information purposes, not a recommendation: these platforms are often contested and may be illegal in some jurisdictions, but must be cited for completeness)
-Netflix → NetMirror, Flixio, FlixHD, Flixtor
+## 🔗 "Take Action" Resource Directory
 
-Disney+ → NetMirror, MovieBox
+For a web app, these should be high-visibility links that direct users to where the real impact happens:
 
-HBO Max / Max → MovieBox, Streamly
+### **📂 Legal & Research Hubs**
 
-Amazon Prime Video → CineHub
+* **[Business & Human Rights Resource Centre](https://www.business-humanrights.org/):** The global "gold standard" for tracking allegations against mining and oil companies in Africa.
+* **[BankTrack](https://www.banktrack.org/):** Tracks which banks (Standard Bank, ICBC, SMBC) are funding the exploitation. Perfect for a "Divestment" CTA.
 
-Apple TV+ → Streamly
+### **✊ Grassroots Movements**
 
-Hulu → ShowZone
+* **[AFIEGO (Africa Institute for Energy Governance)](https://www.afiego.org/):** The primary Ugandan NGO leading the legal fight against the Tilenga/EACOP projects on the ground.
+* **[Environmental Rights Action (ERA)](https://erafoen.org/):** The Nigerian chapter of Friends of the Earth, founded in the wake of Ken Saro-Wiwa’s legacy.
 
-Peacock → GlitchTV
+### **💰 Donation & Legal Aid**
 
-Paramount+ → EpicFlix
+* **[Avaaz - Stop the Monster Pipeline](https://secure.avaaz.org):** Crowdsources funding for legal fees to take TotalEnergies and Shell to court.
+* **[ActionAid Nigeria](https://nigeria.actionaid.org/):** Focuses on the rights of women and farmers displaced by resource extraction.
 
-Starz → CinemaWave
+---
 
-Anime
+## ⚡ Quick-Start CTA for Your App
 
-Crunchyroll → AniMax, AniWave, AniWatch
+> ### **"The 2026 Accountability Checklist"**
+> 
+> 
+> 1. **Check Your Bank:** Does your bank fund the EACOP pipeline? [Check BankTrack]
+> 2. **Support the Victims:** 14,000 Nigerians are suing Shell in London right now. Help fund their travel and legal fees. [Donate to Leigh Day Trust]
+> 3. **Sign the Petition:** Demand the EU Parliament enforces the "Duty of Vigilance" for all mining operations in the DRC. [Sign Now]
+> 
+> 
 
-Documentaries
-
-Discovery+ → DocuStream
-
-Music
-
-Apple Music → eSound
-
-Spotify → Lyra
-
-YouTube / Premium features
-
-YouTube Premium → Brave Browser (feature-level circumvention, not content hosting)
+**Would you like me to create a "Watchlist" feature for your app that tracks the specific stock performance of these companies alongside their active human rights violations?**
