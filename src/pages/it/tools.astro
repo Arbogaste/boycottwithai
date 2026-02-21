@@ -126,6 +126,43 @@ const t = useTranslations(lang);
     </div>
   </section>
 
+  <section style="margin-top:20px">
+    <div class="card">
+      <h2>📄 Tool OCR e Elaborazione Documenti</h2>
+      <p class="muted">Estrai testo da documenti scansionati, immagini e PDF con motori OCR open-source. Essenziale per ricerca d'archivio, analisi documenti leaked, e digitalizzazione documenti storici.</p>
+      <div class="grid" style="margin-top:18px">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔤 Motori OCR Open-Source</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/UKPLab/Tesseract_Framework" target="_blank" rel="noopener">Tesseract 5</a></strong> — Standard industria OCR; supporta 100+ lingue; comando-linea e libreria</li>
+            <li><strong><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener">PaddleOCR</a></strong> — Multilingue, veloce, modelli pre-addestrati; facile integrazione Python</li>
+            <li><strong><a href="https://github.com/JaidedAI/EasyOCR" target="_blank" rel="noopener">EasyOCR</a></strong> — Alta accuratezza, 80+ lingue, basato PyTorch, API semplice</li>
+            <li><strong><a href="https://github.com/rednote-hilab/dots.ocr" target="_blank" rel="noopener">Dots OCR (RedNote HiLab)</a></strong> — Elaborazione documenti leggera ed efficiente, ottimizzata per testo cinese/multilingue</li>
+            <li><strong><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2" target="_blank" rel="noopener">DeepSeek-OCR-2</a></strong> — Modello vision language avanzato per analisi documenti, estrazione dati strutturati, riconoscimento tabelle</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Pipeline Elaborazione Testo</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/Textualize/rich" target="_blank" rel="noopener">Rich</a></strong> — Formatta e visualizza output OCR con syntax highlighting</li>
+            <li><strong><a href="https://github.com/psf/requests" target="_blank" rel="noopener">Python Requests + PIL/Pillow</a></strong> — Scarica in batch immagini/PDF, ridimensiona, preprocessa</li>
+            <li><strong><a href="https://github.com/jbarlow83/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></strong> — Incorpora livello testo OCR in PDF mantenendo layout originale</li>
+            <li><strong><a href="https://github.com/kba/kraken" target="_blank" rel="noopener">Kraken</a></strong> — OCR alta accuratezza per documenti storici e manoscritti</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">💾 Organizzazione Dati</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://www.sqlite.org/fts5.html" target="_blank" rel="noopener">SQLite FTS5</a></strong> — Ricerca full-text su testo estratto; query veloci</li>
+            <li><strong><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></strong> — Motore ricerca distribuito per grandi collezioni documenti</li>
+            <li><strong><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener">Weaviate</a></strong> — Database vettoriale per ricerca documenti semantica</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Esempio Workflow:</strong> Scarica PDF leaked → OCR con DeepSeek/PaddleOCR → Estrai entità (nomi, importi, date) → Salva in SQLite FTS5 → Ricerca e cross-referenza → Esporta findings come CSV/JSON strutturato.</p>
+    </div>
+  </section>
+
   <section style="margin-top:28px">
     <h2>Perché il software libero? Il crollo dei giganti del tech</h2>
     <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">

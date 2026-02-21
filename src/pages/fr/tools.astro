@@ -72,7 +72,42 @@ const t = useTranslations(lang);
       </div>
     </div>
   </section>
-
+  <section style="margin-top:20px">
+    <div class="card">
+      <h2>📄 Outils OCR et Traitement de Documents</h2>
+      <p class="muted">Extrayez le texte de documents numérisés, d'images et de PDF avec des moteurs OCR open-source. Essentiel pour la recherche d'archives, l'analyse de documents divulgués et la numérisation de documents historiques.</p>
+      <div class="grid" style="margin-top:18px">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔤 Moteurs OCR Open-Source</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/UKPLab/Tesseract_Framework" target="_blank" rel="noopener">Tesseract 5</a></strong> — Standard de l'industrie OCR; supporte 100+ langues; ligne de commande et bibliothèque</li>
+            <li><strong><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener">PaddleOCR</a></strong> — Multilingue, rapide, modèles pré-entraînés; intégration facile Python</li>
+            <li><strong><a href="https://github.com/JaidedAI/EasyOCR" target="_blank" rel="noopener">EasyOCR</a></strong> — Haute précision, 80+ langues, basé PyTorch, API simple</li>
+            <li><strong><a href="https://github.com/rednote-hilab/dots.ocr" target="_blank" rel="noopener">Dots OCR (RedNote HiLab)</a></strong> — Traitement de documents léger et efficace, optimisé pour le texte chinois/multilingue</li>
+            <li><strong><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2" target="_blank" rel="noopener">DeepSeek-OCR-2</a></strong> — Modèle vision-langage avancé pour analyse de documents, extraction de données structurées, reconnaissance de tableaux</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Pipeline de Traitement de Texte</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/Textualize/rich" target="_blank" rel="noopener">Rich</a></strong> — Formatez et affichez la sortie OCR avec coloration syntaxique</li>
+            <li><strong><a href="https://github.com/psf/requests" target="_blank" rel="noopener">Python Requests + PIL/Pillow</a></strong> — Téléchargez en masse des images/PDF, redimensionnez, prétraitez</li>
+            <li><strong><a href="https://github.com/jbarlow83/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></strong> — Intégrez une couche de texte OCR dans les PDF en préservant la mise en page originale</li>
+            <li><strong><a href="https://github.com/kba/kraken" target="_blank" rel="noopener">Kraken</a></strong> — OCR haute précision pour documents historiques et manuscrits</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">💾 Organisation des Données</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://www.sqlite.org/fts5.html" target="_blank" rel="noopener">SQLite FTS5</a></strong> — Recherche full-text sur le texte extrait; requêtes rapides</li>
+            <li><strong><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></strong> — Moteur de recherche distribué pour grandes collections de documents</li>
+            <li><strong><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener">Weaviate</a></strong> — Base de données vectorielle pour recherche sémantique de documents</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Exemple de Workflow:</strong> Téléchargez des PDF divulgués → OCR avec DeepSeek/PaddleOCR → Extrayez les entités (noms, montants, dates) → Stockez dans SQLite FTS5 → Recherchez et croisez les références → Exportez les conclusions en CSV/JSON structuré.</p>
+    </div>
+  </section>
   <section style="margin-top:28px">
     <h2>Pourquoi l'Open-Source? L'Effondrement Numérique Corporatif</h2>
     <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">

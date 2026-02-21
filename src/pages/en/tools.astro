@@ -78,6 +78,43 @@ const t = useTranslations(lang);
     </div>
   </section>
 
+  <section style="margin-top:20px">
+    <div class="card">
+      <h2>📄 Document Processing & OCR Tools</h2>
+      <p class="muted">Extract text from scanned documents, images, and PDFs with open-source OCR engines. Essential for archival research, leaked document analysis, and historical record digitization.</p>
+      <div class="grid" style="margin-top:18px">
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🔤 Open-Source OCR Engines</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/UKPLab/Tesseract_Framework" target="_blank" rel="noopener">Tesseract 5</a></strong> — Industry standard OCR; supports 100+ languages; command-line and library</li>
+            <li><strong><a href="https://github.com/PaddlePaddle/PaddleOCR" target="_blank" rel="noopener">PaddleOCR</a></strong> — Multilingual, fast, pre-trained models; easy Python integration</li>
+            <li><strong><a href="https://github.com/JaidedAI/EasyOCR" target="_blank" rel="noopener">EasyOCR</a></strong> — High accuracy, 80+ languages, PyTorch-based, simple API</li>
+            <li><strong><a href="https://github.com/rednote-hilab/dots.ocr" target="_blank" rel="noopener">Dots OCR (RedNote HiLab)</a></strong> — Lightweight, efficient document processing, optimized for Chinese/multilingual text</li>
+            <li><strong><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2" target="_blank" rel="noopener">DeepSeek-OCR-2</a></strong> — Advanced vision language model for document analysis, structured data extraction, table recognition</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">🛠 Text Processing Pipeline</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://github.com/Textualize/rich" target="_blank" rel="noopener">Rich</a></strong> — Format and display OCR output with syntax highlighting</li>
+            <li><strong><a href="https://github.com/psf/requests" target="_blank" rel="noopener">Python Requests + PIL/Pillow</a></strong> — Batch download images/PDFs, resize, preprocess</li>
+            <li><strong><a href="https://github.com/jbarlow83/OCRmyPDF" target="_blank" rel="noopener">OCRmyPDF</a></strong> — Embed OCR text layer into PDFs while preserving original layout</li>
+            <li><strong><a href="https://github.com/kba/kraken" target="_blank" rel="noopener">Kraken</a></strong> — High-accuracy OCR for historical documents and manuscripts</li>
+          </ul>
+        </div>
+        <div style="border:1px solid var(--accent);padding:12px;border-radius:4px">
+          <h4 style="margin-bottom:8px">💾 Data Organization</h4>
+          <ul style="padding-left:16px;font-size:0.9em">
+            <li><strong><a href="https://www.sqlite.org/fts5.html" target="_blank" rel="noopener">SQLite FTS5</a></strong> — Full-text search on extracted text; fast queries</li>
+            <li><strong><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="noopener">Elasticsearch</a></strong> — Distributed search engine for large document collections</li>
+            <li><strong><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener">Weaviate</a></strong> — Vector database for semantic document search</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:0.9em;color:#666"><strong>Workflow Example:</strong> Download leaked PDFs → OCR with DeepSeek/PaddleOCR → Extract entities (names, amounts, dates) → Store in SQLite FTS5 → Search and cross-reference → Export findings as structured CSV/JSON.</p>
+    </div>
+  </section>
+
   <section style="margin-top:28px">
     <h2>Why Open-Source? The Corporate Digital Collapse</h2>
     <div class="card" style="border-left:4px solid var(--accent);background:rgba(20,184,166,0.05)">
