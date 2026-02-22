@@ -79,8 +79,8 @@ export async function GET(context) {
     title: 'BoycottWithAI — Alerts & Tools',
     description: 'Breaking updates on corporate accountability, 2026 landmark trials, Epstein investigation, OSINT resources, and non-violent action campaigns across Europe and globally',
     // Provide a robust `site` value: prefer context.site, then derive from request,
-    // then use process.env.SITE, and finally fall back to localhost:4321.
-    site: context?.site || (context?.request ? new URL('/', context.request.url).toString() : (process.env.SITE || 'http://localhost:4321/')),
+    // then use process.env.SITE, and finally fall back to https://boycottwithai.org/.
+    site: context?.site || (context?.request ? new URL('/', context.request.url).toString() : (process.env.SITE || 'https://boycottwithai.org/')),
     items,
     customData: `
       <language>en-en</language>
