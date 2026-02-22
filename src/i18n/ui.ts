@@ -3,13 +3,25 @@ export const languages = {
   it: 'Italiano',
   en: 'English',
   fr: 'Français',
-  de: 'Deutsch'
+  de: 'Deutsch',
+  pt: 'Português'
 };
 
 export const defaultLang = 'en';
 export const showDefaultLang = false;
 
+
 export const ui = {
+  pt: {
+    'nav.tools': 'Tools',
+    'nav.actions': 'Ações',
+    'nav.methodology': 'Metodologia',
+    'nav.manifesto': 'Manifesto',
+    'nav.feeds': 'Feed',
+    'nav.resources': 'Recursos',
+    'hero.title': 'Tools for Peace and Non-Violent Action',
+    'hero.subtitle': 'Against war and rearmament: non-violent strategic tools to promote demilitarization.'
+  },
   it: {
   'nav.tools': 'Strumenti',
   'nav.actions': 'Azioni',
