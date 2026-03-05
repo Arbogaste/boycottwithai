@@ -5,71 +5,141 @@ import { useTranslations } from '../i18n/utils';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+// Page-specific meta (can be overridden by child components)
+const pageTitle = Astro.props.pageTitle || 'BoycottWithAI — Corporate Accountability & Civil Resistance';
+const pageDescription = Astro.props.pageDescription || 'Evidence-based institutional analysis of corporate exposure to geopolitical contagion. OSINT tools, divestment tracking, and non-violent civic action frameworks for global justice movements.';
+const ogImage = Astro.props.ogImage || '/og-image-default.png';
 ---
 
 <html lang={lang}>
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BoycottWithAI</title>
-  <meta name="description" content="Tools and community resources to organize non-violent action for peace and demilitarization. Resources, toolkits, and templates to oppose rearmament and promote non-violent solutions." />
-    <meta property="og:title" content="BoycottWithAI — Tools for Collective Action" />
-    <meta property="og:description" content="Organize strategic, non-violent campaigns. Find toolkits, templates, and a manifesto for sustained pressure." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    
+    <!-- SEO Title & Description -->
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+    <meta name="keywords" content="civil resistance, corporate accountability, OSINT, divestment, human rights, environmental justice, non-violent action, BDS, institutional pressure, geopolitical risk" />
+    
+    <!-- Canonical & Language Alternates -->
+    <link rel="canonical" href={`https://boycottwithai.com${Astro.url.pathname}`} />
+    <link rel="alternate" hreflang="en" href="https://boycottwithai.com/en/" />
+    <link rel="alternate" hreflang="it" href="https://boycottwithai.com/it/" />
+    <link rel="alternate" hreflang="fr" href="https://boycottwithai.com/fr/" />
+    <link rel="alternate" hreflang="de" href="https://boycottwithai.com/de/" />
+    <link rel="alternate" hreflang="pt" href="https://boycottwithai.com/pt/" />
+    
+    <!-- Open Graph (Social Meta) -->
     <meta property="og:type" content="website" />
-  <meta name="robots" content="index, follow" />
-  <link rel="alternate" hreflang="en" href="/en/" />
-  <link rel="alternate" hreflang="it" href="/it/" />
-  <link rel="alternate" hreflang="fr" href="/fr/" />
-  <link rel="alternate" hreflang="de" href="/de/" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={`https://boycottwithai.com${Astro.url.pathname}`} />
+    <meta property="og:site_name" content="BoycottWithAI" />
+    <meta property="og:locale" content={lang} />
+    <meta property="og:image" content={`https://boycottwithai.com${ogImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BoycottWithAI — Corporate Accountability Analysis" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={`https://boycottwithai.com${ogImage}`} />
+    <meta name="twitter:image:alt" content="BoycottWithAI Platform" />
+    
+    <!-- Robots & Indexing -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Favicon & Theme -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BoycottWithAI" />
+    <meta name="application-name" content="BoycottWithAI" />
+    <meta name="theme-color" content="#c33" />
+    
+    <!-- Performance & Accessibility -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
     <link rel="stylesheet" href="/styles.css" />
-    <script type="application/ld+json">
-      {`{
-        "@context": "https://schema.org",
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BoycottWithAI",
+      "url": "https://boycottwithai.com",
+      "logo": "https://boycottwithai.com/logo.png",
+      "description": "Institutional research platform for corporate accountability, civil resistance tools, and non-violent action frameworks.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Support",
+        "url": "https://boycottwithai.com/en/"
+      },
+      "sameAs": [
+        "https://github.com/Arbogaste/boycottwithai",
+        "https://twitter.com/BoycottWithAI"
+      ]
+    })} />
+    
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": pageTitle,
+      "description": pageDescription,
+      "url": `https://boycottwithai.com${Astro.url.pathname}`,
+      "mainEntity": {
         "@type": "Organization",
-        "name": "BoycottWithAI",
-        "url": "https://boycottwithai.org",
-        "description": "Open tools and templates to organize non-violent campaigns for peace and demilitarization.",
-        "sameAs": ["https://github.com/Arbogaste/boycottwithai"]
-      }`}
-    </script>
+        "name": "BoycottWithAI"
+      }
+    })} />
   </head>
   <body class="app-root">
-    <a class="skip-link sr-only-focusable" href="#content">Skip to content</a>
-    <header class="site-header">
+    <a class="skip-link sr-only-focusable" href="#content">Skip to main content</a>
+    <header class="site-header" role="banner">
       <div class="container header-inner">
         <div style="display:flex;flex-direction:column">
-          <a class="brand" href={`/${lang}/`}>BoycottWithAI</a>
-          <small class="muted" style="font-weight:600;margin-top:4px">Promote peace, oppose war & rearmament</small>
+          <a class="brand" href={`/${lang}/`} aria-current={Astro.url.pathname === `/${lang}/` ? 'page' : undefined}>BoycottWithAI</a>
+          <small class="muted" style="font-weight:600;margin-top:4px" aria-label="Site tagline">Promote peace, oppose war & rearmament</small>
         </div>
         <nav class="main-nav" aria-label="Main navigation">
           <LanguagePicker />
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Dark mode"></button>
-          <button class="mobile-hamburger" aria-label="Open navigation" aria-expanded="false" id="mobileNavToggle" aria-controls="mainNavLinks">
+          <button class="mobile-hamburger" aria-label="Open navigation menu" aria-expanded="false" id="mobileNavToggle" aria-controls="mainNavLinks">
             <svg class="hamburger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
             <svg class="close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg>
           </button>
           <div id="mainNavLinks" class="nav-links">
-            <a href={`/${lang}/tools-resources/`}>{t('nav.tools')} & {t('nav.resources')}</a>
-            <a href={`/${lang}/actions-methodology/`} style="font-weight:bold">{t('nav.actions')} • 🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
-            <a href={`/${lang}/manifesto-feeds/`}>{t('nav.manifesto')} & {lang === 'it' ? 'Feed' : lang === 'fr' ? 'Flux' : lang === 'de' ? 'Feeds' : 'Feeds'}</a>
+            <a href={`/${lang}/tools-resources/`} aria-current={Astro.url.pathname.includes('tools-resources') ? 'page' : undefined}>{t('nav.tools')} & {t('nav.resources')}</a>
+            <a href={`/${lang}/actions-methodology/`} aria-current={Astro.url.pathname.includes('actions') ? 'page' : undefined} style="font-weight:bold">{t('nav.actions')} • 🔴 {lang === 'it' ? 'Inchieste' : lang === 'fr' ? 'Enquêtes' : lang === 'de' ? 'Ermittlungen' : 'Investigations'}</a>
+            <a href={`/${lang}/the-big-short/`} aria-current={Astro.url.pathname.includes('big-short') ? 'page' : undefined} style="font-weight:600;color:#c33">📊 {t('nav.bigshort')}</a>
+            <a href={`/${lang}/manifesto-feeds/`} aria-current={Astro.url.pathname.includes('manifesto') ? 'page' : undefined}>{t('nav.manifesto')} & {lang === 'it' ? 'Feed' : lang === 'fr' ? 'Flux' : lang === 'de' ? 'Feeds' : 'Feeds'}</a>
             <a href="/rss.xml" class="muted" style="font-size:0.9em" aria-label="Subscribe to RSS feed">RSS</a>
           </div>
         </nav>
       </div>
     </header>
 
-  <main id="content" class="site-main" role="main" aria-label="Main content">
+    <main id="content" class="site-main" role="main" aria-label="Main content">
       <div class="container">
         <slot />
       </div>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer" role="contentinfo">
       <div class="container footer-inner">
         <div class="footer-left">
           <small>BoycottWithAI — tools, resources and community resources to build sustained, non-violent pressure for peace and demilitarization.</small>
           <div style="margin-top:12px">
-            <a href="https://github.com/Arbogaste/boycottwithai" target="_blank" rel="noopener" style="font-size:0.9em;font-weight:600">
+            <a href="https://github.com/Arbogaste/boycottwithai" target="_blank" rel="noopener" style="font-size:0.9em;font-weight:600" aria-label="Visit GitHub repository (opens in new window)">
               GitHub → Contribute
             </a>
             <small style="display:block;margin-top:4px;color:var(--color-text-muted)">Help us improve. Found an issue? Your pull requests matter.</small>
@@ -80,7 +150,7 @@ const t = useTranslations(lang);
       </div>
     </footer>
 
-  <script>
+    <script>
       // small accessibility helper: focus outline for keyboard users
       (function(){
         window.addEventListener('keydown', function(e){

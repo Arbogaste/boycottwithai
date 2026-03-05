@@ -4,13 +4,132 @@ import { defaultLang } from '../i18n/ui';
 <!DOCTYPE html>
 <html lang={defaultLang}>
   <head>
+    <!-- Core Meta Tags -->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BoycottWithAI - Social Justice &amp; Corporate Accountability</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- SEO & Description -->
+    <title>BoycottWithAI — Corporate Accountability, Civil Resistance & Non-Violent Action Framework</title>
+    <meta name="description" content="Evidence-based civil resistance platform: corporate risk advisories, OSINT tools, non-violent action frameworks, and institutional divestment tracking for climate justice, labor rights, and human rights accountability. Empower 1.8B+ consumers globally." />
+    <meta name="keywords" content="civil resistance, boycott, corporate accountability, ESG divestment, OSINT tools, non-violent action, institutional divestment, climate justice, human rights, labor rights, BDS, ethical AI, disinformation detection, geopolitical risk analysis, 2025, Gaza conflict, environmental justice" />
+    
+    <!-- Canonical & Language -->
+    <link rel="canonical" href="https://boycottwithai.com/" />
+    <link rel="alternate" hreflang="en" href="https://boycottwithai.com/en/" />
+    <link rel="alternate" hreflang="it" href="https://boycottwithai.com/it/" />
+    <link rel="alternate" hreflang="fr" href="https://boycottwithai.com/fr/" />
+    <link rel="alternate" hreflang="de" href="https://boycottwithai.com/de/" />
+    <link rel="alternate" hreflang="pt" href="https://boycottwithai.com/pt/" />
+    <link rel="alternate" hreflang="x-default" href="https://boycottwithai.com/" />
+    
+    <!-- Open Graph (Social Media) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="BoycottWithAI — Corporate Risk & Civil Resistance Framework" />
+    <meta property="og:description" content="Institutional-grade analysis of corporate exposure to geopolitical contagion. Tools for OSINT, divestment tracking, and non-violent civic action." />
+    <meta property="og:url" content="https://boycottwithai.com/" />
+    <meta property="og:site_name" content="BoycottWithAI" />
+    <meta property="og:locale" content={defaultLang} />
+    <meta property="og:image" content="https://boycottwithai.com/og-image-1200x630.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BoycottWithAI Platform - Corporate Accountability Analysis" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BoycottWithAI — Corporate Risk & Civil Resistance" />
+    <meta name="twitter:description" content="Institutional research on corporate exposure, divestment tracking, OSINT tools for global justice movements." />
+    <meta name="twitter:image" content="https://boycottwithai.com/og-image-1200x630.png" />
+    <meta name="twitter:image:alt" content="BoycottWithAI Platform Logo" />
+    <meta name="twitter:creator" content="@BoycottWithAI" />
+    
+    <!-- Author & Creator -->
+    <meta name="author" content="BoycottWithAI Collective" />
+    <meta name="creator" content="BoycottWithAI Collective" />
+    
+    <!-- Robots & Indexing -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large" />
+    
+    <!-- Security & Compliance -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "BoycottWithAI",
+        "url": "https://boycottwithai.com",
+        "logo": "https://boycottwithai.com/logo.png",
+        "sameAs": [
+          "https://twitter.com/BoycottWithAI"
+        ],
+        "description": "Evidence-based civil resistance platform: corporate accountability, OSINT tools, and non-violent action frameworks for global justice.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "General Support",
+          "url": "https://boycottwithai.com/en/contact/"
+        }
+      }
+    </script>
+    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "BoycottWithAI",
+        "url": "https://boycottwithai.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://boycottwithai.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+    
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://boycottwithai.com/"
+          }
+        ]
+      }
+    </script>
+    
+    <!-- Favicon & Theme -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BoycottWithAI" />
+    <meta name="application-name" content="BoycottWithAI" />
+    <meta name="theme-color" content="#c33" />
+    
+    <!-- Accessibility & Performance -->
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    
+    <!-- Redirect with refresh -->
     <meta http-equiv="refresh" content={"0;url=/" + defaultLang + "/"} />
   </head>
   <body>
-    <h1>BoycottWithAI</h1>
-    <p>Redirecting to your language...</p>
+    <noscript>
+      <p>JavaScript is required. If you cannot enable it, please visit <a href={`/${defaultLang}/`}>our main site</a>.</p>
+    </noscript>
+    <h1>BoycottWithAI — Corporate Accountability & Civil Resistance</h1>
+    <p>Redirecting to your language preference (<strong>{defaultLang}</strong>)...</p>
+    <p style="margin-top:12px"><a href={`/${defaultLang}/`}>Click here if you are not redirected automatically.</a></p>
   </body>
 </html>

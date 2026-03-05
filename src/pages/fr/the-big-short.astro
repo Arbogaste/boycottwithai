@@ -1,0 +1,253 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>The Big Short — Corporate Risk Advisory — BoycottWithAI</title>
+  <meta name="description" content="Analyse du risque d'entreprise : sociétés américaines exposées au conflit de Gaza par le biais de boycotts, de désinvestissements institutionnels et de responsabilité légale. Recherche d'investissement sur les positions short." />
+</head>
+
+<Base>
+  <section class="hero">
+    <div class="left">
+      <h1>The Big Short</h1>
+      <p class="lead">Consultat du Risque d'Entreprise : Sociétés Américaines Exposées à la Contagion Géopolitique</p>
+      <div class="cta">
+        <a class="button" href="#tier1">Positions Short Haute Conviction</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tier1" style="margin-top:28px">
+    <article class="card">
+      <h2>🎯 Tier 1 — Thèses Short Haute Conviction</h2>
+      
+      <div style="margin-top:20px; border-left:4px solid #c33; padding-left:15px">
+        <h3>1. STARBUCKS (NASDAQ: SBUX) — "L'Histoire de Transformation que Personne ne Devrait Croire Encore"</h3>
+        <p><strong>Prix Actuel :</strong> ~$96 | <strong>Juste Valeur (DCF) :</strong> $55–70 | <strong>Surévaluation : 27–77%</strong></p>
+        <p class="muted"><strong>Détérioration Fondamentale (Q3 FY2025) :</strong> Ventes comparables mondiales -2% YoY, marge opérationnelle contractée 650 points de base, marge Nord-Américaine effondrée de 19% → 4%, revenu opérationnel -36% YoY, capitalisation boursière de $11 milliards effacée en 2023.</p>
+        <p class="muted"><strong>L'Erreur du Marché :</strong> Le consensus fixe un prix à une "transformation Brian Niccol" (nouveau PDG de Chipotle) mais ignore la destruction structurelle de la demande sur les marchés internationaux. Inverser la stigmatisation sociale demande des années, pas des améliorations trimestrielles. Starbucks tire ~35% des revenus mondiaux de marchés à population musulmane significative — la marque a été socialement stigmatisée.</p>
+        <p class="muted"><strong>Catalyseurs :</strong> Résultats Q4 FY2025, ventilation du segement international, compression continue des marges.</p>
+        <p class="muted"><strong>Setup Short :</strong> Options de vente long-dated (LEAPS) strike ~$85, expiration déc 2026.</p>
+      </div>
+
+      <div style="margin-top:20px; border-left:4px solid #c33; padding-left:15px">
+        <h3>2. McDONALD'S (NYSE: MCD) — "Perdant du Terrain sur les Marchés les Plus Rapides du Monde"</h3>
+        <p><strong>Prix Actuel :</strong> ~$316 | <strong>Multiple de Négociation :</strong> 23x bénéfices futur (prime intenable)</p>
+        <p class="muted"><strong>Les Chiffres :</strong> Q1 2025 : ventes comparables mondiales -1%, ventes USA -3,6% (plus grand déclin depuis COVID). Récupération partielle Q4 2025 (+5,7%) pilotée par promotions USA, NON par récupération internationale. Marchés IDL (MENA, Asie du Sud-Est) restent structurellement compromis.</p>
+        <p class="muted"><strong>Le Problème Structurel :</strong> Les opérateurs McDonald's israéliens ont pris une décision publique de donner des repas aux soldats de l'IDF — un désastre de relations publiques que McDonald's corporate ne pouvait pas contenir en raison du modèle de franchisage. Ce n'est pas un événement unique; c'est un risque de gouvernance structurel.</p>
+        <p class="muted"><strong>Setup Short :</strong> Put spread (acheter put $300 / vendre put $270), expiration septembre 2026.</p>
+      </div>
+
+      <div style="margin-top:20px; border-left:4px solid #c33; padding-left:15px">
+        <h3>3. CATERPILLAR (NYSE: CAT) — "Quand le Plus Grand Fonds Souverain du Monde Vous Dit Quelque Chose — Écoutez"</h3>
+        <p><strong>Prix Actuel :</strong> ~$320–340 | <strong>Sortie Norges SWF :</strong> Position de $2,4 milliards (août 2025)</p>
+        <p class="muted"><strong>L'Effet Cascade :</strong> Norges SWF ($2T) a disinvesti l'intégralité de la position CAT de $2,4 milliards en août 2025 pour des préoccupations éthiques. ABP hollandais, Church of England, Alameda County se sont tous retirés. Rapport Spécial ONU de juillet 2025 a explicitement nommé Caterpillar comme complice. Cela préconditionne légalement les désinvestissements institutionnels supplémentaires.</p>
+        <p class="muted"><strong>Setup Short :</strong> Long puts, strike ~$300, expiration décembre 2026.</p>
+      </div>
+
+      <div style="margin-top:20px; border-left:4px solid #c33; padding-left:15px">
+        <h3>4. BOEING (NYSE: BA) — "$54 Milliards de Détente, Rapports Amnesty, et un 777X qui Ne Volera Pas"</h3>
+        <p><strong>Prix Actuel :</strong> ~$180–220 | <strong>Détente Totale :</strong> $54,1 milliards | <strong>Échéances de Détente 2026 :</strong> ~$7,95 milliards</p>
+        <p class="muted"><strong>Thèse Triple :</strong></p>
+        <ul style="font-size:0.9em">
+          <li><strong>Crise de la Detente :</strong> Altman Z-Score 1,27 (zone de détresse). FCF négatif dans division commerciale. $7,95B en obligations arrivent à échéance en 2026 au pire moment.</li>
+          <li><strong>Retard de Certification 777X :</strong> Retards à 2026+ coûtent $1–2 milliards par trimestre en revenus différés.</li>
+          <li><strong>Responsabilité Géopolitique :</strong> $26,7 milliards en ventes d'armes à Israël. Amnesty International a explicitement nommé Boeing. L'approvisionnement en défense européen tient compte du risque de réputation.</li>
+        </ul>
+        <p class="muted"><strong>Setup Short :</strong> Put spread ou options à risque défini, plus long terme (déc 2026).</p>
+      </div>
+
+      <div style="margin-top:20px; border-left:4px solid #c33; padding-left:15px">
+        <h3>5. YUM! BRANDS (NYSE: YUM) — "Vendant Pizza Hut Parce que le Monde ne le Veut Plus"</h3>
+        <p><strong>Statut Pizza Hut :</strong> 7 trimestres consécutifs de déclin. -5% en 2025. 250 fermetures de magasins USA annoncées H1 2026.</p>
+        <p class="muted">Yum! a lancé un examen stratégique formel de Pizza Hut — explorant une vente complète. KFC, Pizza Hut, Taco Bell sont les principales cibles de boycott sur les marchés à majorité musulmane. Contrairement à McDonald's, Yum! a moins de flexibilité financière pour absorber une réduction de revenu international de 10–15%.</p>
+        <p class="muted"><strong>Setup Short :</strong> Put spread sur YUM, moyen terme. Catalyseur : résultats Q1 2026 et annonce du processus de vente de Pizza Hut.</p>
+      </div>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">
+    <article class="card">
+      <h2>📊 Tier 2 — Exposition Secondaire Moyenne à Haute Conviction</h2>
+      
+      <div style="margin-top:15px">
+        <h4>COCA-COLA / PEPSI (KO, PEP)</h4>
+        <p class="muted">La migration des consommateurs vers les marques locales (Cola Next, V7, Gaza Cola) sur les marchés MENA est structurellement irréversible. Coke: -1% ventes mondiales Q2 2025, -5% Turquie, -7% Moyen-Orient.</p>
+      </div>
+
+      <div style="margin-top:15px">
+        <h4>LOCKHEED MARTIN / RTX (LMT / RTX)</h4>
+        <p class="muted">Citations directes dans le rapport Amnesty International. Discussions d'approvisionnement de l'UE incluant maintenant le dépistage éthique explicite. Détérioration plus lente que Boeing mais pression institutionnelle croissante.</p>
+      </div>
+
+      <div style="margin-top:15px">
+        <h4>HP / HPE (HPQ / HPE)</h4>
+        <p class="muted">Campagne BDS de 15 ans sur les systèmes biométriques aux points de contrôle militaires en Cisjordanie. Disinvestissement institutionnel à long terme en cours.</p>
+      </div>
+
+      <div style="margin-top:15px">
+        <h4>META PLATFORMS (META)</h4>
+        <p class="muted">Action collective de $1,15 milliard pour préjugé de modération de contenu. Suppression systématique de contenu palestinien documentée par HRW. FTC en appel du verdict antitrust — risque réglementaire non éteint.</p>
+      </div>
+
+      <div style="margin-top:15px">
+        <h4>NETFLIX / DISNEY</h4>
+        <p class="muted">Plus de 1.300 professionnels du cinéma ont signé des promesses de boycott contre les institutions cinématographiques israéliennes. Les deux sociétés ont reçu des lettres légales formelles de coalitions d'activistes.</p>
+      </div>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">    <article class="card">
+      <h2>🔥 Tier 3 — Bulle IA et Risques Tech/Macro (Exposition Systémique)</h2>
+      <p class="muted"><strong>Contexte:</strong> Au-delà des pressions géopolitiques, le secteur technologique américain affronts une bulle de valorisation structurelle de l'IA aggravée par les pressions macro. L'investisseur Michael Burry (célèbre pour avoir prédit la crise 2008) a déployé ~$1,1 milliards en positions put contre Palantir et Nvidia, signalant que le battage sur l'IA a décroché de la réalité économique.</p>
+      
+      <div style="margin-top:20px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>PALANTIR TECHNOLOGIES (NYSE: PLTR)</h4>
+        <p class="muted"><strong>Valorisations Extrêmes:</strong></p>
+        <ul style="font-size:0.9em">
+          <li>P/E: <strong>200x+</strong> (vs. médiane logiciels ~25x)</li>
+          <li>Price-to-Sales: <strong>40x</strong> (vs. médiane SaaS ~5–8x)</li>
+          <li>Capitalisation: <strong>$300B+</strong></li>
+          <li>Cible de Burry: $46/action = <strong>baisse 66%</strong> des niveaux actuels</li>
+        </ul>
+        <p class="muted"><strong>Red Flags:</strong> Au cours de ses 20 premières années d'opérations, elle a cumulé des pertes >$3,8 milliards avant l'IPO. Comptabilité suspecte: allocation de coûts gonflant artificiellement les marges brutes. Si valorisée comme des sociétés logiciels comparables (Accenture, Deloitte), les multiples s'effondrent.</p>
+        <p class="muted"><strong>Catalyseur:</strong> Lorsque le capex IA ne génère pas les rendements promis (~2027), la compression des multiples sera sévère.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>NVIDIA (NASDAQ: NVDA)</h4>
+        <p class="muted"><strong>État Actuel:</strong> Capitalisation dépassée $5 trillions (plus haute au monde). Gain YTD: +46%. Pourtant Burry maintient $187M en puts, pariant sur l'effondrement du battage IA.</p>
+        <p class="muted"><strong>Risque Structurel:</strong> Le récit entier de Nvidia repose sur un capex IA soutenu et explosif. Si capex ralentit — ou si les modèles IA open source (Llama, Mistral) réduisent la charge d'inférence sur le cloud — la demande de GPU premium s'évapore.</p>
+        <p class="muted"><strong>Goulot Énergétique:</strong> Un seul data center IA peut consommer l'électricité équivalente au usage de dizaines de milliers de maisons. La capacité du réseau + licences environnementales deviennent déjà des contraintes dans plusieurs juridictions.</p>
+        <p class="muted"><strong>Réalité du Marché:</strong> JP Morgan estime $6 trillions de capex nécessaires d'ici 2030 pour l'infrastructure IA. Si le ROI réel est 60–70% des prévisions, les prix des actions connaîtront des réinitialisation significatives.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>MICROSOFT / AMAZON (MSFT / AMZN) — Géants du Cloud Sous Pression Capex</h4>
+        <p class="muted"><strong>Microsoft (Azure + Dépendance Copilot):</strong> Le succès IA de Nvidia est étroitement lié à la croissance d'Azure. Si l'adoption IA des entreprises ralentit, les deux souffrent. De plus, les notations de dette Microsoft et les spreads se sont comprimés à des niveaux dangereux — tout sentiment négatif déclenche un refinancement à taux plus élevés.</p>
+        <p class="muted"><strong>Amazon (Capex Data Center AWS):</strong> AWS a annoncé un capex record pour data centers 2025–2026. Si la demande IA s'arrête, ces actifs générent des rendements faibles. Compression de marge AWS = réinitialisation du stock Amazon.</p>
+        <p class="muted"><strong>Disintermédiaire Open Source:</strong> Disponibilité croissante de LLM open source (Llama 2, Mistral, etc.) réduit la dépendance aux API Azure/AWS. Les entreprises déploient des modèles on-premise, réduisant le capex cloud et la marge d'inférence.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>ALPHABET / GOOGLE (GOOGL) — Antitrust + Géopolitique + Open Source</h4>
+        <p class="muted"><strong>Vecteurs Multiples:</strong> Le cœur métier Search sous pression d'UI alternatives (ChatGPT, Claude). Marché de la publicité de plus en plus marchandisé. Contentieux antitrust menaçant le cœur métier. Concurrence IA externe réduit le fossé de Google.</p>
+        <p class="muted"><strong>Risque Chine:</strong> Alphabet a une exposition directe limitée à la Chine mais est enfermé dans une guerre technologique avec Pékin. Les contrôles d'exportation américains sur les puces/logiciels pourraient entraver la capacité de Google à offrir des services sur les marchés en forte croissance.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>APPLE (AAPL) — Risque de Représailles Géopolitiques</h4>
+        <p class="muted"><strong>Dépendance Chine:</strong> La plus grande production, chaîne d'approvisionnement et marché consommateur concentrés en Chine/Asie. Toute escalade dans la guerre technologique USA-Chine pourrait déclencher:</p>
+        <ul style="font-size:0.9em">
+          <li>Interdictions iPhone des marchés publics</li>
+          <li>Remplacement par des alternatives Android domestiques</li>
+          <li>Pression réglementaire sur iCloud, mandats de localisation des données</li>
+        </ul>
+        <p class="muted"><strong>Risque de Marge:</strong> Si de grands segments gouvernement/entreprise abandonnent iOS, les revenus et les marges diminuent structurellement. Apple est déjà sous pression pour réduire les prix en Chine pour concurrencer les fournisseurs locaux.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:3px solid #f9a; padding-left:15px; background:#fff9f6; padding:12px; border-radius:4px">
+        <h4>🌐 Risques Systémiques Plus Larges</h4>
+        <p class="muted"><strong>Perturbation Open Source:</strong> La marchandisation des modèles IA (Llama de Meta, Mistral) signifie que le pouvoir de tarification pour les LLM propriétaires s'érode. Les marges se compriment cloud, logiciels et semiconducteurs.</p>
+        <p class="muted"><strong>Escalade Guerre Tech USA-Chine:</strong> Contrôles d'exportation, restrictions sur les puces, interdictions logiciels. Les entreprises technologiques américaines font face à une contraction structurelle du marché sur le marché chinois de 1,4 milliards de personnes et régions alliées.</p>
+        <p class="muted"><strong>Mur de Refinancement de la Dette Corporate:</strong> De nombreuses entreprises technologiques ont emprunté massivement à 0%–2% (2020–2021). Le refinancement à présent à 4–5%+ augmente les charges d'intérêts de milliards par an. Les gains et la capacité de rachat s'effondrent.</p>
+        <p class="muted"><strong>Crise de la Dette Fédérale Américaine:</strong> Dette nationale $38,4 trilions (+$2,23 trilions YoY). Paiements d'intérêts maintenant $981 milliards/an (contre $345 milliards en 2020). Si les taux restent élevés, le stress fiscal pourrait déclencher des erreurs politiques, la volatilité des marchés ou une récession.</p>
+        <p class="muted"><strong>Avertissement du Marché du Crédit (Signal Mid-2026):</strong> Écarts des obligations corporate investment-grade comprimés aux niveaux historiquement bas (+0,74% au-dessus des Treasury vs. moyenne historique +1,24%). Tout événement de crédit ou récession signale un repricing soudain — les actions les plus vulnérables à la compression des marges.</p>
+      </div>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">
+    <article class="card">
+      <h2>🌍 Contexte Macro Critique: La Crise de la Dette Souveraine Américaine et les Dislocations de Crédit</h2>
+      <p class="muted"><strong>Les sociétés analysées ci-dessus n'existent pas dans le vide.</strong> Leur risque de capital est agravé par des vents macro systémiques qui peuvent déclencher des corrections plus larges :</p>
+      
+      <div style="margin-top:15px; border-left:4px solid #c33; padding-left:15px; background:#ffe8e8; padding:12px; border-radius:4px">
+        <h4>📊 Urgence de la Dette Fédérale Américaine</h4>
+        <ul style="font-size:0.9em; line-height:1.7">
+          <li><strong>Dette Nationale:</strong> $38,4 trillions (déc 2025), +$2,23T YoY (+$6,12B par jour)</li>
+          <li><strong>Par Habitant:</strong> ~$112.900 par résident américain</li>
+          <li><strong>Ratio Dette/PIB:</strong> 124–125% (niveaux record 2020); CBO projette >120% à travers 2036</li>
+          <li><strong>Paiements d'Intérêts:</strong> $981B/an (12 mois à oct 2025), +$345B en 2020 — augmentation de 2,8x en 5 ans</li>
+          <li><strong>Taux Moyen sur Dette Fédérale:</strong> ~3,38% (fin 2025) vs. 1,58% il y a cinq ans — augmentation de 114% du coût par unité</li>
+        </ul>
+        <p class="muted" style="margin-top:12px;"><strong>Implication:</strong> Sans réforme budgétaire structurelle, les dépenses d'intérêts continueront à augmenter. Si les taux restent 4%+ jusqu'en 2030, le gouvernement américain sera forcé d'augmenter les impôts, réduire les dépenses ou déclencher l'inflation/dévaluation. Chaque scénario crée des vents de face pour les actions.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:4px solid #c33; padding-left:15px; background:#ffe8e8; padding:12px; border-radius:4px">
+        <h4>💳 Signaux du Marché du Crédit Corporatif: Compression Historique</h4>
+        <p class="muted"><strong>Écarts Investment-Grade (obligations AAA-BBB):</strong></p>
+        <ul style="font-size:0.9em; line-height:1.7">
+          <li><strong>Actuels:</strong> +0,74% au-dessus des Treasuries (mid-2026)</li>
+          <li><strong>Moyenne Historique:</strong> +1,24%</li>
+          <li><strong>Niveau Pré-2008:</strong> ~1,40%</li>
+          <li><strong>Magnitude de Compression:</strong> 40% plus étroit que normal, 47% plus étroit que pré-crise</li>
+        </ul>
+        <p class="muted" style="margin-top:12px;"><strong>Spreads High-Yield ("Junk") (~2,7%):</strong> Données Moody's montrent taux de défaut typique annuel ~4% avec 60% de pertes de recouvrement. Le rendement attendu (~2,4%) ≈ spread offert (2,7%). <strong>Il n'y a aucune prime de risque fondamentale</strong>. Tout défaut supplémentaire efface la compensation.</p>
+        <p class="muted" style="margin-top:12px;"><strong>Ce que Cela Signifie:</strong> Un événement de crédit déclenche repricing soudain — spreads pourraient sauter à +1,5–2,0% en jours, effondrement des prix obligataires et pression action.</p>
+      </div>
+
+      <div style="margin-top:15px; border-left:4px solid #c33; padding-left:15px; background:#ffe8e8; padding:12px; border-radius:4px">
+        <h4>⚔️ Risques Géopolitiques de Queue (Ère Trump + Confrontation Sino-Américaine)</h4>
+        <ul style="font-size:0.9em; line-height:1.7">
+          <li><strong>Intensification Guerre Tech USA-Chine:</strong> Contrôles export additionnels sur chips IA, restrictions logiciels réduisent revenus tech en Asie (>25% base revenus tech)</li>
+          <li><strong>Guerre Commerciale / Protectionnisme:</strong> Tarifs 25%+ biens chinois + mesures retorsion étirent marges corporatives</li>
+          <li><strong>Escalade Moyen-Orient:</strong> Développements Gaza/Iran/Israël déclenchent choc pétrole, volatilité marcé, rotations "risk-off"</li>
+          <li><strong>Contagion Euro:</strong> Croissance faible Europe + stress bancaire se propagent marchés crédit USA</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:15px; border-left:4px solid #c33; padding-left:15px; background:#ffe8e8; padding:12px; border-radius:4px">
+        <h4>📉 Consensus Marché vs. Fondamentaux: Déconnexion</h4>
+        <p class="muted">Goldman Sachs & Morgan Stanley (fév-mar 2026) notent <strong>potentiel correction 10–20% dans 12–24 mois</strong> malgré titres "soft landing" et "croissance IA". Marchés prezzés pour: capex AI ROI agressif (2028–2029), aucune perturbation M&A/crédit, capital étranger achète toujours actions, crise US reportée 2–3 ans. <strong>Si 1–2 assomptions cassent, repricing équité est rapide.</strong> Les actions TIER 1–2 ci-dessus = candidats downside maximum.</p>
+      </div>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">
+    <article class="card" style="background:#f5f5f5">
+      <h2>⚠️ Risques Clés pour Toutes les Thèses</h2>
+      <table style="width:100%; margin-top:12px; border-collapse:collapse">
+        <tr style="border-bottom:1px solid #ddd">
+          <td style="padding:8px; font-weight:bold">Cessez-le-feu / Accord de Paix</td>
+          <td style="padding:8px; color:#666">Moyen</td>
+          <td style="padding:8px; font-size:0.9em">Réduit temporaires l'intensité du boycott — utilisez les put spreads</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ddd">
+          <td style="padding:8px; font-weight:bold">Short Squeeze</td>
+          <td style="padding:8px; color:#666">Bas-Moyen</td>
+          <td style="padding:8px; font-size:0.9em">Structures d'options à risque défini requises</td>
+        </tr>
+        <tr style="border-bottom:1px solid #ddd">
+          <td style="padding:8px; font-weight:bold">Rally du Marché USA</td>
+          <td style="padding:8px; color:#666">Moyen</td>
+          <td style="padding:8px; font-size:0.9em">Short comme pair trade (long S&P/IWM)</td>
+        </tr>
+        <tr>
+          <td style="padding:8px; font-weight:bold">Pivots Stratégiques</td>
+          <td style="padding:8px; color:#666">Moyen</td>
+          <td style="padding:8px; font-size:0.9em">Surveiller le flux d'actualités corporatives</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">
+    <article class="card" style="border-left:4px solid #333">
+      <h2>🔑 Conclusion</h2>
+      <p class="muted">Le marché a <strong>partiellement mais pas complètement</strong> valorisé les dégâts structurels auxquels ces sociétés font face. Le boycott est une <strong>réallocation permanente des dépenses de consommation</strong> sur les marchés représentant 1,8 milliard de consommateurs musulmans à l'échelle mondiale. Les opportunités les plus asymétriques sont <strong>SBUX</strong> (surévalué 27–77%) et <strong>CAT</strong> (disinvestissement institutionnel accélérée).</p>
+    </article>
+  </section>
+
+  <section style="margin-top:28px">
+    <article class="card" style="background:#f9f9f9">
+      <p style="font-size:0.9em; color:#666"><strong>Sources :</strong> Starbucks Investor Relations | McDonald's Investor Relations | Reuters | Al-Monitor | CNBC | Amnesty International | Human Rights Watch | LeehamNews | Gurufocus | Yahoo Finance | AP News</p>
+      <p style="font-size:0.9em; color:#999; margin-top:8px"><strong>Avertissement :</strong> Ce document est publié exclusivement à titre informatif et de recherche. Il ne constitue pas un conseil financier. La vente short comporte un risque de perte illimité. Toutes les données proviennent de divulgations financières publiques, de recherches institutionnelles et de rapports de presse vérifiés.</p>
+    </article>
+  </section>
+</Base>
