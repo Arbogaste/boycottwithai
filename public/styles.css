@@ -112,6 +112,21 @@ html.theme-dark .button:hover{
 .card{background:var(--panel);padding:18px;border-radius:14px;border:1px solid rgba(15,23,42,0.04);transition:transform .12s ease, box-shadow .12s ease}
 .card:hover{transform:translateY(-2px);box-shadow:0 6px 10px rgba(2,6,23,0.06)}
 .grid{display:grid;grid-template-columns:repeat(1,1fr);gap:16px}
+
+/* Alert panels with better contrast in dark mode */
+.alert-critical { margin-top:28px; padding: 24px; background: #ffcccc; border-left: 4px solid #c33; border-radius: 4px; }
+.alert-warning { margin-top:28px; padding: 24px; background: #fff3cd; border-left: 4px solid #ff6b6b; border-radius: 4px; }
+.alert-info { margin-top:28px; padding: 24px; background: #e8f4f8; border-left: 4px solid #0099cc; border-radius: 4px; }
+.alert-danger { margin-top:28px; padding: 24px; background: #ffe6e6; border-left: 4px solid #cc0000; border-radius: 4px; }
+.alert-soft { margin-top:28px; padding: 24px; background: #f0f0f0; border-left: 4px solid #666; border-radius: 4px; }
+.card.card--white { background: #ffffff; border-color: #ddd; }
+
+html.theme-dark .alert-critical { background: #4b1c2a !important; border-left-color: #fb7185 !important; color: #f8fafc; }
+html.theme-dark .alert-warning { background: #504a26 !important; border-left-color: #fbbf24 !important; color: #f8fafc; }
+html.theme-dark .alert-info { background: #1f2a3d !important; border-left-color: #38bdf8 !important; color: #f8fafc; }
+html.theme-dark .alert-danger { background: #4b1c2a !important; border-left-color: #fb7185 !important; color: #f8fafc; }
+html.theme-dark .alert-soft { background: #334155 !important; border-left-color: #9ca3af !important; color: #e2e8f0; }
+html.theme-dark .card.card--white { background: #1e293b !important; border-color: rgba(241,245,249,0.1) !important; color: #e2e8f0; }
 @media (min-width:720px){
   .grid{grid-template-columns:repeat(2,1fr);}
 }
