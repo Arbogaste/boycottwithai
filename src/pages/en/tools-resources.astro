@@ -320,21 +320,117 @@ I'm a constituent and I urge you to request an independent audit of contract [#]
       </ul>
     </div>
 
-    <div class="grid" style="margin-top:18px">
       <div class="card">
-        <h4>SmashingLearning: Train Models on Your Data</h4>
-        <p class="muted">Use LLaMA Factory and easy-dataset to create datasets and fine-tune models on campaign-specific language, terminology, and evidence patterns.</p>
-        <p style="font-size:0.9em;margin-top:8px"><strong>Example:</strong> Train a model to recognize propaganda narratives in news feeds, detect fake claims in corporate statements, or summarize witness testimony consistently.</p>
-        <a class="secondary" href="https://github.com/Arbogaste/smashingLearning" target="_blank" rel="noopener">→ GitHub Repo & Resources</a>
+        <h4>Open-Source LLMs: Run Models Locally <span style="font-size:0.75em;background:rgba(20,184,166,0.15);color:var(--accent);padding:2px 8px;border-radius:12px;margin-left:8px">Updated 2026</span></h4>
+        <p class="muted">The frontier of open models has exploded. All run locally with <a href="https://ollama.ai/" target="_blank" rel="noopener">Ollama</a> or <a href="https://lmstudio.ai/" target="_blank" rel="noopener">LM Studio</a> — no cloud, no logging, no surveillance risk.</p>
+        <div style="display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin-top:12px;font-size:0.88em">
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🧠 General Purpose Frontier</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://ai.google.dev/gemma" target="_blank" rel="noopener"><strong>Gemma 4</strong></a> (Google, 2025) — 1B–27B, multimodal, best-in-class open weights</li>
+              <li><a href="https://llama.meta.com/" target="_blank" rel="noopener"><strong>Llama 4 Scout / Maverick</strong></a> (Meta, 2025) — 17B–400B+, natively multimodal, open</li>
+              <li><a href="https://mistral.ai/" target="_blank" rel="noopener"><strong>Mistral Small 3.1 / Mixtral 8x22B</strong></a> — Efficient MoE, Apache 2.0 license</li>
+              <li><a href="https://qwenlm.github.io/" target="_blank" rel="noopener"><strong>Qwen 3</strong></a> (Alibaba, 2025) — 0.5B–235B, multilingual, open weights</li>
+              <li><a href="https://github.com/deepseek-ai" target="_blank" rel="noopener"><strong>DeepSeek-R2 / V3</strong></a> — 671B MoE, state-of-art reasoning, fully open</li>
+              <li><a href="https://huggingface.co/microsoft/phi-4" target="_blank" rel="noopener"><strong>Phi-4</strong></a> (Microsoft, 14B) — Tiny but powerful for constrained hardware</li>
+              <li><a href="https://huggingface.co/collections/CohereForAI" target="_blank" rel="noopener"><strong>Command R+</strong></a> (Cohere, open weights) — Best for RAG and document retrieval</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🏥 Specialized / Domain Models</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://deepmind.google/technologies/medgemma/" target="_blank" rel="noopener"><strong>MedGemma 1.5</strong></a> (Google DeepMind, 2025) — Medical reasoning, radiology, clinical text; 4B &amp; 27B open weights</li>
+              <li><a href="https://huggingface.co/BioMistral" target="_blank" rel="noopener"><strong>BioMistral 7B</strong></a> — Medical domain fine-tuned, multilingual biomedical QA</li>
+              <li><a href="https://github.com/InternLM/InternVL" target="_blank" rel="noopener"><strong>InternVL 2.5</strong></a> — Top multimodal open model; document, chart, image understanding</li>
+              <li><a href="https://huggingface.co/SeaLLMs" target="_blank" rel="noopener"><strong>SeaLLM 3</strong></a> — Southeast Asian languages; ideal for multilingual activist work</li>
+              <li><a href="https://codegemma.dev/" target="_blank" rel="noopener"><strong>CodeGemma</strong></a> — Code generation and analysis, open weights by Google</li>
+              <li><a href="https://huggingface.co/openbmb" target="_blank" rel="noopener"><strong>MiniCPM 3.0</strong></a> — Runs on smartphones (2–4GB VRAM); edge deployment</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🔊 Vision, Audio &amp; Multimodal</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://huggingface.co/openai/whisper-large-v3" target="_blank" rel="noopener"><strong>Whisper Large v3</strong></a> — Best open speech-to-text; 100+ languages; transcribe testimonies</li>
+              <li><a href="https://huggingface.co/THUDM/CogVLM2" target="_blank" rel="noopener"><strong>CogVLM 2</strong></a> — Open visual language model; image analysis and verification</li>
+              <li><a href="https://github.com/ggerganov/whisper.cpp" target="_blank" rel="noopener"><strong>Whisper.cpp</strong></a> — Local whisper inference on CPU; no GPU needed</li>
+              <li><a href="https://github.com/facebookresearch/seamless_communication" target="_blank" rel="noopener"><strong>SeamlessM4T v2</strong></a> (Meta) — Real-time speech translation, 100+ languages</li>
+              <li><a href="https://huggingface.co/stabilityai/stable-diffusion-3-5" target="_blank" rel="noopener"><strong>Stable Diffusion 3.5</strong></a> — Open image generation for campaign materials</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin-top:14px;font-size:0.88em;color:#666"><strong>Run everything locally:</strong> <code>ollama pull gemma3:27b</code> · <code>ollama pull medgemma:4b</code> · <code>ollama pull deepseek-r2</code> · <code>ollama pull qwen3:14b</code> · <code>ollama pull llama4:scout</code></p>
       </div>
 
       <div class="card">
-        <h4>Open-source LLMs: Run Models Locally</h4>
-        <p class="muted"><a href="https://llama.meta.com/">LLaMA 2</a> • <a href="https://mistral.ai/">Mistral</a> • <a href="https://ollama.ai/">OLLAMA</a></p>
-        <p style="font-size:0.9em;margin-top:8px">Run on your own hardware. No cloud dependency. No API logging. Perfect for sensitive campaigns in countries with surveillance.</p>
+        <h4>2025–2026 AI Frameworks &amp; Infrastructure <span style="font-size:0.75em;background:rgba(20,184,166,0.15);color:var(--accent);padding:2px 8px;border-radius:12px;margin-left:8px">New</span></h4>
+        <p class="muted">Production-grade open tools to build AI pipelines, agents, and applications — without cloud lock-in.</p>
+        <div style="display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:12px;font-size:0.88em">
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🚀 Inference &amp; Serving</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/vllm-project/vllm" target="_blank" rel="noopener"><strong>vLLM</strong></a> — Fast, production-grade LLM serving; 10x faster than naïve inference</li>
+              <li><a href="https://ollama.ai/" target="_blank" rel="noopener"><strong>Ollama</strong></a> — One-command local LLM runner; REST API included</li>
+              <li><a href="https://lmstudio.ai/" target="_blank" rel="noopener"><strong>LM Studio</strong></a> — GUI for running local models, GGUF format</li>
+              <li><a href="https://github.com/ggerganov/llama.cpp" target="_blank" rel="noopener"><strong>llama.cpp</strong></a> — CPU inference for quantized models; runs on Raspberry Pi</li>
+              <li><a href="https://github.com/huggingface/text-generation-inference" target="_blank" rel="noopener"><strong>TGI (Hugging Face)</strong></a> — Enterprise inference server, open source</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🤖 Agents &amp; Orchestration</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/langchain-ai/langchain" target="_blank" rel="noopener"><strong>LangChain</strong></a> — Composable LLM pipelines; document loaders, retrievers, tools</li>
+              <li><a href="https://github.com/run-llama/llama_index" target="_blank" rel="noopener"><strong>LlamaIndex</strong></a> — RAG (Retrieval-Augmented Generation) over your own documents</li>
+              <li><a href="https://github.com/crewAIInc/crewAI" target="_blank" rel="noopener"><strong>CrewAI</strong></a> (2024–2025) — Multi-agent orchestration; define roles and tasks in Python</li>
+              <li><a href="https://github.com/microsoft/autogen" target="_blank" rel="noopener"><strong>AutoGen 0.4</strong></a> (Microsoft) — Multi-agent conversation framework, async-first</li>
+              <li><a href="https://github.com/stanford-oval/dspy" target="_blank" rel="noopener"><strong>DSPy</strong></a> — Program LLMs with algorithms, not prompts; automatic optimization</li>
+              <li><a href="https://github.com/huggingface/smolagents" target="_blank" rel="noopener"><strong>smolagents</strong></a> (🤗 HF, 2025) — Minimal agent framework; code agents, tool use</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🗄 Vector DBs &amp; RAG Infrastructure</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/chroma-core/chroma" target="_blank" rel="noopener"><strong>ChromaDB</strong></a> — Easiest local vector DB; Python-native; zero config</li>
+              <li><a href="https://qdrant.tech/" target="_blank" rel="noopener"><strong>Qdrant</strong></a> — Fast, production vector search; Rust-based, self-hosted</li>
+              <li><a href="https://github.com/weaviate/weaviate" target="_blank" rel="noopener"><strong>Weaviate</strong></a> — Multimodal vector DB; images, text, audio</li>
+              <li><a href="https://github.com/pgvector/pgvector" target="_blank" rel="noopener"><strong>pgvector</strong></a> — Postgres extension for vector search; no extra infra needed</li>
+              <li><a href="https://github.com/lancedb/lancedb" target="_blank" rel="noopener"><strong>LanceDB</strong></a> — Embedded vector DB, no server; works inside Python scripts</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🔬 Fine-Tuning &amp; Training</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/hiyouga/LLaMA-Factory" target="_blank" rel="noopener"><strong>LLaMA Factory</strong></a> — Fine-tune any open LLM on your data; GUI + CLI</li>
+              <li><a href="https://github.com/unslothai/unsloth" target="_blank" rel="noopener"><strong>Unsloth</strong></a> — 2x faster fine-tuning, 70% less VRAM; supports Gemma, Llama, Mistral</li>
+              <li><a href="https://github.com/axolotl-ai-cloud/axolotl" target="_blank" rel="noopener"><strong>Axolotl</strong></a> — Flexible fine-tuning framework; YAML config, multi-GPU</li>
+              <li><a href="https://github.com/huggingface/trl" target="_blank" rel="noopener"><strong>TRL (HF)</strong></a> — RLHF, DPO, PPO training for open models</li>
+              <li><a href="https://github.com/hiyouga/easy-dataset" target="_blank" rel="noopener"><strong>easy-dataset</strong></a> — Generate fine-tuning datasets from documents automatically</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>📊 Evaluation &amp; Observability</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/BerriAI/litellm" target="_blank" rel="noopener"><strong>LiteLLM</strong></a> — Unified API for 100+ models (OpenAI-compatible); proxy + cost tracking</li>
+              <li><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener"><strong>OpenHands</strong></a> (formerly OpenDevin) — Open-source AI coding agent; runs locally</li>
+              <li><a href="https://github.com/explodinggradients/ragas" target="_blank" rel="noopener"><strong>RAGAS</strong></a> — Evaluate RAG pipeline quality automatically</li>
+              <li><a href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener"><strong>Langfuse</strong></a> — Open-source LLM observability; tracing, evals, cost tracking</li>
+              <li><a href="https://github.com/mlflow/mlflow" target="_blank" rel="noopener"><strong>MLflow</strong></a> — Experiment tracking, model registry, reproducibility</li>
+            </ul>
+          </div>
+          <div style="border:1px solid var(--accent);padding:10px;border-radius:4px">
+            <strong>🌐 Web &amp; App Frameworks</strong>
+            <ul style="padding-left:14px;margin-top:6px">
+              <li><a href="https://github.com/gradio-app/gradio" target="_blank" rel="noopener"><strong>Gradio</strong></a> — Build AI demos in minutes; shareable UIs for models</li>
+              <li><a href="https://github.com/streamlit/streamlit" target="_blank" rel="noopener"><strong>Streamlit</strong></a> — Data apps and dashboards in Python; no frontend skills needed</li>
+              <li><a href="https://github.com/open-webui/open-webui" target="_blank" rel="noopener"><strong>Open WebUI</strong></a> — ChatGPT-like UI for local Ollama models; multi-user, plugins</li>
+              <li><a href="https://github.com/Mintplex-Labs/anything-llm" target="_blank" rel="noopener"><strong>AnythingLLM</strong></a> — Full local AI workspace: RAG, agents, multi-model, no cloud</li>
+              <li><a href="https://github.com/lobehub/lobe-chat" target="_blank" rel="noopener"><strong>LobeChat</strong></a> — Open-source ChatGPT UI; plugins, local model support</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <div class="card">
+
         <h4>Data Validation & Cleaning</h4>
         <p class="muted"><a href="https://www.openrefine.org/">OpenRefine</a> — Hands-on data cleaning without coding. <a href="https://www.dolthub.com/">Dolt</a> — Version-controlled databases.</p>
         <p style="font-size:0.9em;margin-top:8px">Track changes in contracts, spending, corporate records. See who changed what, when. Build an auditable trail.</p>
