@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>Γρήγορη Αναφορά Χωρών — BoycottWithAI</title>
+  <meta name="description" content="Πηγές δεδομένων, βασικές επαφές και εργαλεία έρευνας ανά χώρα. Γρήγορη αναφορά για Ιταλία, Γαλλία και Γερμανία για πρόσβαση σε δημόσιες συμβάσεις, περιβαλλοντικά δεδομένα και κοινοβουλευτικά αρχεία." />
+</head>
+
+<Base>
+  <section>
+    <h1>Γρήγορη Αναφορά Χωρών</h1>
+    <p class="muted">Συνοπτικοί οδηγοί: Πού να βρείτε κυβερνητικές συμβάσεις, περιβαλλοντικά δεδομένα, μητρώα εκπροσώπων συμφερόντων (lobbyists) και στοιχεία επικοινωνίας βουλευτών ανά χώρα.</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h3>🇮🇹 ΙΤΑΛΙΑ</h3>
+        
+        <h4>Δημόσιες Συμβάσεις</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.trasparenza.gov.it/" target="_blank" rel="noopener">trasparenza.gov.it</a></strong> — Πύλη για συμβάσεις, δαπάνες, διαφάνεια</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (ΕΕ)</a></strong> — Συμβάσεις ΕΕ (άνω των 139χιλ. €)</li>
+          <li><strong><a href="https://dati.gov.it/" target="_blank" rel="noopener">data.gov.it</a></strong> — Ανοιχτά κυβερνητικά δεδομένα</li>
+        </ul>
+
+        <h4>Περιβαλλοντικά Δεδομένα</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.arpa.piemonte.it/" target="_blank" rel="noopener">ARPA</a></strong> — Περιφερειακή υπηρεσία περιβάλλοντος (οι πύλες διαφέρουν)</li>
+          <li><strong><a href="https://www.istat.it/" target="_blank" rel="noopener">ISTAT</a></strong> — Εθνική στατιστική υπηρεσία (περιβάλλον + οικονομία)</li>
+          <li><strong>Εστίαση:</strong> Ρύπανση ποταμού Πάδου, βιομηχανικά απόβλητα (Λομβαρδία)</li>
+        </ul>
+
+        <h4>Lobbyists & Διαφθορά</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.registrotrasparenza.it/" target="_blank" rel="noopener">Registro Trasparenza</a></strong> — Μητρώο εκπροσώπων συμφερόντων</li>
+          <li><strong><a href="https://www.antimafia.camera.it/" target="_blank" rel="noopener">Επιτροπή Antimafia</a></strong> — Δημόσιες έρευνες για οργανωμένο έγκλημα + εταιρική συμπαιγνία</li>
+        </ul>
+
+        <h4>Επικοινωνία με Βουλευτές</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.camera.it/" target="_blank" rel="noopener">Βουλή των Αντιπροσώπων</a></strong> — Αναζήτηση βουλευτή + email</li>
+          <li><strong><a href="https://www.senato.it/" target="_blank" rel="noopener">Γερουσία</a></strong> — Κατάλογος γερουσιαστών</li>
+          <li><strong>Πρότυπο:</strong> <a href="/templates/mp-email-it.txt" target="_blank">Email Ιταλού Βουλευτή</a></li>
+        </ul>
+
+        <h4>Βασικά Θέματα</h4>
+        <p style="font-size:0.85em">Βιομηχανική ρύπανση Πάδου • Διείσδυση της Μαφίας σε κονδύλια της ΕΕ • Ποιότητα αέρα Μιλάνου</p>
+      </div>
+
+      <div class="card">
+        <h3>🇫🇷 ΓΑΛΛΙΑ</h3>
+        
+        <h4>Δημόσιες Συμβάσεις</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://data.gouv.fr/" target="_blank" rel="noopener">data.gouv.fr</a></strong> — Πύλη ανοιχτών δεδομένων της Γαλλίας (συμβάσεις, διαφάνεια)</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (ΕΕ)</a></strong> — Συμβάσεις ΕΕ</li>
+          <li><strong><a href="https://marches-publics.gouv.fr/" target="_blank" rel="noopener">marches-publics.gouv.fr</a></strong> — Εθνική πύλη δημοσίων συμβάσεων</li>
+        </ul>
+
+        <h4>Περιβαλλοντικά Δεδομένα</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.brgm.fr/" target="_blank" rel="noopener">BRGM</a></strong> — Γαλλικές γεωλογικές + περιβαλλοντικές έρευνες</li>
+          <li><strong><a href="https://www.drieat.ile-de-france.developpement-durable.gouv.fr/" target="_blank" rel="noopener">DRIEAT (Île-de-France)</a></strong> — Περιφερειακά περιβαλλοντικά δεδομένα</li>
+          <li><strong>Εστίαση:</strong> Μόλυνση Σηκουάνα, άδειες πυρηνικών σταθμών</li>
+        </ul>
+
+        <h4>Lobbyists & Διαφθορά</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">Μητρώο Διαφάνειας ΕΕ</a></strong> — Lobbyists σε επίπεδο ΕΕ</li>
+          <li><strong><a href="https://www.hatvp.gouv.fr/" target="_blank" rel="noopener">HATVP</a></strong> — Γαλλική αρχή δεοντολογίας (συγκρούσεις συμφερόντων πολιτικών)</li>
+        </ul>
+
+        <h4>Επικοινωνία με Βουλευτές</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.assemblee-nationale.fr/" target="_blank" rel="noopener">Εθνοσυνέλευση</a></strong> — Αναζήτηση βουλευτή + επικοινωνία</li>
+          <li><strong><a href="https://www.senat.fr/" target="_blank" rel="noopener">Γερουσία</a></strong> — Κατάλογος γερουσιαστών</li>
+          <li><strong>Πρότυπο:</strong> <a href="/templates/mp-email-fr.txt" target="_blank">Email Γάλλου Βουλευτή</a></li>
+        </ul>
+
+        <h4>Βασικά Θέματα</h4>
+        <p style="font-size:0.85em">Ρύπανση αγροτικών υδάτων • Lobbying πυρηνικής βιομηχανίας • Άδειες υπεράκτιων αιολικών</p>
+      </div>
+
+      <div class="card">
+        <h3>🇩🇪 ΓΕΡΜΑΝΙΑ</h3>
+        
+        <h4>Δημόσιες Συμβάσεις</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundesausschreibungen.de/" target="_blank" rel="noopener">BundesAusschreibungen</a></strong> — Ομοσπονδιακή πύλη συμβάσεων</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (ΕΕ)</a></strong> — Συμβάσεις ΕΕ</li>
+          <li><strong><a href="https://www.govdata.de/" target="_blank" rel="noopener">GovData</a></strong> — Ανοιχτά δεδομένα + πύλη διαφάνειας</li>
+        </ul>
+
+        <h4>Περιβαλλοντικά Δεδομένα</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.umweltbundesamt.de/" target="_blank" rel="noopener">UmweltBundesamt (UBA)</a></strong> — Ομοσπονδιακή υπηρεσία περιβάλλοντος (αέρας, νερό, απόβλητα)</li>
+          <li><strong><a href="https://www.lanuv.nrw.de/" target="_blank" rel="noopener">LANUV (NRW)</a></strong> — Περιβαλλοντικά δεδομένα Βόρειας Ρηνανίας-Βεστφαλίας (βιομηχανική περιοχή)</li>
+          <li><strong>Εστίαση:</strong> Ρύπανση κοιλάδας Ρουρ, κληρονομιά βιομηχανίας άνθρακα, μόλυνση Ρήνου</li>
+        </ul>
+
+        <h4>Lobbyists & Διαφθορά</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.lobbyregister.bundestag.de/" target="_blank" rel="noopener">Lobbyregister (Bundestag)</a></strong> — Μητρώο lobbying ομοσπονδιακού κοινοβουλίου</li>
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">Μητρώο Διαφάνειας ΕΕ</a></strong> — Lobbying σε επίπεδο ΕΕ</li>
+        </ul>
+
+        <h4>Επικοινωνία με Βουλευτές</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundestag.de/" target="_blank" rel="noopener">Bundestag (Ομοσπονδιακό Κοινοβούλιο)</a></strong> — Αναζήτηση βουλευτή + επικοινωνία</li>
+          <li><strong><a href="https://www.bundesrat.de/" target="_blank" rel="noopener">Bundesrat</a></strong> — Εκπροσώπηση κρατιδίων</li>
+          <li><strong>Πρότυπο:</strong> <a href="/templates/mp-email-de.txt" target="_blank">Email Γερμανού Βουλευτή</a></li>
+        </ul>
+
+        <h4>Βασικά Θέματα</h4>
+        <p style="font-size:0.85em">Βιομηχανική ρύπανση κοιλάδας Ρουρ • Αποψίλωση δασών Βαυαρίας • Lobbying σταδιακής κατάργησης άνθρακα • Ρύπανση ναυτιλίας Ρήνου</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:28px">
+      <h2>Πώς να χρησιμοποιήσετε αυτήν την αναφορά</h2>
+      <ol>
+        <li>Επιλέξτε τη χώρα σας και την πηγή δεδομένων παραπάνω</li>
+        <li>Αναζητήστε την εταιρεία ή τη σύμβαση που σας ενδιαφέρει (χρησιμοποιήστε το TED για αναζητήσεις σε όλη την ΕΕ)</li>
+        <li>Διασταυρώστε με περιβαλλοντικά δεδομένα (ARPA, BRGM, UBA)</li>
+        <li>Τεκμηριώστε τα στοιχεία στο <a href="/templates/corporate-report-template.md" target="_blank">Πρότυπο Εταιρικής Λογοδοσίας</a></li>
+        <li>Επικοινωνήστε με τον βουλευτή σας χρησιμοποιώντας το <a href="/templates/mp-email-en.txt" target="_blank">πρότυπο email μας</a></li>
+      </ol>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid var(--accent);background:rgba(14,165,164,0.05)">
+      <h3>💡 Επαγγελματικές Συμβουλές</h3>
+      <ul style="margin-top:12px">
+        <li>Το <strong>TED.europa.eu</strong> έχει δυνατότητα αναζήτησης ανά όνομα εταιρείας, χώρα και τομέα — χρησιμοποιήστε το πρώτα για μοτίβα σε όλη την ΕΕ</li>
+        <li>Τα <strong>πρότυπα email βουλευτών</strong> είναι προγεγραμμένα. Απλώς προσαρμόστε το όνομα της εταιρείας/θέματος και στείλτε τα</li>
+        <li><strong>Διασταυρώστε</strong> συμβάσεις με περιβαλλοντικά δεδομένα για να αποδείξετε ότι η κυβέρνηση επέτρεψε τη ρύπανση</li>
+        <li><strong>Αρχειοθετήστε αποδεικτικά στοιχεία</strong> χρησιμοποιώντας το Wayback Machine εάν οι ιστότοποι ενημερωθούν ή καταργηθούν</li>
+        <li><strong>Ελέγξτε τα τοπικά μέσα</strong> (περιφερειακές ειδήσεις) για πλαίσιο γύρω από συγκεκριμένες περιπτώσεις</li>
+      </ul>
+    </div>
+  </section>
+</Base>

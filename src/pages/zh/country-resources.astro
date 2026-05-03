@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getLangFromUrl, useTranslations } from '../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<head>
+  <title>国家快速参考 — BoycottWithAI</title>
+  <meta name="description" content="特定国家的数据源、关键联系人和研究工具。意大利、法国和德国的快速参考，以访问公共采购、环境数据和议会记录。" />
+</head>
+
+<Base>
+  <section>
+    <h1>国家快速参考</h1>
+    <p class="muted">单页速查表：在哪里可以按国家找到政府合同、环境数据、游说者登记册和议员联系信息。</p>
+
+    <div class="grid" style="margin-top:28px">
+      <div class="card">
+        <h3>🇮🇹 意大利</h3>
+        
+        <h4>公共采购</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.trasparenza.gov.it/" target="_blank" rel="noopener">trasparenza.gov.it</a></strong> — 合同、支出、透明度门户网站</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — 欧盟合同（超过13.9万欧元）</li>
+          <li><strong><a href="https://dati.gov.it/" target="_blank" rel="noopener">data.gov.it</a></strong> — 开放的政府数据集</li>
+        </ul>
+
+        <h4>环境数据</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.arpa.piemonte.it/" target="_blank" rel="noopener">ARPA</a></strong> — 区域环境机构（各区域门户网站不同）</li>
+          <li><strong><a href="https://www.istat.it/" target="_blank" rel="noopener">ISTAT</a></strong> — 国家统计局（环境 + 经济）</li>
+          <li><strong>焦点：</strong> 波河污染、工业废物（伦巴第地区）</li>
+        </ul>
+
+        <h4>游说者与腐败</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.registrotrasparenza.it/" target="_blank" rel="noopener">Registro Trasparenza</a></strong> — 游说登记册</li>
+          <li><strong><a href="https://www.antimafia.camera.it/" target="_blank" rel="noopener">反黑手党委员会</a></strong> — 对有组织犯罪 + 企业勾结的公开调查</li>
+        </ul>
+
+        <h4>议员联系方式</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.camera.it/" target="_blank" rel="noopener">众议院</a></strong> — 搜索议员 + 电子邮件</li>
+          <li><strong><a href="https://www.senato.it/" target="_blank" rel="noopener">参议院</a></strong> — 参议员目录</li>
+          <li><strong>模板：</strong> <a href="/templates/mp-email-it.txt" target="_blank">意大利议员电子邮件</a></li>
+        </ul>
+
+        <h4>关键议题</h4>
+        <p style="font-size:0.85em">波河工业污染 • 黑手党渗透欧盟资金 • 米兰空气质量</p>
+      </div>
+
+      <div class="card">
+        <h3>🇫🇷 法国</h3>
+        
+        <h4>公共采购</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://data.gouv.fr/" target="_blank" rel="noopener">data.gouv.fr</a></strong> — 法国开放数据门户网站（合同、透明度）</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — 欧盟合同</li>
+          <li><strong><a href="https://marches-publics.gouv.fr/" target="_blank" rel="noopener">marches-publics.gouv.fr</a></strong> — 国家公共合同门户网站</li>
+        </ul>
+
+        <h4>环境数据</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.brgm.fr/" target="_blank" rel="noopener">BRGM</a></strong> — 法国地质与环境调查局</li>
+          <li><strong><a href="https://www.drieat.ile-de-france.developpement-durable.gouv.fr/" target="_blank" rel="noopener">DRIEAT (法兰西岛)</a></strong> — 区域环境数据</li>
+          <li><strong>焦点：</strong> 塞纳河污染、核电站许可证</li>
+        </ul>
+
+        <h4>游说者与腐败</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">欧盟透明度登记册</a></strong> — 欧盟级游说者</li>
+          <li><strong><a href="https://www.hatvp.gouv.fr/" target="_blank" rel="noopener">HATVP</a></strong> — 法国道德监督机构（政治家利益冲突）</li>
+        </ul>
+
+        <h4>议员联系方式</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.assemblee-nationale.fr/" target="_blank" rel="noopener">国民议会</a></strong> — 寻找代表 + 联系方式</li>
+          <li><strong><a href="https://www.senat.fr/" target="_blank" rel="noopener">参议院</a></strong> — 参议员目录</li>
+          <li><strong>模板：</strong> <a href="/templates/mp-email-fr.txt" target="_blank">法国议员电子邮件</a></li>
+        </ul>
+
+        <h4>关键议题</h4>
+        <p style="font-size:0.85em">农业水污染 • 核工业游说 • 海上风电许可证</p>
+      </div>
+
+      <div class="card">
+        <h3>🇩🇪 德国</h3>
+        
+        <h4>公共采购</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundesausschreibungen.de/" target="_blank" rel="noopener">BundesAusschreibungen</a></strong> — 联邦采购门户网站</li>
+          <li><strong><a href="https://www.ted.europa.eu/" target="_blank" rel="noopener">TED (EU)</a></strong> — 欧盟合同</li>
+          <li><strong><a href="https://www.govdata.de/" target="_blank" rel="noopener">GovData</a></strong> — 开放数据 + 透明度门户网站</li>
+        </ul>
+
+        <h4>环境数据</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.umweltbundesamt.de/" target="_blank" rel="noopener">UmweltBundesamt (UBA)</a></strong> — 联邦环境局（空气、水、废物）</li>
+          <li><strong><a href="https://www.lanuv.nrw.de/" target="_blank" rel="noopener">LANUV (北威州)</a></strong> — 北莱茵-威斯特法伦州环境数据（工业区）</li>
+          <li><strong>焦点：</strong> 鲁尔区污染、煤炭工业遗留问题、莱茵河污染</li>
+        </ul>
+
+        <h4>游说者与腐败</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.lobbyregister.bundestag.de/" target="_blank" rel="noopener">Lobbyregister (联邦议院)</a></strong> — 联邦议会游说登记册</li>
+          <li><strong><a href="https://registretransparencepublic.eu/" target="_blank" rel="noopener">欧盟透明度登记册</a></strong> — 欧盟级游说</li>
+        </ul>
+
+        <h4>议员联系方式</h4>
+        <ul style="font-size:0.9em">
+          <li><strong><a href="https://www.bundestag.de/" target="_blank" rel="noopener">联邦议院</a></strong> — 寻找代表 + 联系方式</li>
+          <li><strong><a href="https://www.bundesrat.de/" target="_blank" rel="noopener">联邦参议院</a></strong> — 州代表</li>
+          <li><strong>模板：</strong> <a href="/templates/mp-email-de.txt" target="_blank">德国议员电子邮件</a></li>
+        </ul>
+
+        <h4>关键议题</h4>
+        <p style="font-size:0.85em">鲁尔区工业污染 • 巴伐利亚森林砍伐 • 逐步淘汰煤炭游说 • 莱茵河航运污染</p>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:28px">
+      <h2>如何使用此参考</h2>
+      <ol>
+        <li>选择上面的国家和数据源</li>
+        <li>搜索感兴趣的公司或合同（使用TED进行欧盟范围的搜索）</li>
+        <li>与环境数据进行交叉引用（ARPA、BRGM、UBA）</li>
+        <li>在我们的 <a href="/templates/corporate-report-template.md" target="_blank">企业问责模板</a> 中记录证据</li>
+        <li>使用我们的 <a href="/templates/mp-email-en.txt" target="_blank">电子邮件模板</a> 联系您的议员</li>
+      </ol>
+    </div>
+
+    <div class="card" style="margin-top:18px;border:2px solid var(--accent);background:rgba(14,165,164,0.05)">
+      <h3>💡 专业提示</h3>
+      <ul style="margin-top:12px">
+        <li><strong>TED.europa.eu</strong> 可按公司名称、国家和行业进行搜索 — 首先使用它来了解整个欧盟的情况</li>
+        <li><strong>议员电子邮件模板</strong> 是预先写好的；只需自定义公司/问题名称并发送即可</li>
+        <li><strong>交叉引用</strong> 合同和环境数据，以证明政府为污染开绿灯</li>
+        <li>如果网站更新或关闭，请使用 Wayback Machine <strong>存档证据</strong></li>
+        <li><strong>查看当地媒体</strong>（地区新闻），了解特定案件的背景</li>
+      </ul>
+    </div>
+  </section>
+</Base>

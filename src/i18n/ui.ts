@@ -4,7 +4,9 @@ export const languages = {
   en: 'English',
   fr: 'Français',
   de: 'Deutsch',
-  pt: 'Português'
+  pt: 'Português',
+  el: 'Ελληνικά',
+  zh: '中文'
 };
 
 export const defaultLang = 'en';
@@ -789,5 +791,7 @@ export const ui = {
   'getinvolved.steps': ['Unterzeichnen und Teilen von Petitionen für Diplomatie und Waffenstillstand', 'Kontaktieren Sie Vertreter und fordern Sie Transparenz bei Verteidigungsbudgets', 'Organisieren oder beteiligen Sie sich an gewaltfreien Aktionen und Desinvestitionskampagnen', 'Beitragen zu Datenströmen und lokale Eskalationen an unsere Plattform melden'],
   'errors.notFound.title': 'Seite nicht gefunden',
   'errors.notFound.message': 'Die angeforderte Seite existiert nicht oder wurde verschoben. Versuchen Sie einen der Links unten oder kehren Sie zur Startseite zurück.',
-    }
+    },
+    el: {},
+    zh: {}
 } as const;
